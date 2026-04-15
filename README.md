@@ -1,3 +1,3 @@
 # CCMM-utils
 Useful tools for CCMM:
-- [CCMM-xsd-flat](CCMM-xsd-flat/): A utility to normalize and merge multiple CCMM XSD files into one flattened schema. credits: 
+- [ccmm-xsd-flat](ccmm-xsd-flat/): A utility to normalize and merge multiple CCMM XSD files into one flattened schema. credits: 
