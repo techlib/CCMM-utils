@@ -1,0 +1,78 @@
+name: Sync and Flatten CCMM
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  sync-and-merge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout your repository
+        uses: actions/checkout@v4
+        with:
+          path: destination
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Checkout CCMM source
+        uses: actions/checkout@v4
+        with:
+          repository: techlib/CCMM
+          path: source
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: pip install lxml click
+
+      - name: Copy XSD directories
+        run: |
+          TARGET_DIR="destination/ccmm-xsd-flat/mirror-ccmm"
+          
+          # Vyčištění cíle
+          if [ -d "$TARGET_DIR" ]; then
+            rm -rf "$TARGET_DIR"/*
+          else
+            mkdir -p "$TARGET_DIR"
+          fi
+          
+          cd source
+          find . -name "*.xsd" > xsd_list.txt
+          if [ -s xsd_list.txt ]; then
+            cat xsd_list.txt | xargs cp --parents -t "../$TARGET_DIR/"
+            echo "Kopírování do $TARGET_DIR dokončeno."
+          else
+            echo "Chyba: Žádné XSD nenalezeny."
+            exit 1
+          fi
+
+      - name: Run ccmm-xsd-flat
+        run: |
+    
+          cd destination/ccmm-xsd-flat
+          
+          python merge_schemas.py mirror-ccmm/ ccmm_merged.xsd
+
+      # 5. Commit a Push
+      - name: Commit and push
+        run: |
+          cd destination
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Přidáme jen změny v cílovém adresáři
+          git add ccmm-xsd-flat/
+          
+          if ! git diff --cached --quiet; then
+            git commit -m "Update: Synchronized and flattened XSD in ccmm-xsd-flat/"
+            git push origin HEAD
+          else
+            echo "No changes to commit"
+          fi
