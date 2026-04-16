@@ -39,11 +39,9 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y graphviz
           
-          # Stažení JARu PlantUML
           curl -L https://github.com/plantuml/plantuml/releases/latest/download/plantuml.jar -o plantuml.jar
           
-          # Spuštění - PlantUML si teď 'dot' najde automaticky v /usr/bin/dot
-          java -jar plantuml.jar -tpng diagram.puml
+          java -jar plantuml.jar -tpng diagram.puml -o ceCCMM/output/
             
       # 3. Commit a Push
       - name: Commit and Push diagram
