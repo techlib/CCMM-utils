@@ -28,7 +28,7 @@ jobs:
       # 1. sousteni skriptu
       - name: Generate PlantUML source
         run: |
-          python ceCCMM/ccmm-xsd-vis.py > diagram.puml
+          python ceCCMM/scripts/ccmm-xsd-vis.py > diagram.puml
           echo "--- generovany obsah ---"
           cat diagram.puml
           echo "----------------------------------"
