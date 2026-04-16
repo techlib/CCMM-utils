@@ -36,7 +36,13 @@ jobs:
       # 2. renderovani do png
       - name: Render PNG
         run: |
+          sudo apt-get update
+          sudo apt-get install -y graphviz
+          
+          # Stažení JARu PlantUML
           curl -L https://github.com/plantuml/plantuml/releases/latest/download/plantuml.jar -o plantuml.jar
+          
+          # Spuštění - PlantUML si teď 'dot' najde automaticky v /usr/bin/dot
           java -jar plantuml.jar -tpng diagram.puml
             
       # 3. Commit a Push
@@ -45,5 +51,5 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add diagram.png
-          git commit -m "docs: automatická aktualizace diagramu [skip ci]" || exit 0
+          git commit -m "docs: diagram automatic update [skip ci]" || exit 0
           git push
