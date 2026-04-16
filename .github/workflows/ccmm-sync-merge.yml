@@ -34,6 +34,7 @@ jobs:
 
       - name: Copy XSD directories
         run: |
+         
           TARGET_DIR="destination/flattenCCMM/mirror-ccmm"
           
           # Vyčištění cíle
@@ -53,9 +54,9 @@ jobs:
             exit 1
           fi
 
-      - name: Run ccmm-xsd-flat
+      - name: Run flattenCCMM
         run: |
-    
+          # Přechod do nově pojmenovaného adresáře
           cd destination/flattenCCMM
           
           python merge_schemas.py mirror-ccmm/ ccmm_merged.xsd
@@ -67,11 +68,11 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
-          # Přidáme jen změny v cílovém adresáři
-          git add ccmm-xsd-flat/
+          # Přidáme změny v novém adresáři flattenCCMM
+          git add flattenCCMM/
           
           if ! git diff --cached --quiet; then
-            git commit -m "Update: Synchronized and flattened XSD in ccmm-xsd-flat/"
+            git commit -m "Update: Synchronized and flattened XSD in flattenCCMM/"
             git push origin HEAD
           else
             echo "No changes to commit"
