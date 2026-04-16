@@ -33,10 +33,9 @@ jobs:
 
       # 2. renderovani do png
       - name: Render PlantUML to PNG
-        uses: xander-prent/plantuml-action@v1.3.1
-        with:
-          args: -v -tpng diagram.puml
-          
+        run: |
+          docker run --rm -v $(pwd):/data plantuml/plantuml /data/diagram.puml -tpng
+            
       # 3. Commit a Push
       - name: Commit and Push diagram
         run: |
