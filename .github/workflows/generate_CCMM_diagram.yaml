@@ -34,9 +34,10 @@ jobs:
           echo "----------------------------------"
 
       # 2. renderovani do png
-      - name: Render PNG via PlantUML Server
-        run: |
-          curl -X POST --data-binary @diagram.puml https://www.plantuml.com/plantuml/png/ --output diagram.png
+      - name: Use PlantUML Action
+        uses: grimes-work/plantuml-action@v1
+        with:
+          path: diagram.puml
             
       # 3. Commit a Push
       - name: Commit and Push diagram
