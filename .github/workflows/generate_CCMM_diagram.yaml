@@ -26,21 +26,17 @@ jobs:
           python-version: '3.10'
 
       # 1. sousteni skriptu
-      
       - name: Generate PlantUML source
         run: |
           python ceCCMM/ccmm-xsd-vis.py > diagram.puml
+          echo "--- generovany obsah ---"
+          cat diagram.puml
+          echo "----------------------------------"
 
       # 2. renderovani do png
-      - name: Install Java
+      - name: Render PNG via PlantUML Server
         run: |
-          sudo apt-get update
-          sudo apt-get install -y default-jre
-
-      - name: Render PlantUML to PNG
-        run: |
-          curl -L https://github.com/plantuml/plantuml/releases/latest/download/plantuml.jar -o plantuml.jar
-          java -jar plantuml.jar -tpng diagram.puml
+          curl -X POST --data-binary @diagram.puml https://www.plantuml.com/plantuml/png/ --output diagram.png
             
       # 3. Commit a Push
       - name: Commit and Push diagram
