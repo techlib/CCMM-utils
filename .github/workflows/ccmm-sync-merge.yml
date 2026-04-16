@@ -1,6 +1,8 @@
 name: Sync and Flatten CCMM
 
 on:
+  repository_dispatch:
+    types: [ccmm_xsd_updated]
   workflow_dispatch:
   schedule:
     - cron: '0 0 * * *'
