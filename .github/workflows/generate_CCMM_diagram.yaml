@@ -1,4 +1,4 @@
-name: XSD to PlantUML CI
+name: Generate CCMM diagram
 
 on:
   push:
