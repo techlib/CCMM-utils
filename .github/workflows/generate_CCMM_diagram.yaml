@@ -34,7 +34,8 @@ jobs:
       # 2. renderovani do png
       - name: Render PlantUML to PNG
         run: |
-          docker run --rm -v $(pwd):/data plantuml/plantuml /data/diagram.puml -tpng
+          curl -L https://github.com/plantuml/plantuml/releases/latest/download/plantuml.jar -o plantuml.jar
+          java -jar plantuml.jar -tpng diagram.puml
             
       # 3. Commit a Push
       - name: Commit and Push diagram
