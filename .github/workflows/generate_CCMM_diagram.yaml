@@ -33,10 +33,10 @@ jobs:
 
       # 2. renderovani do png
       - name: Render PlantUML to PNG
-        uses: cloudbees/plantuml-github-action@master
+        uses: xander-prent/plantuml-action@v1.3.1
         with:
-          args: -tpng diagram.puml
-
+          args: -v -tpng diagram.puml
+          
       # 3. Commit a Push
       - name: Commit and Push diagram
         run: |
