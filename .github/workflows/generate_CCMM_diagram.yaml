@@ -34,10 +34,10 @@ jobs:
           echo "----------------------------------"
 
       # 2. renderovani do png
-      - name: Use PlantUML Action
-        uses: grimes-work/plantuml-action@v1
-        with:
-          path: diagram.puml
+      - name: Render PNG
+        run: |
+          curl -L https://github.com/plantuml/plantuml/releases/latest/download/plantuml.jar -o plantuml.jar
+          java -jar plantuml.jar -tpng diagram.puml
             
       # 3. Commit a Push
       - name: Commit and Push diagram
