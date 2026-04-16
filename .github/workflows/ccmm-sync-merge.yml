@@ -34,7 +34,7 @@ jobs:
 
       - name: Copy XSD directories
         run: |
-          TARGET_DIR="destination/ccmm-xsd-flat/mirror-ccmm"
+          TARGET_DIR="destination/flattenCCMM/mirror-ccmm"
           
           # Vyčištění cíle
           if [ -d "$TARGET_DIR" ]; then
@@ -56,7 +56,7 @@ jobs:
       - name: Run ccmm-xsd-flat
         run: |
     
-          cd destination/ccmm-xsd-flat
+          cd destination/flattenCCMM
           
           python merge_schemas.py mirror-ccmm/ ccmm_merged.xsd
 
