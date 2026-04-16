@@ -5,8 +5,8 @@ on:
     branches:
       - main
     paths:
-      - 'flattenCCMM/ccmm_merged.xsd'
-      - 'ceCCMM/ccmm-xsd-vis.py'
+      - 'flattenCCMM/output/ccmm_merged.xsd'
+      - 'ceCCMM/scripts/ccmm-xsd-vis.py'
   workflow_dispatch:
 
 jobs:
@@ -50,6 +50,6 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add diagram.png
+          git add ceCCMM/output/diagram.png
           git commit -m "docs: diagram automatic update [skip ci]" || exit 0
           git push
