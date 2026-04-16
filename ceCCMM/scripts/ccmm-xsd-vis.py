@@ -89,4 +89,4 @@ def generate_plantuml_simple(xsd_file):
 
     print("@enduml")
 
-generate_plantuml_simple('flattenCCMM/ccmm_merged.xsd')
+generate_plantuml_simple('flattenCCMM/output/ccmm_merged.xsd')
