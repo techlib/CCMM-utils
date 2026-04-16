@@ -32,6 +32,11 @@ jobs:
           python ceCCMM/ccmm-xsd-vis.py > diagram.puml
 
       # 2. renderovani do png
+      - name: Install Java
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y default-jre
+
       - name: Render PlantUML to PNG
         run: |
           curl -L https://github.com/plantuml/plantuml/releases/latest/download/plantuml.jar -o plantuml.jar
