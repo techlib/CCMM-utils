@@ -59,7 +59,7 @@ jobs:
           # Přechod do nově pojmenovaného adresáře
           cd destination/flattenCCMM
           
-          python merge_schemas.py mirror-ccmm/ ccmm_merged.xsd
+          python scripts/merge_schemas.py mirror-ccmm/ output/ccmm_merged.xsd
 
       # 5. Commit a Push
       - name: Commit and push
@@ -67,8 +67,7 @@ jobs:
           cd destination
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          
-          # Přidáme změny v novém adresáři flattenCCMM
+      
           git add flattenCCMM/
           
           if ! git diff --cached --quiet; then
