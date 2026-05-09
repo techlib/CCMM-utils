@@ -62,7 +62,32 @@ jobs:
           cd destination/flattenCCMM
           
           python scripts/merge_schemas.py mirror-ccmm/ output/ccmm_merged.xsd
+      - name: Validate XML samples against merged XSD
+        run: |
+          echo "Validation CCMM XML samples starts..."
+                  
+          
+          SCHEMA="destination/flattenCCMM/output/ccmm_merged.xsd"
+          SAMPLES_DIR="source/_metadata-samples/xml"
+          
+          # Check samples in dir
+          if [ ! -d "$SAMPLES_DIR" ]; then
+            echo "Error: samples not found in $SAMPLES_DIR"
+            exit 1
+          fi
 
+          # Validation CCMM XML samples using xmllint
+          for xml_file in "$SAMPLES_DIR"/*.xml; do
+            echo "Validates: $(basename "$xml_file")"
+            if xmllint --noout --schema "$SCHEMA" "$xml_file"; then
+              echo "OK: $(basename "$xml_file") is valid."
+            else
+              echo "Error: $(basename "$xml_file") does not conform to the schema!"
+              exit 1
+            fi
+          done
+          
+          echo "Successful validation of all CCMM XML samples."
       # 5. Commit a Push
       - name: Commit and push
         run: |
