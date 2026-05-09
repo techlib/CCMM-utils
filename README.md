@@ -12,7 +12,7 @@ While the internal structure of each tool may vary to accommodate specific requi
 ## Tools
 
 ### 1. flattenCCMM
-A utility to normalize and merge multiple CCMM XSD files into one flattened schema.
+A utility to normalize and merge multiple CCMM XSD files into one flattened schema. Once the merging script finishes, the workflow performs an **integration test** by validating CCMM XML samples against the generated XSD.
 * **Automation:** This tool is triggered whenever the XSD schemas in the **techlib/CCMM** repository are updated.
 * **Credits:** Special thanks to **ccmm-invenio** for the [merge_schemas.py](https://github.com/NRP-CZ/ccmm-invenio/blob/main/ccmm_versions/src/ccmm_versions/merge_schemas.py)` script!
 
