@@ -34,7 +34,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y libxml2-util
+          sudo apt-get install -y libxml2-utils
           pip install lxml click
 
       - name: Copy XSD directories
