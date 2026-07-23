@@ -43,6 +43,9 @@ on:
 jobs:
   run:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # Needed to allow git push
+
     steps:
       - name: Checkout this repo
         uses: actions/checkout@v4
@@ -89,6 +92,9 @@ jobs:
             extra_args+=(--context-url "${{ inputs.context_url }}")
           fi
 
+          # Ensure target folder exists
+          mkdir -p ccmm2rdf/output
+
           while IFS= read -r url; do
             [ -z "$url" ] && continue
             echo "=== Processing $url ==="
@@ -98,8 +104,22 @@ jobs:
               --lifting "${{ inputs.lifting_path }}" \
               --context "${{ inputs.context_path }}" \
               "${extra_args[@]}" \
-              --outdir output
+              --outdir ccmm2rdf/output
           done < xml_urls.txt
+
+      - name: Commit and push outputs
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add ccmm2rdf/output
+          
+          # Only commit if there are changes to avoid workflow failure
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "docs: add ccmm2rdf outputs"
+            git push
+          fi
 
       - name: Upload results as workflow artifact
         uses: actions/upload-artifact@v4
