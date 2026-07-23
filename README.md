@@ -12,13 +12,18 @@ While the internal structure of each tool may vary to accommodate specific requi
 ## Tools
 
 ### 1. flattenCCMM
-A utility to normalize and merge multiple CCMM XSD files into one flattened schema. Once the merging script finishes, the workflow performs an **integration test** by validating CCMM XML samples against the generated XSD.
+An utility to normalize and merge multiple CCMM XSD files into one flattened schema. Once the merging script finishes, the workflow performs an **integration test** by validating CCMM XML samples against the generated XSD.
 * **Automation:** This tool is triggered whenever the XSD schemas in the **techlib/CCMM** repository are updated.
 * **Credits:** Special thanks to **ccmm-invenio** for the [merge_schemas.py](https://github.com/NRP-CZ/ccmm-invenio/blob/main/ccmm_versions/src/ccmm_versions/merge_schemas.py)` script!
 
 ### 2. ceCCMM
-A utility to visualize CCMM XSD structures where **mandatory parts are in bold**.
+An utility to visualize CCMM XSD structures where **mandatory parts are in bold**.
 * **Automation:** This tool is triggered if the visualization script is modified or if the flattened schema in **flattenCCMM** changes.
+
+### 3. xml2rdfCCMM
+An utility transforming xml metadata conformant to the dataset/schema.xsd to the RDF representation using dataset/lifting.xslt.
+On the input there is xml metadata file, a repository and branch and on the output are serialized Turtle, XML/RDF and JSON-LD corresponding to the JSON-LD context given by the branch.
+
 
 ---
 
