@@ -1,0 +1,108 @@
+name: Run ccmm2rdf
+
+# Manual-only workflow. Trigger it from the Actions tab ("Run workflow") and
+# fill in the parameters.
+
+on:
+  workflow_dispatch:
+    inputs:
+      xml_input:
+        description: >
+          Either a direct URL to a single XML file, or a GitHub folder URL
+          of the form https://github.com/<owner>/<repo>/tree/<branch>/<path>
+          (all *.xml files directly in that folder will be processed).
+        required: true
+        type: string
+      repo:
+        description: "GitHub repo containing lifting.xslt/context.jsonld, e.g. techlib/CCMM"
+        required: true
+        type: string
+      branch:
+        description: "Branch or tag to use, e.g. 1.2.0"
+        required: true
+        type: string
+      lifting_path:
+        description: "Path to lifting.xslt within the repo"
+        required: true
+        default: dataset/lifting.xslt
+        type: string
+      context_path:
+        description: "Path to context.jsonld within the repo"
+        required: true
+        default: dataset/context.jsonld
+        type: string
+      context_url:
+        description: >
+          Optional: URL to use as the @context in the output JSON-LD instead
+          of embedding it inline (e.g. a raw.githubusercontent.com link to
+          context.jsonld). Leave blank to embed the full context as before.
+        required: false
+        default: ""
+        type: string
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout this repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install saxonche rdflib pyld
+
+      - name: Resolve XML input into a list of file URLs
+        id: resolve
+        run: |
+          input="${{ inputs.xml_input }}"
+
+          if [[ "$input" =~ ^https://github\.com/([^/]+)/([^/]+)/tree/([^/]+)/(.*)$ ]]; then
+            owner="${BASH_REMATCH[1]}"
+            repo_name="${BASH_REMATCH[2]}"
+            ref="${BASH_REMATCH[3]}"
+            path="${BASH_REMATCH[4]}"
+            echo "Folder input detected: $owner/$repo_name @ $ref : $path"
+            curl -sSL -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+              "https://api.github.com/repos/$owner/$repo_name/contents/$path?ref=$ref" \
+              | jq -r '.[] | select(.name | endswith(".xml")) | .download_url' > xml_urls.txt
+          else
+            echo "Single file input detected"
+            echo "$input" > xml_urls.txt
+          fi
+
+          echo "Files to process:"
+          cat xml_urls.txt
+
+          if [ ! -s xml_urls.txt ]; then
+            echo "No XML files found for the given input - check xml_input."
+            exit 1
+          fi
+
+      - name: Run ccmm2rdf.py for each XML file
+        run: |
+          extra_args=()
+          if [ -n "${{ inputs.context_url }}" ]; then
+            extra_args+=(--context-url "${{ inputs.context_url }}")
+          fi
+
+          while IFS= read -r url; do
+            [ -z "$url" ] && continue
+            echo "=== Processing $url ==="
+            python ccmm2rdf/scripts/ccmm2rdf.py "$url" \
+              --repo "${{ inputs.repo }}" \
+              --branch "${{ inputs.branch }}" \
+              --lifting "${{ inputs.lifting_path }}" \
+              --context "${{ inputs.context_path }}" \
+              "${extra_args[@]}" \
+              --outdir output
+          done < xml_urls.txt
+
+      - name: Upload results as workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ccmm2rdf-output
+          path: output/
