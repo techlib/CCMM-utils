@@ -105,4 +105,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ccmm2rdf-output
-          path: output/
+          path: ccmm2rdf/output/
