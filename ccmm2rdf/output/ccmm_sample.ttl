@@ -109,21 +109,6 @@
     dcat:keyword "kvalita ovzduší"@cs ;
     dcat:version "1.0.23"^^xsd:string ;
     prov:qualifiedAttribution [ a prov:Attribution ;
-            dcat:hadRole <https://vocabs.ccmm.cz/registry/codelist/AgentRole/Publisher> ;
-            prov:agent [ a prov:Person ;
-                    ns2:family-name "Janouch"^^xsd:string ;
-                    ns2:given-name "Ivan"^^xsd:string ;
-                    ns1:identifier <https://orcid.org/0023-0802-44X6-26X0> ;
-                    dcat:contactPoint [ a ns2:Kind ;
-                            ns2:hasAddress [ a ns11:Address ;
-                                    ns11:fullAddress "Pražská 3, 60200, Brno"^^xsd:string ] ;
-                            ns0:email "256384@muni.cz"^^xsd:string ;
-                            ns0:phone "+420876543219"^^xsd:string ] ;
-                    foaf:name "Ivan Janouch"^^xsd:string ;
-                    ns0:hasAffiliation [ a org:Organization ;
-                            ns1:identifier <https://ror.org/02j46qs45> ;
-                            foaf:name "Masarykova Univerzita"^^xsd:string ] ] ],
-        [ a prov:Attribution ;
             dcat:hadRole <https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator> ;
             prov:agent [ a prov:Person ;
                     ns2:family-name "Novák"^^xsd:string ;
@@ -137,7 +122,22 @@
                     foaf:name "Novák"^^xsd:string ;
                     ns0:hasAffiliation [ a org:Organization ;
                             ns1:identifier <https://ror.org/024d6js02> ;
-                            foaf:name "Univerzita Karlova"^^xsd:string ] ] ] ;
+                            foaf:name "Univerzita Karlova"^^xsd:string ] ] ],
+        [ a prov:Attribution ;
+            dcat:hadRole <https://vocabs.ccmm.cz/registry/codelist/AgentRole/Publisher> ;
+            prov:agent [ a prov:Person ;
+                    ns2:family-name "Janouch"^^xsd:string ;
+                    ns2:given-name "Ivan"^^xsd:string ;
+                    ns1:identifier <https://orcid.org/0023-0802-44X6-26X0> ;
+                    dcat:contactPoint [ a ns2:Kind ;
+                            ns2:hasAddress [ a ns11:Address ;
+                                    ns11:fullAddress "Pražská 3, 60200, Brno"^^xsd:string ] ;
+                            ns0:email "256384@muni.cz"^^xsd:string ;
+                            ns0:phone "+420876543219"^^xsd:string ] ;
+                    foaf:name "Ivan Janouch"^^xsd:string ;
+                    ns0:hasAffiliation [ a org:Organization ;
+                            ns1:identifier <https://ror.org/02j46qs45> ;
+                            foaf:name "Masarykova Univerzita"^^xsd:string ] ] ] ;
     prov:wasGeneratedBy <http://link-to-origin.com> ;
     ns0:hasAlternateTitle [ a ns0:AlternateTitle ;
             dcterms:alternative "Air quality measurements in Central Bohemian Region in 2024."@en ;
@@ -145,22 +145,22 @@
     ns0:hasOtherLanguage <http://publications.europa.eu/resource/authority/language/ENG> ;
     ns0:hasPrimaryLanguage <http://publications.europa.eu/resource/authority/language/CES> ;
     ns0:hasTimeReference [ a ns0:TimeReference ;
+            time:hasTime [ a time:Instant ;
+                    time:inXSDDateTime "2025-04-27T12:00:01+02:00"^^xsd:dateTime ] ;
+            ns0:hasType <https://vocabs.ccmm.cz/registry/codelist/TimeReference/Collected> ],
+        [ a ns0:TimeReference ;
             time:hasTime [ a time:Interval ;
                     time:hasBeginning [ a time:Instant ;
                             time:inXSDDate "2024-01-01"^^xsd:date ] ;
                     time:hasEnd [ a time:Instant ;
                             time:inXSDDate "2024-12-31"^^xsd:date ] ] ;
-            ns0:hasType <https://vocabs.ccmm.cz/registry/codelist/TimeReference/Collected> ],
-        [ a ns0:TimeReference ;
-            time:hasTime [ a time:Instant ;
-                    time:inXSDDateTime "2025-04-27T12:00:01+02:00"^^xsd:dateTime ] ;
             ns0:hasType <https://vocabs.ccmm.cz/registry/codelist/TimeReference/Collected> ] ;
     ns0:hasValidationResult [ a ns0:ValidationResult ] ;
     ns0:isDescribedBy <https://original-catalogue/dataset_metadata_id> ;
     ns5:hasFundingReference <https://funder-org.org/grants/123456789> ;
     ns5:relatedItemPublicationYear "2025"^^xsd:gYear ;
     ns6:description [ a <https://w3id.org/tib/datacite/class/Description> ;
-            ns6:description """Tato datová sada obsahuje měření kvality ovzduší ve středních Čechách v
+            dcterms:description """Tato datová sada obsahuje měření kvality ovzduší ve středních Čechách v
             roce 2024."""@cs ;
             ns6:descriptionType <https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Abstract> ] ;
     ns6:subject <http://inspire.ec.europa.eu/theme/ef>,

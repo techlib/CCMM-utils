@@ -267,7 +267,7 @@
           },
           "endpoint_url": [
             {
-              "id": "_:b33",
+              "id": "_:b27",
               "type": "related_resource",
               "title": "Endpoint of WMS service Air quality",
               "resource_url": "https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi"
@@ -284,7 +284,7 @@
             "@value": "Endpoint of WMS service Air quality"
           },
           "http://www.w3.org/ns/dcat#endpointURL": {
-            "id": "_:b33",
+            "id": "_:b27",
             "type": "http://www.w3.org/2000/01/rdf-schema#Resource",
             "title": "Endpoint of WMS service Air quality",
             "https://model.ccmm.cz/vocabulary/ccmm#resourceUrl": {
@@ -822,12 +822,10 @@
   "description": [
     {
       "type": "description",
-      "description": [
-        {
-          "@language": "cs",
-          "@value": "Tato datová sada obsahuje měření kvality ovzduší ve středních Čechách v\n            roce 2024."
-        }
-      ],
+      "http://purl.org/dc/terms/description": {
+        "@language": "cs",
+        "@value": "Tato datová sada obsahuje měření kvality ovzduší ve středních Čechách v\n            roce 2024."
+      },
       "https://w3id.org/tib/datacite/property/descriptionType": {
         "id": "https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Abstract",
         "type": "http://www.w3.org/2004/02/skos/core#Concept",

@@ -496,18 +496,20 @@
       </ns6:subject>
       <ns2:keyword xml:lang="cs">kvalita ovzduší</ns2:keyword>
       <ns6:description>
-         <rdf:Description xmlns:ns0="https://w3id.org/tib/datacite/property/" rdf:nodeID="d44e488">
+         <rdf:Description xmlns:ns0="http://purl.org/dc/terms/"
+                          xmlns:ns1="https://w3id.org/tib/datacite/property/"
+                          rdf:nodeID="d44e488">
             <rdf:type rdf:resource="https://w3id.org/tib/datacite/class/Description"/>
             <ns0:description xml:lang="cs">Tato datová sada obsahuje měření kvality ovzduší ve středních Čechách v
             roce 2024.</ns0:description>
-            <ns0:descriptionType>
+            <ns1:descriptionType>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 rdf:about="https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Abstract">
                   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
                   <ns0:label xml:lang="en">Abstract</ns0:label>
                   <ns0:label xml:lang="cs">Abstrakt</ns0:label>
                </rdf:Description>
-            </ns0:descriptionType>
+            </ns1:descriptionType>
          </rdf:Description>
       </ns6:description>
       <ns3:spatial>
