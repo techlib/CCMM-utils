@@ -7,11 +7,11 @@
     "type": "access_rights",
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+        "@language": "en",
         "@value": "open access"
       },
       {
-        "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+        "@language": "cs",
         "@value": "otevřený přístup"
       }
     ]
@@ -29,13 +29,22 @@
       "resource_type": {
         "id": "http://purl.org/coar/resource_type/c_18cf/",
         "type": "resource_type",
-        "label": "text"
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+          {
+            "@language": "en",
+            "@value": "text"
+          },
+          {
+            "@language": "cs",
+            "@value": "text"
+          }
+        ]
       },
       "https://model.ccmm.cz/vocabulary/ccmm#hasType": {
         "id": "https://vocabs.ccmm.cz/registry/codelist/RelationType/IsReferencedBy",
         "type": "http://www.w3.org/2004/02/skos/core#Concept",
         "http://www.w3.org/2000/01/rdf-schema#label": {
-          "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "@language": "cs",
           "@value": "je na něj odkazováno z (čeho)"
         }
       },
@@ -50,18 +59,21 @@
       "resource_type": {
         "id": "http://purl.org/coar/resource_type/8KJG-QS0Y",
         "type": "resource_type",
-        "label": "research instrument"
+        "http://www.w3.org/2000/01/rdf-schema#label": {
+          "@language": "en",
+          "@value": "research instrument"
+        }
       },
       "https://model.ccmm.cz/vocabulary/ccmm#hasType": {
         "id": "https://vocabs.ccmm.cz/registry/codelist/RelationType/IsCollectedBy",
         "type": "http://www.w3.org/2004/02/skos/core#Concept",
         "http://www.w3.org/2000/01/rdf-schema#label": [
           {
-            "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+            "@language": "cs",
             "@value": "je sbírán (čím)"
           },
           {
-            "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+            "@language": "en",
             "@value": "is collected by"
           }
         ]
@@ -78,18 +90,21 @@
       "resource_type": {
         "id": "http://purl.org/coar/resource_type/FF4C-28RK",
         "type": "resource_type",
-        "label": "observational data"
+        "http://www.w3.org/2000/01/rdf-schema#label": {
+          "@language": "en",
+          "@value": "observational data"
+        }
       },
       "https://model.ccmm.cz/vocabulary/ccmm#hasType": {
         "id": "https://vocabs.ccmm.cz/registry/codelist/RelationType/IsDerivedFrom",
         "type": "http://www.w3.org/2004/02/skos/core#Concept",
         "http://www.w3.org/2000/01/rdf-schema#label": [
           {
-            "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+            "@language": "en",
             "@value": "is derived from"
           },
           {
-            "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+            "@language": "cs",
             "@value": "je odvozen od (čeho)"
           }
         ]
@@ -108,11 +123,11 @@
         "type": "http://www.w3.org/2004/02/skos/core#Concept",
         "http://www.w3.org/2000/01/rdf-schema#label": [
           {
-            "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+            "@language": "cs",
             "@value": "má metadata"
           },
           {
-            "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+            "@language": "en",
             "@value": "has metadata"
           }
         ]
@@ -154,11 +169,11 @@
         "type": "http://www.w3.org/2004/02/skos/core#Concept",
         "http://www.w3.org/2000/01/rdf-schema#label": [
           {
-            "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+            "@language": "cs",
             "@value": "Získáno v lokaci"
           },
           {
-            "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+            "@language": "en",
             "@value": "Collected in"
           }
         ]
@@ -171,11 +186,11 @@
     "type": "resource_type",
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+        "@language": "cs",
         "@value": "datová sada"
       },
       {
-        "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+        "@language": "en",
         "@value": "dataset"
       }
     ]
@@ -191,10 +206,7 @@
       "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
         "id": "https://doi.org/",
         "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-        "http://www.w3.org/2000/01/rdf-schema#label": {
-          "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-          "@value": "DOI"
-        }
+        "http://www.w3.org/2000/01/rdf-schema#label": "DOI"
       }
     },
     {
@@ -208,7 +220,7 @@
         "id": "https://organization.cz/datasets/",
         "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
         "http://www.w3.org/2000/01/rdf-schema#label": {
-          "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "@language": "cs",
           "@value": "Organizační identifikační schéma"
         }
       }
@@ -221,7 +233,10 @@
         {
           "id": "http://data.europa.eu/eli/reg/2010/1089",
           "type": "application_profile",
-          "label": "NAŘÍZENÍ KOMISE (ES) č. 976/2009 ze dne 19. října 2009, kterým\n                    se provádí směrnice Evropského parlamentu a Rady 2007/2/ES, pokud jde o síťové\n                    služby"
+          "http://www.w3.org/2000/01/rdf-schema#label": {
+            "@language": "cs",
+            "@value": "NAŘÍZENÍ KOMISE (ES) č. 976/2009 ze dne 19. října 2009, kterým\n                    se provádí směrnice Evropského parlamentu a Rady 2007/2/ES, pokud jde o síťové\n                    služby"
+          }
         }
       ],
       "description": {
@@ -235,7 +250,10 @@
         {
           "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
           "type": "access_rights",
-          "label": "open access"
+          "http://www.w3.org/2000/01/rdf-schema#label": {
+            "@language": "en",
+            "@value": "open access"
+          }
         }
       ],
       "title": "Služba WMS pro prohlížení dat o kvalitě ovzduší",
@@ -243,10 +261,13 @@
         {
           "id": "https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi",
           "type": "data_service",
-          "label": "Endpoint of WMS service Air quality",
+          "http://purl.org/dc/terms/title": {
+            "@language": "en",
+            "@value": "Endpoint of WMS service Air quality"
+          },
           "endpoint_url": [
             {
-              "id": "_:b2",
+              "id": "_:b33",
               "type": "related_resource",
               "title": "Endpoint of WMS service Air quality",
               "resource_url": "https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi"
@@ -259,11 +280,11 @@
           "id": "https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi",
           "type": "http://www.w3.org/ns/dcat#DataService",
           "http://purl.org/dc/terms/title": {
-            "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+            "@language": "en",
             "@value": "Endpoint of WMS service Air quality"
           },
           "http://www.w3.org/ns/dcat#endpointURL": {
-            "id": "_:b2",
+            "id": "_:b33",
             "type": "http://www.w3.org/2000/01/rdf-schema#Resource",
             "title": "Endpoint of WMS service Air quality",
             "https://model.ccmm.cz/vocabulary/ccmm#resourceUrl": {
@@ -287,14 +308,17 @@
         {
           "id": "https://inspire.ec.europa.eu/schemas/ef/4.0/EnvironmentalMonitoringFacilities.xsd",
           "type": "application_profile",
-          "label": "Environmental monitoring facilities"
+          "http://www.w3.org/2000/01/rdf-schema#label": {
+            "@language": "en",
+            "@value": "Environmental monitoring facilities"
+          }
         }
       ],
       "format": {
         "id": "https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/file-type/GPKG",
         "type": "format",
         "http://www.w3.org/2000/01/rdf-schema#label": {
-          "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "@language": "en",
           "@value": "GeoPackage"
         }
       },
@@ -306,7 +330,10 @@
         {
           "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
           "type": "access_rights",
-          "label": "open access"
+          "http://www.w3.org/2000/01/rdf-schema#label": {
+            "@language": "en",
+            "@value": "open access"
+          }
         }
       ],
       "title": "Kvalita ovzduší",
@@ -329,9 +356,15 @@
         {
           "id": "https://geoportal.gov.cz/atom/CHMU/chmu_ovzdusi_AQ_data_epsg4258_2023.zip",
           "type": "file",
-          "label": [
-            "Datová sada ve formátu Geopackage",
-            "Dataset in Geopackage format"
+          "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+              "@language": "cs",
+              "@value": "Datová sada ve formátu Geopackage"
+            },
+            {
+              "@language": "en",
+              "@value": "Dataset in Geopackage format"
+            }
           ]
         }
       ],
@@ -339,13 +372,16 @@
         "id": "https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/file-type/ZIP",
         "type": "media_type",
         "http://www.w3.org/2000/01/rdf-schema#label": {
-          "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "@language": "en",
           "@value": "ZIP"
         }
       }
     }
   ],
-  "keyword": "kvalita ovzduší",
+  "http://www.w3.org/ns/dcat#keyword": {
+    "@language": "cs",
+    "@value": "kvalita ovzduší"
+  },
   "version": "1.0.23",
   "qualified_attribution": [
     {
@@ -353,9 +389,15 @@
       "role": {
         "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
         "type": "attributed_agent_role_type",
-        "label": [
-          "Creator",
-          "Autor"
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+          {
+            "@language": "en",
+            "@value": "Creator"
+          },
+          {
+            "@language": "cs",
+            "@value": "Autor"
+          }
         ]
       },
       "attributed_agent": {
@@ -373,10 +415,7 @@
             "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
               "id": "https://orcid.org/",
               "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-              "http://www.w3.org/2000/01/rdf-schema#label": {
-                "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-                "@value": "ORCID"
-              }
+              "http://www.w3.org/2000/01/rdf-schema#label": "ORCID"
             }
           }
         ],
@@ -411,10 +450,7 @@
                 "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                   "id": "https://ror.org/",
                   "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                  "http://www.w3.org/2000/01/rdf-schema#label": {
-                    "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-                    "@value": "ROR"
-                  }
+                  "http://www.w3.org/2000/01/rdf-schema#label": "ROR"
                 }
               }
             ],
@@ -428,9 +464,15 @@
       "role": {
         "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Publisher",
         "type": "attributed_agent_role_type",
-        "label": [
-          "Vydavatel",
-          "Publisher"
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+          {
+            "@language": "cs",
+            "@value": "Vydavatel"
+          },
+          {
+            "@language": "en",
+            "@value": "Publisher"
+          }
         ]
       },
       "attributed_agent": {
@@ -448,10 +490,7 @@
             "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
               "id": "https://orcid.org/",
               "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-              "http://www.w3.org/2000/01/rdf-schema#label": {
-                "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-                "@value": "ORCID"
-              }
+              "http://www.w3.org/2000/01/rdf-schema#label": "ORCID"
             }
           }
         ],
@@ -486,10 +525,7 @@
                 "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                   "id": "https://ror.org/",
                   "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                  "http://www.w3.org/2000/01/rdf-schema#label": {
-                    "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-                    "@value": "ROR"
-                  }
+                  "http://www.w3.org/2000/01/rdf-schema#label": "ROR"
                 }
               }
             ],
@@ -509,7 +545,7 @@
     {
       "type": "alternate_title",
       "http://purl.org/dc/terms/alternative": {
-        "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+        "@language": "en",
         "@value": "Air quality measurements in Central Bohemian Region in 2024."
       },
       "https://model.ccmm.cz/vocabulary/ccmm#hasType": {
@@ -517,11 +553,11 @@
         "type": "http://www.w3.org/2004/02/skos/core#Concept",
         "http://www.w3.org/2000/01/rdf-schema#label": [
           {
-            "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+            "@language": "cs",
             "@value": "Přeložený název"
           },
           {
-            "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+            "@language": "en",
             "@value": "Translated Title"
           }
         ]
@@ -537,7 +573,10 @@
   "primary_language": {
     "id": "http://publications.europa.eu/resource/authority/language/CES",
     "type": "language_system",
-    "label": "čeština"
+    "http://www.w3.org/2000/01/rdf-schema#label": {
+      "@language": "cs",
+      "@value": "čeština"
+    }
   },
   "time_reference": [
     {
@@ -554,11 +593,11 @@
         "type": "http://www.w3.org/2004/02/skos/core#Concept",
         "http://www.w3.org/2000/01/rdf-schema#label": [
           {
-            "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+            "@language": "en",
             "@value": "Date Collected"
           },
           {
-            "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+            "@language": "cs",
             "@value": "Datum sběru"
           }
         ]
@@ -588,11 +627,11 @@
         "type": "http://www.w3.org/2004/02/skos/core#Concept",
         "http://www.w3.org/2000/01/rdf-schema#label": [
           {
-            "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+            "@language": "en",
             "@value": "Date Collected"
           },
           {
-            "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+            "@language": "cs",
             "@value": "Datum sběru"
           }
         ]
@@ -612,12 +651,12 @@
         {
           "id": "https://model.ccmm.cz/research-data/1.1.0",
           "type": "application_profile",
-          "label": "CCMM RD 1.1.0"
+          "http://www.w3.org/2000/01/rdf-schema#label": "CCMM RD 1.1.0"
         },
         {
           "id": "https://www.iso.org/standard/80275.html",
           "type": "application_profile",
-          "label": "ISO 19115-1:2014/Amd 2:2020"
+          "http://www.w3.org/2000/01/rdf-schema#label": "ISO 19115-1:2014/Amd 2:2020"
         }
       ],
       "date_created": "2025-04-28",
@@ -625,7 +664,10 @@
         {
           "id": "http://publications.europa.eu/resource/authority/language/CES",
           "type": "language_system",
-          "label": "čeština"
+          "http://www.w3.org/2000/01/rdf-schema#label": {
+            "@language": "cs",
+            "@value": "čeština"
+          }
         }
       ],
       "date_updated": "2025-07-25",
@@ -635,9 +677,15 @@
           "role": {
             "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/DataManager",
             "type": "attributed_agent_role_type",
-            "label": [
-              "Data Manager",
-              "Manažer dat"
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+              {
+                "@language": "en",
+                "@value": "Data Manager"
+              },
+              {
+                "@language": "cs",
+                "@value": "Manažer dat"
+              }
             ]
           },
           "attributed_agent": {
@@ -655,10 +703,7 @@
                 "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                   "id": "https://orcid.org/",
                   "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                  "http://www.w3.org/2000/01/rdf-schema#label": {
-                    "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-                    "@value": "ORCID"
-                  }
+                  "http://www.w3.org/2000/01/rdf-schema#label": "ORCID"
                 }
               }
             ],
@@ -693,10 +738,7 @@
                     "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                       "id": "https://ror.org/",
                       "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                      "http://www.w3.org/2000/01/rdf-schema#label": {
-                        "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-                        "@value": "ROR"
-                      }
+                      "http://www.w3.org/2000/01/rdf-schema#label": "ROR"
                     }
                   }
                 ],
@@ -709,16 +751,25 @@
       "original_repository": {
         "id": "https://original-repository.cz",
         "type": "repository",
-        "label": "Původní repozitář",
+        "http://purl.org/dc/terms/title": {
+          "@language": "cs",
+          "@value": "Původní repozitář"
+        },
         "qualified_attribution": [
           {
             "type": "resource_attribution",
             "role": {
               "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Publisher",
               "type": "attributed_agent_role_type",
-              "label": [
-                "Vydavatel",
-                "Publisher"
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@language": "cs",
+                  "@value": "Vydavatel"
+                },
+                {
+                  "@language": "en",
+                  "@value": "Publisher"
+                }
               ]
             },
             "attributed_agent": {
@@ -756,7 +807,7 @@
             "scheme": {
               "id": "https://ror.org/",
               "type": "identifier_scheme",
-              "label": "ROR"
+              "http://www.w3.org/2000/01/rdf-schema#label": "ROR"
             }
           }
         ],
@@ -773,7 +824,7 @@
       "type": "description",
       "description": [
         {
-          "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "@language": "cs",
           "@value": "Tato datová sada obsahuje měření kvality ovzduší ve středních Čechách v\n            roce 2024."
         }
       ],
@@ -782,11 +833,11 @@
         "type": "http://www.w3.org/2004/02/skos/core#Concept",
         "http://www.w3.org/2000/01/rdf-schema#label": [
           {
-            "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+            "@language": "en",
             "@value": "Abstract"
           },
           {
-            "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+            "@language": "cs",
             "@value": "Abstrakt"
           }
         ]
@@ -799,11 +850,11 @@
       "type": "subject",
       "http://purl.org/dc/terms/title": [
         {
-          "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "@language": "cs",
           "@value": "Meteorologie, vědy o atmosféře"
         },
         {
-          "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "@language": "en",
           "@value": "Meteorology and atmospheric sciences"
         }
       ],
@@ -812,11 +863,11 @@
         "type": "https://model.ccmm.cz/vocabulary/ccmm#SubjectScheme",
         "http://www.w3.org/2000/01/rdf-schema#label": [
           {
-            "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+            "@language": "en",
             "@value": "OECD FORD Subject Category (Frascati)"
           },
           {
-            "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+            "@language": "cs",
             "@value": "Oborové třídění OECD FORD (Frascati)"
           }
         ]
@@ -830,7 +881,7 @@
       "id": "http://inspire.ec.europa.eu/theme/ef",
       "type": "subject",
       "http://purl.org/dc/terms/title": {
-        "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+        "@language": "en",
         "@value": "Environmental monitoring facilities"
       },
       "http://www.w3.org/2004/02/skos/core#definition": {
@@ -841,7 +892,7 @@
         "id": "https://inspire.ec.europa.eu/theme/",
         "type": "https://model.ccmm.cz/vocabulary/ccmm#SubjectScheme",
         "http://www.w3.org/2000/01/rdf-schema#label": {
-          "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "@language": "en",
           "@value": "INSPIRE theme register"
         }
       },

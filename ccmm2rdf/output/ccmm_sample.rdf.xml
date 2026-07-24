@@ -25,8 +25,7 @@
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 rdf:about="http://publications.europa.eu/resource/authority/language/CES">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="cs">čeština</ns0:label>
+                  <ns0:label xml:lang="cs">čeština</ns0:label>
                </rdf:Description>
             </ns0:language>
             <ns1:qualifiedAttribution>
@@ -52,8 +51,7 @@
                                  <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                                   rdf:about="https://orcid.org/">
                                     <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme"/>
-                                    <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                                               xml:lang="">ORCID</ns0:label>
+                                    <ns0:label xml:lang="">ORCID</ns0:label>
                                  </rdf:Description>
                               </ns1:inScheme>
                            </rdf:Description>
@@ -91,8 +89,7 @@
                                        <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                                         rdf:about="https://ror.org/">
                                           <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme"/>
-                                          <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                                                     xml:lang="">ROR</ns0:label>
+                                          <ns0:label xml:lang="">ROR</ns0:label>
                                        </rdf:Description>
                                     </ns1:inScheme>
                                  </rdf:Description>
@@ -106,10 +103,8 @@
                      <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                       rdf:about="https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/DataManager">
                         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Role"/>
-                        <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                                   xml:lang="en">Data Manager</ns0:label>
-                        <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                                   xml:lang="cs">Manažer dat</ns0:label>
+                        <ns0:label xml:lang="en">Data Manager</ns0:label>
+                        <ns0:label xml:lang="cs">Manažer dat</ns0:label>
                      </rdf:Description>
                   </ns1:hadRole>
                </rdf:Description>
@@ -120,23 +115,20 @@
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 rdf:about="https://model.ccmm.cz/research-data/1.1.0">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/Standard"/>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="">CCMM RD 1.1.0</ns0:label>
+                  <ns0:label xml:lang="">CCMM RD 1.1.0</ns0:label>
                </rdf:Description>
             </ns0:conformsTo>
             <ns0:conformsTo>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 rdf:about="https://www.iso.org/standard/80275.html">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/Standard"/>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="">ISO 19115-1:2014/Amd 2:2020</ns0:label>
+                  <ns0:label xml:lang="">ISO 19115-1:2014/Amd 2:2020</ns0:label>
                </rdf:Description>
             </ns0:conformsTo>
             <ns2:originalRepository>
                <rdf:Description rdf:about="https://original-repository.cz">
                   <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
-                  <ns0:title rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="cs">Původní repozitář</ns0:title>
+                  <ns0:title xml:lang="cs">Původní repozitář</ns0:title>
                   <ns1:qualifiedAttribution>
                      <rdf:Description xmlns:ns0="http://www.w3.org/ns/prov#"
                                       xmlns:ns1="http://www.w3.org/ns/dcat#"
@@ -156,10 +148,8 @@
                            <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                             rdf:about="https://vocabs.ccmm.cz/registry/codelist/AgentRole/Publisher">
                               <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Role"/>
-                              <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                                         xml:lang="cs">Vydavatel</ns0:label>
-                              <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                                         xml:lang="en">Publisher</ns0:label>
+                              <ns0:label xml:lang="cs">Vydavatel</ns0:label>
+                              <ns0:label xml:lang="en">Publisher</ns0:label>
                            </rdf:Description>
                         </ns1:hadRole>
                      </rdf:Description>
@@ -178,8 +168,7 @@
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 rdf:about="https://doi.org/">
                   <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme"/>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="">DOI</ns0:label>
+                  <ns0:label xml:lang="">DOI</ns0:label>
                </rdf:Description>
             </ns1:inScheme>
          </rdf:Description>
@@ -194,8 +183,7 @@
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 rdf:about="https://organization.cz/datasets/">
                   <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme"/>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="cs">Organizační identifikační schéma</ns0:label>
+                  <ns0:label xml:lang="cs">Organizační identifikační schéma</ns0:label>
                </rdf:Description>
             </ns1:inScheme>
          </rdf:Description>
@@ -207,16 +195,13 @@
                           xmlns:ns1="https://model.ccmm.cz/vocabulary/ccmm#"
                           rdf:nodeID="d44e184">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#AlternateTitle"/>
-            <ns0:alternative rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="en">Air quality measurements in Central Bohemian Region in 2024.</ns0:alternative>
+            <ns0:alternative xml:lang="en">Air quality measurements in Central Bohemian Region in 2024.</ns0:alternative>
             <ns1:hasType>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 rdf:about="https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/TranslatedTitle">
                   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="cs">Přeložený název</ns0:label>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="en">Translated Title</ns0:label>
+                  <ns0:label xml:lang="cs">Přeložený název</ns0:label>
+                  <ns0:label xml:lang="en">Translated Title</ns0:label>
                </rdf:Description>
             </ns1:hasType>
          </rdf:Description>
@@ -244,8 +229,7 @@
                            <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                             rdf:about="https://orcid.org/">
                               <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme"/>
-                              <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                                         xml:lang="">ORCID</ns0:label>
+                              <ns0:label xml:lang="">ORCID</ns0:label>
                            </rdf:Description>
                         </ns1:inScheme>
                      </rdf:Description>
@@ -283,8 +267,7 @@
                                  <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                                   rdf:about="https://ror.org/">
                                     <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme"/>
-                                    <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                                               xml:lang="">ROR</ns0:label>
+                                    <ns0:label xml:lang="">ROR</ns0:label>
                                  </rdf:Description>
                               </ns1:inScheme>
                            </rdf:Description>
@@ -298,10 +281,8 @@
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 rdf:about="https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator">
                   <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Role"/>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="en">Creator</ns0:label>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="cs">Autor</ns0:label>
+                  <ns0:label xml:lang="en">Creator</ns0:label>
+                  <ns0:label xml:lang="cs">Autor</ns0:label>
                </rdf:Description>
             </ns1:hadRole>
          </rdf:Description>
@@ -329,8 +310,7 @@
                            <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                             rdf:about="https://orcid.org/">
                               <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme"/>
-                              <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                                         xml:lang="">ORCID</ns0:label>
+                              <ns0:label xml:lang="">ORCID</ns0:label>
                            </rdf:Description>
                         </ns1:inScheme>
                      </rdf:Description>
@@ -368,8 +348,7 @@
                                  <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                                   rdf:about="https://ror.org/">
                                     <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme"/>
-                                    <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                                               xml:lang="">ROR</ns0:label>
+                                    <ns0:label xml:lang="">ROR</ns0:label>
                                  </rdf:Description>
                               </ns1:inScheme>
                            </rdf:Description>
@@ -383,10 +362,8 @@
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 rdf:about="https://vocabs.ccmm.cz/registry/codelist/AgentRole/Publisher">
                   <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Role"/>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="en">Publisher</ns0:label>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="cs">Vydavatel</ns0:label>
+                  <ns0:label xml:lang="en">Publisher</ns0:label>
+                  <ns0:label xml:lang="cs">Vydavatel</ns0:label>
                </rdf:Description>
             </ns1:hadRole>
          </rdf:Description>
@@ -408,10 +385,8 @@
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 rdf:about="https://vocabs.ccmm.cz/registry/codelist/TimeReference/Collected">
                   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="en">Date Collected</ns0:label>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="cs">Datum sběru</ns0:label>
+                  <ns0:label xml:lang="en">Date Collected</ns0:label>
+                  <ns0:label xml:lang="cs">Datum sběru</ns0:label>
                </rdf:Description>
             </ns1:hasType>
          </rdf:Description>
@@ -443,10 +418,8 @@
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 rdf:about="https://vocabs.ccmm.cz/registry/codelist/TimeReference/Collected">
                   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="en">Date Collected</ns0:label>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="cs">Datum sběru</ns0:label>
+                  <ns0:label xml:lang="en">Date Collected</ns0:label>
+                  <ns0:label xml:lang="cs">Datum sběru</ns0:label>
                </rdf:Description>
             </ns1:hasType>
          </rdf:Description>
@@ -455,10 +428,8 @@
          <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                           rdf:about="http://purl.org/coar/resource_type/c_ddb1">
             <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-            <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                       xml:lang="cs">datová sada</ns0:label>
-            <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                       xml:lang="en">dataset</ns0:label>
+            <ns0:label xml:lang="cs">datová sada</ns0:label>
+            <ns0:label xml:lang="en">dataset</ns0:label>
          </rdf:Description>
       </ns3:type>
       <ns0:hasPrimaryLanguage>
@@ -477,10 +448,8 @@
          <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                           rdf:about="http://purl.org/coar/access_right/c_abf2">
             <rdf:type rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
-            <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                       xml:lang="en">open access</ns0:label>
-            <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                       xml:lang="cs">otevřený přístup</ns0:label>
+            <ns0:label xml:lang="en">open access</ns0:label>
+            <ns0:label xml:lang="cs">otevřený přístup</ns0:label>
          </rdf:Description>
       </ns3:accessRights>
       <ns6:subject>
@@ -490,19 +459,15 @@
                           xmlns:ns3="https://model.ccmm.cz/vocabulary/ccmm#"
                           rdf:about="https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10509">
             <rdf:type rdf:resource="https://w3id.org/tib/datacite/class/Subject"/>
-            <ns0:title rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                       xml:lang="cs">Meteorologie, vědy o atmosféře</ns0:title>
-            <ns0:title rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                       xml:lang="en">Meteorology and atmospheric sciences</ns0:title>
+            <ns0:title xml:lang="cs">Meteorologie, vědy o atmosféře</ns0:title>
+            <ns0:title xml:lang="en">Meteorology and atmospheric sciences</ns0:title>
             <ns2:classificationCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10509</ns2:classificationCode>
             <ns3:inSubjectScheme>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 rdf:about="https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/">
                   <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#SubjectScheme"/>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="en">OECD FORD Subject Category (Frascati)</ns0:label>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="cs">Oborové třídění OECD FORD (Frascati)</ns0:label>
+                  <ns0:label xml:lang="en">OECD FORD Subject Category (Frascati)</ns0:label>
+                  <ns0:label xml:lang="cs">Oborové třídění OECD FORD (Frascati)</ns0:label>
                </rdf:Description>
             </ns3:inSubjectScheme>
          </rdf:Description>
@@ -514,8 +479,7 @@
                           xmlns:ns3="https://model.ccmm.cz/vocabulary/ccmm#"
                           rdf:about="http://inspire.ec.europa.eu/theme/ef">
             <rdf:type rdf:resource="https://w3id.org/tib/datacite/class/Subject"/>
-            <ns0:title rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                       xml:lang="en">Environmental monitoring facilities</ns0:title>
+            <ns0:title xml:lang="en">Environmental monitoring facilities</ns0:title>
             <ns1:definition xml:lang="en">Location and operation of environmental monitoring facilities
             includes observation and measurement of emissions, of the state of environmental media
             and of other ecosystem parameters (biodiversity, ecological conditions of vegetation,
@@ -525,28 +489,23 @@
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 rdf:about="https://inspire.ec.europa.eu/theme/">
                   <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#SubjectScheme"/>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="en">INSPIRE theme register</ns0:label>
+                  <ns0:label xml:lang="en">INSPIRE theme register</ns0:label>
                </rdf:Description>
             </ns3:inSubjectScheme>
          </rdf:Description>
       </ns6:subject>
-      <ns2:keyword rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                   xml:lang="cs">kvalita ovzduší</ns2:keyword>
+      <ns2:keyword xml:lang="cs">kvalita ovzduší</ns2:keyword>
       <ns6:description>
          <rdf:Description xmlns:ns0="https://w3id.org/tib/datacite/property/" rdf:nodeID="d44e488">
             <rdf:type rdf:resource="https://w3id.org/tib/datacite/class/Description"/>
-            <ns0:description rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="cs">Tato datová sada obsahuje měření kvality ovzduší ve středních Čechách v
+            <ns0:description xml:lang="cs">Tato datová sada obsahuje měření kvality ovzduší ve středních Čechách v
             roce 2024.</ns0:description>
             <ns0:descriptionType>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 rdf:about="https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Abstract">
                   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="en">Abstract</ns0:label>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="cs">Abstrakt</ns0:label>
+                  <ns0:label xml:lang="en">Abstract</ns0:label>
+                  <ns0:label xml:lang="cs">Abstrakt</ns0:label>
                </rdf:Description>
             </ns0:descriptionType>
          </rdf:Description>
@@ -643,10 +602,8 @@
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 rdf:about="https://vocabs.ccmm.cz/registry/codelist/LocationRelation/Collected">
                   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="cs">Získáno v lokaci</ns0:label>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="en">Collected in</ns0:label>
+                  <ns0:label xml:lang="cs">Získáno v lokaci</ns0:label>
+                  <ns0:label xml:lang="en">Collected in</ns0:label>
                </rdf:Description>
             </ns3:hasType>
          </rdf:Description>
@@ -676,8 +633,7 @@
                            <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                             rdf:about="https://ror.org/">
                               <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme"/>
-                              <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                                         xml:lang="">ROR</ns0:label>
+                              <ns0:label xml:lang="">ROR</ns0:label>
                            </rdf:Description>
                         </ns1:inScheme>
                      </rdf:Description>
@@ -701,18 +657,15 @@
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 rdf:about="http://purl.org/coar/resource_type/c_18cf/">
                   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="en">text</ns0:label>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="cs">text</ns0:label>
+                  <ns0:label xml:lang="en">text</ns0:label>
+                  <ns0:label xml:lang="cs">text</ns0:label>
                </rdf:Description>
             </ns1:type>
             <ns2:hasType>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 rdf:about="https://vocabs.ccmm.cz/registry/codelist/RelationType/IsReferencedBy">
                   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="cs">je na něj odkazováno z (čeho)</ns0:label>
+                  <ns0:label xml:lang="cs">je na něj odkazováno z (čeho)</ns0:label>
                </rdf:Description>
             </ns2:hasType>
          </rdf:Description>
@@ -730,18 +683,15 @@
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 rdf:about="http://purl.org/coar/resource_type/8KJG-QS0Y">
                   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="en">research instrument</ns0:label>
+                  <ns0:label xml:lang="en">research instrument</ns0:label>
                </rdf:Description>
             </ns1:type>
             <ns2:hasType>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 rdf:about="https://vocabs.ccmm.cz/registry/codelist/RelationType/IsCollectedBy">
                   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="cs">je sbírán (čím)</ns0:label>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="en">is collected by</ns0:label>
+                  <ns0:label xml:lang="cs">je sbírán (čím)</ns0:label>
+                  <ns0:label xml:lang="en">is collected by</ns0:label>
                </rdf:Description>
             </ns2:hasType>
          </rdf:Description>
@@ -759,18 +709,15 @@
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 rdf:about="http://purl.org/coar/resource_type/FF4C-28RK">
                   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="en">observational data</ns0:label>
+                  <ns0:label xml:lang="en">observational data</ns0:label>
                </rdf:Description>
             </ns1:type>
             <ns2:hasType>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 rdf:about="https://vocabs.ccmm.cz/registry/codelist/RelationType/IsDerivedFrom">
                   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="en">is derived from</ns0:label>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="cs">je odvozen od (čeho)</ns0:label>
+                  <ns0:label xml:lang="en">is derived from</ns0:label>
+                  <ns0:label xml:lang="cs">je odvozen od (čeho)</ns0:label>
                </rdf:Description>
             </ns2:hasType>
          </rdf:Description>
@@ -789,10 +736,8 @@
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 rdf:about="https://vocabs.ccmm.cz/registry/codelist/RelationType/HasMetadata">
                   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="cs">má metadata</ns0:label>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="en">has metadata</ns0:label>
+                  <ns0:label xml:lang="cs">má metadata</ns0:label>
+                  <ns0:label xml:lang="en">has metadata</ns0:label>
                </rdf:Description>
             </ns2:hasType>
          </rdf:Description>
@@ -808,8 +753,7 @@
             <ns1:accessService>
                <rdf:Description rdf:about="https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi">
                   <rdf:type rdf:resource="http://www.w3.org/ns/dcat#DataService"/>
-                  <ns0:title rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="en">Endpoint of WMS service Air quality</ns0:title>
+                  <ns0:title xml:lang="en">Endpoint of WMS service Air quality</ns0:title>
                   <ns1:endpointURL>
                      <rdf:Description xmlns:ns0="http://www.w3.org/ns/adms#"
                                       xmlns:ns1="http://purl.org/dc/terms/"
@@ -827,8 +771,7 @@
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 rdf:about="http://data.europa.eu/eli/reg/2010/1089">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/Standard"/>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="cs">NAŘÍZENÍ KOMISE (ES) č. 976/2009 ze dne 19. října 2009, kterým
+                  <ns0:label xml:lang="cs">NAŘÍZENÍ KOMISE (ES) č. 976/2009 ze dne 19. října 2009, kterým
                     se provádí směrnice Evropského parlamentu a Rady 2007/2/ES, pokud jde o síťové
                     služby</ns0:label>
                </rdf:Description>
@@ -843,8 +786,7 @@
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 rdf:about="https://vocabularies.coar-repositories.org/access_rights/c_abf2/">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="en">open access</ns0:label>
+                  <ns0:label xml:lang="en">open access</ns0:label>
                </rdf:Description>
             </ns0:rights>
             <ns0:license>
@@ -875,34 +817,29 @@
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 rdf:about="https://geoportal.gov.cz/atom/CHMU/chmu_ovzdusi_AQ_data_epsg4258_2023.zip">
                   <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="cs">Datová sada ve formátu Geopackage</ns0:label>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="en">Dataset in Geopackage format</ns0:label>
+                  <ns0:label xml:lang="cs">Datová sada ve formátu Geopackage</ns0:label>
+                  <ns0:label xml:lang="en">Dataset in Geopackage format</ns0:label>
                </rdf:Description>
             </ns1:downloadURL>
             <ns0:conformsTo>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 rdf:about="https://inspire.ec.europa.eu/schemas/ef/4.0/EnvironmentalMonitoringFacilities.xsd">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/Standard"/>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="en">Environmental monitoring facilities</ns0:label>
+                  <ns0:label xml:lang="en">Environmental monitoring facilities</ns0:label>
                </rdf:Description>
             </ns0:conformsTo>
             <ns0:format>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 rdf:about="https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/file-type/GPKG">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/MediaTypeOrExtent"/>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="en">GeoPackage</ns0:label>
+                  <ns0:label xml:lang="en">GeoPackage</ns0:label>
                </rdf:Description>
             </ns0:format>
             <ns1:mediaType>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 rdf:about="https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/file-type/ZIP">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="en">ZIP</ns0:label>
+                  <ns0:label xml:lang="en">ZIP</ns0:label>
                </rdf:Description>
             </ns1:mediaType>
             <ns1:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">256</ns1:byteSize>
@@ -922,8 +859,7 @@
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 rdf:about="https://vocabularies.coar-repositories.org/access_rights/c_abf2/">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
-                  <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                             xml:lang="en">open access</ns0:label>
+                  <ns0:label xml:lang="en">open access</ns0:label>
                </rdf:Description>
             </ns0:rights>
             <ns0:license>

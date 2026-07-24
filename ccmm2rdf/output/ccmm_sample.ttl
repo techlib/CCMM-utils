@@ -11,7 +11,6 @@
 @prefix ns6: <https://w3id.org/tib/datacite/property/> .
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix time: <http://www.w3.org/2006/time#> .
@@ -107,7 +106,7 @@
             dcat:accessURL <https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi> ;
             foaf:page <https://geoportal.gov.cz/web/guest/catalogue-client;jsessionid=F54A364E040A9D2184E42D94D288851C/> ],
         <http://portal.chmi.cz/AQ_DATA> ;
-    dcat:keyword "kvalita ovzduší"^^rdf:langString ;
+    dcat:keyword "kvalita ovzduší"@cs ;
     dcat:version "1.0.23"^^xsd:string ;
     prov:qualifiedAttribution [ a prov:Attribution ;
             dcat:hadRole <https://vocabs.ccmm.cz/registry/codelist/AgentRole/Publisher> ;
@@ -141,7 +140,7 @@
                             foaf:name "Univerzita Karlova"^^xsd:string ] ] ] ;
     prov:wasGeneratedBy <http://link-to-origin.com> ;
     ns0:hasAlternateTitle [ a ns0:AlternateTitle ;
-            dcterms:alternative "Air quality measurements in Central Bohemian Region in 2024."^^rdf:langString ;
+            dcterms:alternative "Air quality measurements in Central Bohemian Region in 2024."@en ;
             ns0:hasType <https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/TranslatedTitle> ] ;
     ns0:hasOtherLanguage <http://publications.europa.eu/resource/authority/language/ENG> ;
     ns0:hasPrimaryLanguage <http://publications.europa.eu/resource/authority/language/CES> ;
@@ -162,7 +161,7 @@
     ns5:relatedItemPublicationYear "2025"^^xsd:gYear ;
     ns6:description [ a <https://w3id.org/tib/datacite/class/Description> ;
             ns6:description """Tato datová sada obsahuje měření kvality ovzduší ve středních Čechách v
-            roce 2024."""^^rdf:langString ;
+            roce 2024."""@cs ;
             ns6:descriptionType <https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Abstract> ] ;
     ns6:subject <http://inspire.ec.europa.eu/theme/ef>,
         <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10509> .
@@ -177,10 +176,10 @@
 <http://data.europa.eu/eli/reg/2010/1089> a dcterms:Standard ;
     rdfs:label """NAŘÍZENÍ KOMISE (ES) č. 976/2009 ze dne 19. října 2009, kterým
                     se provádí směrnice Evropského parlamentu a Rady 2007/2/ES, pokud jde o síťové
-                    služby"""^^rdf:langString .
+                    služby"""@cs .
 
 <http://inspire.ec.europa.eu/theme/ef> a <https://w3id.org/tib/datacite/class/Subject> ;
-    dcterms:title "Environmental monitoring facilities"^^rdf:langString ;
+    dcterms:title "Environmental monitoring facilities"@en ;
     skos:definition """Location and operation of environmental monitoring facilities
             includes observation and measurement of emissions, of the state of environmental media
             and of other ecosystem parameters (biodiversity, ecological conditions of vegetation,
@@ -207,21 +206,22 @@
 <http://publications.europa.eu/resource/authority/language/ENG> a dcterms:LinguisticSystem .
 
 <http://purl.org/coar/access_right/c_abf2> a dcterms:RightsStatement ;
-    rdfs:label "open access"^^rdf:langString,
-        "otevřený přístup"^^rdf:langString .
+    rdfs:label "otevřený přístup"@cs,
+        "open access"@en .
 
 <http://purl.org/coar/resource_type/8KJG-QS0Y> a skos:Concept ;
-    rdfs:label "research instrument"^^rdf:langString .
+    rdfs:label "research instrument"@en .
 
 <http://purl.org/coar/resource_type/FF4C-28RK> a skos:Concept ;
-    rdfs:label "observational data"^^rdf:langString .
+    rdfs:label "observational data"@en .
 
 <http://purl.org/coar/resource_type/c_18cf/> a skos:Concept ;
-    rdfs:label "text"^^rdf:langString .
+    rdfs:label "text"@cs,
+        "text"@en .
 
 <http://purl.org/coar/resource_type/c_ddb1> a skos:Concept ;
-    rdfs:label "dataset"^^rdf:langString,
-        "datová sada"^^rdf:langString .
+    rdfs:label "datová sada"@cs,
+        "dataset"@en .
 
 <https://data.gov.cz/zdroj/datové-sady/00020699/c724d055011d82189bbfc3766ffd1eb7> a rdfs:Resource ;
     dcterms:title """Metadata datoivé sady INSPIRE – Kvalita ovzduší – přehledy (data) na měřicích
@@ -230,7 +230,7 @@
     ns0:resourceUrl "https://data.gov.cz/zdroj/datové-sady/00020699/c724d055011d82189bbfc3766ffd1eb7"^^xsd:anyURI .
 
 <https://doi.org/> a ns0:IdentifierScheme ;
-    rdfs:label "DOI"^^rdf:langString .
+    rdfs:label "DOI" .
 
 <https://doi.org/10.45321/as36sl> a ns1:Identifier ;
     skos:notation "10.45321/as36sl"^^xsd:string ;
@@ -243,25 +243,25 @@
     ns6:funderIdentifier <https://ror.org/01pv73b02> .
 
 <https://geoportal.gov.cz/atom/CHMU/chmu_ovzdusi_AQ_data_epsg4258_2023.zip> a rdfs:Resource ;
-    rdfs:label "Dataset in Geopackage format"^^rdf:langString,
-        "Datová sada ve formátu Geopackage"^^rdf:langString .
+    rdfs:label "Datová sada ve formátu Geopackage"@cs,
+        "Dataset in Geopackage format"@en .
 
 <https://geoportal.gov.cz/web/guest/catalogue-client;jsessionid=F54A364E040A9D2184E42D94D288851C/> a foaf:Document .
 
 <https://inspire.ec.europa.eu/schemas/ef/4.0/EnvironmentalMonitoringFacilities.xsd> a dcterms:Standard ;
-    rdfs:label "Environmental monitoring facilities"^^rdf:langString .
+    rdfs:label "Environmental monitoring facilities"@en .
 
 <https://inspire.ec.europa.eu/theme/> a ns0:SubjectScheme ;
-    rdfs:label "INSPIRE theme register"^^rdf:langString .
+    rdfs:label "INSPIRE theme register"@en .
 
 <https://model.ccmm.cz/research-data/1.1.0> a dcterms:Standard ;
-    rdfs:label "CCMM RD 1.1.0"^^rdf:langString .
+    rdfs:label "CCMM RD 1.1.0" .
 
 <https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/file-type/GPKG> a dcterms:MediaTypeOrExtent ;
-    rdfs:label "GeoPackage"^^rdf:langString .
+    rdfs:label "GeoPackage"@en .
 
 <https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/file-type/ZIP> a dcterms:MediaType ;
-    rdfs:label "ZIP"^^rdf:langString .
+    rdfs:label "ZIP"@en .
 
 <https://opendata.chmi.cz/air_quality/now/data/> a rdfs:Resource ;
     dcterms:title "Kvalita ovzduší – aktuální hodinové údaje"^^xsd:string ;
@@ -274,7 +274,7 @@
     ns0:inScheme <https://orcid.org/> .
 
 <https://organization.cz/datasets/> a ns0:IdentifierScheme ;
-    rdfs:label "Organizační identifikační schéma"^^rdf:langString .
+    rdfs:label "Organizační identifikační schéma"@cs .
 
 <https://organization.cz/datasets/air-q-cb-25-23> a ns1:Identifier ;
     skos:notation "air-q-cb-25-23"^^xsd:string ;
@@ -304,7 +304,7 @@
     ns0:originalRepository <https://original-repository.cz> .
 
 <https://original-repository.cz> a dcat:Catalog ;
-    dcterms:title "Původní repozitář"^^rdf:langString ;
+    dcterms:title "Původní repozitář"@cs ;
     prov:qualifiedAttribution [ a prov:Attribution ;
             dcat:hadRole <https://vocabs.ccmm.cz/registry/codelist/AgentRole/Publisher> ;
             prov:agent [ a org:Organization ;
@@ -324,68 +324,68 @@
     dcterms:title "Středočeský kraj"^^xsd:string .
 
 <https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/DataManager> a dcat:Role ;
-    rdfs:label "Data Manager"^^rdf:langString,
-        "Manažer dat"^^rdf:langString .
+    rdfs:label "Manažer dat"@cs,
+        "Data Manager"@en .
 
 <https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator> a dcat:Role ;
-    rdfs:label "Autor"^^rdf:langString,
-        "Creator"^^rdf:langString .
+    rdfs:label "Autor"@cs,
+        "Creator"@en .
 
 <https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/TranslatedTitle> a skos:Concept ;
-    rdfs:label "Přeložený název"^^rdf:langString,
-        "Translated Title"^^rdf:langString .
+    rdfs:label "Přeložený název"@cs,
+        "Translated Title"@en .
 
 <https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Abstract> a skos:Concept ;
-    rdfs:label "Abstract"^^rdf:langString,
-        "Abstrakt"^^rdf:langString .
+    rdfs:label "Abstrakt"@cs,
+        "Abstract"@en .
 
 <https://vocabs.ccmm.cz/registry/codelist/LocationRelation/Collected> a skos:Concept ;
-    rdfs:label "Collected in"^^rdf:langString,
-        "Získáno v lokaci"^^rdf:langString .
+    rdfs:label "Získáno v lokaci"@cs,
+        "Collected in"@en .
 
 <https://vocabs.ccmm.cz/registry/codelist/RelationType/HasMetadata> a skos:Concept ;
-    rdfs:label "has metadata"^^rdf:langString,
-        "má metadata"^^rdf:langString .
+    rdfs:label "má metadata"@cs,
+        "has metadata"@en .
 
 <https://vocabs.ccmm.cz/registry/codelist/RelationType/IsCollectedBy> a skos:Concept ;
-    rdfs:label "is collected by"^^rdf:langString,
-        "je sbírán (čím)"^^rdf:langString .
+    rdfs:label "je sbírán (čím)"@cs,
+        "is collected by"@en .
 
 <https://vocabs.ccmm.cz/registry/codelist/RelationType/IsDerivedFrom> a skos:Concept ;
-    rdfs:label "is derived from"^^rdf:langString,
-        "je odvozen od (čeho)"^^rdf:langString .
+    rdfs:label "je odvozen od (čeho)"@cs,
+        "is derived from"@en .
 
 <https://vocabs.ccmm.cz/registry/codelist/RelationType/IsReferencedBy> a skos:Concept ;
-    rdfs:label "je na něj odkazováno z (čeho)"^^rdf:langString .
+    rdfs:label "je na něj odkazováno z (čeho)"@cs .
 
 <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/> a ns0:SubjectScheme ;
-    rdfs:label "OECD FORD Subject Category (Frascati)"^^rdf:langString,
-        "Oborové třídění OECD FORD (Frascati)"^^rdf:langString .
+    rdfs:label "Oborové třídění OECD FORD (Frascati)"@cs,
+        "OECD FORD Subject Category (Frascati)"@en .
 
 <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10509> a <https://w3id.org/tib/datacite/class/Subject> ;
-    dcterms:title "Meteorologie, vědy o atmosféře"^^rdf:langString,
-        "Meteorology and atmospheric sciences"^^rdf:langString ;
+    dcterms:title "Meteorologie, vědy o atmosféře"@cs,
+        "Meteorology and atmospheric sciences"@en ;
     ns0:inSubjectScheme <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/> ;
     ns6:classificationCode "10509"^^xsd:string .
 
 <https://www.iana.org/go/rfc6920> a ns21:ChecksumAlgorithm .
 
 <https://www.iso.org/standard/80275.html> a dcterms:Standard ;
-    rdfs:label "ISO 19115-1:2014/Amd 2:2020"^^rdf:langString .
+    rdfs:label "ISO 19115-1:2014/Amd 2:2020" .
 
 <http://link-to-license-statement.com> a dcterms:LicenseDocument .
 
 <http://publications.europa.eu/resource/authority/language/CES> a dcterms:LinguisticSystem ;
-    rdfs:label "čeština"^^rdf:langString .
+    rdfs:label "čeština"@cs .
 
 <https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi> a dcat:DataService ;
-    dcterms:title "Endpoint of WMS service Air quality"^^rdf:langString ;
+    dcterms:title "Endpoint of WMS service Air quality"@en ;
     dcat:endpointURL [ a rdfs:Resource ;
             dcterms:title "Endpoint of WMS service Air quality"^^xsd:string ;
             ns0:resourceUrl "https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi"^^xsd:anyURI ] .
 
 <https://orcid.org/> a ns0:IdentifierScheme ;
-    rdfs:label "ORCID"^^rdf:langString .
+    rdfs:label "ORCID" .
 
 <https://orcid.org/0030-04X2-2030-4X26> a ns1:Identifier ;
     skos:notation "0030-04X2-2030-4X26"^^xsd:string ;
@@ -396,16 +396,16 @@
     ns0:inScheme <https://ror.org/> .
 
 <https://vocabs.ccmm.cz/registry/codelist/AgentRole/Publisher> a dcat:Role ;
-    rdfs:label "Publisher"^^rdf:langString,
-        "Vydavatel"^^rdf:langString .
+    rdfs:label "Vydavatel"@cs,
+        "Publisher"@en .
 
 <https://vocabs.ccmm.cz/registry/codelist/TimeReference/Collected> a skos:Concept ;
-    rdfs:label "Date Collected"^^rdf:langString,
-        "Datum sběru"^^rdf:langString .
+    rdfs:label "Datum sběru"@cs,
+        "Date Collected"@en .
 
 <https://vocabularies.coar-repositories.org/access_rights/c_abf2/> a dcterms:RightsStatement ;
-    rdfs:label "open access"^^rdf:langString .
+    rdfs:label "open access"@en .
 
 <https://ror.org/> a ns0:IdentifierScheme ;
-    rdfs:label "ROR"^^rdf:langString .
+    rdfs:label "ROR" .
 
