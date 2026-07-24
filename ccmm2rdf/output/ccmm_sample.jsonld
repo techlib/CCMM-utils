@@ -246,7 +246,7 @@
           "label": "Endpoint of WMS service Air quality",
           "endpoint_url": [
             {
-              "id": "_:b9",
+              "id": "_:b2",
               "type": "related_resource",
               "title": "Endpoint of WMS service Air quality",
               "resource_url": "https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi"
@@ -263,7 +263,7 @@
             "@value": "Endpoint of WMS service Air quality"
           },
           "http://www.w3.org/ns/dcat#endpointURL": {
-            "id": "_:b9",
+            "id": "_:b2",
             "type": "http://www.w3.org/2000/01/rdf-schema#Resource",
             "title": "Endpoint of WMS service Air quality",
             "https://model.ccmm.cz/vocabulary/ccmm#resourceUrl": {

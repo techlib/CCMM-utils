@@ -870,7 +870,7 @@
                           rdf:about="http://portal.chmi.cz/AQ_DATA">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#Distribution-DownloadableFile"/>
             <ns0:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kvalita ovzduší</ns0:title>
-            <ns1:accessURL rdf:resource="&#xA;                &#xA;                https://www.chmi.cz/o-nas/organizacni-struktura/usek-kvality-ovzdusi/oddeleni-informacniho-systemu-kvality-ovzdusi/odkazy&#xA;            "/>
+            <ns1:accessURL rdf:resource="https://www.chmi.cz/o-nas/organizacni-struktura/usek-kvality-ovzdusi/oddeleni-informacniho-systemu-kvality-ovzdusi/odkazy"/>
             <ns1:downloadURL>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 rdf:about="https://geoportal.gov.cz/atom/CHMU/chmu_ovzdusi_AQ_data_epsg4258_2023.zip">
@@ -907,7 +907,7 @@
             </ns1:mediaType>
             <ns1:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">256</ns1:byteSize>
             <ns2:checksum>
-               <rdf:Description xmlns:ns0="http://spdx.org/rdf/terms#" rdf:nodeID="d44e831">
+               <rdf:Description xmlns:ns0="http://spdx.org/rdf/terms#" rdf:nodeID="d44e830">
                   <rdf:type rdf:resource="http://spdx.org/rdf/terms#Checksum"/>
                   <ns0:checksumValue rdf:datatype="http://www.w3.org/2001/XMLSchema#hexBinary">9c56cc51b374d3a94e096e3f5483c05c6e69e221ae5d62a5435c5f3a9fc84938</ns0:checksumValue>
                   <ns0:algorithm>

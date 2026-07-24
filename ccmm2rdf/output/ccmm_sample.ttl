@@ -110,21 +110,6 @@
     dcat:keyword "kvalita ovzduší"^^rdf:langString ;
     dcat:version "1.0.23"^^xsd:string ;
     prov:qualifiedAttribution [ a prov:Attribution ;
-            dcat:hadRole <https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator> ;
-            prov:agent [ a prov:Person ;
-                    ns2:family-name "Novák"^^xsd:string ;
-                    ns2:given-name "Jan"^^xsd:string ;
-                    ns1:identifier <https://orcid.org/0030-04X2-2030-4X26> ;
-                    dcat:contactPoint [ a ns2:Kind ;
-                            ns2:hasAddress [ a ns11:Address ;
-                                    ns11:fullAddress "Dlouhá 15, 11000, Praha 1"^^xsd:string ] ;
-                            ns0:email "jan.novak@email.com"^^xsd:string ;
-                            ns0:phone "+0112345678"^^xsd:string ] ;
-                    foaf:name "Novák"^^xsd:string ;
-                    ns0:hasAffiliation [ a org:Organization ;
-                            ns1:identifier <https://ror.org/024d6js02> ;
-                            foaf:name "Univerzita Karlova"^^xsd:string ] ] ],
-        [ a prov:Attribution ;
             dcat:hadRole <https://vocabs.ccmm.cz/registry/codelist/AgentRole/Publisher> ;
             prov:agent [ a prov:Person ;
                     ns2:family-name "Janouch"^^xsd:string ;
@@ -138,7 +123,22 @@
                     foaf:name "Ivan Janouch"^^xsd:string ;
                     ns0:hasAffiliation [ a org:Organization ;
                             ns1:identifier <https://ror.org/02j46qs45> ;
-                            foaf:name "Masarykova Univerzita"^^xsd:string ] ] ] ;
+                            foaf:name "Masarykova Univerzita"^^xsd:string ] ] ],
+        [ a prov:Attribution ;
+            dcat:hadRole <https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator> ;
+            prov:agent [ a prov:Person ;
+                    ns2:family-name "Novák"^^xsd:string ;
+                    ns2:given-name "Jan"^^xsd:string ;
+                    ns1:identifier <https://orcid.org/0030-04X2-2030-4X26> ;
+                    dcat:contactPoint [ a ns2:Kind ;
+                            ns2:hasAddress [ a ns11:Address ;
+                                    ns11:fullAddress "Dlouhá 15, 11000, Praha 1"^^xsd:string ] ;
+                            ns0:email "jan.novak@email.com"^^xsd:string ;
+                            ns0:phone "+0112345678"^^xsd:string ] ;
+                    foaf:name "Novák"^^xsd:string ;
+                    ns0:hasAffiliation [ a org:Organization ;
+                            ns1:identifier <https://ror.org/024d6js02> ;
+                            foaf:name "Univerzita Karlova"^^xsd:string ] ] ] ;
     prov:wasGeneratedBy <http://link-to-origin.com> ;
     ns0:hasAlternateTitle [ a ns0:AlternateTitle ;
             dcterms:alternative "Air quality measurements in Central Bohemian Region in 2024."^^rdf:langString ;
