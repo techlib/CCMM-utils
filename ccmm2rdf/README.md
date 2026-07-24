@@ -10,6 +10,11 @@ The output is Turtle, XML/RDF and JSON-LD.
 
 `python scripts/ccmm2rdf.py https://raw.githubusercontent.com/techlib/CCMM/refs/heads/sample-data-1.2/_metadata-samples/xml/ccmm_sample.xml --repo techlib/CCMM --branch 1.2.0 --lifting dataset/lifting.xslt --context dataset/context.jsonld   --context-url "URL_of_JSON_LD _context" --outdir output`
 
+##### Serialization comparison
+
+Script located in `scripts/compare_rdf.py` compares different serializations, presuming they represent the same RDF graph.
+
+Usage: `python compare_rdf.py file1.ttl file2.rdf.xml file3.jsonld [...]`
 
 ###### Known limitation: unresolved property names in JSON-LD output
 
