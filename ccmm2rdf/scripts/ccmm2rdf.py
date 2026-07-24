@@ -129,9 +129,13 @@ def main():
         if not p.exists():
             raise SystemExit(f"Not found in checkout: {p}")
 
-    # --- 1) Lift XML -> RDF, save Turtle ---
+    # --- 1) Lift XML -> RDF, save RDF/XML + Turtle ---
     print(f"Lifting {args.instance} with {lifting_xslt} ...")
     rdf_xml = lift_to_rdf_xml(args.instance, lifting_xslt)
+
+    raw_path = args.outdir / f"{name}.rdf.xml"
+    raw_path.write_text(rdf_xml, encoding="utf-8")
+    print(f"  wrote {raw_path}")
 
     g = Graph()
     g.parse(data=rdf_xml, format="xml")
@@ -146,10 +150,7 @@ def main():
         # Usually a malformed URI in the source data, not a script bug.
         # (Serializing to a string first, as above, avoids leaving a
         # truncated/broken .ttl file on disk if this happens mid-write.)
-        raw_path = args.outdir / f"{name}.rdf.xml"
-        raw_path.write_text(rdf_xml, encoding="utf-8")
         print(f"  WARNING: could not serialize Turtle ({e})")
-        print(f"  wrote raw RDF/XML instead: {raw_path}")
 
     # --- 2) RDF -> JSON-LD, framed against context.jsonld ---
     type_iri = args.type_iri or detect_root_type(rdf_xml)
