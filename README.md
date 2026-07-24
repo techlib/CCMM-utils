@@ -24,6 +24,7 @@ An utility to visualize CCMM XSD structures where **mandatory parts are in bold*
 An utility transforming xml metadata conformant to the dataset/schema.xsd to the RDF representation using dataset/lifting.xslt.
 On the input there is xml metadata file, a repository and branch and on the output are serialized Turtle, XML/RDF and JSON-LD corresponding to the JSON-LD context given by the branch.
 
+Utility also contains the script comparing generated files as a basic ground graph triples, blank nodes and full RDF Canonicalization. This checks whether the graph behind specific serializations is the same.
 
 ---
 
