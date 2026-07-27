@@ -13,7 +13,7 @@ There is an action `Run ccmm2rdf`. Run it with the parameters:
 - GitHub repository comntaing CCMM specification (e.g. `techlib/CCMM`),
 - Branch of the repository (`main` or `1.2.0`),
 - Paths to `lifting.xslt` and `context.jsonld` (dafault `dataset/lifting.xslt` and `dataset/context.jsonld`),
-- Optional: URL to the json-ld context to link from the transformed metadata.
+- Optional: URL to the json-ld context to link from the transformed metadata (otherwise the whole context will be part of the output JSON-LD file).
 
 
 ##### Sample run
