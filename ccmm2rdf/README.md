@@ -6,6 +6,16 @@ Scripts input is CCMM xml file.
 
 The output is Turtle, XML/RDF and JSON-LD.
 
+##### Running the script
+
+There is an action `Run ccmm2rdf`. Run it with the parameters:
+- Direct URL to metadata XML file or folder containing XML files,
+- GitHub repository comntaing CCMM specification (e.g. `techlib/CCMM`),
+- Branch of the repository (`main` or `1.2.0`),
+- Paths to `lifting.xslt` and `context.jsonld` (dafault `dataset/lifting.xslt` and `dataset/context.jsonld`),
+- Optional: URL to the json-ld context to link from the transformed metadata.
+
+
 ##### Sample run
 
 `python scripts/ccmm2rdf.py https://raw.githubusercontent.com/techlib/CCMM/refs/heads/sample-data-1.2/_metadata-samples/xml/ccmm_sample.xml --repo techlib/CCMM --branch 1.2.0 --lifting dataset/lifting.xslt --context dataset/context.jsonld   --context-url "URL_of_JSON_LD _context" --outdir output`
