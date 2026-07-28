@@ -31,7 +31,7 @@
             <ns1:qualifiedAttribution>
                <rdf:Description xmlns:ns0="http://www.w3.org/ns/prov#"
                                 xmlns:ns1="http://www.w3.org/ns/dcat#"
-                                rdf:nodeID="d44e19">
+                                rdf:nodeID="d43e19">
                   <rdf:type rdf:resource="http://www.w3.org/ns/prov#Attribution"/>
                   <ns0:agent>
                      <rdf:Description xmlns:ns0="http://www.w3.org/ns/adms#"
@@ -39,7 +39,7 @@
                                       xmlns:ns2="http://www.w3.org/2006/vcard/ns#"
                                       xmlns:ns3="http://www.w3.org/ns/dcat#"
                                       xmlns:ns4="https://model.ccmm.cz/vocabulary/ccmm#"
-                                      rdf:nodeID="d44e23">
+                                      rdf:nodeID="d43e23">
                         <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
                         <ns0:identifier>
                            <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
@@ -62,14 +62,14 @@
                         <ns3:contactPoint>
                            <rdf:Description xmlns:ns0="https://model.ccmm.cz/vocabulary/ccmm#"
                                             xmlns:ns1="http://www.w3.org/2006/vcard/ns#"
-                                            rdf:nodeID="d44e46">
+                                            rdf:nodeID="d43e46">
                               <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
                               <ns0:email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jan.novak@email.com</ns0:email>
                               <ns0:phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+0112345678</ns0:phone>
                               <ns1:hasAddress>
                                  <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                                   xmlns:ns1="http://www.w3.org/ns/locn#"
-                                                  rdf:nodeID="d44e52">
+                                                  rdf:nodeID="d43e52">
                                     <rdf:type rdf:resource="http://www.w3.org/ns/locn#Address"/>
                                     <ns1:fullAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dlouhá 15, 11000, Praha 1</ns1:fullAddress>
                                  </rdf:Description>
@@ -77,7 +77,7 @@
                            </rdf:Description>
                         </ns3:contactPoint>
                         <ns4:hasAffiliation>
-                           <rdf:Description rdf:nodeID="d44e59">
+                           <rdf:Description rdf:nodeID="d43e59">
                               <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
                               <ns0:identifier>
                                  <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
@@ -132,14 +132,14 @@
                   <ns1:qualifiedAttribution>
                      <rdf:Description xmlns:ns0="http://www.w3.org/ns/prov#"
                                       xmlns:ns1="http://www.w3.org/ns/dcat#"
-                                      rdf:nodeID="d44e121">
+                                      rdf:nodeID="d43e121">
                         <rdf:type rdf:resource="http://www.w3.org/ns/prov#Attribution"/>
                         <ns0:agent>
                            <rdf:Description xmlns:ns0="http://www.w3.org/ns/adms#"
                                             xmlns:ns1="http://xmlns.com/foaf/0.1/"
                                             xmlns:ns2="http://www.w3.org/2006/vcard/ns#"
                                             xmlns:ns3="http://www.w3.org/ns/dcat#"
-                                            rdf:nodeID="d44e125">
+                                            rdf:nodeID="d43e125">
                               <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
                               <ns1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Univerzita Karlova</ns1:name>
                            </rdf:Description>
@@ -193,7 +193,7 @@
       <ns0:hasAlternateTitle>
          <rdf:Description xmlns:ns0="http://purl.org/dc/terms/"
                           xmlns:ns1="https://model.ccmm.cz/vocabulary/ccmm#"
-                          rdf:nodeID="d44e184">
+                          rdf:nodeID="d43e184">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#AlternateTitle"/>
             <ns0:alternative xml:lang="en">Air quality measurements in Central Bohemian Region in 2024.</ns0:alternative>
             <ns1:hasType>
@@ -209,7 +209,7 @@
       <ns4:qualifiedAttribution>
          <rdf:Description xmlns:ns0="http://www.w3.org/ns/prov#"
                           xmlns:ns1="http://www.w3.org/ns/dcat#"
-                          rdf:nodeID="d44e201">
+                          rdf:nodeID="d43e201">
             <rdf:type rdf:resource="http://www.w3.org/ns/prov#Attribution"/>
             <ns0:agent>
                <rdf:Description xmlns:ns0="http://www.w3.org/ns/adms#"
@@ -217,7 +217,7 @@
                                 xmlns:ns2="http://www.w3.org/2006/vcard/ns#"
                                 xmlns:ns3="http://www.w3.org/ns/dcat#"
                                 xmlns:ns4="https://model.ccmm.cz/vocabulary/ccmm#"
-                                rdf:nodeID="d44e205">
+                                rdf:nodeID="d43e205">
                   <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
                   <ns0:identifier>
                      <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
@@ -240,14 +240,14 @@
                   <ns3:contactPoint>
                      <rdf:Description xmlns:ns0="https://model.ccmm.cz/vocabulary/ccmm#"
                                       xmlns:ns1="http://www.w3.org/2006/vcard/ns#"
-                                      rdf:nodeID="d44e228">
+                                      rdf:nodeID="d43e228">
                         <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
                         <ns0:email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jan.novak@email.com</ns0:email>
                         <ns0:phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+0112345678</ns0:phone>
                         <ns1:hasAddress>
                            <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                             xmlns:ns1="http://www.w3.org/ns/locn#"
-                                            rdf:nodeID="d44e234">
+                                            rdf:nodeID="d43e234">
                               <rdf:type rdf:resource="http://www.w3.org/ns/locn#Address"/>
                               <ns1:fullAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dlouhá 15, 11000, Praha 1</ns1:fullAddress>
                            </rdf:Description>
@@ -255,7 +255,7 @@
                      </rdf:Description>
                   </ns3:contactPoint>
                   <ns4:hasAffiliation>
-                     <rdf:Description rdf:nodeID="d44e241">
+                     <rdf:Description rdf:nodeID="d43e241">
                         <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
                         <ns0:identifier>
                            <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
@@ -290,7 +290,7 @@
       <ns4:qualifiedAttribution>
          <rdf:Description xmlns:ns0="http://www.w3.org/ns/prov#"
                           xmlns:ns1="http://www.w3.org/ns/dcat#"
-                          rdf:nodeID="d44e275">
+                          rdf:nodeID="d43e275">
             <rdf:type rdf:resource="http://www.w3.org/ns/prov#Attribution"/>
             <ns0:agent>
                <rdf:Description xmlns:ns0="http://www.w3.org/ns/adms#"
@@ -298,7 +298,7 @@
                                 xmlns:ns2="http://www.w3.org/2006/vcard/ns#"
                                 xmlns:ns3="http://www.w3.org/ns/dcat#"
                                 xmlns:ns4="https://model.ccmm.cz/vocabulary/ccmm#"
-                                rdf:nodeID="d44e279">
+                                rdf:nodeID="d43e279">
                   <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
                   <ns0:identifier>
                      <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
@@ -321,14 +321,14 @@
                   <ns3:contactPoint>
                      <rdf:Description xmlns:ns0="https://model.ccmm.cz/vocabulary/ccmm#"
                                       xmlns:ns1="http://www.w3.org/2006/vcard/ns#"
-                                      rdf:nodeID="d44e302">
+                                      rdf:nodeID="d43e302">
                         <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
                         <ns0:email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">256384@muni.cz</ns0:email>
                         <ns0:phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+420876543219</ns0:phone>
                         <ns1:hasAddress>
                            <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                             xmlns:ns1="http://www.w3.org/ns/locn#"
-                                            rdf:nodeID="d44e308">
+                                            rdf:nodeID="d43e308">
                               <rdf:type rdf:resource="http://www.w3.org/ns/locn#Address"/>
                               <ns1:fullAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pražská 3, 60200, Brno</ns1:fullAddress>
                            </rdf:Description>
@@ -336,7 +336,7 @@
                      </rdf:Description>
                   </ns3:contactPoint>
                   <ns4:hasAffiliation>
-                     <rdf:Description rdf:nodeID="d44e315">
+                     <rdf:Description rdf:nodeID="d43e315">
                         <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
                         <ns0:identifier>
                            <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
@@ -373,10 +373,10 @@
          <rdf:Description xmlns:ns0="http://www.w3.org/2006/time#"
                           xmlns:ns1="https://model.ccmm.cz/vocabulary/ccmm#"
                           xmlns:ns2="https://model.ccmm.cz/vocabulary/datacite#"
-                          rdf:nodeID="d44e351">
+                          rdf:nodeID="d43e351">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#TimeReference"/>
             <ns0:hasTime>
-               <rdf:Description rdf:nodeID="d44e355">
+               <rdf:Description rdf:nodeID="d43e355">
                   <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
                   <ns0:inXSDDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-27T12:00:01+02:00</ns0:inXSDDateTime>
                </rdf:Description>
@@ -395,19 +395,19 @@
          <rdf:Description xmlns:ns0="http://www.w3.org/2006/time#"
                           xmlns:ns1="https://model.ccmm.cz/vocabulary/ccmm#"
                           xmlns:ns2="https://model.ccmm.cz/vocabulary/datacite#"
-                          rdf:nodeID="d44e374">
+                          rdf:nodeID="d43e374">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#TimeReference"/>
             <ns0:hasTime>
-               <rdf:Description rdf:nodeID="d44e378">
+               <rdf:Description rdf:nodeID="d43e378">
                   <rdf:type rdf:resource="http://www.w3.org/2006/time#Interval"/>
                   <ns0:hasBeginning>
-                     <rdf:Description rdf:nodeID="d44e380">
+                     <rdf:Description rdf:nodeID="d43e380">
                         <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
                         <ns0:inXSDDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-01</ns0:inXSDDate>
                      </rdf:Description>
                   </ns0:hasBeginning>
                   <ns0:hasEnd>
-                     <rdf:Description rdf:nodeID="d44e385">
+                     <rdf:Description rdf:nodeID="d43e385">
                         <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
                         <ns0:inXSDDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-31</ns0:inXSDDate>
                      </rdf:Description>
@@ -498,7 +498,7 @@
       <ns6:description>
          <rdf:Description xmlns:ns0="http://purl.org/dc/terms/"
                           xmlns:ns1="https://w3id.org/tib/datacite/property/"
-                          rdf:nodeID="d44e488">
+                          rdf:nodeID="d43e488">
             <rdf:type rdf:resource="https://w3id.org/tib/datacite/class/Description"/>
             <ns0:description xml:lang="cs">Tato datová sada obsahuje měření kvality ovzduší ve středních Čechách v
             roce 2024.</ns0:description>
@@ -518,7 +518,7 @@
                           xmlns:ns2="http://www.w3.org/ns/locn#"
                           xmlns:ns3="https://model.ccmm.cz/vocabulary/ccmm#"
                           xmlns:ns4="http://www.opengis.net/ont/geosparql#"
-                          rdf:nodeID="d44e505">
+                          rdf:nodeID="d43e505">
             <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
             <ns0:bbox>
                <rdf:Description xmlns:ns0="https://model.ccmm.cz/vocabulary/ccmm#"
@@ -526,7 +526,7 @@
                                 xmlns:ns2="http://www.w3.org/ns/dcat#"
                                 xmlns:ns3="http://purl.org/dc/terms/"
                                 xmlns:ns4="http://www.w3.org/ns/prov#"
-                                rdf:nodeID="d44e509">
+                                rdf:nodeID="d43e509">
                   <rdf:type rdf:resource="http://www.opengis.net/ont/sf#Envelope"/>
                   <ns7:asGML rdf:datatype="http://www.opengis.net/gml/3.2#BoundingShapeType">
                 &lt;gml:Envelope xmlns="https://schema.ccmm.cz/research-data/1.2" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
@@ -539,7 +539,7 @@
             <ns2:geometry>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 xmlns:ns1="http://www.opengis.net/ont/geosparql#"
-                                rdf:nodeID="d44e525">
+                                rdf:nodeID="d43e525">
                   <rdf:type rdf:resource="http://www.w3.org/ns/locn#Geometry"/>
                   <ns1:asGML rdf:datatype="http://www.opengis.net/gml/3.2#GeometryPropertyType">
                 &lt;gml:MultiSurface xmlns="https://schema.ccmm.cz/research-data/1.2" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="MS.AU.2.27" srsName="http://www.opengis.net/def/crs/EPSG/0/5514" srsDimension="2"&gt;
@@ -628,7 +628,7 @@
                   <ns0:identifier>
                      <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                       xmlns:ns1="https://model.ccmm.cz/vocabulary/ccmm#"
-                                      rdf:nodeID="d44e587">
+                                      rdf:nodeID="d43e587">
                         <rdf:type rdf:resource="http://www.w3.org/ns/adms#Identifier"/>
                         <ns0:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">01pv73b02</ns0:notation>
                         <ns1:inScheme>
@@ -677,7 +677,7 @@
                           xmlns:ns1="http://purl.org/dc/terms/"
                           xmlns:ns2="https://model.ccmm.cz/vocabulary/ccmm#"
                           xmlns:ns3="http://www.w3.org/ns/prov#"
-                          rdf:nodeID="d44e640">
+                          rdf:nodeID="d43e640">
             <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
             <ns1:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVI LVS1 Sampler pro odběr prašného aerosolu</ns1:title>
             <ns2:resourceUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.envitech-bohemia.cz/p/264/envi-lvs1-sampler-pro-odber-prasneho-aerosolu</ns2:resourceUrl>
@@ -748,10 +748,9 @@
          <rdf:Description xmlns:ns0="http://purl.org/dc/terms/"
                           xmlns:ns1="http://www.w3.org/ns/dcat#"
                           xmlns:ns2="http://xmlns.com/foaf/0.1/"
-                          rdf:nodeID="d44e723">
+                          rdf:nodeID="d43e723">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#Distribution-DataService"/>
             <ns0:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Služba WMS pro prohlížení dat o kvalitě ovzduší</ns0:title>
-            <ns1:accessURL rdf:resource="https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi"/>
             <ns1:accessService>
                <rdf:Description rdf:about="https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi">
                   <rdf:type rdf:resource="http://www.w3.org/ns/dcat#DataService"/>
@@ -761,7 +760,7 @@
                                       xmlns:ns1="http://purl.org/dc/terms/"
                                       xmlns:ns2="https://model.ccmm.cz/vocabulary/ccmm#"
                                       xmlns:ns3="http://www.w3.org/ns/prov#"
-                                      rdf:nodeID="d44e736">
+                                      rdf:nodeID="d43e736">
                         <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
                         <ns1:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Endpoint of WMS service Air quality</ns1:title>
                         <ns2:resourceUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi</ns2:resourceUrl>
@@ -846,7 +845,7 @@
             </ns1:mediaType>
             <ns1:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">256</ns1:byteSize>
             <ns2:checksum>
-               <rdf:Description xmlns:ns0="http://spdx.org/rdf/terms#" rdf:nodeID="d44e830">
+               <rdf:Description xmlns:ns0="http://spdx.org/rdf/terms#" rdf:nodeID="d43e830">
                   <rdf:type rdf:resource="http://spdx.org/rdf/terms#Checksum"/>
                   <ns0:checksumValue rdf:datatype="http://www.w3.org/2001/XMLSchema#hexBinary">9c56cc51b374d3a94e096e3f5483c05c6e69e221ae5d62a5435c5f3a9fc84938</ns0:checksumValue>
                   <ns0:algorithm>
@@ -873,15 +872,10 @@
          </rdf:Description>
       </ns2:distribution>
       <ns0:hasValidationResult>
-         <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="d44e856">
+         <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="d43e856">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#ValidationResult"/>
          </rdf:Description>
       </ns0:hasValidationResult>
-      <ns3:provenance>
-         <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="d44e860">
-            <rdf:type rdf:resource="http://purl.org/dc/terms/ProvenanceStatement"/>
-         </rdf:Description>
-      </ns3:provenance>
       <ns4:wasGeneratedBy>
          <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                           rdf:about="http://link-to-origin.com">

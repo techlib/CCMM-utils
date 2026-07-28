@@ -16,11 +16,6 @@
       }
     ]
   },
-  "provenance": [
-    {
-      "type": "provenance_statement"
-    }
-  ],
   "related_resource": [
     {
       "id": "http://data.europa.eu/eli/dir/2008/50/oj",
@@ -267,31 +262,11 @@
           },
           "endpoint_url": [
             {
-              "id": "_:b27",
               "type": "related_resource",
               "title": "Endpoint of WMS service Air quality",
               "resource_url": "https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi"
             }
           ]
-        }
-      ],
-      "access_url": [
-        {
-          "id": "https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi",
-          "type": "http://www.w3.org/ns/dcat#DataService",
-          "http://purl.org/dc/terms/title": {
-            "@language": "en",
-            "@value": "Endpoint of WMS service Air quality"
-          },
-          "http://www.w3.org/ns/dcat#endpointURL": {
-            "id": "_:b27",
-            "type": "http://www.w3.org/2000/01/rdf-schema#Resource",
-            "title": "Endpoint of WMS service Air quality",
-            "https://model.ccmm.cz/vocabulary/ccmm#resourceUrl": {
-              "type": "xsd:anyURI",
-              "@value": "https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi"
-            }
-          }
         }
       ],
       "documentation": [
