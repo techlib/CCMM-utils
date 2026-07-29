@@ -1,4 +1,4 @@
-### XXMM XML to RDF conversion
+### CCMM XML to RDF conversion
 
 Script automatically converts XML metadata into RDF using lifting transformation and json-ld contexts generated from dataspecer.
 
