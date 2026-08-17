@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xmlns:c="https://schemas.dataspecer.com/xsd/core/"
-         xmlns:ccmm="https://schema.ccmm.cz/research-data/1.2"
+         xmlns:ccmm="https://schema.ccmm.cz/research-data/2.0"
          xmlns:gml="http://www.opengis.net/gml/3.2"
          xmlns:gsp="http://www.opengis.net/ont/geosparql#"
          xmlns:ns0="https://model.ccmm.cz/vocabulary/ccmm#"
@@ -8,9 +8,8 @@
          xmlns:ns2="http://www.w3.org/ns/dcat#"
          xmlns:ns3="http://purl.org/dc/terms/"
          xmlns:ns4="http://www.w3.org/ns/prov#"
-         xmlns:ns5="https://model.ccmm.cz/vocabulary/datacite#"
-         xmlns:ns6="https://w3id.org/tib/datacite/property/"
-         xmlns:ns7="http://www.opengis.net/ont/geosparql#"
+         xmlns:ns5="https://w3id.org/tib/datacite/property/"
+         xmlns:ns6="http://www.opengis.net/ont/geosparql#"
          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
    <rdf:Description rdf:about="https://organization.cz/dataset_server/dataset_id">
@@ -113,9 +112,9 @@
             <ns0:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-28</ns0:created>
             <ns0:conformsTo>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="https://model.ccmm.cz/research-data/1.1.0">
+                                rdf:about="https://model.ccmm.cz/research-data/2.0.0">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/Standard"/>
-                  <ns0:label xml:lang="">CCMM RD 1.1.0</ns0:label>
+                  <ns0:label xml:lang="">CCMM RD 2.0.0</ns0:label>
                </rdf:Description>
             </ns0:conformsTo>
             <ns0:conformsTo>
@@ -368,11 +367,11 @@
             </ns1:hadRole>
          </rdf:Description>
       </ns4:qualifiedAttribution>
-      <ns5:relatedItemPublicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2025</ns5:relatedItemPublicationYear>
+      <ns5:publicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2025</ns5:publicationYear>
       <ns0:hasTimeReference>
          <rdf:Description xmlns:ns0="http://www.w3.org/2006/time#"
                           xmlns:ns1="https://model.ccmm.cz/vocabulary/ccmm#"
-                          xmlns:ns2="https://model.ccmm.cz/vocabulary/datacite#"
+                          xmlns:ns2="https://w3id.org/tib/datacite/property/"
                           rdf:nodeID="d43e351">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#TimeReference"/>
             <ns0:hasTime>
@@ -394,7 +393,7 @@
       <ns0:hasTimeReference>
          <rdf:Description xmlns:ns0="http://www.w3.org/2006/time#"
                           xmlns:ns1="https://model.ccmm.cz/vocabulary/ccmm#"
-                          xmlns:ns2="https://model.ccmm.cz/vocabulary/datacite#"
+                          xmlns:ns2="https://w3id.org/tib/datacite/property/"
                           rdf:nodeID="d43e374">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#TimeReference"/>
             <ns0:hasTime>
@@ -452,7 +451,7 @@
             <ns0:label xml:lang="cs">otevřený přístup</ns0:label>
          </rdf:Description>
       </ns3:accessRights>
-      <ns6:subject>
+      <ns5:subject>
          <rdf:Description xmlns:ns0="http://purl.org/dc/terms/"
                           xmlns:ns1="http://www.w3.org/2004/02/skos/core#"
                           xmlns:ns2="https://w3id.org/tib/datacite/property/"
@@ -471,8 +470,8 @@
                </rdf:Description>
             </ns3:inSubjectScheme>
          </rdf:Description>
-      </ns6:subject>
-      <ns6:subject>
+      </ns5:subject>
+      <ns5:subject>
          <rdf:Description xmlns:ns0="http://purl.org/dc/terms/"
                           xmlns:ns1="http://www.w3.org/2004/02/skos/core#"
                           xmlns:ns2="https://w3id.org/tib/datacite/property/"
@@ -493,9 +492,9 @@
                </rdf:Description>
             </ns3:inSubjectScheme>
          </rdf:Description>
-      </ns6:subject>
+      </ns5:subject>
       <ns2:keyword xml:lang="cs">kvalita ovzduší</ns2:keyword>
-      <ns6:description>
+      <ns5:description>
          <rdf:Description xmlns:ns0="http://purl.org/dc/terms/"
                           xmlns:ns1="https://w3id.org/tib/datacite/property/"
                           rdf:nodeID="d43e488">
@@ -511,7 +510,7 @@
                </rdf:Description>
             </ns1:descriptionType>
          </rdf:Description>
-      </ns6:description>
+      </ns5:description>
       <ns3:spatial>
          <rdf:Description xmlns:ns0="http://www.w3.org/ns/dcat#"
                           xmlns:ns1="http://www.w3.org/2000/01/rdf-schema#"
@@ -528,21 +527,22 @@
                                 xmlns:ns4="http://www.w3.org/ns/prov#"
                                 rdf:nodeID="d43e509">
                   <rdf:type rdf:resource="http://www.opengis.net/ont/sf#Envelope"/>
-                  <ns7:asGML rdf:datatype="http://www.opengis.net/gml/3.2#BoundingShapeType">
-                &lt;gml:Envelope xmlns="https://schema.ccmm.cz/research-data/1.2" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+                  <ns6:asGML rdf:datatype="http://www.opengis.net/gml/3.2#BoundingShapeType">
+                &lt;gml:Envelope xmlns="https://schema.ccmm.cz/research-data/2.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
                     &lt;gml:lowerCorner&gt;13.394972457505816 49.50127042751268&lt;/gml:lowerCorner&gt;
                     &lt;gml:upperCorner&gt;15.585575400519133 50.61421606255462&lt;/gml:upperCorner&gt;
                 &lt;/gml:Envelope&gt;
-            </ns7:asGML>
+            </ns6:asGML>
                </rdf:Description>
             </ns0:bbox>
+            <ns1:label xml:lang="cs">Středočeský kraj</ns1:label>
             <ns2:geometry>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 xmlns:ns1="http://www.opengis.net/ont/geosparql#"
                                 rdf:nodeID="d43e525">
                   <rdf:type rdf:resource="http://www.w3.org/ns/locn#Geometry"/>
                   <ns1:asGML rdf:datatype="http://www.opengis.net/gml/3.2#GeometryPropertyType">
-                &lt;gml:MultiSurface xmlns="https://schema.ccmm.cz/research-data/1.2" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="MS.AU.2.27" srsName="http://www.opengis.net/def/crs/EPSG/0/5514" srsDimension="2"&gt;
+                &lt;gml:MultiSurface xmlns="https://schema.ccmm.cz/research-data/2.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="MS.AU.2.27" srsName="http://www.opengis.net/def/crs/EPSG/0/5514" srsDimension="2"&gt;
                     &lt;gml:surfaceMember&gt;
                         &lt;gml:Polygon gml:id="S.AU.2.27.1"&gt;
                             &lt;gml:exterior&gt;
@@ -610,7 +610,7 @@
             </ns3:hasType>
          </rdf:Description>
       </ns3:spatial>
-      <ns5:hasFundingReference>
+      <ns5:fundingReference>
          <rdf:Description xmlns:ns0="https://w3id.org/tib/datacite/property/"
                           xmlns:ns1="https://model.ccmm.cz/vocabulary/ccmm#"
                           rdf:about="https://funder-org.org/grants/123456789">
@@ -644,7 +644,7 @@
                </rdf:Description>
             </ns0:funderIdentifier>
          </rdf:Description>
-      </ns5:hasFundingReference>
+      </ns5:fundingReference>
       <ns3:relation>
          <rdf:Description xmlns:ns0="http://www.w3.org/ns/adms#"
                           xmlns:ns1="http://purl.org/dc/terms/"
@@ -751,6 +751,7 @@
                           rdf:nodeID="d43e723">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#Distribution-DataService"/>
             <ns0:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Služba WMS pro prohlížení dat o kvalitě ovzduší</ns0:title>
+            <ns1:accessURL rdf:resource="https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi"/>
             <ns1:accessService>
                <rdf:Description rdf:about="https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi">
                   <rdf:type rdf:resource="http://www.w3.org/ns/dcat#DataService"/>
@@ -760,7 +761,7 @@
                                       xmlns:ns1="http://purl.org/dc/terms/"
                                       xmlns:ns2="https://model.ccmm.cz/vocabulary/ccmm#"
                                       xmlns:ns3="http://www.w3.org/ns/prov#"
-                                      rdf:nodeID="d43e736">
+                                      rdf:nodeID="d43e734">
                         <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
                         <ns1:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Endpoint of WMS service Air quality</ns1:title>
                         <ns2:resourceUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi</ns2:resourceUrl>
@@ -845,12 +846,12 @@
             </ns1:mediaType>
             <ns1:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">256</ns1:byteSize>
             <ns2:checksum>
-               <rdf:Description xmlns:ns0="http://spdx.org/rdf/terms#" rdf:nodeID="d43e830">
+               <rdf:Description xmlns:ns0="http://spdx.org/rdf/terms#" rdf:nodeID="d43e828">
                   <rdf:type rdf:resource="http://spdx.org/rdf/terms#Checksum"/>
                   <ns0:checksumValue rdf:datatype="http://www.w3.org/2001/XMLSchema#hexBinary">9c56cc51b374d3a94e096e3f5483c05c6e69e221ae5d62a5435c5f3a9fc84938</ns0:checksumValue>
                   <ns0:algorithm>
                      <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                      rdf:about="https://www.iana.org/go/rfc6920">
+                                      rdf:about="https://spdx.org/rdf/terms/#d4e4247">
                         <rdf:type rdf:resource="http://spdx.org/rdf/terms#ChecksumAlgorithm"/>
                      </rdf:Description>
                   </ns0:algorithm>
@@ -872,14 +873,16 @@
          </rdf:Description>
       </ns2:distribution>
       <ns0:hasValidationResult>
-         <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="d43e856">
+         <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="d43e854">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#ValidationResult"/>
          </rdf:Description>
       </ns0:hasValidationResult>
       <ns4:wasGeneratedBy>
          <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                          rdf:about="http://link-to-origin.com">
+                          xmlns:ns1="https://model.ccmm.cz/vocabulary/ccmm#"
+                          rdf:nodeID="d43e858">
             <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+            <ns1:hasRo-crateJsonRepresentation rdf:resource="https://link.to/ro-crate-json"/>
          </rdf:Description>
       </ns4:wasGeneratedBy>
    </rdf:Description>

@@ -7,8 +7,7 @@
 @prefix ns11: <http://www.w3.org/ns/locn#> .
 @prefix ns2: <http://www.w3.org/2006/vcard/ns#> .
 @prefix ns21: <http://spdx.org/rdf/terms#> .
-@prefix ns5: <https://model.ccmm.cz/vocabulary/datacite#> .
-@prefix ns6: <https://w3id.org/tib/datacite/property/> .
+@prefix ns5: <https://w3id.org/tib/datacite/property/> .
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -27,16 +26,17 @@
         <https://data.gov.cz/zdroj/datové-sady/00020699/c724d055011d82189bbfc3766ffd1eb7>,
         <https://opendata.chmi.cz/air_quality/now/data/> ;
     dcterms:spatial [ a dcterms:Location ;
+            rdfs:label "Středočeský kraj"@cs ;
             dcat:bbox [ a <http://www.opengis.net/ont/sf#Envelope> ;
                     geo:asGML """
-                <gml:Envelope xmlns="https://schema.ccmm.cz/research-data/1.2" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <gml:Envelope xmlns="https://schema.ccmm.cz/research-data/2.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                     <gml:lowerCorner>13.394972457505816 49.50127042751268</gml:lowerCorner>
                     <gml:upperCorner>15.585575400519133 50.61421606255462</gml:upperCorner>
                 </gml:Envelope>
             """^^<http://www.opengis.net/gml/3.2#BoundingShapeType> ] ;
             ns11:geometry [ a ns11:Geometry ;
                     geo:asGML """
-                <gml:MultiSurface xmlns="https://schema.ccmm.cz/research-data/1.2" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="MS.AU.2.27" srsName="http://www.opengis.net/def/crs/EPSG/0/5514" srsDimension="2">
+                <gml:MultiSurface xmlns="https://schema.ccmm.cz/research-data/2.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="MS.AU.2.27" srsName="http://www.opengis.net/def/crs/EPSG/0/5514" srsDimension="2">
                     <gml:surfaceMember>
                         <gml:Polygon gml:id="S.AU.2.27.1">
                             <gml:exterior>
@@ -102,26 +102,12 @@
             dcterms:rights <https://vocabularies.coar-repositories.org/access_rights/c_abf2/> ;
             dcterms:title "Služba WMS pro prohlížení dat o kvalitě ovzduší"^^xsd:string ;
             dcat:accessService <https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi> ;
+            dcat:accessURL <https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi> ;
             foaf:page <https://geoportal.gov.cz/web/guest/catalogue-client;jsessionid=F54A364E040A9D2184E42D94D288851C/> ],
         <http://portal.chmi.cz/AQ_DATA> ;
     dcat:keyword "kvalita ovzduší"@cs ;
     dcat:version "1.0.23"^^xsd:string ;
     prov:qualifiedAttribution [ a prov:Attribution ;
-            dcat:hadRole <https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator> ;
-            prov:agent [ a prov:Person ;
-                    ns2:family-name "Novák"^^xsd:string ;
-                    ns2:given-name "Jan"^^xsd:string ;
-                    ns1:identifier <https://orcid.org/0030-04X2-2030-4X26> ;
-                    dcat:contactPoint [ a ns2:Kind ;
-                            ns2:hasAddress [ a ns11:Address ;
-                                    ns11:fullAddress "Dlouhá 15, 11000, Praha 1"^^xsd:string ] ;
-                            ns0:email "jan.novak@email.com"^^xsd:string ;
-                            ns0:phone "+0112345678"^^xsd:string ] ;
-                    foaf:name "Novák"^^xsd:string ;
-                    ns0:hasAffiliation [ a org:Organization ;
-                            ns1:identifier <https://ror.org/024d6js02> ;
-                            foaf:name "Univerzita Karlova"^^xsd:string ] ] ],
-        [ a prov:Attribution ;
             dcat:hadRole <https://vocabs.ccmm.cz/registry/codelist/AgentRole/Publisher> ;
             prov:agent [ a prov:Person ;
                     ns2:family-name "Janouch"^^xsd:string ;
@@ -135,33 +121,49 @@
                     foaf:name "Ivan Janouch"^^xsd:string ;
                     ns0:hasAffiliation [ a org:Organization ;
                             ns1:identifier <https://ror.org/02j46qs45> ;
-                            foaf:name "Masarykova Univerzita"^^xsd:string ] ] ] ;
-    prov:wasGeneratedBy <http://link-to-origin.com> ;
+                            foaf:name "Masarykova Univerzita"^^xsd:string ] ] ],
+        [ a prov:Attribution ;
+            dcat:hadRole <https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator> ;
+            prov:agent [ a prov:Person ;
+                    ns2:family-name "Novák"^^xsd:string ;
+                    ns2:given-name "Jan"^^xsd:string ;
+                    ns1:identifier <https://orcid.org/0030-04X2-2030-4X26> ;
+                    dcat:contactPoint [ a ns2:Kind ;
+                            ns2:hasAddress [ a ns11:Address ;
+                                    ns11:fullAddress "Dlouhá 15, 11000, Praha 1"^^xsd:string ] ;
+                            ns0:email "jan.novak@email.com"^^xsd:string ;
+                            ns0:phone "+0112345678"^^xsd:string ] ;
+                    foaf:name "Novák"^^xsd:string ;
+                    ns0:hasAffiliation [ a org:Organization ;
+                            ns1:identifier <https://ror.org/024d6js02> ;
+                            foaf:name "Univerzita Karlova"^^xsd:string ] ] ] ;
+    prov:wasGeneratedBy [ a prov:Activity ;
+            ns0:hasRo-crateJsonRepresentation <https://link.to/ro-crate-json> ] ;
     ns0:hasAlternateTitle [ a ns0:AlternateTitle ;
             dcterms:alternative "Air quality measurements in Central Bohemian Region in 2024."@en ;
             ns0:hasType <https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/TranslatedTitle> ] ;
     ns0:hasOtherLanguage <http://publications.europa.eu/resource/authority/language/ENG> ;
     ns0:hasPrimaryLanguage <http://publications.europa.eu/resource/authority/language/CES> ;
     ns0:hasTimeReference [ a ns0:TimeReference ;
-            time:hasTime [ a time:Instant ;
-                    time:inXSDDateTime "2025-04-27T12:00:01+02:00"^^xsd:dateTime ] ;
-            ns0:hasType <https://vocabs.ccmm.cz/registry/codelist/TimeReference/Collected> ],
-        [ a ns0:TimeReference ;
             time:hasTime [ a time:Interval ;
                     time:hasBeginning [ a time:Instant ;
                             time:inXSDDate "2024-01-01"^^xsd:date ] ;
                     time:hasEnd [ a time:Instant ;
                             time:inXSDDate "2024-12-31"^^xsd:date ] ] ;
+            ns0:hasType <https://vocabs.ccmm.cz/registry/codelist/TimeReference/Collected> ],
+        [ a ns0:TimeReference ;
+            time:hasTime [ a time:Instant ;
+                    time:inXSDDateTime "2025-04-27T12:00:01+02:00"^^xsd:dateTime ] ;
             ns0:hasType <https://vocabs.ccmm.cz/registry/codelist/TimeReference/Collected> ] ;
     ns0:hasValidationResult [ a ns0:ValidationResult ] ;
     ns0:isDescribedBy <https://original-catalogue/dataset_metadata_id> ;
-    ns5:hasFundingReference <https://funder-org.org/grants/123456789> ;
-    ns5:relatedItemPublicationYear "2025"^^xsd:gYear ;
-    ns6:description [ a <https://w3id.org/tib/datacite/class/Description> ;
+    ns5:description [ a <https://w3id.org/tib/datacite/class/Description> ;
             dcterms:description """Tato datová sada obsahuje měření kvality ovzduší ve středních Čechách v
             roce 2024."""@cs ;
-            ns6:descriptionType <https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Abstract> ] ;
-    ns6:subject <http://inspire.ec.europa.eu/theme/ef>,
+            ns5:descriptionType <https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Abstract> ] ;
+    ns5:fundingReference <https://funder-org.org/grants/123456789> ;
+    ns5:publicationYear "2025"^^xsd:gYear ;
+    ns5:subject <http://inspire.ec.europa.eu/theme/ef>,
         <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10509> .
 
 <http://data.europa.eu/eli/dir/2008/50/oj> a rdfs:Resource ;
@@ -183,9 +185,7 @@
             and of other ecosystem parameters (biodiversity, ecological conditions of vegetation,
             etc.) by or on behalf of public authorities."""@en ;
     ns0:inSubjectScheme <https://inspire.ec.europa.eu/theme/> ;
-    ns6:classificationCode "EF"^^xsd:string .
-
-<http://link-to-origin.com> a prov:Activity .
+    ns5:classificationCode "EF"^^xsd:string .
 
 <http://portal.chmi.cz/AQ_DATA> a ns0:Distribution-DownloadableFile ;
     dcterms:conformsTo <https://inspire.ec.europa.eu/schemas/ef/4.0/EnvironmentalMonitoringFacilities.xsd> ;
@@ -194,7 +194,7 @@
     dcterms:rights <https://vocabularies.coar-repositories.org/access_rights/c_abf2/> ;
     dcterms:title "Kvalita ovzduší"^^xsd:string ;
     ns21:checksum [ a ns21:Checksum ;
-            ns21:algorithm <https://www.iana.org/go/rfc6920> ;
+            ns21:algorithm <https://spdx.org/rdf/terms/#d4e4247> ;
             ns21:checksumValue "9c56cc51b374d3a94e096e3f5483c05c6e69e221ae5d62a5435c5f3a9fc84938"^^xsd:hexBinary ] ;
     dcat:accessURL <https://www.chmi.cz/o-nas/organizacni-struktura/usek-kvality-ovzdusi/oddeleni-informacniho-systemu-kvality-ovzdusi/odkazy> ;
     dcat:byteSize 256 ;
@@ -236,9 +236,9 @@
 
 <https://funder-org.org/grants/123456789> a <https://w3id.org/tib/datacite/class/FundingReference> ;
     ns0:fundingProgram "https://funder-org.org/program/abcdefgh"^^xsd:anyURI ;
-    ns6:awardNumber "https://doi.org/award-identifier"^^xsd:string ;
-    ns6:awardTitle "Program for air pollution research"^^xsd:string ;
-    ns6:funderIdentifier <https://ror.org/01pv73b02> .
+    ns5:awardNumber "https://doi.org/award-identifier"^^xsd:string ;
+    ns5:awardTitle "Program for air pollution research"^^xsd:string ;
+    ns5:funderIdentifier <https://ror.org/01pv73b02> .
 
 <https://geoportal.gov.cz/atom/CHMU/chmu_ovzdusi_AQ_data_epsg4258_2023.zip> a rdfs:Resource ;
     rdfs:label "Datová sada ve formátu Geopackage"@cs,
@@ -246,20 +246,14 @@
 
 <https://geoportal.gov.cz/web/guest/catalogue-client;jsessionid=F54A364E040A9D2184E42D94D288851C/> a foaf:Document .
 
-<https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi> a dcat:DataService ;
-    dcterms:title "Endpoint of WMS service Air quality"@en ;
-    dcat:endpointURL [ a rdfs:Resource ;
-            dcterms:title "Endpoint of WMS service Air quality"^^xsd:string ;
-            ns0:resourceUrl "https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi"^^xsd:anyURI ] .
-
 <https://inspire.ec.europa.eu/schemas/ef/4.0/EnvironmentalMonitoringFacilities.xsd> a dcterms:Standard ;
     rdfs:label "Environmental monitoring facilities"@en .
 
 <https://inspire.ec.europa.eu/theme/> a ns0:SubjectScheme ;
     rdfs:label "INSPIRE theme register"@en .
 
-<https://model.ccmm.cz/research-data/1.1.0> a dcterms:Standard ;
-    rdfs:label "CCMM RD 1.1.0" .
+<https://model.ccmm.cz/research-data/2.0.0> a dcterms:Standard ;
+    rdfs:label "CCMM RD 2.0.0" .
 
 <https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/file-type/GPKG> a dcterms:MediaTypeOrExtent ;
     rdfs:label "GeoPackage"@en .
@@ -285,7 +279,7 @@
     ns0:inScheme <https://organization.cz/datasets/> .
 
 <https://original-catalogue/dataset_metadata_id> a dcat:CatalogRecord ;
-    dcterms:conformsTo <https://model.ccmm.cz/research-data/1.1.0>,
+    dcterms:conformsTo <https://model.ccmm.cz/research-data/2.0.0>,
         <https://www.iso.org/standard/80275.html> ;
     dcterms:created "2025-04-28"^^xsd:date ;
     dcterms:language <http://publications.europa.eu/resource/authority/language/CES> ;
@@ -323,6 +317,8 @@
 <https://ror.org/02j46qs45> a ns1:Identifier ;
     skos:notation "02j46qs45"^^xsd:string ;
     ns0:inScheme <https://ror.org/> .
+
+<https://spdx.org/rdf/terms/#d4e4247> a ns21:ChecksumAlgorithm .
 
 <https://vdp.cuzk.gov.cz/vdp/ruian/vusc/27> a rdfs:Resource ;
     dcterms:title "Středočeský kraj"^^xsd:string .
@@ -370,9 +366,7 @@
     dcterms:title "Meteorologie, vědy o atmosféře"@cs,
         "Meteorology and atmospheric sciences"@en ;
     ns0:inSubjectScheme <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/> ;
-    ns6:classificationCode "10509"^^xsd:string .
-
-<https://www.iana.org/go/rfc6920> a ns21:ChecksumAlgorithm .
+    ns5:classificationCode "10509"^^xsd:string .
 
 <https://www.iso.org/standard/80275.html> a dcterms:Standard ;
     rdfs:label "ISO 19115-1:2014/Amd 2:2020" .
@@ -381,6 +375,12 @@
 
 <http://publications.europa.eu/resource/authority/language/CES> a dcterms:LinguisticSystem ;
     rdfs:label "čeština"@cs .
+
+<https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi> a dcat:DataService ;
+    dcterms:title "Endpoint of WMS service Air quality"@en ;
+    dcat:endpointURL [ a rdfs:Resource ;
+            dcterms:title "Endpoint of WMS service Air quality"^^xsd:string ;
+            ns0:resourceUrl "https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi"^^xsd:anyURI ] .
 
 <https://orcid.org/> a ns0:IdentifierScheme ;
     rdfs:label "ORCID" .
