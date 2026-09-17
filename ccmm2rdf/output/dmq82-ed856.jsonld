@@ -17,8 +17,8 @@
           "@container": "@set",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "language_system": {
               "@id": "http://purl.org/dc/terms/LinguisticSystem",
@@ -49,6 +49,10 @@
                         "label": {
                           "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                           "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                        },
+                        "notation": {
+                          "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                          "@type": "xsd:string"
                         },
                         "identifier_scheme": {
                           "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
@@ -178,6 +182,10 @@
                               "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                               "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                             },
+                            "notation": {
+                              "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                              "@type": "xsd:string"
+                            },
                             "identifier_scheme": {
                               "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
                               "@context": {}
@@ -299,8 +307,8 @@
               "@type": "@id",
               "@context": {
                 "label": {
-                  "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                  "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                  "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                  "@container": "@language"
                 },
                 "attributed_agent_role_type": {
                   "@id": "http://www.w3.org/ns/dcat#Role",
@@ -344,6 +352,10 @@
               "@id": "http://purl.org/dc/terms/title",
               "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
             },
+            "description": {
+              "@id": "http://purl.org/dc/terms/description",
+              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            },
             "qualified_attribution": {
               "@id": "http://www.w3.org/ns/prov#qualifiedAttribution",
               "@container": "@set",
@@ -367,6 +379,10 @@
                             "label": {
                               "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                               "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                            },
+                            "notation": {
+                              "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                              "@type": "xsd:string"
                             },
                             "identifier_scheme": {
                               "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
@@ -496,6 +512,10 @@
                                   "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                                   "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                                 },
+                                "notation": {
+                                  "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                                  "@type": "xsd:string"
+                                },
                                 "identifier_scheme": {
                                   "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
                                   "@context": {}
@@ -617,8 +637,8 @@
                   "@type": "@id",
                   "@context": {
                     "label": {
-                      "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                      "@container": "@language"
                     },
                     "attributed_agent_role_type": {
                       "@id": "http://www.w3.org/ns/dcat#Role",
@@ -631,6 +651,16 @@
                   "@context": {}
                 }
               }
+            },
+            "record": {
+              "@id": "http://www.w3.org/ns/dcat#record",
+              "@type": "@id",
+              "@container": "@set"
+            },
+            "dataset": {
+              "@id": "http://www.w3.org/ns/dcat#dataset",
+              "@type": "@id",
+              "@container": "@set"
             },
             "repository": {
               "@id": "http://www.w3.org/ns/dcat#Catalog",
@@ -659,6 +689,10 @@
             "label": {
               "@id": "http://www.w3.org/2000/01/rdf-schema#label",
               "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            },
+            "notation": {
+              "@id": "http://www.w3.org/2004/02/skos/core#notation",
+              "@type": "xsd:string"
             },
             "identifier_scheme": {
               "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
@@ -697,8 +731,8 @@
           "@type": "@id",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "alternate_title_type": {
               "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -735,6 +769,10 @@
                     "label": {
                       "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                    },
+                    "notation": {
+                      "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                      "@type": "xsd:string"
                     },
                     "identifier_scheme": {
                       "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
@@ -863,6 +901,10 @@
                         "label": {
                           "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                           "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                        },
+                        "notation": {
+                          "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                          "@type": "xsd:string"
                         },
                         "identifier_scheme": {
                           "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
@@ -985,8 +1027,8 @@
           "@type": "@id",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "attributed_agent_role_type": {
               "@id": "http://www.w3.org/ns/dcat#Role",
@@ -1071,8 +1113,8 @@
           "@type": "@id",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "date_type": {
               "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -1095,8 +1137,8 @@
       "@type": "@id",
       "@context": {
         "label": {
-          "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+          "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "@container": "@language"
         },
         "resource_type": {
           "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -1109,8 +1151,8 @@
       "@type": "@id",
       "@context": {
         "label": {
-          "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+          "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "@container": "@language"
         },
         "language_system": {
           "@id": "http://purl.org/dc/terms/LinguisticSystem",
@@ -1123,8 +1165,8 @@
       "@container": "@set",
       "@context": {
         "label": {
-          "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+          "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "@container": "@language"
         },
         "language_system": {
           "@id": "http://purl.org/dc/terms/LinguisticSystem",
@@ -1137,8 +1179,8 @@
       "@type": "@id",
       "@context": {
         "label": {
-          "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+          "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "@container": "@language"
         },
         "access_rights": {
           "@id": "http://purl.org/dc/terms/RightsStatement",
@@ -1199,8 +1241,8 @@
           "@type": "@id",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "description_type": {
               "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -1268,6 +1310,10 @@
                       "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                     },
+                    "notation": {
+                      "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                      "@type": "xsd:string"
+                    },
                     "identifier_scheme": {
                       "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
                       "@context": {}
@@ -1301,8 +1347,8 @@
                   "@type": "@id",
                   "@context": {
                     "label": {
-                      "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                      "@container": "@language"
                     },
                     "alternate_title_type": {
                       "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -1343,6 +1389,10 @@
                             "label": {
                               "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                               "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                            },
+                            "notation": {
+                              "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                              "@type": "xsd:string"
                             },
                             "identifier_scheme": {
                               "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
@@ -1472,6 +1522,10 @@
                                   "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                                   "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                                 },
+                                "notation": {
+                                  "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                                  "@type": "xsd:string"
+                                },
                                 "identifier_scheme": {
                                   "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
                                   "@context": {}
@@ -1593,8 +1647,8 @@
                   "@type": "@id",
                   "@context": {
                     "label": {
-                      "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                      "@container": "@language"
                     },
                     "attributed_agent_role_type": {
                       "@id": "http://www.w3.org/ns/dcat#Role",
@@ -1675,8 +1729,8 @@
                   "@type": "@id",
                   "@context": {
                     "label": {
-                      "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                      "@container": "@language"
                     },
                     "date_type": {
                       "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -1699,8 +1753,8 @@
               "@type": "@id",
               "@context": {
                 "label": {
-                  "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                  "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                  "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                  "@container": "@language"
                 },
                 "resource_type": {
                   "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -1713,8 +1767,8 @@
               "@type": "@id",
               "@context": {
                 "label": {
-                  "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                  "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                  "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                  "@container": "@language"
                 },
                 "resource_relation_type": {
                   "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -1733,8 +1787,8 @@
           "@type": "@id",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "relation_type": {
               "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -1783,6 +1837,10 @@
                     "label": {
                       "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                    },
+                    "notation": {
+                      "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                      "@type": "xsd:string"
                     },
                     "identifier_scheme": {
                       "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
@@ -1911,6 +1969,10 @@
                         "label": {
                           "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                           "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                        },
+                        "notation": {
+                          "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                          "@type": "xsd:string"
                         },
                         "identifier_scheme": {
                           "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
@@ -2054,6 +2116,10 @@
                   "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                   "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                 },
+                "notation": {
+                  "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                  "@type": "xsd:string"
+                },
                 "identifier_scheme": {
                   "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
                   "@context": {}
@@ -2087,8 +2153,8 @@
               "@type": "@id",
               "@context": {
                 "label": {
-                  "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                  "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                  "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                  "@container": "@language"
                 },
                 "alternate_title_type": {
                   "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -2129,6 +2195,10 @@
                         "label": {
                           "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                           "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                        },
+                        "notation": {
+                          "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                          "@type": "xsd:string"
                         },
                         "identifier_scheme": {
                           "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
@@ -2258,6 +2328,10 @@
                               "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                               "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                             },
+                            "notation": {
+                              "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                              "@type": "xsd:string"
+                            },
                             "identifier_scheme": {
                               "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
                               "@context": {}
@@ -2379,8 +2453,8 @@
               "@type": "@id",
               "@context": {
                 "label": {
-                  "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                  "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                  "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                  "@container": "@language"
                 },
                 "attributed_agent_role_type": {
                   "@id": "http://www.w3.org/ns/dcat#Role",
@@ -2461,8 +2535,8 @@
               "@type": "@id",
               "@context": {
                 "label": {
-                  "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                  "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                  "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                  "@container": "@language"
                 },
                 "date_type": {
                   "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -2485,8 +2559,8 @@
           "@type": "@id",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "resource_type": {
               "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -2499,8 +2573,8 @@
           "@type": "@id",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "resource_relation_type": {
               "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -2555,6 +2629,10 @@
                           "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                           "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                         },
+                        "notation": {
+                          "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                          "@type": "xsd:string"
+                        },
                         "identifier_scheme": {
                           "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
                           "@context": {}
@@ -2588,8 +2666,8 @@
                       "@type": "@id",
                       "@context": {
                         "label": {
-                          "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                          "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                          "@container": "@language"
                         },
                         "alternate_title_type": {
                           "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -2630,6 +2708,10 @@
                                 "label": {
                                   "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                                   "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                                },
+                                "notation": {
+                                  "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                                  "@type": "xsd:string"
                                 },
                                 "identifier_scheme": {
                                   "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
@@ -2759,6 +2841,10 @@
                                       "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                                       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                                     },
+                                    "notation": {
+                                      "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                                      "@type": "xsd:string"
+                                    },
                                     "identifier_scheme": {
                                       "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
                                       "@context": {}
@@ -2880,8 +2966,8 @@
                       "@type": "@id",
                       "@context": {
                         "label": {
-                          "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                          "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                          "@container": "@language"
                         },
                         "attributed_agent_role_type": {
                           "@id": "http://www.w3.org/ns/dcat#Role",
@@ -2962,8 +3048,8 @@
                       "@type": "@id",
                       "@context": {
                         "label": {
-                          "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                          "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                          "@container": "@language"
                         },
                         "date_type": {
                           "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -2986,8 +3072,8 @@
                   "@type": "@id",
                   "@context": {
                     "label": {
-                      "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                      "@container": "@language"
                     },
                     "resource_type": {
                       "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -3000,8 +3086,8 @@
                   "@type": "@id",
                   "@context": {
                     "label": {
-                      "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                      "@container": "@language"
                     },
                     "resource_relation_type": {
                       "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -3019,8 +3105,8 @@
               "@id": "http://purl.org/dc/terms/license",
               "@type": "@id",
               "@context": {
-                "label": {
-                  "@id": "http://www.w3.org/2000/01/rdf-schema#label",
+                "title": {
+                  "@id": "http://purl.org/dc/terms/title",
                   "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                 },
                 "licence_document": {
@@ -3068,8 +3154,8 @@
           "@container": "@set",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "access_rights": {
               "@id": "http://purl.org/dc/terms/RightsStatement",
@@ -3081,8 +3167,8 @@
           "@id": "http://purl.org/dc/terms/license",
           "@type": "@id",
           "@context": {
-            "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
+            "title": {
+              "@id": "http://purl.org/dc/terms/title",
               "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
             },
             "licence_document": {
@@ -3114,8 +3200,8 @@
           "@type": "@id",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "format": {
               "@id": "http://purl.org/dc/terms/MediaTypeOrExtent",
@@ -3128,8 +3214,8 @@
           "@type": "@id",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "media_type": {
               "@id": "http://purl.org/dc/terms/MediaType",
@@ -3142,8 +3228,8 @@
           "@type": "@id",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "media_type": {
               "@id": "http://purl.org/dc/terms/MediaType",
@@ -3156,8 +3242,8 @@
           "@type": "@id",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "media_type": {
               "@id": "http://purl.org/dc/terms/MediaType",
@@ -3258,7 +3344,7 @@
   "access_rights": {
     "id": "http://purl.org/coar/access_right/c_abf2",
     "type": "access_rights",
-    "http://www.w3.org/2000/01/rdf-schema#label": [
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
         "@value": "open access"
@@ -3276,25 +3362,16 @@
         "related_resource",
         "http://www.w3.org/ns/adms#Identifier"
       ],
-      "title": "Influence of Deposition Parameters on the Building rate, In-Situ Formation of Austenite and Tensile Properties of SAF 2507 SDSS Fabricated by Directed Energy Deposition",
+      "http://purl.org/dc/terms/title": "Influence of Deposition Parameters on the Building rate, In-Situ Formation of Austenite and Tensile Properties of SAF 2507 SDSS Fabricated by Directed Energy Deposition",
       "resource_type": {
         "id": "http://purl.org/coar/resource_type/c_6501",
         "type": "resource_type",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-          {
-            "@language": "en",
-            "@value": "journal article"
-          },
-          {
-            "@language": "cs",
-            "@value": "článek v odborném časopisu"
-          }
-        ]
+        "label": {
+          "en": "journal article",
+          "cs": "článek v odborném časopisu"
+        }
       },
-      "http://www.w3.org/2004/02/skos/core#notation": {
-        "type": "xsd:string",
-        "@value": "10.1007/s12540-025-01953-4"
-      },
+      "http://www.w3.org/2004/02/skos/core#notation": "10.1007/s12540-025-01953-4",
       "identifier": [
         {
           "id": "https://doi.org/10.1007/s12540-025-01953-4",
@@ -3302,11 +3379,11 @@
             "http://www.w3.org/2000/01/rdf-schema#Resource",
             "identifier"
           ],
-          "title": "Influence of Deposition Parameters on the Building rate, In-Situ Formation of Austenite and Tensile Properties of SAF 2507 SDSS Fabricated by Directed Energy Deposition",
+          "http://purl.org/dc/terms/title": "Influence of Deposition Parameters on the Building rate, In-Situ Formation of Austenite and Tensile Properties of SAF 2507 SDSS Fabricated by Directed Energy Deposition",
           "resource_type": {
             "id": "http://purl.org/coar/resource_type/c_6501",
             "type": "resource_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://www.w3.org/2004/02/skos/core#prefLabel": [
               {
                 "@language": "en",
                 "@value": "journal article"
@@ -3317,154 +3394,118 @@
               }
             ]
           },
-          "value": "10.1007/s12540-025-01953-4",
+          "http://www.w3.org/2004/02/skos/core#notation": "10.1007/s12540-025-01953-4",
           "http://www.w3.org/ns/adms#identifier": {
             "id": "https://doi.org/10.1007/s12540-025-01953-4"
           },
           "qualified_attribution": [
             {
-              "id": "_:b44",
+              "id": "_:b4",
               "type": "resource_attribution",
               "role": {
                 "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
                 "type": "attributed_agent_role_type",
-                "http://www.w3.org/2000/01/rdf-schema#label": [
-                  {
-                    "@language": "en",
-                    "@value": "Creator"
-                  },
-                  {
-                    "@language": "cs",
-                    "@value": "Autor"
-                  }
-                ]
+                "label": {
+                  "en": "Creator",
+                  "cs": "Autor"
+                }
               },
               "attributed_agent": {
-                "id": "_:b50",
+                "id": "_:b10",
                 "type": "person",
-                "name": "Salvetr, Pavel"
+                "http://xmlns.com/foaf/0.1/name": "Salvetr, Pavel"
               }
             },
             {
-              "id": "_:b45",
+              "id": "_:b5",
               "type": "resource_attribution",
               "role": {
                 "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
                 "type": "attributed_agent_role_type",
-                "http://www.w3.org/2000/01/rdf-schema#label": [
-                  {
-                    "@language": "en",
-                    "@value": "Creator"
-                  },
-                  {
-                    "@language": "cs",
-                    "@value": "Autor"
-                  }
-                ]
+                "label": {
+                  "en": "Creator",
+                  "cs": "Autor"
+                }
               },
               "attributed_agent": {
-                "id": "_:b51",
+                "id": "_:b11",
                 "type": "person",
-                "name": "Hodek, Josef"
+                "http://xmlns.com/foaf/0.1/name": "Hodek, Josef"
               }
             },
             {
-              "id": "_:b46",
+              "id": "_:b6",
               "type": "resource_attribution",
               "role": {
                 "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
                 "type": "attributed_agent_role_type",
-                "http://www.w3.org/2000/01/rdf-schema#label": [
-                  {
-                    "@language": "en",
-                    "@value": "Creator"
-                  },
-                  {
-                    "@language": "cs",
-                    "@value": "Autor"
-                  }
-                ]
+                "label": {
+                  "en": "Creator",
+                  "cs": "Autor"
+                }
               },
               "attributed_agent": {
-                "id": "_:b52",
+                "id": "_:b12",
                 "type": "person",
-                "name": "Uhlík, Matouš"
+                "http://xmlns.com/foaf/0.1/name": "Uhlík, Matouš"
               }
             },
             {
-              "id": "_:b47",
+              "id": "_:b7",
               "type": "resource_attribution",
               "role": {
                 "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
                 "type": "attributed_agent_role_type",
-                "http://www.w3.org/2000/01/rdf-schema#label": [
-                  {
-                    "@language": "en",
-                    "@value": "Creator"
-                  },
-                  {
-                    "@language": "cs",
-                    "@value": "Autor"
-                  }
-                ]
+                "label": {
+                  "en": "Creator",
+                  "cs": "Autor"
+                }
               },
               "attributed_agent": {
-                "id": "_:b53",
+                "id": "_:b13",
                 "type": "person",
-                "name": "Novák, Pavel"
+                "http://xmlns.com/foaf/0.1/name": "Novák, Pavel"
               }
             },
             {
-              "id": "_:b48",
+              "id": "_:b8",
               "type": "resource_attribution",
               "role": {
                 "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
                 "type": "attributed_agent_role_type",
-                "http://www.w3.org/2000/01/rdf-schema#label": [
-                  {
-                    "@language": "en",
-                    "@value": "Creator"
-                  },
-                  {
-                    "@language": "cs",
-                    "@value": "Autor"
-                  }
-                ]
+                "label": {
+                  "en": "Creator",
+                  "cs": "Autor"
+                }
               },
               "attributed_agent": {
-                "id": "_:b54",
+                "id": "_:b14",
                 "type": "person",
-                "name": "Dlouhý, Jaromír"
+                "http://xmlns.com/foaf/0.1/name": "Dlouhý, Jaromír"
               }
             },
             {
-              "id": "_:b49",
+              "id": "_:b9",
               "type": "resource_attribution",
               "role": {
                 "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
                 "type": "attributed_agent_role_type",
-                "http://www.w3.org/2000/01/rdf-schema#label": [
-                  {
-                    "@language": "en",
-                    "@value": "Creator"
-                  },
-                  {
-                    "@language": "cs",
-                    "@value": "Autor"
-                  }
-                ]
+                "label": {
+                  "en": "Creator",
+                  "cs": "Autor"
+                }
               },
               "attributed_agent": {
-                "id": "_:b55",
+                "id": "_:b15",
                 "type": "person",
-                "name": "Brázda, Michal"
+                "http://xmlns.com/foaf/0.1/name": "Brázda, Michal"
               }
             }
           ],
           "https://model.ccmm.cz/vocabulary/ccmm#hasType": {
-            "id": "https://vocabs.ccmm.cz/registry/codelist/RelationType/IsReferencedBy",
+            "id": "https://w3id.org/tib/datacite/vocab/relationType/IsReferencedBy",
             "type": "http://www.w3.org/2004/02/skos/core#Concept",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://www.w3.org/2004/02/skos/core#prefLabel": [
               {
                 "@language": "en",
                 "@value": "is referenced by"
@@ -3478,7 +3519,11 @@
           "scheme": {
             "id": "https://doi.org/",
             "type": "identifier_scheme",
-            "http://www.w3.org/2000/01/rdf-schema#label": "DOI"
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "@language": "en",
+              "@value": "Digital Object Identifier"
+            },
+            "http://www.w3.org/2004/02/skos/core#notation": "DOI"
           },
           "https://model.ccmm.cz/vocabulary/ccmm#resourceUrl": {
             "type": "xsd:anyURI",
@@ -3488,148 +3533,112 @@
       ],
       "qualified_attribution": [
         {
-          "id": "_:b44",
+          "id": "_:b4",
           "type": "resource_attribution",
           "role": {
             "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
             "type": "attributed_agent_role_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-              {
-                "@language": "en",
-                "@value": "Creator"
-              },
-              {
-                "@language": "cs",
-                "@value": "Autor"
-              }
-            ]
+            "label": {
+              "en": "Creator",
+              "cs": "Autor"
+            }
           },
           "attributed_agent": {
-            "id": "_:b50",
+            "id": "_:b10",
             "type": "person",
-            "name": "Salvetr, Pavel"
+            "http://xmlns.com/foaf/0.1/name": "Salvetr, Pavel"
           }
         },
         {
-          "id": "_:b45",
+          "id": "_:b5",
           "type": "resource_attribution",
           "role": {
             "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
             "type": "attributed_agent_role_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-              {
-                "@language": "en",
-                "@value": "Creator"
-              },
-              {
-                "@language": "cs",
-                "@value": "Autor"
-              }
-            ]
+            "label": {
+              "en": "Creator",
+              "cs": "Autor"
+            }
           },
           "attributed_agent": {
-            "id": "_:b51",
+            "id": "_:b11",
             "type": "person",
-            "name": "Hodek, Josef"
+            "http://xmlns.com/foaf/0.1/name": "Hodek, Josef"
           }
         },
         {
-          "id": "_:b46",
+          "id": "_:b6",
           "type": "resource_attribution",
           "role": {
             "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
             "type": "attributed_agent_role_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-              {
-                "@language": "en",
-                "@value": "Creator"
-              },
-              {
-                "@language": "cs",
-                "@value": "Autor"
-              }
-            ]
+            "label": {
+              "en": "Creator",
+              "cs": "Autor"
+            }
           },
           "attributed_agent": {
-            "id": "_:b52",
+            "id": "_:b12",
             "type": "person",
-            "name": "Uhlík, Matouš"
+            "http://xmlns.com/foaf/0.1/name": "Uhlík, Matouš"
           }
         },
         {
-          "id": "_:b47",
+          "id": "_:b7",
           "type": "resource_attribution",
           "role": {
             "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
             "type": "attributed_agent_role_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-              {
-                "@language": "en",
-                "@value": "Creator"
-              },
-              {
-                "@language": "cs",
-                "@value": "Autor"
-              }
-            ]
+            "label": {
+              "en": "Creator",
+              "cs": "Autor"
+            }
           },
           "attributed_agent": {
-            "id": "_:b53",
+            "id": "_:b13",
             "type": "person",
-            "name": "Novák, Pavel"
+            "http://xmlns.com/foaf/0.1/name": "Novák, Pavel"
           }
         },
         {
-          "id": "_:b48",
+          "id": "_:b8",
           "type": "resource_attribution",
           "role": {
             "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
             "type": "attributed_agent_role_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-              {
-                "@language": "en",
-                "@value": "Creator"
-              },
-              {
-                "@language": "cs",
-                "@value": "Autor"
-              }
-            ]
+            "label": {
+              "en": "Creator",
+              "cs": "Autor"
+            }
           },
           "attributed_agent": {
-            "id": "_:b54",
+            "id": "_:b14",
             "type": "person",
-            "name": "Dlouhý, Jaromír"
+            "http://xmlns.com/foaf/0.1/name": "Dlouhý, Jaromír"
           }
         },
         {
-          "id": "_:b49",
+          "id": "_:b9",
           "type": "resource_attribution",
           "role": {
             "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
             "type": "attributed_agent_role_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-              {
-                "@language": "en",
-                "@value": "Creator"
-              },
-              {
-                "@language": "cs",
-                "@value": "Autor"
-              }
-            ]
+            "label": {
+              "en": "Creator",
+              "cs": "Autor"
+            }
           },
           "attributed_agent": {
-            "id": "_:b55",
+            "id": "_:b15",
             "type": "person",
-            "name": "Brázda, Michal"
+            "http://xmlns.com/foaf/0.1/name": "Brázda, Michal"
           }
         }
       ],
       "https://model.ccmm.cz/vocabulary/ccmm#hasType": {
-        "id": "https://vocabs.ccmm.cz/registry/codelist/RelationType/IsReferencedBy",
+        "id": "https://w3id.org/tib/datacite/vocab/relationType/IsReferencedBy",
         "type": "http://www.w3.org/2004/02/skos/core#Concept",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
           {
             "@language": "en",
             "@value": "is referenced by"
@@ -3643,7 +3652,11 @@
       "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
         "id": "https://doi.org/",
         "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-        "http://www.w3.org/2000/01/rdf-schema#label": "DOI"
+        "http://www.w3.org/2000/01/rdf-schema#label": {
+          "@language": "en",
+          "@value": "Digital Object Identifier"
+        },
+        "http://www.w3.org/2004/02/skos/core#notation": "DOI"
       },
       "https://model.ccmm.cz/vocabulary/ccmm#resourceUrl": {
         "type": "xsd:anyURI",
@@ -3651,11 +3664,11 @@
       }
     }
   ],
-  "title": "Data k rukopisu - Vliv podmínek depozice na rychlost tisku, množství in-situ vzniklého austenitu a mechanické vlastnosti oceli SAF2507 připravené metodou přímé depozice",
+  "http://purl.org/dc/terms/title": "Data k rukopisu - Vliv podmínek depozice na rychlost tisku, množství in-situ vzniklého austenitu a mechanické vlastnosti oceli SAF2507 připravené metodou přímé depozice",
   "resource_type": {
     "id": "http://purl.org/coar/resource_type/c_ddb1",
     "type": "resource_type",
-    "http://www.w3.org/2000/01/rdf-schema#label": [
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "cs",
         "@value": "datová sada"
@@ -3666,10 +3679,7 @@
       }
     ]
   },
-  "http://www.w3.org/2004/02/skos/core#notation": {
-    "type": "xsd:string",
-    "@value": "10.48700/datst.dmq82-ed856"
-  },
+  "http://www.w3.org/2004/02/skos/core#notation": "10.48700/datst.dmq82-ed856",
   "identifier": [
     {
       "id": "https://doi.org/10.48700/datst.dmq82-ed856",
@@ -3680,7 +3690,7 @@
       "access_rights": {
         "id": "http://purl.org/coar/access_right/c_abf2",
         "type": "access_rights",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
           {
             "@language": "en",
             "@value": "open access"
@@ -3698,25 +3708,16 @@
             "related_resource",
             "http://www.w3.org/ns/adms#Identifier"
           ],
-          "title": "Influence of Deposition Parameters on the Building rate, In-Situ Formation of Austenite and Tensile Properties of SAF 2507 SDSS Fabricated by Directed Energy Deposition",
+          "http://purl.org/dc/terms/title": "Influence of Deposition Parameters on the Building rate, In-Situ Formation of Austenite and Tensile Properties of SAF 2507 SDSS Fabricated by Directed Energy Deposition",
           "resource_type": {
             "id": "http://purl.org/coar/resource_type/c_6501",
             "type": "resource_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-              {
-                "@language": "en",
-                "@value": "journal article"
-              },
-              {
-                "@language": "cs",
-                "@value": "článek v odborném časopisu"
-              }
-            ]
+            "label": {
+              "en": "journal article",
+              "cs": "článek v odborném časopisu"
+            }
           },
-          "http://www.w3.org/2004/02/skos/core#notation": {
-            "type": "xsd:string",
-            "@value": "10.1007/s12540-025-01953-4"
-          },
+          "http://www.w3.org/2004/02/skos/core#notation": "10.1007/s12540-025-01953-4",
           "identifier": [
             {
               "id": "https://doi.org/10.1007/s12540-025-01953-4",
@@ -3724,11 +3725,11 @@
                 "http://www.w3.org/2000/01/rdf-schema#Resource",
                 "identifier"
               ],
-              "title": "Influence of Deposition Parameters on the Building rate, In-Situ Formation of Austenite and Tensile Properties of SAF 2507 SDSS Fabricated by Directed Energy Deposition",
+              "http://purl.org/dc/terms/title": "Influence of Deposition Parameters on the Building rate, In-Situ Formation of Austenite and Tensile Properties of SAF 2507 SDSS Fabricated by Directed Energy Deposition",
               "resource_type": {
                 "id": "http://purl.org/coar/resource_type/c_6501",
                 "type": "resource_type",
-                "http://www.w3.org/2000/01/rdf-schema#label": [
+                "http://www.w3.org/2004/02/skos/core#prefLabel": [
                   {
                     "@language": "en",
                     "@value": "journal article"
@@ -3739,154 +3740,118 @@
                   }
                 ]
               },
-              "value": "10.1007/s12540-025-01953-4",
+              "http://www.w3.org/2004/02/skos/core#notation": "10.1007/s12540-025-01953-4",
               "http://www.w3.org/ns/adms#identifier": {
                 "id": "https://doi.org/10.1007/s12540-025-01953-4"
               },
               "qualified_attribution": [
                 {
-                  "id": "_:b44",
+                  "id": "_:b4",
                   "type": "resource_attribution",
                   "role": {
                     "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
                     "type": "attributed_agent_role_type",
-                    "http://www.w3.org/2000/01/rdf-schema#label": [
-                      {
-                        "@language": "en",
-                        "@value": "Creator"
-                      },
-                      {
-                        "@language": "cs",
-                        "@value": "Autor"
-                      }
-                    ]
+                    "label": {
+                      "en": "Creator",
+                      "cs": "Autor"
+                    }
                   },
                   "attributed_agent": {
-                    "id": "_:b50",
+                    "id": "_:b10",
                     "type": "person",
-                    "name": "Salvetr, Pavel"
+                    "http://xmlns.com/foaf/0.1/name": "Salvetr, Pavel"
                   }
                 },
                 {
-                  "id": "_:b45",
+                  "id": "_:b5",
                   "type": "resource_attribution",
                   "role": {
                     "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
                     "type": "attributed_agent_role_type",
-                    "http://www.w3.org/2000/01/rdf-schema#label": [
-                      {
-                        "@language": "en",
-                        "@value": "Creator"
-                      },
-                      {
-                        "@language": "cs",
-                        "@value": "Autor"
-                      }
-                    ]
+                    "label": {
+                      "en": "Creator",
+                      "cs": "Autor"
+                    }
                   },
                   "attributed_agent": {
-                    "id": "_:b51",
+                    "id": "_:b11",
                     "type": "person",
-                    "name": "Hodek, Josef"
+                    "http://xmlns.com/foaf/0.1/name": "Hodek, Josef"
                   }
                 },
                 {
-                  "id": "_:b46",
+                  "id": "_:b6",
                   "type": "resource_attribution",
                   "role": {
                     "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
                     "type": "attributed_agent_role_type",
-                    "http://www.w3.org/2000/01/rdf-schema#label": [
-                      {
-                        "@language": "en",
-                        "@value": "Creator"
-                      },
-                      {
-                        "@language": "cs",
-                        "@value": "Autor"
-                      }
-                    ]
+                    "label": {
+                      "en": "Creator",
+                      "cs": "Autor"
+                    }
                   },
                   "attributed_agent": {
-                    "id": "_:b52",
+                    "id": "_:b12",
                     "type": "person",
-                    "name": "Uhlík, Matouš"
+                    "http://xmlns.com/foaf/0.1/name": "Uhlík, Matouš"
                   }
                 },
                 {
-                  "id": "_:b47",
+                  "id": "_:b7",
                   "type": "resource_attribution",
                   "role": {
                     "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
                     "type": "attributed_agent_role_type",
-                    "http://www.w3.org/2000/01/rdf-schema#label": [
-                      {
-                        "@language": "en",
-                        "@value": "Creator"
-                      },
-                      {
-                        "@language": "cs",
-                        "@value": "Autor"
-                      }
-                    ]
+                    "label": {
+                      "en": "Creator",
+                      "cs": "Autor"
+                    }
                   },
                   "attributed_agent": {
-                    "id": "_:b53",
+                    "id": "_:b13",
                     "type": "person",
-                    "name": "Novák, Pavel"
+                    "http://xmlns.com/foaf/0.1/name": "Novák, Pavel"
                   }
                 },
                 {
-                  "id": "_:b48",
+                  "id": "_:b8",
                   "type": "resource_attribution",
                   "role": {
                     "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
                     "type": "attributed_agent_role_type",
-                    "http://www.w3.org/2000/01/rdf-schema#label": [
-                      {
-                        "@language": "en",
-                        "@value": "Creator"
-                      },
-                      {
-                        "@language": "cs",
-                        "@value": "Autor"
-                      }
-                    ]
+                    "label": {
+                      "en": "Creator",
+                      "cs": "Autor"
+                    }
                   },
                   "attributed_agent": {
-                    "id": "_:b54",
+                    "id": "_:b14",
                     "type": "person",
-                    "name": "Dlouhý, Jaromír"
+                    "http://xmlns.com/foaf/0.1/name": "Dlouhý, Jaromír"
                   }
                 },
                 {
-                  "id": "_:b49",
+                  "id": "_:b9",
                   "type": "resource_attribution",
                   "role": {
                     "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
                     "type": "attributed_agent_role_type",
-                    "http://www.w3.org/2000/01/rdf-schema#label": [
-                      {
-                        "@language": "en",
-                        "@value": "Creator"
-                      },
-                      {
-                        "@language": "cs",
-                        "@value": "Autor"
-                      }
-                    ]
+                    "label": {
+                      "en": "Creator",
+                      "cs": "Autor"
+                    }
                   },
                   "attributed_agent": {
-                    "id": "_:b55",
+                    "id": "_:b15",
                     "type": "person",
-                    "name": "Brázda, Michal"
+                    "http://xmlns.com/foaf/0.1/name": "Brázda, Michal"
                   }
                 }
               ],
               "https://model.ccmm.cz/vocabulary/ccmm#hasType": {
-                "id": "https://vocabs.ccmm.cz/registry/codelist/RelationType/IsReferencedBy",
+                "id": "https://w3id.org/tib/datacite/vocab/relationType/IsReferencedBy",
                 "type": "http://www.w3.org/2004/02/skos/core#Concept",
-                "http://www.w3.org/2000/01/rdf-schema#label": [
+                "http://www.w3.org/2004/02/skos/core#prefLabel": [
                   {
                     "@language": "en",
                     "@value": "is referenced by"
@@ -3900,7 +3865,11 @@
               "scheme": {
                 "id": "https://doi.org/",
                 "type": "identifier_scheme",
-                "http://www.w3.org/2000/01/rdf-schema#label": "DOI"
+                "http://www.w3.org/2000/01/rdf-schema#label": {
+                  "@language": "en",
+                  "@value": "Digital Object Identifier"
+                },
+                "http://www.w3.org/2004/02/skos/core#notation": "DOI"
               },
               "https://model.ccmm.cz/vocabulary/ccmm#resourceUrl": {
                 "type": "xsd:anyURI",
@@ -3910,148 +3879,112 @@
           ],
           "qualified_attribution": [
             {
-              "id": "_:b44",
+              "id": "_:b4",
               "type": "resource_attribution",
               "role": {
                 "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
                 "type": "attributed_agent_role_type",
-                "http://www.w3.org/2000/01/rdf-schema#label": [
-                  {
-                    "@language": "en",
-                    "@value": "Creator"
-                  },
-                  {
-                    "@language": "cs",
-                    "@value": "Autor"
-                  }
-                ]
+                "label": {
+                  "en": "Creator",
+                  "cs": "Autor"
+                }
               },
               "attributed_agent": {
-                "id": "_:b50",
+                "id": "_:b10",
                 "type": "person",
-                "name": "Salvetr, Pavel"
+                "http://xmlns.com/foaf/0.1/name": "Salvetr, Pavel"
               }
             },
             {
-              "id": "_:b45",
+              "id": "_:b5",
               "type": "resource_attribution",
               "role": {
                 "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
                 "type": "attributed_agent_role_type",
-                "http://www.w3.org/2000/01/rdf-schema#label": [
-                  {
-                    "@language": "en",
-                    "@value": "Creator"
-                  },
-                  {
-                    "@language": "cs",
-                    "@value": "Autor"
-                  }
-                ]
+                "label": {
+                  "en": "Creator",
+                  "cs": "Autor"
+                }
               },
               "attributed_agent": {
-                "id": "_:b51",
+                "id": "_:b11",
                 "type": "person",
-                "name": "Hodek, Josef"
+                "http://xmlns.com/foaf/0.1/name": "Hodek, Josef"
               }
             },
             {
-              "id": "_:b46",
+              "id": "_:b6",
               "type": "resource_attribution",
               "role": {
                 "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
                 "type": "attributed_agent_role_type",
-                "http://www.w3.org/2000/01/rdf-schema#label": [
-                  {
-                    "@language": "en",
-                    "@value": "Creator"
-                  },
-                  {
-                    "@language": "cs",
-                    "@value": "Autor"
-                  }
-                ]
+                "label": {
+                  "en": "Creator",
+                  "cs": "Autor"
+                }
               },
               "attributed_agent": {
-                "id": "_:b52",
+                "id": "_:b12",
                 "type": "person",
-                "name": "Uhlík, Matouš"
+                "http://xmlns.com/foaf/0.1/name": "Uhlík, Matouš"
               }
             },
             {
-              "id": "_:b47",
+              "id": "_:b7",
               "type": "resource_attribution",
               "role": {
                 "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
                 "type": "attributed_agent_role_type",
-                "http://www.w3.org/2000/01/rdf-schema#label": [
-                  {
-                    "@language": "en",
-                    "@value": "Creator"
-                  },
-                  {
-                    "@language": "cs",
-                    "@value": "Autor"
-                  }
-                ]
+                "label": {
+                  "en": "Creator",
+                  "cs": "Autor"
+                }
               },
               "attributed_agent": {
-                "id": "_:b53",
+                "id": "_:b13",
                 "type": "person",
-                "name": "Novák, Pavel"
+                "http://xmlns.com/foaf/0.1/name": "Novák, Pavel"
               }
             },
             {
-              "id": "_:b48",
+              "id": "_:b8",
               "type": "resource_attribution",
               "role": {
                 "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
                 "type": "attributed_agent_role_type",
-                "http://www.w3.org/2000/01/rdf-schema#label": [
-                  {
-                    "@language": "en",
-                    "@value": "Creator"
-                  },
-                  {
-                    "@language": "cs",
-                    "@value": "Autor"
-                  }
-                ]
+                "label": {
+                  "en": "Creator",
+                  "cs": "Autor"
+                }
               },
               "attributed_agent": {
-                "id": "_:b54",
+                "id": "_:b14",
                 "type": "person",
-                "name": "Dlouhý, Jaromír"
+                "http://xmlns.com/foaf/0.1/name": "Dlouhý, Jaromír"
               }
             },
             {
-              "id": "_:b49",
+              "id": "_:b9",
               "type": "resource_attribution",
               "role": {
                 "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
                 "type": "attributed_agent_role_type",
-                "http://www.w3.org/2000/01/rdf-schema#label": [
-                  {
-                    "@language": "en",
-                    "@value": "Creator"
-                  },
-                  {
-                    "@language": "cs",
-                    "@value": "Autor"
-                  }
-                ]
+                "label": {
+                  "en": "Creator",
+                  "cs": "Autor"
+                }
               },
               "attributed_agent": {
-                "id": "_:b55",
+                "id": "_:b15",
                 "type": "person",
-                "name": "Brázda, Michal"
+                "http://xmlns.com/foaf/0.1/name": "Brázda, Michal"
               }
             }
           ],
           "https://model.ccmm.cz/vocabulary/ccmm#hasType": {
-            "id": "https://vocabs.ccmm.cz/registry/codelist/RelationType/IsReferencedBy",
+            "id": "https://w3id.org/tib/datacite/vocab/relationType/IsReferencedBy",
             "type": "http://www.w3.org/2004/02/skos/core#Concept",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://www.w3.org/2004/02/skos/core#prefLabel": [
               {
                 "@language": "en",
                 "@value": "is referenced by"
@@ -4065,7 +3998,11 @@
           "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
             "id": "https://doi.org/",
             "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-            "http://www.w3.org/2000/01/rdf-schema#label": "DOI"
+            "http://www.w3.org/2000/01/rdf-schema#label": {
+              "@language": "en",
+              "@value": "Digital Object Identifier"
+            },
+            "http://www.w3.org/2004/02/skos/core#notation": "DOI"
           },
           "https://model.ccmm.cz/vocabulary/ccmm#resourceUrl": {
             "type": "xsd:anyURI",
@@ -4073,11 +4010,11 @@
           }
         }
       ],
-      "title": "Data k rukopisu - Vliv podmínek depozice na rychlost tisku, množství in-situ vzniklého austenitu a mechanické vlastnosti oceli SAF2507 připravené metodou přímé depozice",
+      "http://purl.org/dc/terms/title": "Data k rukopisu - Vliv podmínek depozice na rychlost tisku, množství in-situ vzniklého austenitu a mechanické vlastnosti oceli SAF2507 připravené metodou přímé depozice",
       "resource_type": {
         "id": "http://purl.org/coar/resource_type/c_ddb1",
         "type": "resource_type",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
           {
             "@language": "cs",
             "@value": "datová sada"
@@ -4088,10 +4025,7 @@
           }
         ]
       },
-      "http://www.w3.org/2004/02/skos/core#notation": {
-        "type": "xsd:string",
-        "@value": "10.48700/datst.dmq82-ed856"
-      },
+      "http://www.w3.org/2004/02/skos/core#notation": "10.48700/datst.dmq82-ed856",
       "identifier": [
         {
           "id": "https://doi.org/10.48700/datst.dmq82-ed856"
@@ -4110,7 +4044,7 @@
               "format",
               "http://purl.org/dc/terms/MediaType"
             ],
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "TAR"
             }
@@ -4118,7 +4052,7 @@
           "licence": {
             "id": "https://creativecommons.org/licenses/by/4.0/",
             "type": "licence_document",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://purl.org/dc/terms/title": [
               {
                 "@language": "en",
                 "@value": "Creative Commons Attribution 4.0 International License"
@@ -4133,13 +4067,12 @@
             {
               "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
               "type": "access_rights",
-              "http://www.w3.org/2000/01/rdf-schema#label": {
-                "@language": "en",
-                "@value": "open access"
+              "label": {
+                "en": "open access"
               }
             }
           ],
-          "title": "REPO.tar",
+          "http://purl.org/dc/terms/title": "REPO.tar",
           "http://www.w3.org/2000/01/rdf-schema#label": [
             {
               "@language": "cs",
@@ -4167,7 +4100,7 @@
                   "format",
                   "http://purl.org/dc/terms/MediaType"
                 ],
-                "http://www.w3.org/2000/01/rdf-schema#label": {
+                "http://www.w3.org/2004/02/skos/core#prefLabel": {
                   "@language": "en",
                   "@value": "TAR"
                 }
@@ -4175,7 +4108,7 @@
               "licence": {
                 "id": "https://creativecommons.org/licenses/by/4.0/",
                 "type": "licence_document",
-                "http://www.w3.org/2000/01/rdf-schema#label": [
+                "http://purl.org/dc/terms/title": [
                   {
                     "@language": "en",
                     "@value": "Creative Commons Attribution 4.0 International License"
@@ -4190,13 +4123,12 @@
                 {
                   "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
                   "type": "access_rights",
-                  "http://www.w3.org/2000/01/rdf-schema#label": {
-                    "@language": "en",
-                    "@value": "open access"
+                  "label": {
+                    "en": "open access"
                   }
                 }
               ],
-              "title": "REPO.tar",
+              "http://purl.org/dc/terms/title": "REPO.tar",
               "http://www.w3.org/2000/01/rdf-schema#label": [
                 {
                   "@language": "cs",
@@ -4222,7 +4154,7 @@
                   "http://purl.org/dc/terms/MediaTypeOrExtent",
                   "media_type"
                 ],
-                "http://www.w3.org/2000/01/rdf-schema#label": {
+                "http://www.w3.org/2004/02/skos/core#prefLabel": {
                   "@language": "en",
                   "@value": "TAR"
                 }
@@ -4235,7 +4167,7 @@
               "http://purl.org/dc/terms/MediaTypeOrExtent",
               "media_type"
             ],
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "TAR"
             }
@@ -4270,525 +4202,523 @@
       ],
       "qualified_attribution": [
         {
-          "id": "_:b0",
+          "id": "_:b16",
           "type": "resource_attribution",
           "role": {
             "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
             "type": "attributed_agent_role_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-              {
-                "@language": "en",
-                "@value": "Creator"
-              },
-              {
-                "@language": "cs",
-                "@value": "Autor"
-              }
-            ]
+            "label": {
+              "en": "Creator",
+              "cs": "Autor"
+            }
           },
           "attributed_agent": {
-            "id": "_:b16",
+            "id": "_:b32",
             "type": "person",
-            "family_name": "Salvetr",
-            "given_name": "Pavel",
+            "http://www.w3.org/2006/vcard/ns#family-name": "Salvetr",
+            "http://www.w3.org/2006/vcard/ns#given-name": "Pavel",
             "identifier": [
               {
                 "id": "https://orcid.org/0000-0001-5717-267X",
                 "type": "identifier",
-                "http://www.w3.org/2004/02/skos/core#notation": {
-                  "type": "xsd:string",
-                  "@value": "0000-0001-5717-267X"
-                },
+                "http://www.w3.org/2004/02/skos/core#notation": "0000-0001-5717-267X",
                 "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                   "id": "https://orcid.org/",
                   "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                  "http://www.w3.org/2000/01/rdf-schema#label": "ORCID"
+                  "http://www.w3.org/2000/01/rdf-schema#label": {
+                    "@language": "en",
+                    "@value": "Open Research and Contributor ID"
+                  },
+                  "http://www.w3.org/2004/02/skos/core#notation": "ORCID"
                 }
               }
             ],
-            "name": "Salvetr, Pavel",
+            "http://xmlns.com/foaf/0.1/name": "Salvetr, Pavel",
             "affiliation": [
               {
-                "id": "_:b17",
+                "id": "_:b33",
                 "type": "organization",
                 "identifier": [
                   {
                     "id": "https://ror.org/00hzjtg80",
                     "type": "identifier",
-                    "http://www.w3.org/2004/02/skos/core#notation": {
-                      "type": "xsd:string",
-                      "@value": "00hzjtg80"
-                    },
+                    "http://www.w3.org/2004/02/skos/core#notation": "00hzjtg80",
                     "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                       "id": "https://ror.org/",
                       "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                      "http://www.w3.org/2000/01/rdf-schema#label": "ROR"
+                      "http://www.w3.org/2000/01/rdf-schema#label": {
+                        "@language": "en",
+                        "@value": "Research Organization Registry"
+                      },
+                      "http://www.w3.org/2004/02/skos/core#notation": "ROR"
                     }
                   },
                   {
-                    "id": "_:b18",
+                    "id": "_:b34",
                     "type": "identifier",
-                    "http://www.w3.org/2004/02/skos/core#notation": {
-                      "type": "xsd:string",
-                      "@value": "26316919"
-                    },
+                    "http://www.w3.org/2004/02/skos/core#notation": "26316919",
                     "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                       "id": "https://www.wikidata.org/entity/Q42302581",
                       "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                      "http://www.w3.org/2000/01/rdf-schema#label": {
-                        "@language": "cs",
-                        "@value": "IČO"
-                      }
+                      "http://www.w3.org/2000/01/rdf-schema#label": [
+                        {
+                          "@language": "cs",
+                          "@value": "Identifikační Číslo Osoby"
+                        },
+                        {
+                          "@language": "en",
+                          "@value": "Identification Number (IČO)"
+                        }
+                      ],
+                      "http://www.w3.org/2004/02/skos/core#notation": "IČO"
                     }
                   }
                 ],
-                "name": "COMTES FHT"
+                "http://xmlns.com/foaf/0.1/name": "COMTES FHT"
               }
             ]
           }
         },
         {
-          "id": "_:b1",
+          "id": "_:b17",
           "type": "resource_attribution",
           "role": {
             "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
             "type": "attributed_agent_role_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-              {
-                "@language": "en",
-                "@value": "Creator"
-              },
-              {
-                "@language": "cs",
-                "@value": "Autor"
-              }
-            ]
+            "label": {
+              "en": "Creator",
+              "cs": "Autor"
+            }
           },
           "attributed_agent": {
-            "id": "_:b19",
+            "id": "_:b35",
             "type": "person",
-            "family_name": "Hodek",
-            "given_name": "Josef",
+            "http://www.w3.org/2006/vcard/ns#family-name": "Hodek",
+            "http://www.w3.org/2006/vcard/ns#given-name": "Josef",
             "identifier": [
               {
                 "id": "https://orcid.org/0000-0003-4013-9819",
                 "type": "identifier",
-                "http://www.w3.org/2004/02/skos/core#notation": {
-                  "type": "xsd:string",
-                  "@value": "0000-0003-4013-9819"
-                },
+                "http://www.w3.org/2004/02/skos/core#notation": "0000-0003-4013-9819",
                 "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                   "id": "https://orcid.org/",
                   "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                  "http://www.w3.org/2000/01/rdf-schema#label": "ORCID"
+                  "http://www.w3.org/2000/01/rdf-schema#label": {
+                    "@language": "en",
+                    "@value": "Open Research and Contributor ID"
+                  },
+                  "http://www.w3.org/2004/02/skos/core#notation": "ORCID"
                 }
               }
             ],
-            "name": "Hodek, Josef",
+            "http://xmlns.com/foaf/0.1/name": "Hodek, Josef",
             "affiliation": [
               {
-                "id": "_:b20",
+                "id": "_:b36",
                 "type": "organization",
                 "identifier": [
                   {
                     "id": "https://ror.org/00hzjtg80",
                     "type": "identifier",
-                    "http://www.w3.org/2004/02/skos/core#notation": {
-                      "type": "xsd:string",
-                      "@value": "00hzjtg80"
-                    },
+                    "http://www.w3.org/2004/02/skos/core#notation": "00hzjtg80",
                     "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                       "id": "https://ror.org/",
                       "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                      "http://www.w3.org/2000/01/rdf-schema#label": "ROR"
+                      "http://www.w3.org/2000/01/rdf-schema#label": {
+                        "@language": "en",
+                        "@value": "Research Organization Registry"
+                      },
+                      "http://www.w3.org/2004/02/skos/core#notation": "ROR"
                     }
                   },
                   {
-                    "id": "_:b21",
+                    "id": "_:b37",
                     "type": "identifier",
-                    "http://www.w3.org/2004/02/skos/core#notation": {
-                      "type": "xsd:string",
-                      "@value": "26316919"
-                    },
+                    "http://www.w3.org/2004/02/skos/core#notation": "26316919",
                     "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                       "id": "https://www.wikidata.org/entity/Q42302581",
                       "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                      "http://www.w3.org/2000/01/rdf-schema#label": {
-                        "@language": "cs",
-                        "@value": "IČO"
-                      }
+                      "http://www.w3.org/2000/01/rdf-schema#label": [
+                        {
+                          "@language": "cs",
+                          "@value": "Identifikační Číslo Osoby"
+                        },
+                        {
+                          "@language": "en",
+                          "@value": "Identification Number (IČO)"
+                        }
+                      ],
+                      "http://www.w3.org/2004/02/skos/core#notation": "IČO"
                     }
                   }
                 ],
-                "name": "COMTES FHT"
+                "http://xmlns.com/foaf/0.1/name": "COMTES FHT"
               }
             ]
           }
         },
         {
-          "id": "_:b2",
+          "id": "_:b18",
           "type": "resource_attribution",
           "role": {
             "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
             "type": "attributed_agent_role_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-              {
-                "@language": "en",
-                "@value": "Creator"
-              },
-              {
-                "@language": "cs",
-                "@value": "Autor"
-              }
-            ]
+            "label": {
+              "en": "Creator",
+              "cs": "Autor"
+            }
           },
           "attributed_agent": {
-            "id": "_:b22",
+            "id": "_:b38",
             "type": "person",
-            "family_name": "Uhlík",
-            "given_name": "Matouš",
-            "name": "Uhlík, Matouš",
+            "http://www.w3.org/2006/vcard/ns#family-name": "Uhlík",
+            "http://www.w3.org/2006/vcard/ns#given-name": "Matouš",
+            "http://xmlns.com/foaf/0.1/name": "Uhlík, Matouš",
             "affiliation": [
               {
-                "id": "_:b23",
+                "id": "_:b39",
                 "type": "organization",
                 "identifier": [
                   {
                     "id": "https://ror.org/00hzjtg80",
                     "type": "identifier",
-                    "http://www.w3.org/2004/02/skos/core#notation": {
-                      "type": "xsd:string",
-                      "@value": "00hzjtg80"
-                    },
+                    "http://www.w3.org/2004/02/skos/core#notation": "00hzjtg80",
                     "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                       "id": "https://ror.org/",
                       "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                      "http://www.w3.org/2000/01/rdf-schema#label": "ROR"
+                      "http://www.w3.org/2000/01/rdf-schema#label": {
+                        "@language": "en",
+                        "@value": "Research Organization Registry"
+                      },
+                      "http://www.w3.org/2004/02/skos/core#notation": "ROR"
                     }
                   },
                   {
-                    "id": "_:b24",
+                    "id": "_:b40",
                     "type": "identifier",
-                    "http://www.w3.org/2004/02/skos/core#notation": {
-                      "type": "xsd:string",
-                      "@value": "26316919"
-                    },
+                    "http://www.w3.org/2004/02/skos/core#notation": "26316919",
                     "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                       "id": "https://www.wikidata.org/entity/Q42302581",
                       "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                      "http://www.w3.org/2000/01/rdf-schema#label": {
-                        "@language": "cs",
-                        "@value": "IČO"
-                      }
+                      "http://www.w3.org/2000/01/rdf-schema#label": [
+                        {
+                          "@language": "cs",
+                          "@value": "Identifikační Číslo Osoby"
+                        },
+                        {
+                          "@language": "en",
+                          "@value": "Identification Number (IČO)"
+                        }
+                      ],
+                      "http://www.w3.org/2004/02/skos/core#notation": "IČO"
                     }
                   }
                 ],
-                "name": "COMTES FHT"
+                "http://xmlns.com/foaf/0.1/name": "COMTES FHT"
               }
             ]
           }
         },
         {
-          "id": "_:b3",
+          "id": "_:b19",
           "type": "resource_attribution",
           "role": {
             "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
             "type": "attributed_agent_role_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-              {
-                "@language": "en",
-                "@value": "Creator"
-              },
-              {
-                "@language": "cs",
-                "@value": "Autor"
-              }
-            ]
+            "label": {
+              "en": "Creator",
+              "cs": "Autor"
+            }
           },
           "attributed_agent": {
-            "id": "_:b25",
+            "id": "_:b41",
             "type": "person",
-            "family_name": "Novák",
-            "given_name": "Pavel",
+            "http://www.w3.org/2006/vcard/ns#family-name": "Novák",
+            "http://www.w3.org/2006/vcard/ns#given-name": "Pavel",
             "identifier": [
               {
                 "id": "https://orcid.org/0000-0001-9947-2566",
                 "type": "identifier",
-                "http://www.w3.org/2004/02/skos/core#notation": {
-                  "type": "xsd:string",
-                  "@value": "0000-0001-9947-2566"
-                },
+                "http://www.w3.org/2004/02/skos/core#notation": "0000-0001-9947-2566",
                 "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                   "id": "https://orcid.org/",
                   "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                  "http://www.w3.org/2000/01/rdf-schema#label": "ORCID"
+                  "http://www.w3.org/2000/01/rdf-schema#label": {
+                    "@language": "en",
+                    "@value": "Open Research and Contributor ID"
+                  },
+                  "http://www.w3.org/2004/02/skos/core#notation": "ORCID"
                 }
               }
             ],
-            "name": "Novák, Pavel",
+            "http://xmlns.com/foaf/0.1/name": "Novák, Pavel",
             "affiliation": [
               {
-                "id": "_:b26",
+                "id": "_:b42",
                 "type": "organization",
                 "identifier": [
                   {
                     "id": "https://ror.org/05ggn0a85",
                     "type": "identifier",
-                    "http://www.w3.org/2004/02/skos/core#notation": {
-                      "type": "xsd:string",
-                      "@value": "05ggn0a85"
-                    },
+                    "http://www.w3.org/2004/02/skos/core#notation": "05ggn0a85",
                     "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                       "id": "https://ror.org/",
                       "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                      "http://www.w3.org/2000/01/rdf-schema#label": "ROR"
+                      "http://www.w3.org/2000/01/rdf-schema#label": {
+                        "@language": "en",
+                        "@value": "Research Organization Registry"
+                      },
+                      "http://www.w3.org/2004/02/skos/core#notation": "ROR"
                     }
                   },
                   {
-                    "id": "_:b27",
+                    "id": "_:b43",
                     "type": "identifier",
-                    "http://www.w3.org/2004/02/skos/core#notation": {
-                      "type": "xsd:string",
-                      "@value": "60461373"
-                    },
+                    "http://www.w3.org/2004/02/skos/core#notation": "60461373",
                     "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                       "id": "https://www.wikidata.org/entity/Q42302581",
                       "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                      "http://www.w3.org/2000/01/rdf-schema#label": {
-                        "@language": "cs",
-                        "@value": "IČO"
-                      }
+                      "http://www.w3.org/2000/01/rdf-schema#label": [
+                        {
+                          "@language": "cs",
+                          "@value": "Identifikační Číslo Osoby"
+                        },
+                        {
+                          "@language": "en",
+                          "@value": "Identification Number (IČO)"
+                        }
+                      ],
+                      "http://www.w3.org/2004/02/skos/core#notation": "IČO"
                     }
                   }
                 ],
-                "name": "Vysoká škola chemicko-technologická v Praze"
+                "http://xmlns.com/foaf/0.1/name": "Vysoká škola chemicko-technologická v Praze"
               }
             ]
           }
         },
         {
-          "id": "_:b4",
+          "id": "_:b20",
           "type": "resource_attribution",
           "role": {
             "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
             "type": "attributed_agent_role_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-              {
-                "@language": "en",
-                "@value": "Creator"
-              },
-              {
-                "@language": "cs",
-                "@value": "Autor"
-              }
-            ]
+            "label": {
+              "en": "Creator",
+              "cs": "Autor"
+            }
           },
           "attributed_agent": {
-            "id": "_:b28",
+            "id": "_:b44",
             "type": "person",
-            "family_name": "Dlouhý",
-            "given_name": "Jaromír",
+            "http://www.w3.org/2006/vcard/ns#family-name": "Dlouhý",
+            "http://www.w3.org/2006/vcard/ns#given-name": "Jaromír",
             "identifier": [
               {
                 "id": "https://orcid.org/0000-0002-1241-6121",
                 "type": "identifier",
-                "http://www.w3.org/2004/02/skos/core#notation": {
-                  "type": "xsd:string",
-                  "@value": "0000-0002-1241-6121"
-                },
+                "http://www.w3.org/2004/02/skos/core#notation": "0000-0002-1241-6121",
                 "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                   "id": "https://orcid.org/",
                   "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                  "http://www.w3.org/2000/01/rdf-schema#label": "ORCID"
+                  "http://www.w3.org/2000/01/rdf-schema#label": {
+                    "@language": "en",
+                    "@value": "Open Research and Contributor ID"
+                  },
+                  "http://www.w3.org/2004/02/skos/core#notation": "ORCID"
                 }
               }
             ],
-            "name": "Dlouhý, Jaromír",
+            "http://xmlns.com/foaf/0.1/name": "Dlouhý, Jaromír",
             "affiliation": [
               {
-                "id": "_:b29",
+                "id": "_:b45",
                 "type": "organization",
                 "identifier": [
                   {
                     "id": "https://ror.org/00hzjtg80",
                     "type": "identifier",
-                    "http://www.w3.org/2004/02/skos/core#notation": {
-                      "type": "xsd:string",
-                      "@value": "00hzjtg80"
-                    },
+                    "http://www.w3.org/2004/02/skos/core#notation": "00hzjtg80",
                     "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                       "id": "https://ror.org/",
                       "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                      "http://www.w3.org/2000/01/rdf-schema#label": "ROR"
+                      "http://www.w3.org/2000/01/rdf-schema#label": {
+                        "@language": "en",
+                        "@value": "Research Organization Registry"
+                      },
+                      "http://www.w3.org/2004/02/skos/core#notation": "ROR"
                     }
                   },
                   {
-                    "id": "_:b30",
+                    "id": "_:b46",
                     "type": "identifier",
-                    "http://www.w3.org/2004/02/skos/core#notation": {
-                      "type": "xsd:string",
-                      "@value": "26316919"
-                    },
+                    "http://www.w3.org/2004/02/skos/core#notation": "26316919",
                     "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                       "id": "https://www.wikidata.org/entity/Q42302581",
                       "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                      "http://www.w3.org/2000/01/rdf-schema#label": {
-                        "@language": "cs",
-                        "@value": "IČO"
-                      }
+                      "http://www.w3.org/2000/01/rdf-schema#label": [
+                        {
+                          "@language": "cs",
+                          "@value": "Identifikační Číslo Osoby"
+                        },
+                        {
+                          "@language": "en",
+                          "@value": "Identification Number (IČO)"
+                        }
+                      ],
+                      "http://www.w3.org/2004/02/skos/core#notation": "IČO"
                     }
                   }
                 ],
-                "name": "COMTES FHT"
+                "http://xmlns.com/foaf/0.1/name": "COMTES FHT"
               }
             ]
           }
         },
         {
-          "id": "_:b5",
+          "id": "_:b21",
           "type": "resource_attribution",
           "role": {
             "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
             "type": "attributed_agent_role_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-              {
-                "@language": "en",
-                "@value": "Creator"
-              },
-              {
-                "@language": "cs",
-                "@value": "Autor"
-              }
-            ]
+            "label": {
+              "en": "Creator",
+              "cs": "Autor"
+            }
           },
           "attributed_agent": {
-            "id": "_:b31",
+            "id": "_:b47",
             "type": "person",
-            "family_name": "Brázda",
-            "given_name": "Michal",
+            "http://www.w3.org/2006/vcard/ns#family-name": "Brázda",
+            "http://www.w3.org/2006/vcard/ns#given-name": "Michal",
             "identifier": [
               {
                 "id": "https://orcid.org/0000-0002-4982-9114",
                 "type": "identifier",
-                "http://www.w3.org/2004/02/skos/core#notation": {
-                  "type": "xsd:string",
-                  "@value": "0000-0002-4982-9114"
-                },
+                "http://www.w3.org/2004/02/skos/core#notation": "0000-0002-4982-9114",
                 "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                   "id": "https://orcid.org/",
                   "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                  "http://www.w3.org/2000/01/rdf-schema#label": "ORCID"
+                  "http://www.w3.org/2000/01/rdf-schema#label": {
+                    "@language": "en",
+                    "@value": "Open Research and Contributor ID"
+                  },
+                  "http://www.w3.org/2004/02/skos/core#notation": "ORCID"
                 }
               }
             ],
-            "name": "Brázda, Michal",
+            "http://xmlns.com/foaf/0.1/name": "Brázda, Michal",
             "affiliation": [
               {
-                "id": "_:b32",
+                "id": "_:b48",
                 "type": "organization",
                 "identifier": [
                   {
                     "id": "https://ror.org/00hzjtg80",
                     "type": "identifier",
-                    "http://www.w3.org/2004/02/skos/core#notation": {
-                      "type": "xsd:string",
-                      "@value": "00hzjtg80"
-                    },
+                    "http://www.w3.org/2004/02/skos/core#notation": "00hzjtg80",
                     "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                       "id": "https://ror.org/",
                       "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                      "http://www.w3.org/2000/01/rdf-schema#label": "ROR"
+                      "http://www.w3.org/2000/01/rdf-schema#label": {
+                        "@language": "en",
+                        "@value": "Research Organization Registry"
+                      },
+                      "http://www.w3.org/2004/02/skos/core#notation": "ROR"
                     }
                   },
                   {
-                    "id": "_:b33",
+                    "id": "_:b49",
                     "type": "identifier",
-                    "http://www.w3.org/2004/02/skos/core#notation": {
-                      "type": "xsd:string",
-                      "@value": "26316919"
-                    },
+                    "http://www.w3.org/2004/02/skos/core#notation": "26316919",
                     "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                       "id": "https://www.wikidata.org/entity/Q42302581",
                       "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                      "http://www.w3.org/2000/01/rdf-schema#label": {
-                        "@language": "cs",
-                        "@value": "IČO"
-                      }
+                      "http://www.w3.org/2000/01/rdf-schema#label": [
+                        {
+                          "@language": "cs",
+                          "@value": "Identifikační Číslo Osoby"
+                        },
+                        {
+                          "@language": "en",
+                          "@value": "Identification Number (IČO)"
+                        }
+                      ],
+                      "http://www.w3.org/2004/02/skos/core#notation": "IČO"
                     }
                   }
                 ],
-                "name": "COMTES FHT"
+                "http://xmlns.com/foaf/0.1/name": "COMTES FHT"
               }
             ]
           }
         },
         {
-          "id": "_:b6",
+          "id": "_:b22",
           "type": "resource_attribution",
           "role": {
             "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Publisher",
             "type": "attributed_agent_role_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-              {
-                "@language": "cs",
-                "@value": "Vydavatel"
-              },
-              {
-                "@language": "en",
-                "@value": "Publisher"
-              }
-            ]
+            "label": {
+              "cs": "Vydavatel",
+              "en": "Publisher"
+            }
           },
           "attributed_agent": {
-            "id": "_:b34",
+            "id": "_:b50",
             "type": "organization",
             "identifier": [
               {
                 "id": "https://ror.org/00hzjtg80",
                 "type": "identifier",
-                "http://www.w3.org/2004/02/skos/core#notation": {
-                  "type": "xsd:string",
-                  "@value": "00hzjtg80"
-                },
+                "http://www.w3.org/2004/02/skos/core#notation": "00hzjtg80",
                 "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                   "id": "https://ror.org/",
                   "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                  "http://www.w3.org/2000/01/rdf-schema#label": "ROR"
+                  "http://www.w3.org/2000/01/rdf-schema#label": {
+                    "@language": "en",
+                    "@value": "Research Organization Registry"
+                  },
+                  "http://www.w3.org/2004/02/skos/core#notation": "ROR"
                 }
               },
               {
-                "id": "_:b35",
+                "id": "_:b51",
                 "type": "identifier",
-                "http://www.w3.org/2004/02/skos/core#notation": {
-                  "type": "xsd:string",
-                  "@value": "26316919"
-                },
+                "http://www.w3.org/2004/02/skos/core#notation": "26316919",
                 "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                   "id": "https://www.wikidata.org/entity/Q42302581",
                   "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                  "http://www.w3.org/2000/01/rdf-schema#label": {
-                    "@language": "cs",
-                    "@value": "IČO"
-                  }
+                  "http://www.w3.org/2000/01/rdf-schema#label": [
+                    {
+                      "@language": "cs",
+                      "@value": "Identifikační Číslo Osoby"
+                    },
+                    {
+                      "@language": "en",
+                      "@value": "Identification Number (IČO)"
+                    }
+                  ],
+                  "http://www.w3.org/2004/02/skos/core#notation": "IČO"
                 }
               }
             ],
-            "name": "COMTES FHT"
+            "http://xmlns.com/foaf/0.1/name": "COMTES FHT"
           }
         }
       ],
       "alternate_title": [
         {
-          "id": "_:b7",
+          "id": "_:b23",
           "type": "alternate_title",
           "http://purl.org/dc/terms/alternative": {
             "@language": "en",
             "@value": "Data to manuscript Influence of Deposition Parameters on the Building rate, In-Situ Formation of Austenite and Tensile Properties of SAF 2507 SDSS Fabricated by Directed Energy Deposition"
           },
           "https://model.ccmm.cz/vocabulary/ccmm#hasType": {
-            "id": "https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/TranslatedTitle",
+            "id": "https://w3id.org/tib/datacite/vocab/titleType/TranslatedTitle",
             "type": "http://www.w3.org/2004/02/skos/core#Concept",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://www.w3.org/2004/02/skos/core#prefLabel": [
               {
                 "@language": "cs",
                 "@value": "Přeložený název"
@@ -4804,17 +4734,16 @@
       "primary_language": {
         "id": "http://publications.europa.eu/resource/authority/language/ENG",
         "type": "language_system",
-        "http://www.w3.org/2000/01/rdf-schema#label": {
-          "@language": "en",
-          "@value": "English"
+        "label": {
+          "en": "English"
         }
       },
       "time_reference": [
         {
-          "id": "_:b8",
+          "id": "_:b24",
           "type": "time_reference",
           "http://www.w3.org/2006/time#hasTime": {
-            "id": "_:b36",
+            "id": "_:b52",
             "type": "http://www.w3.org/2006/time#Instant",
             "http://www.w3.org/2006/time#inXSDDate": {
               "type": "xsd:date",
@@ -4822,9 +4751,9 @@
             }
           },
           "https://model.ccmm.cz/vocabulary/ccmm#hasType": {
-            "id": "https://vocabs.ccmm.cz/registry/codelist/TimeReference/Issued",
+            "id": "https://w3id.org/tib/datacite/vocab/dateType/Issued",
             "type": "http://www.w3.org/2004/02/skos/core#Concept",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://www.w3.org/2004/02/skos/core#prefLabel": [
               {
                 "@language": "en",
                 "@value": "Date Issued"
@@ -4837,13 +4766,13 @@
           }
         },
         {
-          "id": "_:b9",
+          "id": "_:b25",
           "type": "time_reference",
           "http://www.w3.org/2006/time#hasTime": {
-            "id": "_:b37",
+            "id": "_:b53",
             "type": "http://www.w3.org/2006/time#Interval",
             "http://www.w3.org/2006/time#hasBeginning": {
-              "id": "_:b38",
+              "id": "_:b54",
               "type": "http://www.w3.org/2006/time#Instant",
               "http://www.w3.org/2006/time#inXSDDate": {
                 "type": "xsd:date",
@@ -4851,7 +4780,7 @@
               }
             },
             "http://www.w3.org/2006/time#hasEnd": {
-              "id": "_:b39",
+              "id": "_:b55",
               "type": "http://www.w3.org/2006/time#Instant",
               "http://www.w3.org/2006/time#inXSDDate": {
                 "type": "xsd:date",
@@ -4860,9 +4789,9 @@
             }
           },
           "https://model.ccmm.cz/vocabulary/ccmm#hasType": {
-            "id": "https://vocabs.ccmm.cz/registry/codelist/TimeReference/Created",
+            "id": "https://w3id.org/tib/datacite/vocab/dateType/Created",
             "type": "http://www.w3.org/2004/02/skos/core#Concept",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://www.w3.org/2004/02/skos/core#prefLabel": [
               {
                 "@language": "en",
                 "@value": "Date Created"
@@ -4875,10 +4804,10 @@
           }
         },
         {
-          "id": "_:b10",
+          "id": "_:b26",
           "type": "time_reference",
           "http://www.w3.org/2006/time#hasTime": {
-            "id": "_:b40",
+            "id": "_:b56",
             "type": "http://www.w3.org/2006/time#Instant",
             "http://www.w3.org/2006/time#inXSDDate": {
               "type": "xsd:date",
@@ -4886,9 +4815,9 @@
             }
           },
           "https://model.ccmm.cz/vocabulary/ccmm#hasType": {
-            "id": "https://vocabs.ccmm.cz/registry/codelist/TimeReference/Available",
+            "id": "https://w3id.org/tib/datacite/vocab/dateType/Available",
             "type": "http://www.w3.org/2004/02/skos/core#Concept",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://www.w3.org/2004/02/skos/core#prefLabel": [
               {
                 "@language": "en",
                 "@value": "Date Available"
@@ -4903,14 +4832,18 @@
       ],
       "validation_result": [
         {
-          "id": "_:b11",
+          "id": "_:b27",
           "type": "validation_result"
         }
       ],
       "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
         "id": "https://doi.org/",
         "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-        "http://www.w3.org/2000/01/rdf-schema#label": "DOI"
+        "http://www.w3.org/2000/01/rdf-schema#label": {
+          "@language": "en",
+          "@value": "Digital Object Identifier"
+        },
+        "http://www.w3.org/2004/02/skos/core#notation": "DOI"
       },
       "metadata_identification": [
         {
@@ -4920,7 +4853,10 @@
             {
               "id": "https://model.ccmm.cz/research-data/2.0.0",
               "type": "application_profile",
-              "http://www.w3.org/2000/01/rdf-schema#label": "CCMM RD 2.0.0"
+              "http://www.w3.org/2000/01/rdf-schema#label": {
+                "@language": "en",
+                "@value": "Czech Core Metadata Model for Research Data 2.0.0"
+              }
             },
             {
               "id": "https://data.narodni-repozitar.cz/schemas/nr_datasets/nr-datasets-v1.0.0.json",
@@ -4936,69 +4872,58 @@
             {
               "id": "http://publications.europa.eu/resource/authority/language/ENG",
               "type": "language_system",
-              "http://www.w3.org/2000/01/rdf-schema#label": {
-                "@language": "en",
-                "@value": "English"
+              "label": {
+                "en": "English"
               }
             }
           ],
           "date_updated": "2025-10-14",
           "qualified_attribution": [
             {
-              "id": "_:b56",
+              "id": "_:b2",
               "type": "resource_attribution",
               "role": {
                 "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/DataManager",
                 "type": "attributed_agent_role_type",
-                "http://www.w3.org/2000/01/rdf-schema#label": [
-                  {
-                    "@language": "en",
-                    "@value": "Data Manager"
-                  },
-                  {
-                    "@language": "cs",
-                    "@value": "Manažer dat"
-                  }
-                ]
+                "label": {
+                  "en": "Data Manager",
+                  "cs": "Správce dat"
+                }
               },
               "attributed_agent": {
-                "id": "_:b57",
+                "id": "_:b3",
                 "type": "person",
-                "family_name": ":unkn",
-                "given_name": ":unkn",
-                "name": ":unkn"
+                "http://xmlns.com/foaf/0.1/name": ":unkn"
               }
             }
           ],
           "original_repository": {
             "id": "https://datarepo.eosc.cz",
             "type": "repository",
+            "http://purl.org/dc/terms/description": {
+              "@language": "en",
+              "@value": "The Data Catch-all Repository is a general-purpose repository for research data for which no more suitable disciplinary, institutional, or community repository is available."
+            },
             "http://purl.org/dc/terms/title": {
-              "@language": "cs",
+              "@language": "en",
               "@value": "Catch-all"
             },
             "qualified_attribution": [
               {
-                "id": "_:b42",
+                "id": "_:b0",
                 "type": "resource_attribution",
                 "role": {
                   "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Publisher",
                   "type": "attributed_agent_role_type",
-                  "http://www.w3.org/2000/01/rdf-schema#label": [
-                    {
-                      "@language": "cs",
-                      "@value": "Vydavatel"
-                    },
-                    {
-                      "@language": "en",
-                      "@value": "Publisher"
-                    }
-                  ]
+                  "label": {
+                    "cs": "Vydavatel",
+                    "en": "Publisher"
+                  }
                 },
                 "attributed_agent": {
-                  "id": "_:b43",
+                  "id": "_:b1",
                   "type": "organization",
-                  "name": "COMTES FHT"
+                  "http://xmlns.com/foaf/0.1/name": "COMTES FHT"
                 }
               }
             ]
@@ -5007,16 +4932,16 @@
       ],
       "description": [
         {
-          "id": "_:b12",
+          "id": "_:b28",
           "type": "description",
           "http://purl.org/dc/terms/description": {
             "@language": "en",
             "@value": "Industry applications of duplex stainless steels require a two-phase microstructure with a nearly balanced austenite-ferrite content to achieve good mechanical properties and good corrosion resistance. The most widespread additive manufacturing method such as laser powder bed fusion provides nearly fully ferritic microstructures due to the very high cooling rate, and the post-processing heat treatment must be performed. In contrast, other additive manufacturing methods, such as directed deposition methods, reach lower cooling rates and enable to obtain an equal ferrite–austenite ratio directly in the microstructure of the as-built state. In this work, the super duplex stainless steel SAF 2507 was deposited by directed energy deposition. The process parameters, namely, the laser power, laser beam spot, and powder feed rate, were varied to investigate the impact of the energy area density on the microstructure and tensile properties. A decrease in the energy area density caused an increase in the austenite content of 48 vol% and a numerical simulation of the sample temperature distribution inside the block during deposition, explaining the relationship between the amount of in situ formed austenite and the deposition parameters, was provided. Simultaneously, the deposition rate increased by more than five times. In contrast, the samples deposited at a higher building rate are characterized by greater porosity and lower elongation values in the vertical direction. The effect of the deposition parameters on the yield strength is low."
           },
           "https://w3id.org/tib/datacite/property/descriptionType": {
-            "id": "https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Abstract",
+            "id": "https://w3id.org/tib/datacite/property/descriptionType/Abstract",
             "type": "http://www.w3.org/2004/02/skos/core#Concept",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://www.w3.org/2004/02/skos/core#prefLabel": [
               {
                 "@language": "en",
                 "@value": "Abstract"
@@ -5029,16 +4954,16 @@
           }
         },
         {
-          "id": "_:b13",
+          "id": "_:b29",
           "type": "description",
           "http://purl.org/dc/terms/description": {
             "@language": "en",
             "@value": "The data set is related to the investigation of the influence of deposition parameters on the microstructure, austenite formation, and tensile properties of SAF 2507 super duplex stainless steel fabricated using directed energy deposition (DED). The experiments were carried out at COMTES FHT (Czech Republic) using an INSSTEK MX-600 system equipped with a 2 kW Yttrium fiber laser. SAF 2507 powder (particle size 45–150 μm) was deposited under three different parameter sets, varying laser power, beam diameter, layer thickness, hatch distance, and powder feed rate, while maintaining constant scan speed. A zig-zag deposition strategy was applied under a protective argon atmosphere (5.0, 99.999%). For each parameter set, 20×20×20 mm cubes were built and used for analysis. Microstructure and phase composition were characterized using optical microscopy, scanning electron microscopy, EBSD analysis, X-ray diffraction. Tensile properties were evaluated using miniature tensile tests. Thermal simulations of the deposition process were carried out using Simufact Welding 2024.1 with the Advanced Thermal Cycle (ATC) method."
           },
           "https://w3id.org/tib/datacite/property/descriptionType": {
-            "id": "https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Methods",
+            "id": "https://w3id.org/tib/datacite/property/descriptionType/Methods",
             "type": "http://www.w3.org/2004/02/skos/core#Concept",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://www.w3.org/2004/02/skos/core#prefLabel": [
               {
                 "@language": "en",
                 "@value": "Methods"
@@ -5051,16 +4976,16 @@
           }
         },
         {
-          "id": "_:b14",
+          "id": "_:b30",
           "type": "description",
           "http://purl.org/dc/terms/description": {
             "@language": "en",
             "@value": "The sets of experimental data were recorded on several instruments within COMTES FHT. In cases where possible (XRD, MTT, EBSD), the data are in xlsx format enabling any replotting."
           },
           "https://w3id.org/tib/datacite/property/descriptionType": {
-            "id": "https://vocabs.ccmm.cz/registry/codelist/DescriptionType/TechnicalInfo",
+            "id": "https://w3id.org/tib/datacite/property/descriptionType/TechnicalInfo",
             "type": "http://www.w3.org/2004/02/skos/core#Concept",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://www.w3.org/2004/02/skos/core#prefLabel": [
               {
                 "@language": "en",
                 "@value": "Technical Info"
@@ -5075,22 +5000,16 @@
       ],
       "funding_reference": [
         {
-          "id": "_:b15",
+          "id": "_:b31",
           "type": "funding_reference",
           "https://model.ccmm.cz/vocabulary/ccmm#fundingProgram": {
             "type": "xsd:anyURI",
             "@value": "Operační program Jan Amos Komenský"
           },
-          "https://w3id.org/tib/datacite/property/awardNumber": {
-            "type": "xsd:string",
-            "@value": "EH23_021/0008433"
-          },
-          "https://w3id.org/tib/datacite/property/awardTitle": {
-            "type": "xsd:string",
-            "@value": "Development of special wire semiproducts for welding and 3D printing"
-          },
+          "https://w3id.org/tib/datacite/property/awardNumber": "EH23_021/0008433",
+          "https://w3id.org/tib/datacite/property/awardTitle": "Development of special wire semiproducts for welding and 3D printing",
           "https://w3id.org/tib/datacite/property/funderIdentifier": {
-            "id": "_:b41",
+            "id": "_:b57",
             "type": "http://www.w3.org/ns/org#Organization",
             "http://www.w3.org/2006/vcard/ns#organization-name": {
               "@language": "en",
@@ -5100,28 +5019,33 @@
               {
                 "id": "https://ror.org/037n8p820",
                 "type": "identifier",
-                "value": "037n8p820",
+                "http://www.w3.org/2004/02/skos/core#notation": "037n8p820",
                 "scheme": {
                   "id": "https://ror.org/",
                   "type": "identifier_scheme",
-                  "http://www.w3.org/2000/01/rdf-schema#label": "ROR"
+                  "http://www.w3.org/2000/01/rdf-schema#label": {
+                    "@language": "en",
+                    "@value": "Research Organization Registry"
+                  },
+                  "http://www.w3.org/2004/02/skos/core#notation": "ROR"
                 }
               },
               {
                 "id": "http://dx.doi.org/10.13039/501100001823",
                 "type": "identifier",
-                "value": "10.13039/501100001823",
+                "http://www.w3.org/2004/02/skos/core#notation": "10.13039/501100001823",
                 "scheme": {
                   "id": "https://doi.org/",
                   "type": "identifier_scheme",
-                  "http://www.w3.org/2000/01/rdf-schema#label": "DOI"
+                  "http://www.w3.org/2000/01/rdf-schema#label": {
+                    "@language": "en",
+                    "@value": "Digital Object Identifier"
+                  },
+                  "http://www.w3.org/2004/02/skos/core#notation": "DOI"
                 }
               }
             ],
-            "http://xmlns.com/foaf/0.1/name": {
-              "type": "xsd:string",
-              "@value": "Ministerstvo školství, mládeže a tělovýchovy"
-            }
+            "http://xmlns.com/foaf/0.1/name": "Ministerstvo školství, mládeže a tělovýchovy"
           }
         }
       ],
@@ -5154,10 +5078,7 @@
               }
             ]
           },
-          "https://w3id.org/tib/datacite/property/classificationCode": {
-            "type": "xsd:string",
-            "@value": "20501"
-          }
+          "https://w3id.org/tib/datacite/property/classificationCode": "20501"
         }
       ]
     }
@@ -5175,7 +5096,7 @@
           "format",
           "http://purl.org/dc/terms/MediaType"
         ],
-        "http://www.w3.org/2000/01/rdf-schema#label": {
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
           "@language": "en",
           "@value": "TAR"
         }
@@ -5183,7 +5104,7 @@
       "licence": {
         "id": "https://creativecommons.org/licenses/by/4.0/",
         "type": "licence_document",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
+        "http://purl.org/dc/terms/title": [
           {
             "@language": "en",
             "@value": "Creative Commons Attribution 4.0 International License"
@@ -5198,13 +5119,12 @@
         {
           "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
           "type": "access_rights",
-          "http://www.w3.org/2000/01/rdf-schema#label": {
-            "@language": "en",
-            "@value": "open access"
+          "label": {
+            "en": "open access"
           }
         }
       ],
-      "title": "REPO.tar",
+      "http://purl.org/dc/terms/title": "REPO.tar",
       "http://www.w3.org/2000/01/rdf-schema#label": [
         {
           "@language": "cs",
@@ -5232,7 +5152,7 @@
               "format",
               "http://purl.org/dc/terms/MediaType"
             ],
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "TAR"
             }
@@ -5240,7 +5160,7 @@
           "licence": {
             "id": "https://creativecommons.org/licenses/by/4.0/",
             "type": "licence_document",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://purl.org/dc/terms/title": [
               {
                 "@language": "en",
                 "@value": "Creative Commons Attribution 4.0 International License"
@@ -5255,13 +5175,12 @@
             {
               "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
               "type": "access_rights",
-              "http://www.w3.org/2000/01/rdf-schema#label": {
-                "@language": "en",
-                "@value": "open access"
+              "label": {
+                "en": "open access"
               }
             }
           ],
-          "title": "REPO.tar",
+          "http://purl.org/dc/terms/title": "REPO.tar",
           "http://www.w3.org/2000/01/rdf-schema#label": [
             {
               "@language": "cs",
@@ -5287,7 +5206,7 @@
               "http://purl.org/dc/terms/MediaTypeOrExtent",
               "media_type"
             ],
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "TAR"
             }
@@ -5300,7 +5219,7 @@
           "http://purl.org/dc/terms/MediaTypeOrExtent",
           "media_type"
         ],
-        "http://www.w3.org/2000/01/rdf-schema#label": {
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
           "@language": "en",
           "@value": "TAR"
         }
@@ -5335,525 +5254,523 @@
   ],
   "qualified_attribution": [
     {
-      "id": "_:b0",
+      "id": "_:b16",
       "type": "resource_attribution",
       "role": {
         "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
         "type": "attributed_agent_role_type",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-          {
-            "@language": "en",
-            "@value": "Creator"
-          },
-          {
-            "@language": "cs",
-            "@value": "Autor"
-          }
-        ]
+        "label": {
+          "en": "Creator",
+          "cs": "Autor"
+        }
       },
       "attributed_agent": {
-        "id": "_:b16",
+        "id": "_:b32",
         "type": "person",
-        "family_name": "Salvetr",
-        "given_name": "Pavel",
+        "http://www.w3.org/2006/vcard/ns#family-name": "Salvetr",
+        "http://www.w3.org/2006/vcard/ns#given-name": "Pavel",
         "identifier": [
           {
             "id": "https://orcid.org/0000-0001-5717-267X",
             "type": "identifier",
-            "http://www.w3.org/2004/02/skos/core#notation": {
-              "type": "xsd:string",
-              "@value": "0000-0001-5717-267X"
-            },
+            "http://www.w3.org/2004/02/skos/core#notation": "0000-0001-5717-267X",
             "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
               "id": "https://orcid.org/",
               "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-              "http://www.w3.org/2000/01/rdf-schema#label": "ORCID"
+              "http://www.w3.org/2000/01/rdf-schema#label": {
+                "@language": "en",
+                "@value": "Open Research and Contributor ID"
+              },
+              "http://www.w3.org/2004/02/skos/core#notation": "ORCID"
             }
           }
         ],
-        "name": "Salvetr, Pavel",
+        "http://xmlns.com/foaf/0.1/name": "Salvetr, Pavel",
         "affiliation": [
           {
-            "id": "_:b17",
+            "id": "_:b33",
             "type": "organization",
             "identifier": [
               {
                 "id": "https://ror.org/00hzjtg80",
                 "type": "identifier",
-                "http://www.w3.org/2004/02/skos/core#notation": {
-                  "type": "xsd:string",
-                  "@value": "00hzjtg80"
-                },
+                "http://www.w3.org/2004/02/skos/core#notation": "00hzjtg80",
                 "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                   "id": "https://ror.org/",
                   "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                  "http://www.w3.org/2000/01/rdf-schema#label": "ROR"
+                  "http://www.w3.org/2000/01/rdf-schema#label": {
+                    "@language": "en",
+                    "@value": "Research Organization Registry"
+                  },
+                  "http://www.w3.org/2004/02/skos/core#notation": "ROR"
                 }
               },
               {
-                "id": "_:b18",
+                "id": "_:b34",
                 "type": "identifier",
-                "http://www.w3.org/2004/02/skos/core#notation": {
-                  "type": "xsd:string",
-                  "@value": "26316919"
-                },
+                "http://www.w3.org/2004/02/skos/core#notation": "26316919",
                 "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                   "id": "https://www.wikidata.org/entity/Q42302581",
                   "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                  "http://www.w3.org/2000/01/rdf-schema#label": {
-                    "@language": "cs",
-                    "@value": "IČO"
-                  }
+                  "http://www.w3.org/2000/01/rdf-schema#label": [
+                    {
+                      "@language": "cs",
+                      "@value": "Identifikační Číslo Osoby"
+                    },
+                    {
+                      "@language": "en",
+                      "@value": "Identification Number (IČO)"
+                    }
+                  ],
+                  "http://www.w3.org/2004/02/skos/core#notation": "IČO"
                 }
               }
             ],
-            "name": "COMTES FHT"
+            "http://xmlns.com/foaf/0.1/name": "COMTES FHT"
           }
         ]
       }
     },
     {
-      "id": "_:b1",
+      "id": "_:b17",
       "type": "resource_attribution",
       "role": {
         "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
         "type": "attributed_agent_role_type",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-          {
-            "@language": "en",
-            "@value": "Creator"
-          },
-          {
-            "@language": "cs",
-            "@value": "Autor"
-          }
-        ]
+        "label": {
+          "en": "Creator",
+          "cs": "Autor"
+        }
       },
       "attributed_agent": {
-        "id": "_:b19",
+        "id": "_:b35",
         "type": "person",
-        "family_name": "Hodek",
-        "given_name": "Josef",
+        "http://www.w3.org/2006/vcard/ns#family-name": "Hodek",
+        "http://www.w3.org/2006/vcard/ns#given-name": "Josef",
         "identifier": [
           {
             "id": "https://orcid.org/0000-0003-4013-9819",
             "type": "identifier",
-            "http://www.w3.org/2004/02/skos/core#notation": {
-              "type": "xsd:string",
-              "@value": "0000-0003-4013-9819"
-            },
+            "http://www.w3.org/2004/02/skos/core#notation": "0000-0003-4013-9819",
             "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
               "id": "https://orcid.org/",
               "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-              "http://www.w3.org/2000/01/rdf-schema#label": "ORCID"
+              "http://www.w3.org/2000/01/rdf-schema#label": {
+                "@language": "en",
+                "@value": "Open Research and Contributor ID"
+              },
+              "http://www.w3.org/2004/02/skos/core#notation": "ORCID"
             }
           }
         ],
-        "name": "Hodek, Josef",
+        "http://xmlns.com/foaf/0.1/name": "Hodek, Josef",
         "affiliation": [
           {
-            "id": "_:b20",
+            "id": "_:b36",
             "type": "organization",
             "identifier": [
               {
                 "id": "https://ror.org/00hzjtg80",
                 "type": "identifier",
-                "http://www.w3.org/2004/02/skos/core#notation": {
-                  "type": "xsd:string",
-                  "@value": "00hzjtg80"
-                },
+                "http://www.w3.org/2004/02/skos/core#notation": "00hzjtg80",
                 "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                   "id": "https://ror.org/",
                   "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                  "http://www.w3.org/2000/01/rdf-schema#label": "ROR"
+                  "http://www.w3.org/2000/01/rdf-schema#label": {
+                    "@language": "en",
+                    "@value": "Research Organization Registry"
+                  },
+                  "http://www.w3.org/2004/02/skos/core#notation": "ROR"
                 }
               },
               {
-                "id": "_:b21",
+                "id": "_:b37",
                 "type": "identifier",
-                "http://www.w3.org/2004/02/skos/core#notation": {
-                  "type": "xsd:string",
-                  "@value": "26316919"
-                },
+                "http://www.w3.org/2004/02/skos/core#notation": "26316919",
                 "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                   "id": "https://www.wikidata.org/entity/Q42302581",
                   "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                  "http://www.w3.org/2000/01/rdf-schema#label": {
-                    "@language": "cs",
-                    "@value": "IČO"
-                  }
+                  "http://www.w3.org/2000/01/rdf-schema#label": [
+                    {
+                      "@language": "cs",
+                      "@value": "Identifikační Číslo Osoby"
+                    },
+                    {
+                      "@language": "en",
+                      "@value": "Identification Number (IČO)"
+                    }
+                  ],
+                  "http://www.w3.org/2004/02/skos/core#notation": "IČO"
                 }
               }
             ],
-            "name": "COMTES FHT"
+            "http://xmlns.com/foaf/0.1/name": "COMTES FHT"
           }
         ]
       }
     },
     {
-      "id": "_:b2",
+      "id": "_:b18",
       "type": "resource_attribution",
       "role": {
         "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
         "type": "attributed_agent_role_type",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-          {
-            "@language": "en",
-            "@value": "Creator"
-          },
-          {
-            "@language": "cs",
-            "@value": "Autor"
-          }
-        ]
+        "label": {
+          "en": "Creator",
+          "cs": "Autor"
+        }
       },
       "attributed_agent": {
-        "id": "_:b22",
+        "id": "_:b38",
         "type": "person",
-        "family_name": "Uhlík",
-        "given_name": "Matouš",
-        "name": "Uhlík, Matouš",
+        "http://www.w3.org/2006/vcard/ns#family-name": "Uhlík",
+        "http://www.w3.org/2006/vcard/ns#given-name": "Matouš",
+        "http://xmlns.com/foaf/0.1/name": "Uhlík, Matouš",
         "affiliation": [
           {
-            "id": "_:b23",
+            "id": "_:b39",
             "type": "organization",
             "identifier": [
               {
                 "id": "https://ror.org/00hzjtg80",
                 "type": "identifier",
-                "http://www.w3.org/2004/02/skos/core#notation": {
-                  "type": "xsd:string",
-                  "@value": "00hzjtg80"
-                },
+                "http://www.w3.org/2004/02/skos/core#notation": "00hzjtg80",
                 "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                   "id": "https://ror.org/",
                   "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                  "http://www.w3.org/2000/01/rdf-schema#label": "ROR"
+                  "http://www.w3.org/2000/01/rdf-schema#label": {
+                    "@language": "en",
+                    "@value": "Research Organization Registry"
+                  },
+                  "http://www.w3.org/2004/02/skos/core#notation": "ROR"
                 }
               },
               {
-                "id": "_:b24",
+                "id": "_:b40",
                 "type": "identifier",
-                "http://www.w3.org/2004/02/skos/core#notation": {
-                  "type": "xsd:string",
-                  "@value": "26316919"
-                },
+                "http://www.w3.org/2004/02/skos/core#notation": "26316919",
                 "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                   "id": "https://www.wikidata.org/entity/Q42302581",
                   "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                  "http://www.w3.org/2000/01/rdf-schema#label": {
-                    "@language": "cs",
-                    "@value": "IČO"
-                  }
+                  "http://www.w3.org/2000/01/rdf-schema#label": [
+                    {
+                      "@language": "cs",
+                      "@value": "Identifikační Číslo Osoby"
+                    },
+                    {
+                      "@language": "en",
+                      "@value": "Identification Number (IČO)"
+                    }
+                  ],
+                  "http://www.w3.org/2004/02/skos/core#notation": "IČO"
                 }
               }
             ],
-            "name": "COMTES FHT"
+            "http://xmlns.com/foaf/0.1/name": "COMTES FHT"
           }
         ]
       }
     },
     {
-      "id": "_:b3",
+      "id": "_:b19",
       "type": "resource_attribution",
       "role": {
         "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
         "type": "attributed_agent_role_type",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-          {
-            "@language": "en",
-            "@value": "Creator"
-          },
-          {
-            "@language": "cs",
-            "@value": "Autor"
-          }
-        ]
+        "label": {
+          "en": "Creator",
+          "cs": "Autor"
+        }
       },
       "attributed_agent": {
-        "id": "_:b25",
+        "id": "_:b41",
         "type": "person",
-        "family_name": "Novák",
-        "given_name": "Pavel",
+        "http://www.w3.org/2006/vcard/ns#family-name": "Novák",
+        "http://www.w3.org/2006/vcard/ns#given-name": "Pavel",
         "identifier": [
           {
             "id": "https://orcid.org/0000-0001-9947-2566",
             "type": "identifier",
-            "http://www.w3.org/2004/02/skos/core#notation": {
-              "type": "xsd:string",
-              "@value": "0000-0001-9947-2566"
-            },
+            "http://www.w3.org/2004/02/skos/core#notation": "0000-0001-9947-2566",
             "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
               "id": "https://orcid.org/",
               "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-              "http://www.w3.org/2000/01/rdf-schema#label": "ORCID"
+              "http://www.w3.org/2000/01/rdf-schema#label": {
+                "@language": "en",
+                "@value": "Open Research and Contributor ID"
+              },
+              "http://www.w3.org/2004/02/skos/core#notation": "ORCID"
             }
           }
         ],
-        "name": "Novák, Pavel",
+        "http://xmlns.com/foaf/0.1/name": "Novák, Pavel",
         "affiliation": [
           {
-            "id": "_:b26",
+            "id": "_:b42",
             "type": "organization",
             "identifier": [
               {
                 "id": "https://ror.org/05ggn0a85",
                 "type": "identifier",
-                "http://www.w3.org/2004/02/skos/core#notation": {
-                  "type": "xsd:string",
-                  "@value": "05ggn0a85"
-                },
+                "http://www.w3.org/2004/02/skos/core#notation": "05ggn0a85",
                 "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                   "id": "https://ror.org/",
                   "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                  "http://www.w3.org/2000/01/rdf-schema#label": "ROR"
+                  "http://www.w3.org/2000/01/rdf-schema#label": {
+                    "@language": "en",
+                    "@value": "Research Organization Registry"
+                  },
+                  "http://www.w3.org/2004/02/skos/core#notation": "ROR"
                 }
               },
               {
-                "id": "_:b27",
+                "id": "_:b43",
                 "type": "identifier",
-                "http://www.w3.org/2004/02/skos/core#notation": {
-                  "type": "xsd:string",
-                  "@value": "60461373"
-                },
+                "http://www.w3.org/2004/02/skos/core#notation": "60461373",
                 "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                   "id": "https://www.wikidata.org/entity/Q42302581",
                   "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                  "http://www.w3.org/2000/01/rdf-schema#label": {
-                    "@language": "cs",
-                    "@value": "IČO"
-                  }
+                  "http://www.w3.org/2000/01/rdf-schema#label": [
+                    {
+                      "@language": "cs",
+                      "@value": "Identifikační Číslo Osoby"
+                    },
+                    {
+                      "@language": "en",
+                      "@value": "Identification Number (IČO)"
+                    }
+                  ],
+                  "http://www.w3.org/2004/02/skos/core#notation": "IČO"
                 }
               }
             ],
-            "name": "Vysoká škola chemicko-technologická v Praze"
+            "http://xmlns.com/foaf/0.1/name": "Vysoká škola chemicko-technologická v Praze"
           }
         ]
       }
     },
     {
-      "id": "_:b4",
+      "id": "_:b20",
       "type": "resource_attribution",
       "role": {
         "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
         "type": "attributed_agent_role_type",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-          {
-            "@language": "en",
-            "@value": "Creator"
-          },
-          {
-            "@language": "cs",
-            "@value": "Autor"
-          }
-        ]
+        "label": {
+          "en": "Creator",
+          "cs": "Autor"
+        }
       },
       "attributed_agent": {
-        "id": "_:b28",
+        "id": "_:b44",
         "type": "person",
-        "family_name": "Dlouhý",
-        "given_name": "Jaromír",
+        "http://www.w3.org/2006/vcard/ns#family-name": "Dlouhý",
+        "http://www.w3.org/2006/vcard/ns#given-name": "Jaromír",
         "identifier": [
           {
             "id": "https://orcid.org/0000-0002-1241-6121",
             "type": "identifier",
-            "http://www.w3.org/2004/02/skos/core#notation": {
-              "type": "xsd:string",
-              "@value": "0000-0002-1241-6121"
-            },
+            "http://www.w3.org/2004/02/skos/core#notation": "0000-0002-1241-6121",
             "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
               "id": "https://orcid.org/",
               "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-              "http://www.w3.org/2000/01/rdf-schema#label": "ORCID"
+              "http://www.w3.org/2000/01/rdf-schema#label": {
+                "@language": "en",
+                "@value": "Open Research and Contributor ID"
+              },
+              "http://www.w3.org/2004/02/skos/core#notation": "ORCID"
             }
           }
         ],
-        "name": "Dlouhý, Jaromír",
+        "http://xmlns.com/foaf/0.1/name": "Dlouhý, Jaromír",
         "affiliation": [
           {
-            "id": "_:b29",
+            "id": "_:b45",
             "type": "organization",
             "identifier": [
               {
                 "id": "https://ror.org/00hzjtg80",
                 "type": "identifier",
-                "http://www.w3.org/2004/02/skos/core#notation": {
-                  "type": "xsd:string",
-                  "@value": "00hzjtg80"
-                },
+                "http://www.w3.org/2004/02/skos/core#notation": "00hzjtg80",
                 "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                   "id": "https://ror.org/",
                   "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                  "http://www.w3.org/2000/01/rdf-schema#label": "ROR"
+                  "http://www.w3.org/2000/01/rdf-schema#label": {
+                    "@language": "en",
+                    "@value": "Research Organization Registry"
+                  },
+                  "http://www.w3.org/2004/02/skos/core#notation": "ROR"
                 }
               },
               {
-                "id": "_:b30",
+                "id": "_:b46",
                 "type": "identifier",
-                "http://www.w3.org/2004/02/skos/core#notation": {
-                  "type": "xsd:string",
-                  "@value": "26316919"
-                },
+                "http://www.w3.org/2004/02/skos/core#notation": "26316919",
                 "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                   "id": "https://www.wikidata.org/entity/Q42302581",
                   "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                  "http://www.w3.org/2000/01/rdf-schema#label": {
-                    "@language": "cs",
-                    "@value": "IČO"
-                  }
+                  "http://www.w3.org/2000/01/rdf-schema#label": [
+                    {
+                      "@language": "cs",
+                      "@value": "Identifikační Číslo Osoby"
+                    },
+                    {
+                      "@language": "en",
+                      "@value": "Identification Number (IČO)"
+                    }
+                  ],
+                  "http://www.w3.org/2004/02/skos/core#notation": "IČO"
                 }
               }
             ],
-            "name": "COMTES FHT"
+            "http://xmlns.com/foaf/0.1/name": "COMTES FHT"
           }
         ]
       }
     },
     {
-      "id": "_:b5",
+      "id": "_:b21",
       "type": "resource_attribution",
       "role": {
         "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
         "type": "attributed_agent_role_type",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-          {
-            "@language": "en",
-            "@value": "Creator"
-          },
-          {
-            "@language": "cs",
-            "@value": "Autor"
-          }
-        ]
+        "label": {
+          "en": "Creator",
+          "cs": "Autor"
+        }
       },
       "attributed_agent": {
-        "id": "_:b31",
+        "id": "_:b47",
         "type": "person",
-        "family_name": "Brázda",
-        "given_name": "Michal",
+        "http://www.w3.org/2006/vcard/ns#family-name": "Brázda",
+        "http://www.w3.org/2006/vcard/ns#given-name": "Michal",
         "identifier": [
           {
             "id": "https://orcid.org/0000-0002-4982-9114",
             "type": "identifier",
-            "http://www.w3.org/2004/02/skos/core#notation": {
-              "type": "xsd:string",
-              "@value": "0000-0002-4982-9114"
-            },
+            "http://www.w3.org/2004/02/skos/core#notation": "0000-0002-4982-9114",
             "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
               "id": "https://orcid.org/",
               "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-              "http://www.w3.org/2000/01/rdf-schema#label": "ORCID"
+              "http://www.w3.org/2000/01/rdf-schema#label": {
+                "@language": "en",
+                "@value": "Open Research and Contributor ID"
+              },
+              "http://www.w3.org/2004/02/skos/core#notation": "ORCID"
             }
           }
         ],
-        "name": "Brázda, Michal",
+        "http://xmlns.com/foaf/0.1/name": "Brázda, Michal",
         "affiliation": [
           {
-            "id": "_:b32",
+            "id": "_:b48",
             "type": "organization",
             "identifier": [
               {
                 "id": "https://ror.org/00hzjtg80",
                 "type": "identifier",
-                "http://www.w3.org/2004/02/skos/core#notation": {
-                  "type": "xsd:string",
-                  "@value": "00hzjtg80"
-                },
+                "http://www.w3.org/2004/02/skos/core#notation": "00hzjtg80",
                 "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                   "id": "https://ror.org/",
                   "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                  "http://www.w3.org/2000/01/rdf-schema#label": "ROR"
+                  "http://www.w3.org/2000/01/rdf-schema#label": {
+                    "@language": "en",
+                    "@value": "Research Organization Registry"
+                  },
+                  "http://www.w3.org/2004/02/skos/core#notation": "ROR"
                 }
               },
               {
-                "id": "_:b33",
+                "id": "_:b49",
                 "type": "identifier",
-                "http://www.w3.org/2004/02/skos/core#notation": {
-                  "type": "xsd:string",
-                  "@value": "26316919"
-                },
+                "http://www.w3.org/2004/02/skos/core#notation": "26316919",
                 "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                   "id": "https://www.wikidata.org/entity/Q42302581",
                   "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                  "http://www.w3.org/2000/01/rdf-schema#label": {
-                    "@language": "cs",
-                    "@value": "IČO"
-                  }
+                  "http://www.w3.org/2000/01/rdf-schema#label": [
+                    {
+                      "@language": "cs",
+                      "@value": "Identifikační Číslo Osoby"
+                    },
+                    {
+                      "@language": "en",
+                      "@value": "Identification Number (IČO)"
+                    }
+                  ],
+                  "http://www.w3.org/2004/02/skos/core#notation": "IČO"
                 }
               }
             ],
-            "name": "COMTES FHT"
+            "http://xmlns.com/foaf/0.1/name": "COMTES FHT"
           }
         ]
       }
     },
     {
-      "id": "_:b6",
+      "id": "_:b22",
       "type": "resource_attribution",
       "role": {
         "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Publisher",
         "type": "attributed_agent_role_type",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-          {
-            "@language": "cs",
-            "@value": "Vydavatel"
-          },
-          {
-            "@language": "en",
-            "@value": "Publisher"
-          }
-        ]
+        "label": {
+          "cs": "Vydavatel",
+          "en": "Publisher"
+        }
       },
       "attributed_agent": {
-        "id": "_:b34",
+        "id": "_:b50",
         "type": "organization",
         "identifier": [
           {
             "id": "https://ror.org/00hzjtg80",
             "type": "identifier",
-            "http://www.w3.org/2004/02/skos/core#notation": {
-              "type": "xsd:string",
-              "@value": "00hzjtg80"
-            },
+            "http://www.w3.org/2004/02/skos/core#notation": "00hzjtg80",
             "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
               "id": "https://ror.org/",
               "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-              "http://www.w3.org/2000/01/rdf-schema#label": "ROR"
+              "http://www.w3.org/2000/01/rdf-schema#label": {
+                "@language": "en",
+                "@value": "Research Organization Registry"
+              },
+              "http://www.w3.org/2004/02/skos/core#notation": "ROR"
             }
           },
           {
-            "id": "_:b35",
+            "id": "_:b51",
             "type": "identifier",
-            "http://www.w3.org/2004/02/skos/core#notation": {
-              "type": "xsd:string",
-              "@value": "26316919"
-            },
+            "http://www.w3.org/2004/02/skos/core#notation": "26316919",
             "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
               "id": "https://www.wikidata.org/entity/Q42302581",
               "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-              "http://www.w3.org/2000/01/rdf-schema#label": {
-                "@language": "cs",
-                "@value": "IČO"
-              }
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@language": "cs",
+                  "@value": "Identifikační Číslo Osoby"
+                },
+                {
+                  "@language": "en",
+                  "@value": "Identification Number (IČO)"
+                }
+              ],
+              "http://www.w3.org/2004/02/skos/core#notation": "IČO"
             }
           }
         ],
-        "name": "COMTES FHT"
+        "http://xmlns.com/foaf/0.1/name": "COMTES FHT"
       }
     }
   ],
   "alternate_title": [
     {
-      "id": "_:b7",
+      "id": "_:b23",
       "type": "alternate_title",
       "http://purl.org/dc/terms/alternative": {
         "@language": "en",
         "@value": "Data to manuscript Influence of Deposition Parameters on the Building rate, In-Situ Formation of Austenite and Tensile Properties of SAF 2507 SDSS Fabricated by Directed Energy Deposition"
       },
       "https://model.ccmm.cz/vocabulary/ccmm#hasType": {
-        "id": "https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/TranslatedTitle",
+        "id": "https://w3id.org/tib/datacite/vocab/titleType/TranslatedTitle",
         "type": "http://www.w3.org/2004/02/skos/core#Concept",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
           {
             "@language": "cs",
             "@value": "Přeložený název"
@@ -5869,17 +5786,16 @@
   "primary_language": {
     "id": "http://publications.europa.eu/resource/authority/language/ENG",
     "type": "language_system",
-    "http://www.w3.org/2000/01/rdf-schema#label": {
-      "@language": "en",
-      "@value": "English"
+    "label": {
+      "en": "English"
     }
   },
   "time_reference": [
     {
-      "id": "_:b8",
+      "id": "_:b24",
       "type": "time_reference",
       "http://www.w3.org/2006/time#hasTime": {
-        "id": "_:b36",
+        "id": "_:b52",
         "type": "http://www.w3.org/2006/time#Instant",
         "http://www.w3.org/2006/time#inXSDDate": {
           "type": "xsd:date",
@@ -5887,9 +5803,9 @@
         }
       },
       "https://model.ccmm.cz/vocabulary/ccmm#hasType": {
-        "id": "https://vocabs.ccmm.cz/registry/codelist/TimeReference/Issued",
+        "id": "https://w3id.org/tib/datacite/vocab/dateType/Issued",
         "type": "http://www.w3.org/2004/02/skos/core#Concept",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
           {
             "@language": "en",
             "@value": "Date Issued"
@@ -5902,13 +5818,13 @@
       }
     },
     {
-      "id": "_:b9",
+      "id": "_:b25",
       "type": "time_reference",
       "http://www.w3.org/2006/time#hasTime": {
-        "id": "_:b37",
+        "id": "_:b53",
         "type": "http://www.w3.org/2006/time#Interval",
         "http://www.w3.org/2006/time#hasBeginning": {
-          "id": "_:b38",
+          "id": "_:b54",
           "type": "http://www.w3.org/2006/time#Instant",
           "http://www.w3.org/2006/time#inXSDDate": {
             "type": "xsd:date",
@@ -5916,7 +5832,7 @@
           }
         },
         "http://www.w3.org/2006/time#hasEnd": {
-          "id": "_:b39",
+          "id": "_:b55",
           "type": "http://www.w3.org/2006/time#Instant",
           "http://www.w3.org/2006/time#inXSDDate": {
             "type": "xsd:date",
@@ -5925,9 +5841,9 @@
         }
       },
       "https://model.ccmm.cz/vocabulary/ccmm#hasType": {
-        "id": "https://vocabs.ccmm.cz/registry/codelist/TimeReference/Created",
+        "id": "https://w3id.org/tib/datacite/vocab/dateType/Created",
         "type": "http://www.w3.org/2004/02/skos/core#Concept",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
           {
             "@language": "en",
             "@value": "Date Created"
@@ -5940,10 +5856,10 @@
       }
     },
     {
-      "id": "_:b10",
+      "id": "_:b26",
       "type": "time_reference",
       "http://www.w3.org/2006/time#hasTime": {
-        "id": "_:b40",
+        "id": "_:b56",
         "type": "http://www.w3.org/2006/time#Instant",
         "http://www.w3.org/2006/time#inXSDDate": {
           "type": "xsd:date",
@@ -5951,9 +5867,9 @@
         }
       },
       "https://model.ccmm.cz/vocabulary/ccmm#hasType": {
-        "id": "https://vocabs.ccmm.cz/registry/codelist/TimeReference/Available",
+        "id": "https://w3id.org/tib/datacite/vocab/dateType/Available",
         "type": "http://www.w3.org/2004/02/skos/core#Concept",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
           {
             "@language": "en",
             "@value": "Date Available"
@@ -5968,14 +5884,18 @@
   ],
   "validation_result": [
     {
-      "id": "_:b11",
+      "id": "_:b27",
       "type": "validation_result"
     }
   ],
   "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
     "id": "https://doi.org/",
     "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-    "http://www.w3.org/2000/01/rdf-schema#label": "DOI"
+    "http://www.w3.org/2000/01/rdf-schema#label": {
+      "@language": "en",
+      "@value": "Digital Object Identifier"
+    },
+    "http://www.w3.org/2004/02/skos/core#notation": "DOI"
   },
   "metadata_identification": [
     {
@@ -5985,7 +5905,10 @@
         {
           "id": "https://model.ccmm.cz/research-data/2.0.0",
           "type": "application_profile",
-          "http://www.w3.org/2000/01/rdf-schema#label": "CCMM RD 2.0.0"
+          "http://www.w3.org/2000/01/rdf-schema#label": {
+            "@language": "en",
+            "@value": "Czech Core Metadata Model for Research Data 2.0.0"
+          }
         },
         {
           "id": "https://data.narodni-repozitar.cz/schemas/nr_datasets/nr-datasets-v1.0.0.json",
@@ -6001,69 +5924,58 @@
         {
           "id": "http://publications.europa.eu/resource/authority/language/ENG",
           "type": "language_system",
-          "http://www.w3.org/2000/01/rdf-schema#label": {
-            "@language": "en",
-            "@value": "English"
+          "label": {
+            "en": "English"
           }
         }
       ],
       "date_updated": "2025-10-14",
       "qualified_attribution": [
         {
-          "id": "_:b56",
+          "id": "_:b2",
           "type": "resource_attribution",
           "role": {
             "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/DataManager",
             "type": "attributed_agent_role_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-              {
-                "@language": "en",
-                "@value": "Data Manager"
-              },
-              {
-                "@language": "cs",
-                "@value": "Manažer dat"
-              }
-            ]
+            "label": {
+              "en": "Data Manager",
+              "cs": "Správce dat"
+            }
           },
           "attributed_agent": {
-            "id": "_:b57",
+            "id": "_:b3",
             "type": "person",
-            "family_name": ":unkn",
-            "given_name": ":unkn",
-            "name": ":unkn"
+            "http://xmlns.com/foaf/0.1/name": ":unkn"
           }
         }
       ],
       "original_repository": {
         "id": "https://datarepo.eosc.cz",
         "type": "repository",
+        "http://purl.org/dc/terms/description": {
+          "@language": "en",
+          "@value": "The Data Catch-all Repository is a general-purpose repository for research data for which no more suitable disciplinary, institutional, or community repository is available."
+        },
         "http://purl.org/dc/terms/title": {
-          "@language": "cs",
+          "@language": "en",
           "@value": "Catch-all"
         },
         "qualified_attribution": [
           {
-            "id": "_:b42",
+            "id": "_:b0",
             "type": "resource_attribution",
             "role": {
               "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Publisher",
               "type": "attributed_agent_role_type",
-              "http://www.w3.org/2000/01/rdf-schema#label": [
-                {
-                  "@language": "cs",
-                  "@value": "Vydavatel"
-                },
-                {
-                  "@language": "en",
-                  "@value": "Publisher"
-                }
-              ]
+              "label": {
+                "cs": "Vydavatel",
+                "en": "Publisher"
+              }
             },
             "attributed_agent": {
-              "id": "_:b43",
+              "id": "_:b1",
               "type": "organization",
-              "name": "COMTES FHT"
+              "http://xmlns.com/foaf/0.1/name": "COMTES FHT"
             }
           }
         ]
@@ -6072,16 +5984,16 @@
   ],
   "description": [
     {
-      "id": "_:b12",
+      "id": "_:b28",
       "type": "description",
       "http://purl.org/dc/terms/description": {
         "@language": "en",
         "@value": "Industry applications of duplex stainless steels require a two-phase microstructure with a nearly balanced austenite-ferrite content to achieve good mechanical properties and good corrosion resistance. The most widespread additive manufacturing method such as laser powder bed fusion provides nearly fully ferritic microstructures due to the very high cooling rate, and the post-processing heat treatment must be performed. In contrast, other additive manufacturing methods, such as directed deposition methods, reach lower cooling rates and enable to obtain an equal ferrite–austenite ratio directly in the microstructure of the as-built state. In this work, the super duplex stainless steel SAF 2507 was deposited by directed energy deposition. The process parameters, namely, the laser power, laser beam spot, and powder feed rate, were varied to investigate the impact of the energy area density on the microstructure and tensile properties. A decrease in the energy area density caused an increase in the austenite content of 48 vol% and a numerical simulation of the sample temperature distribution inside the block during deposition, explaining the relationship between the amount of in situ formed austenite and the deposition parameters, was provided. Simultaneously, the deposition rate increased by more than five times. In contrast, the samples deposited at a higher building rate are characterized by greater porosity and lower elongation values in the vertical direction. The effect of the deposition parameters on the yield strength is low."
       },
       "https://w3id.org/tib/datacite/property/descriptionType": {
-        "id": "https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Abstract",
+        "id": "https://w3id.org/tib/datacite/property/descriptionType/Abstract",
         "type": "http://www.w3.org/2004/02/skos/core#Concept",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
           {
             "@language": "en",
             "@value": "Abstract"
@@ -6094,16 +6006,16 @@
       }
     },
     {
-      "id": "_:b13",
+      "id": "_:b29",
       "type": "description",
       "http://purl.org/dc/terms/description": {
         "@language": "en",
         "@value": "The data set is related to the investigation of the influence of deposition parameters on the microstructure, austenite formation, and tensile properties of SAF 2507 super duplex stainless steel fabricated using directed energy deposition (DED). The experiments were carried out at COMTES FHT (Czech Republic) using an INSSTEK MX-600 system equipped with a 2 kW Yttrium fiber laser. SAF 2507 powder (particle size 45–150 μm) was deposited under three different parameter sets, varying laser power, beam diameter, layer thickness, hatch distance, and powder feed rate, while maintaining constant scan speed. A zig-zag deposition strategy was applied under a protective argon atmosphere (5.0, 99.999%). For each parameter set, 20×20×20 mm cubes were built and used for analysis. Microstructure and phase composition were characterized using optical microscopy, scanning electron microscopy, EBSD analysis, X-ray diffraction. Tensile properties were evaluated using miniature tensile tests. Thermal simulations of the deposition process were carried out using Simufact Welding 2024.1 with the Advanced Thermal Cycle (ATC) method."
       },
       "https://w3id.org/tib/datacite/property/descriptionType": {
-        "id": "https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Methods",
+        "id": "https://w3id.org/tib/datacite/property/descriptionType/Methods",
         "type": "http://www.w3.org/2004/02/skos/core#Concept",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
           {
             "@language": "en",
             "@value": "Methods"
@@ -6116,16 +6028,16 @@
       }
     },
     {
-      "id": "_:b14",
+      "id": "_:b30",
       "type": "description",
       "http://purl.org/dc/terms/description": {
         "@language": "en",
         "@value": "The sets of experimental data were recorded on several instruments within COMTES FHT. In cases where possible (XRD, MTT, EBSD), the data are in xlsx format enabling any replotting."
       },
       "https://w3id.org/tib/datacite/property/descriptionType": {
-        "id": "https://vocabs.ccmm.cz/registry/codelist/DescriptionType/TechnicalInfo",
+        "id": "https://w3id.org/tib/datacite/property/descriptionType/TechnicalInfo",
         "type": "http://www.w3.org/2004/02/skos/core#Concept",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
           {
             "@language": "en",
             "@value": "Technical Info"
@@ -6140,22 +6052,16 @@
   ],
   "funding_reference": [
     {
-      "id": "_:b15",
+      "id": "_:b31",
       "type": "funding_reference",
       "https://model.ccmm.cz/vocabulary/ccmm#fundingProgram": {
         "type": "xsd:anyURI",
         "@value": "Operační program Jan Amos Komenský"
       },
-      "https://w3id.org/tib/datacite/property/awardNumber": {
-        "type": "xsd:string",
-        "@value": "EH23_021/0008433"
-      },
-      "https://w3id.org/tib/datacite/property/awardTitle": {
-        "type": "xsd:string",
-        "@value": "Development of special wire semiproducts for welding and 3D printing"
-      },
+      "https://w3id.org/tib/datacite/property/awardNumber": "EH23_021/0008433",
+      "https://w3id.org/tib/datacite/property/awardTitle": "Development of special wire semiproducts for welding and 3D printing",
       "https://w3id.org/tib/datacite/property/funderIdentifier": {
-        "id": "_:b41",
+        "id": "_:b57",
         "type": "http://www.w3.org/ns/org#Organization",
         "http://www.w3.org/2006/vcard/ns#organization-name": {
           "@language": "en",
@@ -6165,28 +6071,33 @@
           {
             "id": "https://ror.org/037n8p820",
             "type": "identifier",
-            "value": "037n8p820",
+            "http://www.w3.org/2004/02/skos/core#notation": "037n8p820",
             "scheme": {
               "id": "https://ror.org/",
               "type": "identifier_scheme",
-              "http://www.w3.org/2000/01/rdf-schema#label": "ROR"
+              "http://www.w3.org/2000/01/rdf-schema#label": {
+                "@language": "en",
+                "@value": "Research Organization Registry"
+              },
+              "http://www.w3.org/2004/02/skos/core#notation": "ROR"
             }
           },
           {
             "id": "http://dx.doi.org/10.13039/501100001823",
             "type": "identifier",
-            "value": "10.13039/501100001823",
+            "http://www.w3.org/2004/02/skos/core#notation": "10.13039/501100001823",
             "scheme": {
               "id": "https://doi.org/",
               "type": "identifier_scheme",
-              "http://www.w3.org/2000/01/rdf-schema#label": "DOI"
+              "http://www.w3.org/2000/01/rdf-schema#label": {
+                "@language": "en",
+                "@value": "Digital Object Identifier"
+              },
+              "http://www.w3.org/2004/02/skos/core#notation": "DOI"
             }
           }
         ],
-        "http://xmlns.com/foaf/0.1/name": {
-          "type": "xsd:string",
-          "@value": "Ministerstvo školství, mládeže a tělovýchovy"
-        }
+        "http://xmlns.com/foaf/0.1/name": "Ministerstvo školství, mládeže a tělovýchovy"
       }
     }
   ],
@@ -6219,10 +6130,7 @@
           }
         ]
       },
-      "https://w3id.org/tib/datacite/property/classificationCode": {
-        "type": "xsd:string",
-        "@value": "20501"
-      }
+      "https://w3id.org/tib/datacite/property/classificationCode": "20501"
     }
   ]
 }

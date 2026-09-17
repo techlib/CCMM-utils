@@ -21,17 +21,17 @@
                           rdf:about="https://datarepo.eosc.cz/datasets/records/datst.1m3t2-78951">
             <rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
             <ns0:language>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="http://publications.europa.eu/resource/authority/language/CES">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/>
-                  <ns0:label xml:lang="cs">čeština</ns0:label>
+                  <ns0:prefLabel xml:lang="cs">čeština</ns0:prefLabel>
                </rdf:Description>
             </ns0:language>
             <ns0:language>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="http://publications.europa.eu/resource/authority/language/ENG">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/>
-                  <ns0:label xml:lang="en">English</ns0:label>
+                  <ns0:prefLabel xml:lang="en">English</ns0:prefLabel>
                </rdf:Description>
             </ns0:language>
             <ns1:qualifiedAttribution>
@@ -47,17 +47,17 @@
                                       xmlns:ns4="https://model.ccmm.cz/vocabulary/ccmm#"
                                       rdf:nodeID="d43e38">
                         <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
-                        <ns1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">:unkn</ns1:name>
-                        <ns2:given-name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">:unkn</ns2:given-name>
-                        <ns2:family-name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">:unkn</ns2:family-name>
+                        <ns1:name>:unkn</ns1:name>
+                        <ns2:given-name>:unkn</ns2:given-name>
+                        <ns2:family-name>:unkn</ns2:family-name>
                      </rdf:Description>
                   </ns0:agent>
                   <ns1:hadRole>
-                     <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+                     <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                       rdf:about="https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/DataManager">
                         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Role"/>
-                        <ns0:label xml:lang="en">Data manager</ns0:label>
-                        <ns0:label xml:lang="cs">Manažer dat</ns0:label>
+                        <ns0:prefLabel xml:lang="en">Data manager</ns0:prefLabel>
+                        <ns0:prefLabel xml:lang="cs">Manažer dat</ns0:prefLabel>
                      </rdf:Description>
                   </ns1:hadRole>
                </rdf:Description>
@@ -68,7 +68,7 @@
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 rdf:about="https://model.ccmm.cz/research-data/2.0.0">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/Standard"/>
-                  <ns0:label xml:lang="">CCMM RD 2.0.0</ns0:label>
+                  <ns0:label xml:lang="en">Czech Core Metadata Model for Research Data 2.0.0</ns0:label>
                </rdf:Description>
             </ns0:conformsTo>
             <ns0:conformsTo>
@@ -79,30 +79,31 @@
                </rdf:Description>
             </ns0:conformsTo>
             <ns2:originalRepository>
-               <rdf:Description rdf:about="https://datarepo.eosc.cz">
+               <rdf:Description xmlns:ns2="http://www.w3.org/ns/dcat#" rdf:about="https://datarepo.eosc.cz">
                   <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
-                  <ns0:title xml:lang="cs">Catch-all</ns0:title>
+                  <ns0:title xml:lang="en">Catch-all</ns0:title>
+                  <ns0:description xml:lang="en">The Data Catch-all Repository is a general-purpose repository for research data for which no more suitable disciplinary, institutional, or community repository is available.</ns0:description>
                   <ns1:qualifiedAttribution>
                      <rdf:Description xmlns:ns0="http://www.w3.org/ns/prov#"
                                       xmlns:ns1="http://www.w3.org/ns/dcat#"
-                                      rdf:nodeID="d43e94">
+                                      rdf:nodeID="d43e97">
                         <rdf:type rdf:resource="http://www.w3.org/ns/prov#Attribution"/>
                         <ns0:agent>
                            <rdf:Description xmlns:ns0="http://www.w3.org/ns/adms#"
                                             xmlns:ns1="http://xmlns.com/foaf/0.1/"
                                             xmlns:ns2="http://www.w3.org/2006/vcard/ns#"
                                             xmlns:ns3="http://www.w3.org/ns/dcat#"
-                                            rdf:nodeID="d43e98">
+                                            rdf:nodeID="d43e101">
                               <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
-                              <ns1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ústav fyzikální chemie J. Heyrovského AV ČR</ns1:name>
+                              <ns1:name>Ústav fyzikální chemie J. Heyrovského AV ČR</ns1:name>
                            </rdf:Description>
                         </ns0:agent>
                         <ns1:hadRole>
-                           <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+                           <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                             rdf:about="https://vocabs.ccmm.cz/registry/codelist/AgentRole/Publisher">
                               <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Role"/>
-                              <ns0:label xml:lang="cs">Vydavatel</ns0:label>
-                              <ns0:label xml:lang="en">Publisher</ns0:label>
+                              <ns0:prefLabel xml:lang="cs">Vydavatel</ns0:prefLabel>
+                              <ns0:prefLabel xml:lang="en">Publisher</ns0:prefLabel>
                            </rdf:Description>
                         </ns1:hadRole>
                      </rdf:Description>
@@ -116,29 +117,31 @@
                           xmlns:ns1="https://model.ccmm.cz/vocabulary/ccmm#"
                           rdf:about="https://doi.org/10.48700/datst.1m3t2-78951">
             <rdf:type rdf:resource="http://www.w3.org/ns/adms#Identifier"/>
-            <ns0:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.48700/datst.1m3t2-78951</ns0:notation>
+            <ns0:notation>10.48700/datst.1m3t2-78951</ns0:notation>
             <ns1:inScheme>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+                                xmlns:ns1="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="https://doi.org/">
                   <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme"/>
-                  <ns0:label xml:lang="">DOI</ns0:label>
+                  <ns0:label xml:lang="en">Digital Object Identifier</ns0:label>
+                  <ns1:notation>DOI</ns1:notation>
                </rdf:Description>
             </ns1:inScheme>
          </rdf:Description>
       </ns1:identifier>
-      <ns3:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data set žádosti o grant Grantové agentury České republiky</ns3:title>
+      <ns3:title>Data set žádosti o grant Grantové agentury České republiky</ns3:title>
       <ns0:hasAlternateTitle>
          <rdf:Description xmlns:ns0="http://purl.org/dc/terms/"
                           xmlns:ns1="https://model.ccmm.cz/vocabulary/ccmm#"
-                          rdf:nodeID="d43e142">
+                          rdf:nodeID="d43e147">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#AlternateTitle"/>
             <ns0:alternative xml:lang="en">The Czech Science Foundation Grant Application Data Set</ns0:alternative>
             <ns1:hasType>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/TranslatedTitle">
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
+                                rdf:about="https://w3id.org/tib/datacite/vocab/titleType/TranslatedTitle">
                   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-                  <ns0:label xml:lang="cs">Přeložený název</ns0:label>
-                  <ns0:label xml:lang="en">Translated Title</ns0:label>
+                  <ns0:prefLabel xml:lang="cs">Přeložený název</ns0:prefLabel>
+                  <ns0:prefLabel xml:lang="en">Translated Title</ns0:prefLabel>
                </rdf:Description>
             </ns1:hasType>
          </rdf:Description>
@@ -146,7 +149,7 @@
       <ns4:qualifiedAttribution>
          <rdf:Description xmlns:ns0="http://www.w3.org/ns/prov#"
                           xmlns:ns1="http://www.w3.org/ns/dcat#"
-                          rdf:nodeID="d43e163">
+                          rdf:nodeID="d43e168">
             <rdf:type rdf:resource="http://www.w3.org/ns/prov#Attribution"/>
             <ns0:agent>
                <rdf:Description xmlns:ns0="http://www.w3.org/ns/adms#"
@@ -154,38 +157,42 @@
                                 xmlns:ns2="http://www.w3.org/2006/vcard/ns#"
                                 xmlns:ns3="http://www.w3.org/ns/dcat#"
                                 xmlns:ns4="https://model.ccmm.cz/vocabulary/ccmm#"
-                                rdf:nodeID="d43e167">
+                                rdf:nodeID="d43e172">
                   <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
                   <ns0:identifier>
                      <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                       xmlns:ns1="https://model.ccmm.cz/vocabulary/ccmm#"
                                       rdf:about="https://orcid.org/0009-0003-1158-1138">
                         <rdf:type rdf:resource="http://www.w3.org/ns/adms#Identifier"/>
-                        <ns0:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0009-0003-1158-1138</ns0:notation>
+                        <ns0:notation>0009-0003-1158-1138</ns0:notation>
                         <ns1:inScheme>
                            <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+                                            xmlns:ns1="http://www.w3.org/2004/02/skos/core#"
                                             rdf:about="https://orcid.org/">
                               <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme"/>
-                              <ns0:label xml:lang="">ORCID</ns0:label>
+                              <ns0:label xml:lang="en">Open Research and Contributor ID</ns0:label>
+                              <ns1:notation>ORCID</ns1:notation>
                            </rdf:Description>
                         </ns1:inScheme>
                      </rdf:Description>
                   </ns0:identifier>
-                  <ns1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paldusová, Kateřina</ns1:name>
+                  <ns1:name>Paldusová, Kateřina</ns1:name>
                   <ns4:hasAffiliation>
-                     <rdf:Description rdf:nodeID="d43e186">
+                     <rdf:Description rdf:nodeID="d43e193">
                         <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
                         <ns0:identifier>
                            <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                             xmlns:ns1="https://model.ccmm.cz/vocabulary/ccmm#"
                                             rdf:about="https://ror.org/02sat5y74">
                               <rdf:type rdf:resource="http://www.w3.org/ns/adms#Identifier"/>
-                              <ns0:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">02sat5y74</ns0:notation>
+                              <ns0:notation>02sat5y74</ns0:notation>
                               <ns1:inScheme>
                                  <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+                                                  xmlns:ns1="http://www.w3.org/2004/02/skos/core#"
                                                   rdf:about="https://ror.org/">
                                     <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme"/>
-                                    <ns0:label xml:lang="">ROR</ns0:label>
+                                    <ns0:label xml:lang="en">Research Organization Registry</ns0:label>
+                                    <ns1:notation>ROR</ns1:notation>
                                  </rdf:Description>
                               </ns1:inScheme>
                            </rdf:Description>
@@ -193,29 +200,31 @@
                         <ns0:identifier>
                            <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                             xmlns:ns1="https://model.ccmm.cz/vocabulary/ccmm#"
-                                            rdf:nodeID="d43e203">
+                                            rdf:nodeID="d43e212">
                               <rdf:type rdf:resource="http://www.w3.org/ns/adms#Identifier"/>
-                              <ns0:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">61388955</ns0:notation>
+                              <ns0:notation>61388955</ns0:notation>
                               <ns1:inScheme>
                                  <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+                                                  xmlns:ns1="http://www.w3.org/2004/02/skos/core#"
                                                   rdf:about="https://www.wikidata.org/entity/Q42302581">
                                     <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme"/>
-                                    <ns0:label xml:lang="cs">IČO</ns0:label>
+                                    <ns0:label xml:lang="cs">Identifikační Číslo Osoby</ns0:label>
+                                    <ns1:notation>IČO</ns1:notation>
                                  </rdf:Description>
                               </ns1:inScheme>
                            </rdf:Description>
                         </ns0:identifier>
-                        <ns1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ústav fyzikální chemie J. Heyrovského AV ČR</ns1:name>
+                        <ns1:name>Ústav fyzikální chemie J. Heyrovského AV ČR</ns1:name>
                      </rdf:Description>
                   </ns4:hasAffiliation>
                </rdf:Description>
             </ns0:agent>
             <ns1:hadRole>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator">
                   <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Role"/>
-                  <ns0:label xml:lang="en">Creator</ns0:label>
-                  <ns0:label xml:lang="cs">Autor</ns0:label>
+                  <ns0:prefLabel xml:lang="en">Creator</ns0:prefLabel>
+                  <ns0:prefLabel xml:lang="cs">Autor</ns0:prefLabel>
                </rdf:Description>
             </ns1:hadRole>
          </rdf:Description>
@@ -223,7 +232,7 @@
       <ns4:qualifiedAttribution>
          <rdf:Description xmlns:ns0="http://www.w3.org/ns/prov#"
                           xmlns:ns1="http://www.w3.org/ns/dcat#"
-                          rdf:nodeID="d43e236">
+                          rdf:nodeID="d43e247">
             <rdf:type rdf:resource="http://www.w3.org/ns/prov#Attribution"/>
             <ns0:agent>
                <rdf:Description xmlns:ns0="http://www.w3.org/ns/adms#"
@@ -231,38 +240,42 @@
                                 xmlns:ns2="http://www.w3.org/2006/vcard/ns#"
                                 xmlns:ns3="http://www.w3.org/ns/dcat#"
                                 xmlns:ns4="https://model.ccmm.cz/vocabulary/ccmm#"
-                                rdf:nodeID="d43e240">
+                                rdf:nodeID="d43e251">
                   <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
                   <ns0:identifier>
                      <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                       xmlns:ns1="https://model.ccmm.cz/vocabulary/ccmm#"
                                       rdf:about="https://orcid.org/0000-0003-1662-9092">
                         <rdf:type rdf:resource="http://www.w3.org/ns/adms#Identifier"/>
-                        <ns0:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0003-1662-9092</ns0:notation>
+                        <ns0:notation>0000-0003-1662-9092</ns0:notation>
                         <ns1:inScheme>
                            <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+                                            xmlns:ns1="http://www.w3.org/2004/02/skos/core#"
                                             rdf:about="https://orcid.org/">
                               <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme"/>
-                              <ns0:label xml:lang="">ORCID</ns0:label>
+                              <ns0:label xml:lang="en">Open Research and Contributor ID</ns0:label>
+                              <ns1:notation>ORCID</ns1:notation>
                            </rdf:Description>
                         </ns1:inScheme>
                      </rdf:Description>
                   </ns0:identifier>
-                  <ns1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">González Navarro, José Alfredo</ns1:name>
+                  <ns1:name>González Navarro, José Alfredo</ns1:name>
                   <ns4:hasAffiliation>
-                     <rdf:Description rdf:nodeID="d43e259">
+                     <rdf:Description rdf:nodeID="d43e272">
                         <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
                         <ns0:identifier>
                            <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                             xmlns:ns1="https://model.ccmm.cz/vocabulary/ccmm#"
                                             rdf:about="https://ror.org/02sat5y74">
                               <rdf:type rdf:resource="http://www.w3.org/ns/adms#Identifier"/>
-                              <ns0:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">02sat5y74</ns0:notation>
+                              <ns0:notation>02sat5y74</ns0:notation>
                               <ns1:inScheme>
                                  <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+                                                  xmlns:ns1="http://www.w3.org/2004/02/skos/core#"
                                                   rdf:about="https://ror.org/">
                                     <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme"/>
-                                    <ns0:label xml:lang="">ROR</ns0:label>
+                                    <ns0:label xml:lang="en">Research Organization Registry</ns0:label>
+                                    <ns1:notation>ROR</ns1:notation>
                                  </rdf:Description>
                               </ns1:inScheme>
                            </rdf:Description>
@@ -270,29 +283,31 @@
                         <ns0:identifier>
                            <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                             xmlns:ns1="https://model.ccmm.cz/vocabulary/ccmm#"
-                                            rdf:nodeID="d43e276">
+                                            rdf:nodeID="d43e291">
                               <rdf:type rdf:resource="http://www.w3.org/ns/adms#Identifier"/>
-                              <ns0:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">61388955</ns0:notation>
+                              <ns0:notation>61388955</ns0:notation>
                               <ns1:inScheme>
                                  <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+                                                  xmlns:ns1="http://www.w3.org/2004/02/skos/core#"
                                                   rdf:about="https://www.wikidata.org/entity/Q42302581">
                                     <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme"/>
-                                    <ns0:label xml:lang="cs">IČO</ns0:label>
+                                    <ns0:label xml:lang="cs">Identifikační Číslo Osoby</ns0:label>
+                                    <ns1:notation>IČO</ns1:notation>
                                  </rdf:Description>
                               </ns1:inScheme>
                            </rdf:Description>
                         </ns0:identifier>
-                        <ns1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ústav fyzikální chemie J. Heyrovského AV ČR</ns1:name>
+                        <ns1:name>Ústav fyzikální chemie J. Heyrovského AV ČR</ns1:name>
                      </rdf:Description>
                   </ns4:hasAffiliation>
                </rdf:Description>
             </ns0:agent>
             <ns1:hadRole>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator">
                   <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Role"/>
-                  <ns0:label xml:lang="en">Creator</ns0:label>
-                  <ns0:label xml:lang="cs">Autor</ns0:label>
+                  <ns0:prefLabel xml:lang="en">Creator</ns0:prefLabel>
+                  <ns0:prefLabel xml:lang="cs">Autor</ns0:prefLabel>
                </rdf:Description>
             </ns1:hadRole>
          </rdf:Description>
@@ -300,7 +315,7 @@
       <ns4:qualifiedAttribution>
          <rdf:Description xmlns:ns0="http://www.w3.org/ns/prov#"
                           xmlns:ns1="http://www.w3.org/ns/dcat#"
-                          rdf:nodeID="d43e308">
+                          rdf:nodeID="d43e325">
             <rdf:type rdf:resource="http://www.w3.org/ns/prov#Attribution"/>
             <ns0:agent>
                <rdf:Description xmlns:ns0="http://www.w3.org/ns/adms#"
@@ -308,38 +323,42 @@
                                 xmlns:ns2="http://www.w3.org/2006/vcard/ns#"
                                 xmlns:ns3="http://www.w3.org/ns/dcat#"
                                 xmlns:ns4="https://model.ccmm.cz/vocabulary/ccmm#"
-                                rdf:nodeID="d43e312">
+                                rdf:nodeID="d43e329">
                   <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
                   <ns0:identifier>
                      <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                       xmlns:ns1="https://model.ccmm.cz/vocabulary/ccmm#"
                                       rdf:about="https://orcid.org/0009-0008-0140-2075">
                         <rdf:type rdf:resource="http://www.w3.org/ns/adms#Identifier"/>
-                        <ns0:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0009-0008-0140-2075</ns0:notation>
+                        <ns0:notation>0009-0008-0140-2075</ns0:notation>
                         <ns1:inScheme>
                            <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+                                            xmlns:ns1="http://www.w3.org/2004/02/skos/core#"
                                             rdf:about="https://orcid.org/">
                               <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme"/>
-                              <ns0:label xml:lang="">ORCID</ns0:label>
+                              <ns0:label xml:lang="en">Open Research and Contributor ID</ns0:label>
+                              <ns1:notation>ORCID</ns1:notation>
                            </rdf:Description>
                         </ns1:inScheme>
                      </rdf:Description>
                   </ns0:identifier>
-                  <ns1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Echezarreta Mendicute, Irene</ns1:name>
+                  <ns1:name>Echezarreta Mendicute, Irene</ns1:name>
                   <ns4:hasAffiliation>
-                     <rdf:Description rdf:nodeID="d43e331">
+                     <rdf:Description rdf:nodeID="d43e350">
                         <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
                         <ns0:identifier>
                            <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                             xmlns:ns1="https://model.ccmm.cz/vocabulary/ccmm#"
                                             rdf:about="https://ror.org/02sat5y74">
                               <rdf:type rdf:resource="http://www.w3.org/ns/adms#Identifier"/>
-                              <ns0:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">02sat5y74</ns0:notation>
+                              <ns0:notation>02sat5y74</ns0:notation>
                               <ns1:inScheme>
                                  <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+                                                  xmlns:ns1="http://www.w3.org/2004/02/skos/core#"
                                                   rdf:about="https://ror.org/">
                                     <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme"/>
-                                    <ns0:label xml:lang="">ROR</ns0:label>
+                                    <ns0:label xml:lang="en">Research Organization Registry</ns0:label>
+                                    <ns1:notation>ROR</ns1:notation>
                                  </rdf:Description>
                               </ns1:inScheme>
                            </rdf:Description>
@@ -347,29 +366,31 @@
                         <ns0:identifier>
                            <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                             xmlns:ns1="https://model.ccmm.cz/vocabulary/ccmm#"
-                                            rdf:nodeID="d43e348">
+                                            rdf:nodeID="d43e369">
                               <rdf:type rdf:resource="http://www.w3.org/ns/adms#Identifier"/>
-                              <ns0:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">61388955</ns0:notation>
+                              <ns0:notation>61388955</ns0:notation>
                               <ns1:inScheme>
                                  <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+                                                  xmlns:ns1="http://www.w3.org/2004/02/skos/core#"
                                                   rdf:about="https://www.wikidata.org/entity/Q42302581">
                                     <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme"/>
-                                    <ns0:label xml:lang="cs">IČO</ns0:label>
+                                    <ns0:label xml:lang="cs">Identifikační Číslo Osoby</ns0:label>
+                                    <ns1:notation>IČO</ns1:notation>
                                  </rdf:Description>
                               </ns1:inScheme>
                            </rdf:Description>
                         </ns0:identifier>
-                        <ns1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ústav fyzikální chemie J. Heyrovského AV ČR</ns1:name>
+                        <ns1:name>Ústav fyzikální chemie J. Heyrovského AV ČR</ns1:name>
                      </rdf:Description>
                   </ns4:hasAffiliation>
                </rdf:Description>
             </ns0:agent>
             <ns1:hadRole>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator">
                   <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Role"/>
-                  <ns0:label xml:lang="en">Creator</ns0:label>
-                  <ns0:label xml:lang="cs">Autor</ns0:label>
+                  <ns0:prefLabel xml:lang="en">Creator</ns0:prefLabel>
+                  <ns0:prefLabel xml:lang="cs">Autor</ns0:prefLabel>
                </rdf:Description>
             </ns1:hadRole>
          </rdf:Description>
@@ -377,7 +398,7 @@
       <ns4:qualifiedAttribution>
          <rdf:Description xmlns:ns0="http://www.w3.org/ns/prov#"
                           xmlns:ns1="http://www.w3.org/ns/dcat#"
-                          rdf:nodeID="d43e380">
+                          rdf:nodeID="d43e403">
             <rdf:type rdf:resource="http://www.w3.org/ns/prov#Attribution"/>
             <ns0:agent>
                <rdf:Description xmlns:ns0="http://www.w3.org/ns/adms#"
@@ -385,38 +406,42 @@
                                 xmlns:ns2="http://www.w3.org/2006/vcard/ns#"
                                 xmlns:ns3="http://www.w3.org/ns/dcat#"
                                 xmlns:ns4="https://model.ccmm.cz/vocabulary/ccmm#"
-                                rdf:nodeID="d43e384">
+                                rdf:nodeID="d43e407">
                   <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
                   <ns0:identifier>
                      <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                       xmlns:ns1="https://model.ccmm.cz/vocabulary/ccmm#"
                                       rdf:about="https://orcid.org/0000-0002-4606-1218">
                         <rdf:type rdf:resource="http://www.w3.org/ns/adms#Identifier"/>
-                        <ns0:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-4606-1218</ns0:notation>
+                        <ns0:notation>0000-0002-4606-1218</ns0:notation>
                         <ns1:inScheme>
                            <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+                                            xmlns:ns1="http://www.w3.org/2004/02/skos/core#"
                                             rdf:about="https://orcid.org/">
                               <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme"/>
-                              <ns0:label xml:lang="">ORCID</ns0:label>
+                              <ns0:label xml:lang="en">Open Research and Contributor ID</ns0:label>
+                              <ns1:notation>ORCID</ns1:notation>
                            </rdf:Description>
                         </ns1:inScheme>
                      </rdf:Description>
                   </ns0:identifier>
-                  <ns1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cebecauer, Marek</ns1:name>
+                  <ns1:name>Cebecauer, Marek</ns1:name>
                   <ns4:hasAffiliation>
-                     <rdf:Description rdf:nodeID="d43e403">
+                     <rdf:Description rdf:nodeID="d43e428">
                         <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
                         <ns0:identifier>
                            <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                             xmlns:ns1="https://model.ccmm.cz/vocabulary/ccmm#"
                                             rdf:about="https://ror.org/02sat5y74">
                               <rdf:type rdf:resource="http://www.w3.org/ns/adms#Identifier"/>
-                              <ns0:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">02sat5y74</ns0:notation>
+                              <ns0:notation>02sat5y74</ns0:notation>
                               <ns1:inScheme>
                                  <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+                                                  xmlns:ns1="http://www.w3.org/2004/02/skos/core#"
                                                   rdf:about="https://ror.org/">
                                     <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme"/>
-                                    <ns0:label xml:lang="">ROR</ns0:label>
+                                    <ns0:label xml:lang="en">Research Organization Registry</ns0:label>
+                                    <ns1:notation>ROR</ns1:notation>
                                  </rdf:Description>
                               </ns1:inScheme>
                            </rdf:Description>
@@ -424,29 +449,31 @@
                         <ns0:identifier>
                            <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                             xmlns:ns1="https://model.ccmm.cz/vocabulary/ccmm#"
-                                            rdf:nodeID="d43e420">
+                                            rdf:nodeID="d43e447">
                               <rdf:type rdf:resource="http://www.w3.org/ns/adms#Identifier"/>
-                              <ns0:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">61388955</ns0:notation>
+                              <ns0:notation>61388955</ns0:notation>
                               <ns1:inScheme>
                                  <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+                                                  xmlns:ns1="http://www.w3.org/2004/02/skos/core#"
                                                   rdf:about="https://www.wikidata.org/entity/Q42302581">
                                     <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme"/>
-                                    <ns0:label xml:lang="cs">IČO</ns0:label>
+                                    <ns0:label xml:lang="cs">Identifikační Číslo Osoby</ns0:label>
+                                    <ns1:notation>IČO</ns1:notation>
                                  </rdf:Description>
                               </ns1:inScheme>
                            </rdf:Description>
                         </ns0:identifier>
-                        <ns1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ústav fyzikální chemie J. Heyrovského AV ČR</ns1:name>
+                        <ns1:name>Ústav fyzikální chemie J. Heyrovského AV ČR</ns1:name>
                      </rdf:Description>
                   </ns4:hasAffiliation>
                </rdf:Description>
             </ns0:agent>
             <ns1:hadRole>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator">
                   <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Role"/>
-                  <ns0:label xml:lang="en">Creator</ns0:label>
-                  <ns0:label xml:lang="cs">Autor</ns0:label>
+                  <ns0:prefLabel xml:lang="en">Creator</ns0:prefLabel>
+                  <ns0:prefLabel xml:lang="cs">Autor</ns0:prefLabel>
                </rdf:Description>
             </ns1:hadRole>
          </rdf:Description>
@@ -454,26 +481,28 @@
       <ns4:qualifiedAttribution>
          <rdf:Description xmlns:ns0="http://www.w3.org/ns/prov#"
                           xmlns:ns1="http://www.w3.org/ns/dcat#"
-                          rdf:nodeID="d43e453">
+                          rdf:nodeID="d43e482">
             <rdf:type rdf:resource="http://www.w3.org/ns/prov#Attribution"/>
             <ns0:agent>
                <rdf:Description xmlns:ns0="http://www.w3.org/ns/adms#"
                                 xmlns:ns1="http://xmlns.com/foaf/0.1/"
                                 xmlns:ns2="http://www.w3.org/2006/vcard/ns#"
                                 xmlns:ns3="http://www.w3.org/ns/dcat#"
-                                rdf:nodeID="d43e457">
+                                rdf:nodeID="d43e486">
                   <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
                   <ns0:identifier>
                      <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                       xmlns:ns1="https://model.ccmm.cz/vocabulary/ccmm#"
                                       rdf:about="https://ror.org/02sat5y74">
                         <rdf:type rdf:resource="http://www.w3.org/ns/adms#Identifier"/>
-                        <ns0:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">02sat5y74</ns0:notation>
+                        <ns0:notation>02sat5y74</ns0:notation>
                         <ns1:inScheme>
                            <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+                                            xmlns:ns1="http://www.w3.org/2004/02/skos/core#"
                                             rdf:about="https://ror.org/">
                               <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme"/>
-                              <ns0:label xml:lang="">ROR</ns0:label>
+                              <ns0:label xml:lang="en">Research Organization Registry</ns0:label>
+                              <ns1:notation>ROR</ns1:notation>
                            </rdf:Description>
                         </ns1:inScheme>
                      </rdf:Description>
@@ -481,27 +510,29 @@
                   <ns0:identifier>
                      <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                       xmlns:ns1="https://model.ccmm.cz/vocabulary/ccmm#"
-                                      rdf:nodeID="d43e474">
+                                      rdf:nodeID="d43e505">
                         <rdf:type rdf:resource="http://www.w3.org/ns/adms#Identifier"/>
-                        <ns0:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">61388955</ns0:notation>
+                        <ns0:notation>61388955</ns0:notation>
                         <ns1:inScheme>
                            <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+                                            xmlns:ns1="http://www.w3.org/2004/02/skos/core#"
                                             rdf:about="https://www.wikidata.org/entity/Q42302581">
                               <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme"/>
-                              <ns0:label xml:lang="cs">IČO</ns0:label>
+                              <ns0:label xml:lang="cs">Identifikační Číslo Osoby</ns0:label>
+                              <ns1:notation>IČO</ns1:notation>
                            </rdf:Description>
                         </ns1:inScheme>
                      </rdf:Description>
                   </ns0:identifier>
-                  <ns1:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ústav fyzikální chemie J. Heyrovského AV ČR</ns1:name>
+                  <ns1:name>Ústav fyzikální chemie J. Heyrovského AV ČR</ns1:name>
                </rdf:Description>
             </ns0:agent>
             <ns1:hadRole>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="https://vocabs.ccmm.cz/registry/codelist/AgentRole/Publisher">
                   <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Role"/>
-                  <ns0:label xml:lang="en">Publisher</ns0:label>
-                  <ns0:label xml:lang="cs">Vydavatel</ns0:label>
+                  <ns0:prefLabel xml:lang="en">Publisher</ns0:prefLabel>
+                  <ns0:prefLabel xml:lang="cs">Vydavatel</ns0:prefLabel>
                </rdf:Description>
             </ns1:hadRole>
          </rdf:Description>
@@ -511,20 +542,20 @@
          <rdf:Description xmlns:ns0="http://www.w3.org/2006/time#"
                           xmlns:ns1="https://model.ccmm.cz/vocabulary/ccmm#"
                           xmlns:ns2="https://w3id.org/tib/datacite/property/"
-                          rdf:nodeID="d43e511">
+                          rdf:nodeID="d43e544">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#TimeReference"/>
             <ns0:hasTime>
-               <rdf:Description rdf:nodeID="d43e515">
+               <rdf:Description rdf:nodeID="d43e548">
                   <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
                   <ns0:inXSDDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-03</ns0:inXSDDate>
                </rdf:Description>
             </ns0:hasTime>
             <ns1:hasType>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="https://vocabs.ccmm.cz/registry/codelist/TimeReference/Issued">
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
+                                rdf:about="https://w3id.org/tib/datacite/vocab/dateType/Issued">
                   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-                  <ns0:label xml:lang="en">Date Issued</ns0:label>
-                  <ns0:label xml:lang="cs">Datum vydání</ns0:label>
+                  <ns0:prefLabel xml:lang="en">Date Issued</ns0:prefLabel>
+                  <ns0:prefLabel xml:lang="cs">Datum vydání</ns0:prefLabel>
                </rdf:Description>
             </ns1:hasType>
          </rdf:Description>
@@ -533,19 +564,19 @@
          <rdf:Description xmlns:ns0="http://www.w3.org/2006/time#"
                           xmlns:ns1="https://model.ccmm.cz/vocabulary/ccmm#"
                           xmlns:ns2="https://w3id.org/tib/datacite/property/"
-                          rdf:nodeID="d43e534">
+                          rdf:nodeID="d43e567">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#TimeReference"/>
             <ns0:hasTime>
-               <rdf:Description rdf:nodeID="d43e538">
+               <rdf:Description rdf:nodeID="d43e571">
                   <rdf:type rdf:resource="http://www.w3.org/2006/time#Interval"/>
                   <ns0:hasBeginning>
-                     <rdf:Description rdf:nodeID="d43e540">
+                     <rdf:Description rdf:nodeID="d43e573">
                         <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
                         <ns0:inXSDDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-02</ns0:inXSDDate>
                      </rdf:Description>
                   </ns0:hasBeginning>
                   <ns0:hasEnd>
-                     <rdf:Description rdf:nodeID="d43e545">
+                     <rdf:Description rdf:nodeID="d43e578">
                         <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
                         <ns0:inXSDDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-03</ns0:inXSDDate>
                      </rdf:Description>
@@ -553,11 +584,11 @@
                </rdf:Description>
             </ns0:hasTime>
             <ns1:hasType>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="https://vocabs.ccmm.cz/registry/codelist/TimeReference/Created">
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
+                                rdf:about="https://w3id.org/tib/datacite/vocab/dateType/Created">
                   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-                  <ns0:label xml:lang="en">Date Created</ns0:label>
-                  <ns0:label xml:lang="cs">Datum vytvoření</ns0:label>
+                  <ns0:prefLabel xml:lang="en">Date Created</ns0:prefLabel>
+                  <ns0:prefLabel xml:lang="cs">Datum vytvoření</ns0:prefLabel>
                </rdf:Description>
             </ns1:hasType>
          </rdf:Description>
@@ -566,19 +597,19 @@
          <rdf:Description xmlns:ns0="http://www.w3.org/2006/time#"
                           xmlns:ns1="https://model.ccmm.cz/vocabulary/ccmm#"
                           xmlns:ns2="https://w3id.org/tib/datacite/property/"
-                          rdf:nodeID="d43e564">
+                          rdf:nodeID="d43e597">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#TimeReference"/>
             <ns0:hasTime>
-               <rdf:Description rdf:nodeID="d43e568">
+               <rdf:Description rdf:nodeID="d43e601">
                   <rdf:type rdf:resource="http://www.w3.org/2006/time#Interval"/>
                   <ns0:hasBeginning>
-                     <rdf:Description rdf:nodeID="d43e570">
+                     <rdf:Description rdf:nodeID="d43e603">
                         <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
                         <ns0:inXSDDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-01-01</ns0:inXSDDate>
                      </rdf:Description>
                   </ns0:hasBeginning>
                   <ns0:hasEnd>
-                     <rdf:Description rdf:nodeID="d43e575">
+                     <rdf:Description rdf:nodeID="d43e608">
                         <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
                         <ns0:inXSDDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-03</ns0:inXSDDate>
                      </rdf:Description>
@@ -586,11 +617,11 @@
                </rdf:Description>
             </ns0:hasTime>
             <ns1:hasType>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="https://vocabs.ccmm.cz/registry/codelist/TimeReference/Collected">
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
+                                rdf:about="https://w3id.org/tib/datacite/vocab/dateType/Collected">
                   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-                  <ns0:label xml:lang="en">Date Collected</ns0:label>
-                  <ns0:label xml:lang="cs">Datum sběru</ns0:label>
+                  <ns0:prefLabel xml:lang="en">Date Collected</ns0:prefLabel>
+                  <ns0:prefLabel xml:lang="cs">Datum sběru</ns0:prefLabel>
                </rdf:Description>
             </ns1:hasType>
          </rdf:Description>
@@ -599,45 +630,45 @@
          <rdf:Description xmlns:ns0="http://www.w3.org/2006/time#"
                           xmlns:ns1="https://model.ccmm.cz/vocabulary/ccmm#"
                           xmlns:ns2="https://w3id.org/tib/datacite/property/"
-                          rdf:nodeID="d43e594">
+                          rdf:nodeID="d43e627">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#TimeReference"/>
             <ns0:hasTime>
-               <rdf:Description rdf:nodeID="d43e598">
+               <rdf:Description rdf:nodeID="d43e631">
                   <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
                   <ns0:inXSDDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-03</ns0:inXSDDate>
                </rdf:Description>
             </ns0:hasTime>
             <ns1:hasType>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="https://vocabs.ccmm.cz/registry/codelist/TimeReference/Available">
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
+                                rdf:about="https://w3id.org/tib/datacite/vocab/dateType/Available">
                   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-                  <ns0:label xml:lang="en">Date Available</ns0:label>
-                  <ns0:label xml:lang="cs">Datum zveřejnění</ns0:label>
+                  <ns0:prefLabel xml:lang="en">Date Available</ns0:prefLabel>
+                  <ns0:prefLabel xml:lang="cs">Datum zveřejnění</ns0:prefLabel>
                </rdf:Description>
             </ns1:hasType>
          </rdf:Description>
       </ns0:hasTimeReference>
       <ns3:type>
-         <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+         <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                           rdf:about="http://purl.org/coar/resource_type/c_ddb1">
             <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-            <ns0:label xml:lang="cs">datová sada</ns0:label>
-            <ns0:label xml:lang="en">dataset</ns0:label>
+            <ns0:prefLabel xml:lang="cs">datová sada</ns0:prefLabel>
+            <ns0:prefLabel xml:lang="en">dataset</ns0:prefLabel>
          </rdf:Description>
       </ns3:type>
       <ns0:hasPrimaryLanguage>
-         <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+         <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                           rdf:about="http://publications.europa.eu/resource/authority/language/ENG">
             <rdf:type rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/>
-            <ns0:label xml:lang="en">English</ns0:label>
+            <ns0:prefLabel xml:lang="en">English</ns0:prefLabel>
          </rdf:Description>
       </ns0:hasPrimaryLanguage>
       <ns3:accessRights>
-         <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+         <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                           rdf:about="http://purl.org/coar/access_right/c_abf2">
             <rdf:type rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
-            <ns0:label xml:lang="en">open access</ns0:label>
-            <ns0:label xml:lang="cs">otevřený přístup</ns0:label>
+            <ns0:prefLabel xml:lang="en">open access</ns0:prefLabel>
+            <ns0:prefLabel xml:lang="cs">otevřený přístup</ns0:prefLabel>
          </rdf:Description>
       </ns3:accessRights>
       <ns5:subject>
@@ -649,7 +680,7 @@
             <rdf:type rdf:resource="https://w3id.org/tib/datacite/class/Subject"/>
             <ns0:title xml:lang="cs">Buněčná biologie</ns0:title>
             <ns0:title xml:lang="en">Cell biology</ns0:title>
-            <ns2:classificationCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10601</ns2:classificationCode>
+            <ns2:classificationCode>10601</ns2:classificationCode>
             <ns3:inSubjectScheme>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 rdf:about="https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/">
@@ -669,7 +700,7 @@
             <rdf:type rdf:resource="https://w3id.org/tib/datacite/class/Subject"/>
             <ns0:title xml:lang="cs">Mikrobiologie</ns0:title>
             <ns0:title xml:lang="en">Microbiology</ns0:title>
-            <ns2:classificationCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10606</ns2:classificationCode>
+            <ns2:classificationCode>10606</ns2:classificationCode>
             <ns3:inSubjectScheme>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 rdf:about="https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/">
@@ -689,7 +720,7 @@
             <rdf:type rdf:resource="https://w3id.org/tib/datacite/class/Subject"/>
             <ns0:title xml:lang="cs">Imunologie</ns0:title>
             <ns0:title xml:lang="en">Immunology</ns0:title>
-            <ns2:classificationCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">30102</ns2:classificationCode>
+            <ns2:classificationCode>30102</ns2:classificationCode>
             <ns3:inSubjectScheme>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 rdf:about="https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/">
@@ -709,7 +740,7 @@
             <rdf:type rdf:resource="https://w3id.org/tib/datacite/class/Subject"/>
             <ns0:title xml:lang="cs">Mikrobiologie </ns0:title>
             <ns0:title xml:lang="en">Biological sciences</ns0:title>
-            <ns2:classificationCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10606</ns2:classificationCode>
+            <ns2:classificationCode>10606</ns2:classificationCode>
             <ns3:inSubjectScheme>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 rdf:about="https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/">
@@ -731,15 +762,15 @@
       <ns5:description>
          <rdf:Description xmlns:ns0="http://purl.org/dc/terms/"
                           xmlns:ns1="https://w3id.org/tib/datacite/property/"
-                          rdf:nodeID="d43e782">
+                          rdf:nodeID="d43e815">
             <rdf:type rdf:resource="https://w3id.org/tib/datacite/class/Description"/>
             <ns0:description xml:lang="cs">Data podporující strukturu neutrofilových extracelulárních pastí pocházejících z lidských neutrofilů</ns0:description>
             <ns1:descriptionType>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Abstract">
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
+                                rdf:about="https://w3id.org/tib/datacite/property/descriptionType/Abstract">
                   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-                  <ns0:label xml:lang="cs">Abstrakt</ns0:label>
-                  <ns0:label xml:lang="en">Abstract</ns0:label>
+                  <ns0:prefLabel xml:lang="cs">Abstrakt</ns0:prefLabel>
+                  <ns0:prefLabel xml:lang="en">Abstract</ns0:prefLabel>
                </rdf:Description>
             </ns1:descriptionType>
          </rdf:Description>
@@ -747,15 +778,15 @@
       <ns5:description>
          <rdf:Description xmlns:ns0="http://purl.org/dc/terms/"
                           xmlns:ns1="https://w3id.org/tib/datacite/property/"
-                          rdf:nodeID="d43e799">
+                          rdf:nodeID="d43e832">
             <rdf:type rdf:resource="https://w3id.org/tib/datacite/class/Description"/>
             <ns0:description xml:lang="en">Data supporting the structure of neutrophil extracellular traps generated from human neutrophils</ns0:description>
             <ns1:descriptionType>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Abstract">
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
+                                rdf:about="https://w3id.org/tib/datacite/property/descriptionType/Abstract">
                   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-                  <ns0:label xml:lang="cs">Abstrakt</ns0:label>
-                  <ns0:label xml:lang="en">Abstract</ns0:label>
+                  <ns0:prefLabel xml:lang="cs">Abstrakt</ns0:prefLabel>
+                  <ns0:prefLabel xml:lang="en">Abstract</ns0:prefLabel>
                </rdf:Description>
             </ns1:descriptionType>
          </rdf:Description>
@@ -763,15 +794,15 @@
       <ns5:description>
          <rdf:Description xmlns:ns0="http://purl.org/dc/terms/"
                           xmlns:ns1="https://w3id.org/tib/datacite/property/"
-                          rdf:nodeID="d43e816">
+                          rdf:nodeID="d43e849">
             <rdf:type rdf:resource="https://w3id.org/tib/datacite/class/Description"/>
             <ns0:description xml:lang="cs">Doplňující mikroskopická data</ns0:description>
             <ns1:descriptionType>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="https://vocabs.ccmm.cz/registry/codelist/DescriptionType/TechnicalInfo">
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
+                                rdf:about="https://w3id.org/tib/datacite/property/descriptionType/TechnicalInfo">
                   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-                  <ns0:label xml:lang="cs">Technická informace</ns0:label>
-                  <ns0:label xml:lang="en">Technical Info</ns0:label>
+                  <ns0:prefLabel xml:lang="cs">Technická informace</ns0:prefLabel>
+                  <ns0:prefLabel xml:lang="en">Technical Info</ns0:prefLabel>
                </rdf:Description>
             </ns1:descriptionType>
          </rdf:Description>
@@ -779,15 +810,15 @@
       <ns5:description>
          <rdf:Description xmlns:ns0="http://purl.org/dc/terms/"
                           xmlns:ns1="https://w3id.org/tib/datacite/property/"
-                          rdf:nodeID="d43e833">
+                          rdf:nodeID="d43e866">
             <rdf:type rdf:resource="https://w3id.org/tib/datacite/class/Description"/>
             <ns0:description xml:lang="en">Supplementary microscopy data</ns0:description>
             <ns1:descriptionType>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="https://vocabs.ccmm.cz/registry/codelist/DescriptionType/TechnicalInfo">
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
+                                rdf:about="https://w3id.org/tib/datacite/property/descriptionType/TechnicalInfo">
                   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-                  <ns0:label xml:lang="cs">Technická informace</ns0:label>
-                  <ns0:label xml:lang="en">Technical Info</ns0:label>
+                  <ns0:prefLabel xml:lang="cs">Technická informace</ns0:prefLabel>
+                  <ns0:prefLabel xml:lang="en">Technical Info</ns0:prefLabel>
                </rdf:Description>
             </ns1:descriptionType>
          </rdf:Description>
@@ -795,15 +826,15 @@
       <ns5:description>
          <rdf:Description xmlns:ns0="http://purl.org/dc/terms/"
                           xmlns:ns1="https://w3id.org/tib/datacite/property/"
-                          rdf:nodeID="d43e850">
+                          rdf:nodeID="d43e883">
             <rdf:type rdf:resource="https://w3id.org/tib/datacite/class/Description"/>
             <ns0:description xml:lang="cs">Izolace neutrofilů ze vzorků lidské krve, stimulace neutrofilů pomocí agens indukujících NETózu, akvizice mikroskopických dat</ns0:description>
             <ns1:descriptionType>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Methods">
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
+                                rdf:about="https://w3id.org/tib/datacite/property/descriptionType/Methods">
                   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-                  <ns0:label xml:lang="cs">Metodologie</ns0:label>
-                  <ns0:label xml:lang="en">Methods</ns0:label>
+                  <ns0:prefLabel xml:lang="cs">Metodologie</ns0:prefLabel>
+                  <ns0:prefLabel xml:lang="en">Methods</ns0:prefLabel>
                </rdf:Description>
             </ns1:descriptionType>
          </rdf:Description>
@@ -811,15 +842,15 @@
       <ns5:description>
          <rdf:Description xmlns:ns0="http://purl.org/dc/terms/"
                           xmlns:ns1="https://w3id.org/tib/datacite/property/"
-                          rdf:nodeID="d43e867">
+                          rdf:nodeID="d43e900">
             <rdf:type rdf:resource="https://w3id.org/tib/datacite/class/Description"/>
             <ns0:description xml:lang="en">Isolation of neutrophils from human blood samples, neutrophil stimulation with NETosis-inducing agents, microscopy data acquisition</ns0:description>
             <ns1:descriptionType>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Methods">
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
+                                rdf:about="https://w3id.org/tib/datacite/property/descriptionType/Methods">
                   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-                  <ns0:label xml:lang="cs">Metodologie</ns0:label>
-                  <ns0:label xml:lang="en">Methods</ns0:label>
+                  <ns0:prefLabel xml:lang="cs">Metodologie</ns0:prefLabel>
+                  <ns0:prefLabel xml:lang="en">Methods</ns0:prefLabel>
                </rdf:Description>
             </ns1:descriptionType>
          </rdf:Description>
@@ -830,7 +861,7 @@
                           xmlns:ns2="http://spdx.org/rdf/terms#"
                           rdf:about="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/CebecauerTkadlec_GACR2026_MindMap.pdf">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#Distribution-DownloadableFile"/>
-            <ns0:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CebecauerTkadlec_GACR2026_MindMap.pdf</ns0:title>
+            <ns0:title>CebecauerTkadlec_GACR2026_MindMap.pdf</ns0:title>
             <ns1:accessURL rdf:resource="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/"/>
             <ns1:downloadURL>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
@@ -840,33 +871,32 @@
                </rdf:Description>
             </ns1:downloadURL>
             <ns0:format>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="http://publications.europa.eu/resource/authority/file-type/PDF">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/MediaTypeOrExtent"/>
-                  <ns0:label xml:lang="en">PDF</ns0:label>
+                  <ns0:prefLabel xml:lang="en">PDF</ns0:prefLabel>
                </rdf:Description>
             </ns0:format>
             <ns1:mediaType>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="http://www.iana.org/assignments/media-types/application/pdf">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
-                  <ns0:label xml:lang="en">application/pdf</ns0:label>
+                  <ns0:prefLabel xml:lang="en">application/pdf</ns0:prefLabel>
                </rdf:Description>
             </ns1:mediaType>
             <ns1:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">67587</ns1:byteSize>
             <ns0:rights>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="https://vocabularies.coar-repositories.org/access_rights/c_abf2/">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
-                  <ns0:label xml:lang="en">open access</ns0:label>
+                  <ns0:prefLabel xml:lang="en">open access</ns0:prefLabel>
                </rdf:Description>
             </ns0:rights>
             <ns0:license>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="https://creativecommons.org/licenses/by/4.0/">
+               <rdf:Description rdf:about="https://creativecommons.org/licenses/by/4.0/">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/LicenseDocument"/>
-                  <ns0:label xml:lang="en">Creative Commons Attribution 4.0 International License</ns0:label>
-                  <ns0:label xml:lang="cs">Creative Commons Uveďte původ 4.0 Mezinárodní licence</ns0:label>
+                  <ns0:title xml:lang="en">Creative Commons Attribution 4.0 International License</ns0:title>
+                  <ns0:title xml:lang="cs">Creative Commons Uveďte původ 4.0 Mezinárodní licence</ns0:title>
                </rdf:Description>
             </ns0:license>
          </rdf:Description>
@@ -877,7 +907,7 @@
                           xmlns:ns2="http://spdx.org/rdf/terms#"
                           rdf:about="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/ReadMe.txt">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#Distribution-DownloadableFile"/>
-            <ns0:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ReadMe.txt</ns0:title>
+            <ns0:title>ReadMe.txt</ns0:title>
             <ns1:accessURL rdf:resource="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/"/>
             <ns1:downloadURL>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
@@ -887,33 +917,32 @@
                </rdf:Description>
             </ns1:downloadURL>
             <ns0:format>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="http://publications.europa.eu/resource/authority/file-type/TXT">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/MediaTypeOrExtent"/>
-                  <ns0:label xml:lang="en">Plain text</ns0:label>
+                  <ns0:prefLabel xml:lang="en">Plain text</ns0:prefLabel>
                </rdf:Description>
             </ns0:format>
             <ns1:mediaType>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="http://www.iana.org/assignments/media-types/text/plain">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
-                  <ns0:label xml:lang="en">text/plain</ns0:label>
+                  <ns0:prefLabel xml:lang="en">text/plain</ns0:prefLabel>
                </rdf:Description>
             </ns1:mediaType>
             <ns1:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3889</ns1:byteSize>
             <ns0:rights>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="https://vocabularies.coar-repositories.org/access_rights/c_abf2/">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
-                  <ns0:label xml:lang="en">open access</ns0:label>
+                  <ns0:prefLabel xml:lang="en">open access</ns0:prefLabel>
                </rdf:Description>
             </ns0:rights>
             <ns0:license>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="https://creativecommons.org/licenses/by/4.0/">
+               <rdf:Description rdf:about="https://creativecommons.org/licenses/by/4.0/">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/LicenseDocument"/>
-                  <ns0:label xml:lang="en">Creative Commons Attribution 4.0 International License</ns0:label>
-                  <ns0:label xml:lang="cs">Creative Commons Uveďte původ 4.0 Mezinárodní licence</ns0:label>
+                  <ns0:title xml:lang="en">Creative Commons Attribution 4.0 International License</ns0:title>
+                  <ns0:title xml:lang="cs">Creative Commons Uveďte původ 4.0 Mezinárodní licence</ns0:title>
                </rdf:Description>
             </ns0:license>
          </rdf:Description>
@@ -924,7 +953,7 @@
                           xmlns:ns2="http://spdx.org/rdf/terms#"
                           rdf:about="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2A_NE_DNAchannel.tif">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#Distribution-DownloadableFile"/>
-            <ns0:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supp_Fig2A_NE_DNAchannel.tif</ns0:title>
+            <ns0:title>Supp_Fig2A_NE_DNAchannel.tif</ns0:title>
             <ns1:accessURL rdf:resource="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/"/>
             <ns1:downloadURL>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
@@ -934,33 +963,32 @@
                </rdf:Description>
             </ns1:downloadURL>
             <ns0:format>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="http://publications.europa.eu/resource/authority/file-type/TIFF">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/MediaTypeOrExtent"/>
-                  <ns0:label xml:lang="en">TIFF</ns0:label>
+                  <ns0:prefLabel xml:lang="en">TIFF</ns0:prefLabel>
                </rdf:Description>
             </ns0:format>
             <ns1:mediaType>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="http://www.iana.org/assignments/media-types/image/tiff">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
-                  <ns0:label xml:lang="en">image/tiff</ns0:label>
+                  <ns0:prefLabel xml:lang="en">image/tiff</ns0:prefLabel>
                </rdf:Description>
             </ns1:mediaType>
             <ns1:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1049028</ns1:byteSize>
             <ns0:rights>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="https://vocabularies.coar-repositories.org/access_rights/c_abf2/">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
-                  <ns0:label xml:lang="en">open access</ns0:label>
+                  <ns0:prefLabel xml:lang="en">open access</ns0:prefLabel>
                </rdf:Description>
             </ns0:rights>
             <ns0:license>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="https://creativecommons.org/licenses/by/4.0/">
+               <rdf:Description rdf:about="https://creativecommons.org/licenses/by/4.0/">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/LicenseDocument"/>
-                  <ns0:label xml:lang="en">Creative Commons Attribution 4.0 International License</ns0:label>
-                  <ns0:label xml:lang="cs">Creative Commons Uveďte původ 4.0 Mezinárodní licence</ns0:label>
+                  <ns0:title xml:lang="en">Creative Commons Attribution 4.0 International License</ns0:title>
+                  <ns0:title xml:lang="cs">Creative Commons Uveďte původ 4.0 Mezinárodní licence</ns0:title>
                </rdf:Description>
             </ns0:license>
          </rdf:Description>
@@ -971,7 +999,7 @@
                           xmlns:ns2="http://spdx.org/rdf/terms#"
                           rdf:about="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2A_NE_Merge_5um.tif">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#Distribution-DownloadableFile"/>
-            <ns0:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supp_Fig2A_NE_Merge_5um.tif</ns0:title>
+            <ns0:title>Supp_Fig2A_NE_Merge_5um.tif</ns0:title>
             <ns1:accessURL rdf:resource="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/"/>
             <ns1:downloadURL>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
@@ -981,33 +1009,32 @@
                </rdf:Description>
             </ns1:downloadURL>
             <ns0:format>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="http://publications.europa.eu/resource/authority/file-type/TIFF">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/MediaTypeOrExtent"/>
-                  <ns0:label xml:lang="en">TIFF</ns0:label>
+                  <ns0:prefLabel xml:lang="en">TIFF</ns0:prefLabel>
                </rdf:Description>
             </ns0:format>
             <ns1:mediaType>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="http://www.iana.org/assignments/media-types/image/tiff">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
-                  <ns0:label xml:lang="en">image/tiff</ns0:label>
+                  <ns0:prefLabel xml:lang="en">image/tiff</ns0:prefLabel>
                </rdf:Description>
             </ns1:mediaType>
             <ns1:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">786842</ns1:byteSize>
             <ns0:rights>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="https://vocabularies.coar-repositories.org/access_rights/c_abf2/">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
-                  <ns0:label xml:lang="en">open access</ns0:label>
+                  <ns0:prefLabel xml:lang="en">open access</ns0:prefLabel>
                </rdf:Description>
             </ns0:rights>
             <ns0:license>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="https://creativecommons.org/licenses/by/4.0/">
+               <rdf:Description rdf:about="https://creativecommons.org/licenses/by/4.0/">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/LicenseDocument"/>
-                  <ns0:label xml:lang="en">Creative Commons Attribution 4.0 International License</ns0:label>
-                  <ns0:label xml:lang="cs">Creative Commons Uveďte původ 4.0 Mezinárodní licence</ns0:label>
+                  <ns0:title xml:lang="en">Creative Commons Attribution 4.0 International License</ns0:title>
+                  <ns0:title xml:lang="cs">Creative Commons Uveďte původ 4.0 Mezinárodní licence</ns0:title>
                </rdf:Description>
             </ns0:license>
          </rdf:Description>
@@ -1018,7 +1045,7 @@
                           xmlns:ns2="http://spdx.org/rdf/terms#"
                           rdf:about="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2A_NE_processedSMLM.tif">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#Distribution-DownloadableFile"/>
-            <ns0:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supp_Fig2A_NE_processedSMLM.tif</ns0:title>
+            <ns0:title>Supp_Fig2A_NE_processedSMLM.tif</ns0:title>
             <ns1:accessURL rdf:resource="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/"/>
             <ns1:downloadURL>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
@@ -1028,33 +1055,32 @@
                </rdf:Description>
             </ns1:downloadURL>
             <ns0:format>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="http://publications.europa.eu/resource/authority/file-type/TIFF">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/MediaTypeOrExtent"/>
-                  <ns0:label xml:lang="en">TIFF</ns0:label>
+                  <ns0:prefLabel xml:lang="en">TIFF</ns0:prefLabel>
                </rdf:Description>
             </ns0:format>
             <ns1:mediaType>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="http://www.iana.org/assignments/media-types/image/tiff">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
-                  <ns0:label xml:lang="en">image/tiff</ns0:label>
+                  <ns0:prefLabel xml:lang="en">image/tiff</ns0:prefLabel>
                </rdf:Description>
             </ns1:mediaType>
             <ns1:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26112432</ns1:byteSize>
             <ns0:rights>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="https://vocabularies.coar-repositories.org/access_rights/c_abf2/">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
-                  <ns0:label xml:lang="en">open access</ns0:label>
+                  <ns0:prefLabel xml:lang="en">open access</ns0:prefLabel>
                </rdf:Description>
             </ns0:rights>
             <ns0:license>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="https://creativecommons.org/licenses/by/4.0/">
+               <rdf:Description rdf:about="https://creativecommons.org/licenses/by/4.0/">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/LicenseDocument"/>
-                  <ns0:label xml:lang="en">Creative Commons Attribution 4.0 International License</ns0:label>
-                  <ns0:label xml:lang="cs">Creative Commons Uveďte původ 4.0 Mezinárodní licence</ns0:label>
+                  <ns0:title xml:lang="en">Creative Commons Attribution 4.0 International License</ns0:title>
+                  <ns0:title xml:lang="cs">Creative Commons Uveďte původ 4.0 Mezinárodní licence</ns0:title>
                </rdf:Description>
             </ns0:license>
          </rdf:Description>
@@ -1065,7 +1091,7 @@
                           xmlns:ns2="http://spdx.org/rdf/terms#"
                           rdf:about="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2B_citH3_DNAchannel.tif">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#Distribution-DownloadableFile"/>
-            <ns0:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supp_Fig2B_citH3_DNAchannel.tif</ns0:title>
+            <ns0:title>Supp_Fig2B_citH3_DNAchannel.tif</ns0:title>
             <ns1:accessURL rdf:resource="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/"/>
             <ns1:downloadURL>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
@@ -1075,33 +1101,32 @@
                </rdf:Description>
             </ns1:downloadURL>
             <ns0:format>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="http://publications.europa.eu/resource/authority/file-type/TIFF">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/MediaTypeOrExtent"/>
-                  <ns0:label xml:lang="en">TIFF</ns0:label>
+                  <ns0:prefLabel xml:lang="en">TIFF</ns0:prefLabel>
                </rdf:Description>
             </ns0:format>
             <ns1:mediaType>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="http://www.iana.org/assignments/media-types/image/tiff">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
-                  <ns0:label xml:lang="en">image/tiff</ns0:label>
+                  <ns0:prefLabel xml:lang="en">image/tiff</ns0:prefLabel>
                </rdf:Description>
             </ns1:mediaType>
             <ns1:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1049028</ns1:byteSize>
             <ns0:rights>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="https://vocabularies.coar-repositories.org/access_rights/c_abf2/">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
-                  <ns0:label xml:lang="en">open access</ns0:label>
+                  <ns0:prefLabel xml:lang="en">open access</ns0:prefLabel>
                </rdf:Description>
             </ns0:rights>
             <ns0:license>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="https://creativecommons.org/licenses/by/4.0/">
+               <rdf:Description rdf:about="https://creativecommons.org/licenses/by/4.0/">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/LicenseDocument"/>
-                  <ns0:label xml:lang="en">Creative Commons Attribution 4.0 International License</ns0:label>
-                  <ns0:label xml:lang="cs">Creative Commons Uveďte původ 4.0 Mezinárodní licence</ns0:label>
+                  <ns0:title xml:lang="en">Creative Commons Attribution 4.0 International License</ns0:title>
+                  <ns0:title xml:lang="cs">Creative Commons Uveďte původ 4.0 Mezinárodní licence</ns0:title>
                </rdf:Description>
             </ns0:license>
          </rdf:Description>
@@ -1112,7 +1137,7 @@
                           xmlns:ns2="http://spdx.org/rdf/terms#"
                           rdf:about="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2B_citH3_Merge_5um.tif">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#Distribution-DownloadableFile"/>
-            <ns0:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supp_Fig2B_citH3_Merge_5um.tif</ns0:title>
+            <ns0:title>Supp_Fig2B_citH3_Merge_5um.tif</ns0:title>
             <ns1:accessURL rdf:resource="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/"/>
             <ns1:downloadURL>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
@@ -1122,33 +1147,32 @@
                </rdf:Description>
             </ns1:downloadURL>
             <ns0:format>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="http://publications.europa.eu/resource/authority/file-type/TIFF">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/MediaTypeOrExtent"/>
-                  <ns0:label xml:lang="en">TIFF</ns0:label>
+                  <ns0:prefLabel xml:lang="en">TIFF</ns0:prefLabel>
                </rdf:Description>
             </ns0:format>
             <ns1:mediaType>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="http://www.iana.org/assignments/media-types/image/tiff">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
-                  <ns0:label xml:lang="en">image/tiff</ns0:label>
+                  <ns0:prefLabel xml:lang="en">image/tiff</ns0:prefLabel>
                </rdf:Description>
             </ns1:mediaType>
             <ns1:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">786842</ns1:byteSize>
             <ns0:rights>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="https://vocabularies.coar-repositories.org/access_rights/c_abf2/">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
-                  <ns0:label xml:lang="en">open access</ns0:label>
+                  <ns0:prefLabel xml:lang="en">open access</ns0:prefLabel>
                </rdf:Description>
             </ns0:rights>
             <ns0:license>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="https://creativecommons.org/licenses/by/4.0/">
+               <rdf:Description rdf:about="https://creativecommons.org/licenses/by/4.0/">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/LicenseDocument"/>
-                  <ns0:label xml:lang="en">Creative Commons Attribution 4.0 International License</ns0:label>
-                  <ns0:label xml:lang="cs">Creative Commons Uveďte původ 4.0 Mezinárodní licence</ns0:label>
+                  <ns0:title xml:lang="en">Creative Commons Attribution 4.0 International License</ns0:title>
+                  <ns0:title xml:lang="cs">Creative Commons Uveďte původ 4.0 Mezinárodní licence</ns0:title>
                </rdf:Description>
             </ns0:license>
          </rdf:Description>
@@ -1159,7 +1183,7 @@
                           xmlns:ns2="http://spdx.org/rdf/terms#"
                           rdf:about="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2B_citH3_processedSMLM.tif">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#Distribution-DownloadableFile"/>
-            <ns0:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supp_Fig2B_citH3_processedSMLM.tif</ns0:title>
+            <ns0:title>Supp_Fig2B_citH3_processedSMLM.tif</ns0:title>
             <ns1:accessURL rdf:resource="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/"/>
             <ns1:downloadURL>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
@@ -1169,33 +1193,32 @@
                </rdf:Description>
             </ns1:downloadURL>
             <ns0:format>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="http://publications.europa.eu/resource/authority/file-type/TIFF">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/MediaTypeOrExtent"/>
-                  <ns0:label xml:lang="en">TIFF</ns0:label>
+                  <ns0:prefLabel xml:lang="en">TIFF</ns0:prefLabel>
                </rdf:Description>
             </ns0:format>
             <ns1:mediaType>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="http://www.iana.org/assignments/media-types/image/tiff">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
-                  <ns0:label xml:lang="en">image/tiff</ns0:label>
+                  <ns0:prefLabel xml:lang="en">image/tiff</ns0:prefLabel>
                </rdf:Description>
             </ns1:mediaType>
             <ns1:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26163532</ns1:byteSize>
             <ns0:rights>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="https://vocabularies.coar-repositories.org/access_rights/c_abf2/">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
-                  <ns0:label xml:lang="en">open access</ns0:label>
+                  <ns0:prefLabel xml:lang="en">open access</ns0:prefLabel>
                </rdf:Description>
             </ns0:rights>
             <ns0:license>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="https://creativecommons.org/licenses/by/4.0/">
+               <rdf:Description rdf:about="https://creativecommons.org/licenses/by/4.0/">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/LicenseDocument"/>
-                  <ns0:label xml:lang="en">Creative Commons Attribution 4.0 International License</ns0:label>
-                  <ns0:label xml:lang="cs">Creative Commons Uveďte původ 4.0 Mezinárodní licence</ns0:label>
+                  <ns0:title xml:lang="en">Creative Commons Attribution 4.0 International License</ns0:title>
+                  <ns0:title xml:lang="cs">Creative Commons Uveďte původ 4.0 Mezinárodní licence</ns0:title>
                </rdf:Description>
             </ns0:license>
          </rdf:Description>
@@ -1206,7 +1229,7 @@
                           xmlns:ns2="http://spdx.org/rdf/terms#"
                           rdf:about="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2C_MPO_DNAchannel.tif">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#Distribution-DownloadableFile"/>
-            <ns0:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supp_Fig2C_MPO_DNAchannel.tif</ns0:title>
+            <ns0:title>Supp_Fig2C_MPO_DNAchannel.tif</ns0:title>
             <ns1:accessURL rdf:resource="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/"/>
             <ns1:downloadURL>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
@@ -1216,33 +1239,32 @@
                </rdf:Description>
             </ns1:downloadURL>
             <ns0:format>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="http://publications.europa.eu/resource/authority/file-type/TIFF">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/MediaTypeOrExtent"/>
-                  <ns0:label xml:lang="en">TIFF</ns0:label>
+                  <ns0:prefLabel xml:lang="en">TIFF</ns0:prefLabel>
                </rdf:Description>
             </ns0:format>
             <ns1:mediaType>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="http://www.iana.org/assignments/media-types/image/tiff">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
-                  <ns0:label xml:lang="en">image/tiff</ns0:label>
+                  <ns0:prefLabel xml:lang="en">image/tiff</ns0:prefLabel>
                </rdf:Description>
             </ns1:mediaType>
             <ns1:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1049033</ns1:byteSize>
             <ns0:rights>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="https://vocabularies.coar-repositories.org/access_rights/c_abf2/">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
-                  <ns0:label xml:lang="en">open access</ns0:label>
+                  <ns0:prefLabel xml:lang="en">open access</ns0:prefLabel>
                </rdf:Description>
             </ns0:rights>
             <ns0:license>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="https://creativecommons.org/licenses/by/4.0/">
+               <rdf:Description rdf:about="https://creativecommons.org/licenses/by/4.0/">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/LicenseDocument"/>
-                  <ns0:label xml:lang="en">Creative Commons Attribution 4.0 International License</ns0:label>
-                  <ns0:label xml:lang="cs">Creative Commons Uveďte původ 4.0 Mezinárodní licence</ns0:label>
+                  <ns0:title xml:lang="en">Creative Commons Attribution 4.0 International License</ns0:title>
+                  <ns0:title xml:lang="cs">Creative Commons Uveďte původ 4.0 Mezinárodní licence</ns0:title>
                </rdf:Description>
             </ns0:license>
          </rdf:Description>
@@ -1253,7 +1275,7 @@
                           xmlns:ns2="http://spdx.org/rdf/terms#"
                           rdf:about="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2C_MPO_Merge_5um.tif">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#Distribution-DownloadableFile"/>
-            <ns0:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supp_Fig2C_MPO_Merge_5um.tif</ns0:title>
+            <ns0:title>Supp_Fig2C_MPO_Merge_5um.tif</ns0:title>
             <ns1:accessURL rdf:resource="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/"/>
             <ns1:downloadURL>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
@@ -1263,33 +1285,32 @@
                </rdf:Description>
             </ns1:downloadURL>
             <ns0:format>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="http://publications.europa.eu/resource/authority/file-type/TIFF">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/MediaTypeOrExtent"/>
-                  <ns0:label xml:lang="en">TIFF</ns0:label>
+                  <ns0:prefLabel xml:lang="en">TIFF</ns0:prefLabel>
                </rdf:Description>
             </ns0:format>
             <ns1:mediaType>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="http://www.iana.org/assignments/media-types/image/tiff">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
-                  <ns0:label xml:lang="en">image/tiff</ns0:label>
+                  <ns0:prefLabel xml:lang="en">image/tiff</ns0:prefLabel>
                </rdf:Description>
             </ns1:mediaType>
             <ns1:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">786842</ns1:byteSize>
             <ns0:rights>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="https://vocabularies.coar-repositories.org/access_rights/c_abf2/">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
-                  <ns0:label xml:lang="en">open access</ns0:label>
+                  <ns0:prefLabel xml:lang="en">open access</ns0:prefLabel>
                </rdf:Description>
             </ns0:rights>
             <ns0:license>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="https://creativecommons.org/licenses/by/4.0/">
+               <rdf:Description rdf:about="https://creativecommons.org/licenses/by/4.0/">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/LicenseDocument"/>
-                  <ns0:label xml:lang="en">Creative Commons Attribution 4.0 International License</ns0:label>
-                  <ns0:label xml:lang="cs">Creative Commons Uveďte původ 4.0 Mezinárodní licence</ns0:label>
+                  <ns0:title xml:lang="en">Creative Commons Attribution 4.0 International License</ns0:title>
+                  <ns0:title xml:lang="cs">Creative Commons Uveďte původ 4.0 Mezinárodní licence</ns0:title>
                </rdf:Description>
             </ns0:license>
          </rdf:Description>
@@ -1300,7 +1321,7 @@
                           xmlns:ns2="http://spdx.org/rdf/terms#"
                           rdf:about="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2C_MPO_processedSMLM.tif">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#Distribution-DownloadableFile"/>
-            <ns0:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supp_Fig2C_MPO_processedSMLM.tif</ns0:title>
+            <ns0:title>Supp_Fig2C_MPO_processedSMLM.tif</ns0:title>
             <ns1:accessURL rdf:resource="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/"/>
             <ns1:downloadURL>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
@@ -1310,33 +1331,32 @@
                </rdf:Description>
             </ns1:downloadURL>
             <ns0:format>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="http://publications.europa.eu/resource/authority/file-type/TIFF">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/MediaTypeOrExtent"/>
-                  <ns0:label xml:lang="en">TIFF</ns0:label>
+                  <ns0:prefLabel xml:lang="en">TIFF</ns0:prefLabel>
                </rdf:Description>
             </ns0:format>
             <ns1:mediaType>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="http://www.iana.org/assignments/media-types/image/tiff">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
-                  <ns0:label xml:lang="en">image/tiff</ns0:label>
+                  <ns0:prefLabel xml:lang="en">image/tiff</ns0:prefLabel>
                </rdf:Description>
             </ns1:mediaType>
             <ns1:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26112431</ns1:byteSize>
             <ns0:rights>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="https://vocabularies.coar-repositories.org/access_rights/c_abf2/">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
-                  <ns0:label xml:lang="en">open access</ns0:label>
+                  <ns0:prefLabel xml:lang="en">open access</ns0:prefLabel>
                </rdf:Description>
             </ns0:rights>
             <ns0:license>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="https://creativecommons.org/licenses/by/4.0/">
+               <rdf:Description rdf:about="https://creativecommons.org/licenses/by/4.0/">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/LicenseDocument"/>
-                  <ns0:label xml:lang="en">Creative Commons Attribution 4.0 International License</ns0:label>
-                  <ns0:label xml:lang="cs">Creative Commons Uveďte původ 4.0 Mezinárodní licence</ns0:label>
+                  <ns0:title xml:lang="en">Creative Commons Attribution 4.0 International License</ns0:title>
+                  <ns0:title xml:lang="cs">Creative Commons Uveďte původ 4.0 Mezinárodní licence</ns0:title>
                </rdf:Description>
             </ns0:license>
          </rdf:Description>
@@ -1347,7 +1367,7 @@
                           xmlns:ns2="http://spdx.org/rdf/terms#"
                           rdf:about="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supplementary_Figures.pdf">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#Distribution-DownloadableFile"/>
-            <ns0:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supplementary_Figures.pdf</ns0:title>
+            <ns0:title>Supplementary_Figures.pdf</ns0:title>
             <ns1:accessURL rdf:resource="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/"/>
             <ns1:downloadURL>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
@@ -1357,39 +1377,38 @@
                </rdf:Description>
             </ns1:downloadURL>
             <ns0:format>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="http://publications.europa.eu/resource/authority/file-type/PDF">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/MediaTypeOrExtent"/>
-                  <ns0:label xml:lang="en">PDF</ns0:label>
+                  <ns0:prefLabel xml:lang="en">PDF</ns0:prefLabel>
                </rdf:Description>
             </ns0:format>
             <ns1:mediaType>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="http://www.iana.org/assignments/media-types/application/pdf">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
-                  <ns0:label xml:lang="en">application/pdf</ns0:label>
+                  <ns0:prefLabel xml:lang="en">application/pdf</ns0:prefLabel>
                </rdf:Description>
             </ns1:mediaType>
             <ns1:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">895767</ns1:byteSize>
             <ns0:rights>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
+               <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
                                 rdf:about="https://vocabularies.coar-repositories.org/access_rights/c_abf2/">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
-                  <ns0:label xml:lang="en">open access</ns0:label>
+                  <ns0:prefLabel xml:lang="en">open access</ns0:prefLabel>
                </rdf:Description>
             </ns0:rights>
             <ns0:license>
-               <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="https://creativecommons.org/licenses/by/4.0/">
+               <rdf:Description rdf:about="https://creativecommons.org/licenses/by/4.0/">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/LicenseDocument"/>
-                  <ns0:label xml:lang="en">Creative Commons Attribution 4.0 International License</ns0:label>
-                  <ns0:label xml:lang="cs">Creative Commons Uveďte původ 4.0 Mezinárodní licence</ns0:label>
+                  <ns0:title xml:lang="en">Creative Commons Attribution 4.0 International License</ns0:title>
+                  <ns0:title xml:lang="cs">Creative Commons Uveďte původ 4.0 Mezinárodní licence</ns0:title>
                </rdf:Description>
             </ns0:license>
          </rdf:Description>
       </ns2:distribution>
       <ns0:hasValidationResult>
-         <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="d43e1593">
+         <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:nodeID="d43e1626">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#ValidationResult"/>
          </rdf:Description>
       </ns0:hasValidationResult>

@@ -17,8 +17,8 @@
           "@container": "@set",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "language_system": {
               "@id": "http://purl.org/dc/terms/LinguisticSystem",
@@ -49,6 +49,10 @@
                         "label": {
                           "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                           "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                        },
+                        "notation": {
+                          "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                          "@type": "xsd:string"
                         },
                         "identifier_scheme": {
                           "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
@@ -178,6 +182,10 @@
                               "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                               "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                             },
+                            "notation": {
+                              "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                              "@type": "xsd:string"
+                            },
                             "identifier_scheme": {
                               "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
                               "@context": {}
@@ -299,8 +307,8 @@
               "@type": "@id",
               "@context": {
                 "label": {
-                  "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                  "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                  "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                  "@container": "@language"
                 },
                 "attributed_agent_role_type": {
                   "@id": "http://www.w3.org/ns/dcat#Role",
@@ -344,6 +352,10 @@
               "@id": "http://purl.org/dc/terms/title",
               "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
             },
+            "description": {
+              "@id": "http://purl.org/dc/terms/description",
+              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            },
             "qualified_attribution": {
               "@id": "http://www.w3.org/ns/prov#qualifiedAttribution",
               "@container": "@set",
@@ -367,6 +379,10 @@
                             "label": {
                               "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                               "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                            },
+                            "notation": {
+                              "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                              "@type": "xsd:string"
                             },
                             "identifier_scheme": {
                               "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
@@ -496,6 +512,10 @@
                                   "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                                   "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                                 },
+                                "notation": {
+                                  "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                                  "@type": "xsd:string"
+                                },
                                 "identifier_scheme": {
                                   "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
                                   "@context": {}
@@ -617,8 +637,8 @@
                   "@type": "@id",
                   "@context": {
                     "label": {
-                      "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                      "@container": "@language"
                     },
                     "attributed_agent_role_type": {
                       "@id": "http://www.w3.org/ns/dcat#Role",
@@ -631,6 +651,16 @@
                   "@context": {}
                 }
               }
+            },
+            "record": {
+              "@id": "http://www.w3.org/ns/dcat#record",
+              "@type": "@id",
+              "@container": "@set"
+            },
+            "dataset": {
+              "@id": "http://www.w3.org/ns/dcat#dataset",
+              "@type": "@id",
+              "@container": "@set"
             },
             "repository": {
               "@id": "http://www.w3.org/ns/dcat#Catalog",
@@ -659,6 +689,10 @@
             "label": {
               "@id": "http://www.w3.org/2000/01/rdf-schema#label",
               "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            },
+            "notation": {
+              "@id": "http://www.w3.org/2004/02/skos/core#notation",
+              "@type": "xsd:string"
             },
             "identifier_scheme": {
               "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
@@ -697,8 +731,8 @@
           "@type": "@id",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "alternate_title_type": {
               "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -735,6 +769,10 @@
                     "label": {
                       "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                    },
+                    "notation": {
+                      "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                      "@type": "xsd:string"
                     },
                     "identifier_scheme": {
                       "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
@@ -863,6 +901,10 @@
                         "label": {
                           "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                           "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                        },
+                        "notation": {
+                          "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                          "@type": "xsd:string"
                         },
                         "identifier_scheme": {
                           "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
@@ -985,8 +1027,8 @@
           "@type": "@id",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "attributed_agent_role_type": {
               "@id": "http://www.w3.org/ns/dcat#Role",
@@ -1071,8 +1113,8 @@
           "@type": "@id",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "date_type": {
               "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -1095,8 +1137,8 @@
       "@type": "@id",
       "@context": {
         "label": {
-          "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+          "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "@container": "@language"
         },
         "resource_type": {
           "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -1109,8 +1151,8 @@
       "@type": "@id",
       "@context": {
         "label": {
-          "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+          "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "@container": "@language"
         },
         "language_system": {
           "@id": "http://purl.org/dc/terms/LinguisticSystem",
@@ -1123,8 +1165,8 @@
       "@container": "@set",
       "@context": {
         "label": {
-          "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+          "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "@container": "@language"
         },
         "language_system": {
           "@id": "http://purl.org/dc/terms/LinguisticSystem",
@@ -1137,8 +1179,8 @@
       "@type": "@id",
       "@context": {
         "label": {
-          "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+          "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "@container": "@language"
         },
         "access_rights": {
           "@id": "http://purl.org/dc/terms/RightsStatement",
@@ -1199,8 +1241,8 @@
           "@type": "@id",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "description_type": {
               "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -1268,6 +1310,10 @@
                       "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                     },
+                    "notation": {
+                      "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                      "@type": "xsd:string"
+                    },
                     "identifier_scheme": {
                       "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
                       "@context": {}
@@ -1301,8 +1347,8 @@
                   "@type": "@id",
                   "@context": {
                     "label": {
-                      "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                      "@container": "@language"
                     },
                     "alternate_title_type": {
                       "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -1343,6 +1389,10 @@
                             "label": {
                               "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                               "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                            },
+                            "notation": {
+                              "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                              "@type": "xsd:string"
                             },
                             "identifier_scheme": {
                               "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
@@ -1472,6 +1522,10 @@
                                   "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                                   "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                                 },
+                                "notation": {
+                                  "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                                  "@type": "xsd:string"
+                                },
                                 "identifier_scheme": {
                                   "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
                                   "@context": {}
@@ -1593,8 +1647,8 @@
                   "@type": "@id",
                   "@context": {
                     "label": {
-                      "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                      "@container": "@language"
                     },
                     "attributed_agent_role_type": {
                       "@id": "http://www.w3.org/ns/dcat#Role",
@@ -1675,8 +1729,8 @@
                   "@type": "@id",
                   "@context": {
                     "label": {
-                      "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                      "@container": "@language"
                     },
                     "date_type": {
                       "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -1699,8 +1753,8 @@
               "@type": "@id",
               "@context": {
                 "label": {
-                  "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                  "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                  "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                  "@container": "@language"
                 },
                 "resource_type": {
                   "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -1713,8 +1767,8 @@
               "@type": "@id",
               "@context": {
                 "label": {
-                  "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                  "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                  "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                  "@container": "@language"
                 },
                 "resource_relation_type": {
                   "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -1733,8 +1787,8 @@
           "@type": "@id",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "relation_type": {
               "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -1783,6 +1837,10 @@
                     "label": {
                       "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                    },
+                    "notation": {
+                      "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                      "@type": "xsd:string"
                     },
                     "identifier_scheme": {
                       "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
@@ -1911,6 +1969,10 @@
                         "label": {
                           "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                           "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                        },
+                        "notation": {
+                          "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                          "@type": "xsd:string"
                         },
                         "identifier_scheme": {
                           "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
@@ -2054,6 +2116,10 @@
                   "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                   "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                 },
+                "notation": {
+                  "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                  "@type": "xsd:string"
+                },
                 "identifier_scheme": {
                   "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
                   "@context": {}
@@ -2087,8 +2153,8 @@
               "@type": "@id",
               "@context": {
                 "label": {
-                  "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                  "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                  "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                  "@container": "@language"
                 },
                 "alternate_title_type": {
                   "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -2129,6 +2195,10 @@
                         "label": {
                           "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                           "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                        },
+                        "notation": {
+                          "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                          "@type": "xsd:string"
                         },
                         "identifier_scheme": {
                           "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
@@ -2258,6 +2328,10 @@
                               "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                               "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                             },
+                            "notation": {
+                              "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                              "@type": "xsd:string"
+                            },
                             "identifier_scheme": {
                               "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
                               "@context": {}
@@ -2379,8 +2453,8 @@
               "@type": "@id",
               "@context": {
                 "label": {
-                  "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                  "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                  "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                  "@container": "@language"
                 },
                 "attributed_agent_role_type": {
                   "@id": "http://www.w3.org/ns/dcat#Role",
@@ -2461,8 +2535,8 @@
               "@type": "@id",
               "@context": {
                 "label": {
-                  "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                  "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                  "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                  "@container": "@language"
                 },
                 "date_type": {
                   "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -2485,8 +2559,8 @@
           "@type": "@id",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "resource_type": {
               "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -2499,8 +2573,8 @@
           "@type": "@id",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "resource_relation_type": {
               "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -2555,6 +2629,10 @@
                           "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                           "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                         },
+                        "notation": {
+                          "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                          "@type": "xsd:string"
+                        },
                         "identifier_scheme": {
                           "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
                           "@context": {}
@@ -2588,8 +2666,8 @@
                       "@type": "@id",
                       "@context": {
                         "label": {
-                          "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                          "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                          "@container": "@language"
                         },
                         "alternate_title_type": {
                           "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -2630,6 +2708,10 @@
                                 "label": {
                                   "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                                   "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                                },
+                                "notation": {
+                                  "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                                  "@type": "xsd:string"
                                 },
                                 "identifier_scheme": {
                                   "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
@@ -2759,6 +2841,10 @@
                                       "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                                       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                                     },
+                                    "notation": {
+                                      "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                                      "@type": "xsd:string"
+                                    },
                                     "identifier_scheme": {
                                       "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
                                       "@context": {}
@@ -2880,8 +2966,8 @@
                       "@type": "@id",
                       "@context": {
                         "label": {
-                          "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                          "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                          "@container": "@language"
                         },
                         "attributed_agent_role_type": {
                           "@id": "http://www.w3.org/ns/dcat#Role",
@@ -2962,8 +3048,8 @@
                       "@type": "@id",
                       "@context": {
                         "label": {
-                          "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                          "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                          "@container": "@language"
                         },
                         "date_type": {
                           "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -2986,8 +3072,8 @@
                   "@type": "@id",
                   "@context": {
                     "label": {
-                      "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                      "@container": "@language"
                     },
                     "resource_type": {
                       "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -3000,8 +3086,8 @@
                   "@type": "@id",
                   "@context": {
                     "label": {
-                      "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                      "@container": "@language"
                     },
                     "resource_relation_type": {
                       "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -3019,8 +3105,8 @@
               "@id": "http://purl.org/dc/terms/license",
               "@type": "@id",
               "@context": {
-                "label": {
-                  "@id": "http://www.w3.org/2000/01/rdf-schema#label",
+                "title": {
+                  "@id": "http://purl.org/dc/terms/title",
                   "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                 },
                 "licence_document": {
@@ -3068,8 +3154,8 @@
           "@container": "@set",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "access_rights": {
               "@id": "http://purl.org/dc/terms/RightsStatement",
@@ -3081,8 +3167,8 @@
           "@id": "http://purl.org/dc/terms/license",
           "@type": "@id",
           "@context": {
-            "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
+            "title": {
+              "@id": "http://purl.org/dc/terms/title",
               "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
             },
             "licence_document": {
@@ -3114,8 +3200,8 @@
           "@type": "@id",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "format": {
               "@id": "http://purl.org/dc/terms/MediaTypeOrExtent",
@@ -3128,8 +3214,8 @@
           "@type": "@id",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "media_type": {
               "@id": "http://purl.org/dc/terms/MediaType",
@@ -3142,8 +3228,8 @@
           "@type": "@id",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "media_type": {
               "@id": "http://purl.org/dc/terms/MediaType",
@@ -3156,8 +3242,8 @@
           "@type": "@id",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "media_type": {
               "@id": "http://purl.org/dc/terms/MediaType",
@@ -3258,7 +3344,7 @@
   "access_rights": {
     "id": "http://purl.org/coar/access_right/c_abf2",
     "type": "access_rights",
-    "http://www.w3.org/2000/01/rdf-schema#label": [
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
         "@value": "open access"
@@ -3269,11 +3355,11 @@
       }
     ]
   },
-  "title": "Data set žádosti o grant Grantové agentury České republiky",
+  "http://purl.org/dc/terms/title": "Data set žádosti o grant Grantové agentury České republiky",
   "resource_type": {
     "id": "http://purl.org/coar/resource_type/c_ddb1",
     "type": "resource_type",
-    "http://www.w3.org/2000/01/rdf-schema#label": [
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "cs",
         "@value": "datová sada"
@@ -3284,10 +3370,7 @@
       }
     ]
   },
-  "http://www.w3.org/2004/02/skos/core#notation": {
-    "type": "xsd:string",
-    "@value": "10.48700/datst.1m3t2-78951"
-  },
+  "http://www.w3.org/2004/02/skos/core#notation": "10.48700/datst.1m3t2-78951",
   "identifier": [
     {
       "id": "https://doi.org/10.48700/datst.1m3t2-78951",
@@ -3298,7 +3381,7 @@
       "access_rights": {
         "id": "http://purl.org/coar/access_right/c_abf2",
         "type": "access_rights",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
           {
             "@language": "en",
             "@value": "open access"
@@ -3309,11 +3392,11 @@
           }
         ]
       },
-      "title": "Data set žádosti o grant Grantové agentury České republiky",
+      "http://purl.org/dc/terms/title": "Data set žádosti o grant Grantové agentury České republiky",
       "resource_type": {
         "id": "http://purl.org/coar/resource_type/c_ddb1",
         "type": "resource_type",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
           {
             "@language": "cs",
             "@value": "datová sada"
@@ -3324,10 +3407,7 @@
           }
         ]
       },
-      "http://www.w3.org/2004/02/skos/core#notation": {
-        "type": "xsd:string",
-        "@value": "10.48700/datst.1m3t2-78951"
-      },
+      "http://www.w3.org/2004/02/skos/core#notation": "10.48700/datst.1m3t2-78951",
       "identifier": [
         {
           "id": "https://doi.org/10.48700/datst.1m3t2-78951"
@@ -3343,7 +3423,7 @@
           "format": {
             "id": "http://publications.europa.eu/resource/authority/file-type/PDF",
             "type": "format",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "PDF"
             }
@@ -3351,7 +3431,7 @@
           "licence": {
             "id": "https://creativecommons.org/licenses/by/4.0/",
             "type": "licence_document",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://purl.org/dc/terms/title": [
               {
                 "@language": "en",
                 "@value": "Creative Commons Attribution 4.0 International License"
@@ -3366,13 +3446,12 @@
             {
               "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
               "type": "access_rights",
-              "http://www.w3.org/2000/01/rdf-schema#label": {
-                "@language": "en",
-                "@value": "open access"
+              "label": {
+                "en": "open access"
               }
             }
           ],
-          "title": "CebecauerTkadlec_GACR2026_MindMap.pdf",
+          "http://purl.org/dc/terms/title": "CebecauerTkadlec_GACR2026_MindMap.pdf",
           "http://www.w3.org/2000/01/rdf-schema#label": {
             "@language": "en",
             "@value": "CebecauerTkadlec_GACR2026_MindMap.pdf"
@@ -3391,7 +3470,7 @@
               "format": {
                 "id": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "type": "format",
-                "http://www.w3.org/2000/01/rdf-schema#label": {
+                "http://www.w3.org/2004/02/skos/core#prefLabel": {
                   "@language": "en",
                   "@value": "PDF"
                 }
@@ -3399,7 +3478,7 @@
               "licence": {
                 "id": "https://creativecommons.org/licenses/by/4.0/",
                 "type": "licence_document",
-                "http://www.w3.org/2000/01/rdf-schema#label": [
+                "http://purl.org/dc/terms/title": [
                   {
                     "@language": "en",
                     "@value": "Creative Commons Attribution 4.0 International License"
@@ -3414,13 +3493,12 @@
                 {
                   "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
                   "type": "access_rights",
-                  "http://www.w3.org/2000/01/rdf-schema#label": {
-                    "@language": "en",
-                    "@value": "open access"
+                  "label": {
+                    "en": "open access"
                   }
                 }
               ],
-              "title": "CebecauerTkadlec_GACR2026_MindMap.pdf",
+              "http://purl.org/dc/terms/title": "CebecauerTkadlec_GACR2026_MindMap.pdf",
               "http://www.w3.org/2000/01/rdf-schema#label": {
                 "@language": "en",
                 "@value": "CebecauerTkadlec_GACR2026_MindMap.pdf"
@@ -3437,7 +3515,7 @@
               "media_type": {
                 "id": "http://www.iana.org/assignments/media-types/application/pdf",
                 "type": "media_type",
-                "http://www.w3.org/2000/01/rdf-schema#label": {
+                "http://www.w3.org/2004/02/skos/core#prefLabel": {
                   "@language": "en",
                   "@value": "application/pdf"
                 }
@@ -3447,7 +3525,7 @@
           "media_type": {
             "id": "http://www.iana.org/assignments/media-types/application/pdf",
             "type": "media_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "application/pdf"
             }
@@ -3462,7 +3540,7 @@
           "format": {
             "id": "http://publications.europa.eu/resource/authority/file-type/TXT",
             "type": "format",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "Plain text"
             }
@@ -3470,7 +3548,7 @@
           "licence": {
             "id": "https://creativecommons.org/licenses/by/4.0/",
             "type": "licence_document",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://purl.org/dc/terms/title": [
               {
                 "@language": "en",
                 "@value": "Creative Commons Attribution 4.0 International License"
@@ -3485,13 +3563,12 @@
             {
               "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
               "type": "access_rights",
-              "http://www.w3.org/2000/01/rdf-schema#label": {
-                "@language": "en",
-                "@value": "open access"
+              "label": {
+                "en": "open access"
               }
             }
           ],
-          "title": "ReadMe.txt",
+          "http://purl.org/dc/terms/title": "ReadMe.txt",
           "http://www.w3.org/2000/01/rdf-schema#label": {
             "@language": "en",
             "@value": "ReadMe.txt"
@@ -3510,7 +3587,7 @@
               "format": {
                 "id": "http://publications.europa.eu/resource/authority/file-type/TXT",
                 "type": "format",
-                "http://www.w3.org/2000/01/rdf-schema#label": {
+                "http://www.w3.org/2004/02/skos/core#prefLabel": {
                   "@language": "en",
                   "@value": "Plain text"
                 }
@@ -3518,7 +3595,7 @@
               "licence": {
                 "id": "https://creativecommons.org/licenses/by/4.0/",
                 "type": "licence_document",
-                "http://www.w3.org/2000/01/rdf-schema#label": [
+                "http://purl.org/dc/terms/title": [
                   {
                     "@language": "en",
                     "@value": "Creative Commons Attribution 4.0 International License"
@@ -3533,13 +3610,12 @@
                 {
                   "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
                   "type": "access_rights",
-                  "http://www.w3.org/2000/01/rdf-schema#label": {
-                    "@language": "en",
-                    "@value": "open access"
+                  "label": {
+                    "en": "open access"
                   }
                 }
               ],
-              "title": "ReadMe.txt",
+              "http://purl.org/dc/terms/title": "ReadMe.txt",
               "http://www.w3.org/2000/01/rdf-schema#label": {
                 "@language": "en",
                 "@value": "ReadMe.txt"
@@ -3556,7 +3632,7 @@
               "media_type": {
                 "id": "http://www.iana.org/assignments/media-types/text/plain",
                 "type": "media_type",
-                "http://www.w3.org/2000/01/rdf-schema#label": {
+                "http://www.w3.org/2004/02/skos/core#prefLabel": {
                   "@language": "en",
                   "@value": "text/plain"
                 }
@@ -3566,7 +3642,7 @@
           "media_type": {
             "id": "http://www.iana.org/assignments/media-types/text/plain",
             "type": "media_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "text/plain"
             }
@@ -3581,7 +3657,7 @@
           "format": {
             "id": "http://publications.europa.eu/resource/authority/file-type/TIFF",
             "type": "format",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "TIFF"
             }
@@ -3589,7 +3665,7 @@
           "licence": {
             "id": "https://creativecommons.org/licenses/by/4.0/",
             "type": "licence_document",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://purl.org/dc/terms/title": [
               {
                 "@language": "en",
                 "@value": "Creative Commons Attribution 4.0 International License"
@@ -3604,13 +3680,12 @@
             {
               "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
               "type": "access_rights",
-              "http://www.w3.org/2000/01/rdf-schema#label": {
-                "@language": "en",
-                "@value": "open access"
+              "label": {
+                "en": "open access"
               }
             }
           ],
-          "title": "Supp_Fig2A_NE_DNAchannel.tif",
+          "http://purl.org/dc/terms/title": "Supp_Fig2A_NE_DNAchannel.tif",
           "http://www.w3.org/2000/01/rdf-schema#label": {
             "@language": "en",
             "@value": "Supp_Fig2A_NE_DNAchannel.tif"
@@ -3629,7 +3704,7 @@
               "format": {
                 "id": "http://publications.europa.eu/resource/authority/file-type/TIFF",
                 "type": "format",
-                "http://www.w3.org/2000/01/rdf-schema#label": {
+                "http://www.w3.org/2004/02/skos/core#prefLabel": {
                   "@language": "en",
                   "@value": "TIFF"
                 }
@@ -3637,7 +3712,7 @@
               "licence": {
                 "id": "https://creativecommons.org/licenses/by/4.0/",
                 "type": "licence_document",
-                "http://www.w3.org/2000/01/rdf-schema#label": [
+                "http://purl.org/dc/terms/title": [
                   {
                     "@language": "en",
                     "@value": "Creative Commons Attribution 4.0 International License"
@@ -3652,13 +3727,12 @@
                 {
                   "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
                   "type": "access_rights",
-                  "http://www.w3.org/2000/01/rdf-schema#label": {
-                    "@language": "en",
-                    "@value": "open access"
+                  "label": {
+                    "en": "open access"
                   }
                 }
               ],
-              "title": "Supp_Fig2A_NE_DNAchannel.tif",
+              "http://purl.org/dc/terms/title": "Supp_Fig2A_NE_DNAchannel.tif",
               "http://www.w3.org/2000/01/rdf-schema#label": {
                 "@language": "en",
                 "@value": "Supp_Fig2A_NE_DNAchannel.tif"
@@ -3675,7 +3749,7 @@
               "media_type": {
                 "id": "http://www.iana.org/assignments/media-types/image/tiff",
                 "type": "media_type",
-                "http://www.w3.org/2000/01/rdf-schema#label": {
+                "http://www.w3.org/2004/02/skos/core#prefLabel": {
                   "@language": "en",
                   "@value": "image/tiff"
                 }
@@ -3685,7 +3759,7 @@
           "media_type": {
             "id": "http://www.iana.org/assignments/media-types/image/tiff",
             "type": "media_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "image/tiff"
             }
@@ -3700,7 +3774,7 @@
           "format": {
             "id": "http://publications.europa.eu/resource/authority/file-type/TIFF",
             "type": "format",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "TIFF"
             }
@@ -3708,7 +3782,7 @@
           "licence": {
             "id": "https://creativecommons.org/licenses/by/4.0/",
             "type": "licence_document",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://purl.org/dc/terms/title": [
               {
                 "@language": "en",
                 "@value": "Creative Commons Attribution 4.0 International License"
@@ -3723,13 +3797,12 @@
             {
               "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
               "type": "access_rights",
-              "http://www.w3.org/2000/01/rdf-schema#label": {
-                "@language": "en",
-                "@value": "open access"
+              "label": {
+                "en": "open access"
               }
             }
           ],
-          "title": "Supp_Fig2A_NE_Merge_5um.tif",
+          "http://purl.org/dc/terms/title": "Supp_Fig2A_NE_Merge_5um.tif",
           "http://www.w3.org/2000/01/rdf-schema#label": {
             "@language": "en",
             "@value": "Supp_Fig2A_NE_Merge_5um.tif"
@@ -3748,7 +3821,7 @@
               "format": {
                 "id": "http://publications.europa.eu/resource/authority/file-type/TIFF",
                 "type": "format",
-                "http://www.w3.org/2000/01/rdf-schema#label": {
+                "http://www.w3.org/2004/02/skos/core#prefLabel": {
                   "@language": "en",
                   "@value": "TIFF"
                 }
@@ -3756,7 +3829,7 @@
               "licence": {
                 "id": "https://creativecommons.org/licenses/by/4.0/",
                 "type": "licence_document",
-                "http://www.w3.org/2000/01/rdf-schema#label": [
+                "http://purl.org/dc/terms/title": [
                   {
                     "@language": "en",
                     "@value": "Creative Commons Attribution 4.0 International License"
@@ -3771,13 +3844,12 @@
                 {
                   "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
                   "type": "access_rights",
-                  "http://www.w3.org/2000/01/rdf-schema#label": {
-                    "@language": "en",
-                    "@value": "open access"
+                  "label": {
+                    "en": "open access"
                   }
                 }
               ],
-              "title": "Supp_Fig2A_NE_Merge_5um.tif",
+              "http://purl.org/dc/terms/title": "Supp_Fig2A_NE_Merge_5um.tif",
               "http://www.w3.org/2000/01/rdf-schema#label": {
                 "@language": "en",
                 "@value": "Supp_Fig2A_NE_Merge_5um.tif"
@@ -3794,7 +3866,7 @@
               "media_type": {
                 "id": "http://www.iana.org/assignments/media-types/image/tiff",
                 "type": "media_type",
-                "http://www.w3.org/2000/01/rdf-schema#label": {
+                "http://www.w3.org/2004/02/skos/core#prefLabel": {
                   "@language": "en",
                   "@value": "image/tiff"
                 }
@@ -3804,7 +3876,7 @@
           "media_type": {
             "id": "http://www.iana.org/assignments/media-types/image/tiff",
             "type": "media_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "image/tiff"
             }
@@ -3819,7 +3891,7 @@
           "format": {
             "id": "http://publications.europa.eu/resource/authority/file-type/TIFF",
             "type": "format",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "TIFF"
             }
@@ -3827,7 +3899,7 @@
           "licence": {
             "id": "https://creativecommons.org/licenses/by/4.0/",
             "type": "licence_document",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://purl.org/dc/terms/title": [
               {
                 "@language": "en",
                 "@value": "Creative Commons Attribution 4.0 International License"
@@ -3842,13 +3914,12 @@
             {
               "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
               "type": "access_rights",
-              "http://www.w3.org/2000/01/rdf-schema#label": {
-                "@language": "en",
-                "@value": "open access"
+              "label": {
+                "en": "open access"
               }
             }
           ],
-          "title": "Supp_Fig2A_NE_processedSMLM.tif",
+          "http://purl.org/dc/terms/title": "Supp_Fig2A_NE_processedSMLM.tif",
           "http://www.w3.org/2000/01/rdf-schema#label": {
             "@language": "en",
             "@value": "Supp_Fig2A_NE_processedSMLM.tif"
@@ -3867,7 +3938,7 @@
               "format": {
                 "id": "http://publications.europa.eu/resource/authority/file-type/TIFF",
                 "type": "format",
-                "http://www.w3.org/2000/01/rdf-schema#label": {
+                "http://www.w3.org/2004/02/skos/core#prefLabel": {
                   "@language": "en",
                   "@value": "TIFF"
                 }
@@ -3875,7 +3946,7 @@
               "licence": {
                 "id": "https://creativecommons.org/licenses/by/4.0/",
                 "type": "licence_document",
-                "http://www.w3.org/2000/01/rdf-schema#label": [
+                "http://purl.org/dc/terms/title": [
                   {
                     "@language": "en",
                     "@value": "Creative Commons Attribution 4.0 International License"
@@ -3890,13 +3961,12 @@
                 {
                   "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
                   "type": "access_rights",
-                  "http://www.w3.org/2000/01/rdf-schema#label": {
-                    "@language": "en",
-                    "@value": "open access"
+                  "label": {
+                    "en": "open access"
                   }
                 }
               ],
-              "title": "Supp_Fig2A_NE_processedSMLM.tif",
+              "http://purl.org/dc/terms/title": "Supp_Fig2A_NE_processedSMLM.tif",
               "http://www.w3.org/2000/01/rdf-schema#label": {
                 "@language": "en",
                 "@value": "Supp_Fig2A_NE_processedSMLM.tif"
@@ -3913,7 +3983,7 @@
               "media_type": {
                 "id": "http://www.iana.org/assignments/media-types/image/tiff",
                 "type": "media_type",
-                "http://www.w3.org/2000/01/rdf-schema#label": {
+                "http://www.w3.org/2004/02/skos/core#prefLabel": {
                   "@language": "en",
                   "@value": "image/tiff"
                 }
@@ -3923,7 +3993,7 @@
           "media_type": {
             "id": "http://www.iana.org/assignments/media-types/image/tiff",
             "type": "media_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "image/tiff"
             }
@@ -3938,7 +4008,7 @@
           "format": {
             "id": "http://publications.europa.eu/resource/authority/file-type/TIFF",
             "type": "format",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "TIFF"
             }
@@ -3946,7 +4016,7 @@
           "licence": {
             "id": "https://creativecommons.org/licenses/by/4.0/",
             "type": "licence_document",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://purl.org/dc/terms/title": [
               {
                 "@language": "en",
                 "@value": "Creative Commons Attribution 4.0 International License"
@@ -3961,13 +4031,12 @@
             {
               "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
               "type": "access_rights",
-              "http://www.w3.org/2000/01/rdf-schema#label": {
-                "@language": "en",
-                "@value": "open access"
+              "label": {
+                "en": "open access"
               }
             }
           ],
-          "title": "Supp_Fig2B_citH3_DNAchannel.tif",
+          "http://purl.org/dc/terms/title": "Supp_Fig2B_citH3_DNAchannel.tif",
           "http://www.w3.org/2000/01/rdf-schema#label": {
             "@language": "en",
             "@value": "Supp_Fig2B_citH3_DNAchannel.tif"
@@ -3986,7 +4055,7 @@
               "format": {
                 "id": "http://publications.europa.eu/resource/authority/file-type/TIFF",
                 "type": "format",
-                "http://www.w3.org/2000/01/rdf-schema#label": {
+                "http://www.w3.org/2004/02/skos/core#prefLabel": {
                   "@language": "en",
                   "@value": "TIFF"
                 }
@@ -3994,7 +4063,7 @@
               "licence": {
                 "id": "https://creativecommons.org/licenses/by/4.0/",
                 "type": "licence_document",
-                "http://www.w3.org/2000/01/rdf-schema#label": [
+                "http://purl.org/dc/terms/title": [
                   {
                     "@language": "en",
                     "@value": "Creative Commons Attribution 4.0 International License"
@@ -4009,13 +4078,12 @@
                 {
                   "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
                   "type": "access_rights",
-                  "http://www.w3.org/2000/01/rdf-schema#label": {
-                    "@language": "en",
-                    "@value": "open access"
+                  "label": {
+                    "en": "open access"
                   }
                 }
               ],
-              "title": "Supp_Fig2B_citH3_DNAchannel.tif",
+              "http://purl.org/dc/terms/title": "Supp_Fig2B_citH3_DNAchannel.tif",
               "http://www.w3.org/2000/01/rdf-schema#label": {
                 "@language": "en",
                 "@value": "Supp_Fig2B_citH3_DNAchannel.tif"
@@ -4032,7 +4100,7 @@
               "media_type": {
                 "id": "http://www.iana.org/assignments/media-types/image/tiff",
                 "type": "media_type",
-                "http://www.w3.org/2000/01/rdf-schema#label": {
+                "http://www.w3.org/2004/02/skos/core#prefLabel": {
                   "@language": "en",
                   "@value": "image/tiff"
                 }
@@ -4042,7 +4110,7 @@
           "media_type": {
             "id": "http://www.iana.org/assignments/media-types/image/tiff",
             "type": "media_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "image/tiff"
             }
@@ -4057,7 +4125,7 @@
           "format": {
             "id": "http://publications.europa.eu/resource/authority/file-type/TIFF",
             "type": "format",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "TIFF"
             }
@@ -4065,7 +4133,7 @@
           "licence": {
             "id": "https://creativecommons.org/licenses/by/4.0/",
             "type": "licence_document",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://purl.org/dc/terms/title": [
               {
                 "@language": "en",
                 "@value": "Creative Commons Attribution 4.0 International License"
@@ -4080,13 +4148,12 @@
             {
               "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
               "type": "access_rights",
-              "http://www.w3.org/2000/01/rdf-schema#label": {
-                "@language": "en",
-                "@value": "open access"
+              "label": {
+                "en": "open access"
               }
             }
           ],
-          "title": "Supp_Fig2B_citH3_Merge_5um.tif",
+          "http://purl.org/dc/terms/title": "Supp_Fig2B_citH3_Merge_5um.tif",
           "http://www.w3.org/2000/01/rdf-schema#label": {
             "@language": "en",
             "@value": "Supp_Fig2B_citH3_Merge_5um.tif"
@@ -4105,7 +4172,7 @@
               "format": {
                 "id": "http://publications.europa.eu/resource/authority/file-type/TIFF",
                 "type": "format",
-                "http://www.w3.org/2000/01/rdf-schema#label": {
+                "http://www.w3.org/2004/02/skos/core#prefLabel": {
                   "@language": "en",
                   "@value": "TIFF"
                 }
@@ -4113,7 +4180,7 @@
               "licence": {
                 "id": "https://creativecommons.org/licenses/by/4.0/",
                 "type": "licence_document",
-                "http://www.w3.org/2000/01/rdf-schema#label": [
+                "http://purl.org/dc/terms/title": [
                   {
                     "@language": "en",
                     "@value": "Creative Commons Attribution 4.0 International License"
@@ -4128,13 +4195,12 @@
                 {
                   "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
                   "type": "access_rights",
-                  "http://www.w3.org/2000/01/rdf-schema#label": {
-                    "@language": "en",
-                    "@value": "open access"
+                  "label": {
+                    "en": "open access"
                   }
                 }
               ],
-              "title": "Supp_Fig2B_citH3_Merge_5um.tif",
+              "http://purl.org/dc/terms/title": "Supp_Fig2B_citH3_Merge_5um.tif",
               "http://www.w3.org/2000/01/rdf-schema#label": {
                 "@language": "en",
                 "@value": "Supp_Fig2B_citH3_Merge_5um.tif"
@@ -4151,7 +4217,7 @@
               "media_type": {
                 "id": "http://www.iana.org/assignments/media-types/image/tiff",
                 "type": "media_type",
-                "http://www.w3.org/2000/01/rdf-schema#label": {
+                "http://www.w3.org/2004/02/skos/core#prefLabel": {
                   "@language": "en",
                   "@value": "image/tiff"
                 }
@@ -4161,7 +4227,7 @@
           "media_type": {
             "id": "http://www.iana.org/assignments/media-types/image/tiff",
             "type": "media_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "image/tiff"
             }
@@ -4176,7 +4242,7 @@
           "format": {
             "id": "http://publications.europa.eu/resource/authority/file-type/TIFF",
             "type": "format",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "TIFF"
             }
@@ -4184,7 +4250,7 @@
           "licence": {
             "id": "https://creativecommons.org/licenses/by/4.0/",
             "type": "licence_document",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://purl.org/dc/terms/title": [
               {
                 "@language": "en",
                 "@value": "Creative Commons Attribution 4.0 International License"
@@ -4199,13 +4265,12 @@
             {
               "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
               "type": "access_rights",
-              "http://www.w3.org/2000/01/rdf-schema#label": {
-                "@language": "en",
-                "@value": "open access"
+              "label": {
+                "en": "open access"
               }
             }
           ],
-          "title": "Supp_Fig2B_citH3_processedSMLM.tif",
+          "http://purl.org/dc/terms/title": "Supp_Fig2B_citH3_processedSMLM.tif",
           "http://www.w3.org/2000/01/rdf-schema#label": {
             "@language": "en",
             "@value": "Supp_Fig2B_citH3_processedSMLM.tif"
@@ -4224,7 +4289,7 @@
               "format": {
                 "id": "http://publications.europa.eu/resource/authority/file-type/TIFF",
                 "type": "format",
-                "http://www.w3.org/2000/01/rdf-schema#label": {
+                "http://www.w3.org/2004/02/skos/core#prefLabel": {
                   "@language": "en",
                   "@value": "TIFF"
                 }
@@ -4232,7 +4297,7 @@
               "licence": {
                 "id": "https://creativecommons.org/licenses/by/4.0/",
                 "type": "licence_document",
-                "http://www.w3.org/2000/01/rdf-schema#label": [
+                "http://purl.org/dc/terms/title": [
                   {
                     "@language": "en",
                     "@value": "Creative Commons Attribution 4.0 International License"
@@ -4247,13 +4312,12 @@
                 {
                   "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
                   "type": "access_rights",
-                  "http://www.w3.org/2000/01/rdf-schema#label": {
-                    "@language": "en",
-                    "@value": "open access"
+                  "label": {
+                    "en": "open access"
                   }
                 }
               ],
-              "title": "Supp_Fig2B_citH3_processedSMLM.tif",
+              "http://purl.org/dc/terms/title": "Supp_Fig2B_citH3_processedSMLM.tif",
               "http://www.w3.org/2000/01/rdf-schema#label": {
                 "@language": "en",
                 "@value": "Supp_Fig2B_citH3_processedSMLM.tif"
@@ -4270,7 +4334,7 @@
               "media_type": {
                 "id": "http://www.iana.org/assignments/media-types/image/tiff",
                 "type": "media_type",
-                "http://www.w3.org/2000/01/rdf-schema#label": {
+                "http://www.w3.org/2004/02/skos/core#prefLabel": {
                   "@language": "en",
                   "@value": "image/tiff"
                 }
@@ -4280,7 +4344,7 @@
           "media_type": {
             "id": "http://www.iana.org/assignments/media-types/image/tiff",
             "type": "media_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "image/tiff"
             }
@@ -4295,7 +4359,7 @@
           "format": {
             "id": "http://publications.europa.eu/resource/authority/file-type/TIFF",
             "type": "format",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "TIFF"
             }
@@ -4303,7 +4367,7 @@
           "licence": {
             "id": "https://creativecommons.org/licenses/by/4.0/",
             "type": "licence_document",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://purl.org/dc/terms/title": [
               {
                 "@language": "en",
                 "@value": "Creative Commons Attribution 4.0 International License"
@@ -4318,13 +4382,12 @@
             {
               "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
               "type": "access_rights",
-              "http://www.w3.org/2000/01/rdf-schema#label": {
-                "@language": "en",
-                "@value": "open access"
+              "label": {
+                "en": "open access"
               }
             }
           ],
-          "title": "Supp_Fig2C_MPO_DNAchannel.tif",
+          "http://purl.org/dc/terms/title": "Supp_Fig2C_MPO_DNAchannel.tif",
           "http://www.w3.org/2000/01/rdf-schema#label": {
             "@language": "en",
             "@value": "Supp_Fig2C_MPO_DNAchannel.tif"
@@ -4343,7 +4406,7 @@
               "format": {
                 "id": "http://publications.europa.eu/resource/authority/file-type/TIFF",
                 "type": "format",
-                "http://www.w3.org/2000/01/rdf-schema#label": {
+                "http://www.w3.org/2004/02/skos/core#prefLabel": {
                   "@language": "en",
                   "@value": "TIFF"
                 }
@@ -4351,7 +4414,7 @@
               "licence": {
                 "id": "https://creativecommons.org/licenses/by/4.0/",
                 "type": "licence_document",
-                "http://www.w3.org/2000/01/rdf-schema#label": [
+                "http://purl.org/dc/terms/title": [
                   {
                     "@language": "en",
                     "@value": "Creative Commons Attribution 4.0 International License"
@@ -4366,13 +4429,12 @@
                 {
                   "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
                   "type": "access_rights",
-                  "http://www.w3.org/2000/01/rdf-schema#label": {
-                    "@language": "en",
-                    "@value": "open access"
+                  "label": {
+                    "en": "open access"
                   }
                 }
               ],
-              "title": "Supp_Fig2C_MPO_DNAchannel.tif",
+              "http://purl.org/dc/terms/title": "Supp_Fig2C_MPO_DNAchannel.tif",
               "http://www.w3.org/2000/01/rdf-schema#label": {
                 "@language": "en",
                 "@value": "Supp_Fig2C_MPO_DNAchannel.tif"
@@ -4389,7 +4451,7 @@
               "media_type": {
                 "id": "http://www.iana.org/assignments/media-types/image/tiff",
                 "type": "media_type",
-                "http://www.w3.org/2000/01/rdf-schema#label": {
+                "http://www.w3.org/2004/02/skos/core#prefLabel": {
                   "@language": "en",
                   "@value": "image/tiff"
                 }
@@ -4399,7 +4461,7 @@
           "media_type": {
             "id": "http://www.iana.org/assignments/media-types/image/tiff",
             "type": "media_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "image/tiff"
             }
@@ -4414,7 +4476,7 @@
           "format": {
             "id": "http://publications.europa.eu/resource/authority/file-type/TIFF",
             "type": "format",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "TIFF"
             }
@@ -4422,7 +4484,7 @@
           "licence": {
             "id": "https://creativecommons.org/licenses/by/4.0/",
             "type": "licence_document",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://purl.org/dc/terms/title": [
               {
                 "@language": "en",
                 "@value": "Creative Commons Attribution 4.0 International License"
@@ -4437,13 +4499,12 @@
             {
               "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
               "type": "access_rights",
-              "http://www.w3.org/2000/01/rdf-schema#label": {
-                "@language": "en",
-                "@value": "open access"
+              "label": {
+                "en": "open access"
               }
             }
           ],
-          "title": "Supp_Fig2C_MPO_Merge_5um.tif",
+          "http://purl.org/dc/terms/title": "Supp_Fig2C_MPO_Merge_5um.tif",
           "http://www.w3.org/2000/01/rdf-schema#label": {
             "@language": "en",
             "@value": "Supp_Fig2C_MPO_Merge_5um.tif"
@@ -4462,7 +4523,7 @@
               "format": {
                 "id": "http://publications.europa.eu/resource/authority/file-type/TIFF",
                 "type": "format",
-                "http://www.w3.org/2000/01/rdf-schema#label": {
+                "http://www.w3.org/2004/02/skos/core#prefLabel": {
                   "@language": "en",
                   "@value": "TIFF"
                 }
@@ -4470,7 +4531,7 @@
               "licence": {
                 "id": "https://creativecommons.org/licenses/by/4.0/",
                 "type": "licence_document",
-                "http://www.w3.org/2000/01/rdf-schema#label": [
+                "http://purl.org/dc/terms/title": [
                   {
                     "@language": "en",
                     "@value": "Creative Commons Attribution 4.0 International License"
@@ -4485,13 +4546,12 @@
                 {
                   "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
                   "type": "access_rights",
-                  "http://www.w3.org/2000/01/rdf-schema#label": {
-                    "@language": "en",
-                    "@value": "open access"
+                  "label": {
+                    "en": "open access"
                   }
                 }
               ],
-              "title": "Supp_Fig2C_MPO_Merge_5um.tif",
+              "http://purl.org/dc/terms/title": "Supp_Fig2C_MPO_Merge_5um.tif",
               "http://www.w3.org/2000/01/rdf-schema#label": {
                 "@language": "en",
                 "@value": "Supp_Fig2C_MPO_Merge_5um.tif"
@@ -4508,7 +4568,7 @@
               "media_type": {
                 "id": "http://www.iana.org/assignments/media-types/image/tiff",
                 "type": "media_type",
-                "http://www.w3.org/2000/01/rdf-schema#label": {
+                "http://www.w3.org/2004/02/skos/core#prefLabel": {
                   "@language": "en",
                   "@value": "image/tiff"
                 }
@@ -4518,7 +4578,7 @@
           "media_type": {
             "id": "http://www.iana.org/assignments/media-types/image/tiff",
             "type": "media_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "image/tiff"
             }
@@ -4533,7 +4593,7 @@
           "format": {
             "id": "http://publications.europa.eu/resource/authority/file-type/TIFF",
             "type": "format",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "TIFF"
             }
@@ -4541,7 +4601,7 @@
           "licence": {
             "id": "https://creativecommons.org/licenses/by/4.0/",
             "type": "licence_document",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://purl.org/dc/terms/title": [
               {
                 "@language": "en",
                 "@value": "Creative Commons Attribution 4.0 International License"
@@ -4556,13 +4616,12 @@
             {
               "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
               "type": "access_rights",
-              "http://www.w3.org/2000/01/rdf-schema#label": {
-                "@language": "en",
-                "@value": "open access"
+              "label": {
+                "en": "open access"
               }
             }
           ],
-          "title": "Supp_Fig2C_MPO_processedSMLM.tif",
+          "http://purl.org/dc/terms/title": "Supp_Fig2C_MPO_processedSMLM.tif",
           "http://www.w3.org/2000/01/rdf-schema#label": {
             "@language": "en",
             "@value": "Supp_Fig2C_MPO_processedSMLM.tif"
@@ -4581,7 +4640,7 @@
               "format": {
                 "id": "http://publications.europa.eu/resource/authority/file-type/TIFF",
                 "type": "format",
-                "http://www.w3.org/2000/01/rdf-schema#label": {
+                "http://www.w3.org/2004/02/skos/core#prefLabel": {
                   "@language": "en",
                   "@value": "TIFF"
                 }
@@ -4589,7 +4648,7 @@
               "licence": {
                 "id": "https://creativecommons.org/licenses/by/4.0/",
                 "type": "licence_document",
-                "http://www.w3.org/2000/01/rdf-schema#label": [
+                "http://purl.org/dc/terms/title": [
                   {
                     "@language": "en",
                     "@value": "Creative Commons Attribution 4.0 International License"
@@ -4604,13 +4663,12 @@
                 {
                   "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
                   "type": "access_rights",
-                  "http://www.w3.org/2000/01/rdf-schema#label": {
-                    "@language": "en",
-                    "@value": "open access"
+                  "label": {
+                    "en": "open access"
                   }
                 }
               ],
-              "title": "Supp_Fig2C_MPO_processedSMLM.tif",
+              "http://purl.org/dc/terms/title": "Supp_Fig2C_MPO_processedSMLM.tif",
               "http://www.w3.org/2000/01/rdf-schema#label": {
                 "@language": "en",
                 "@value": "Supp_Fig2C_MPO_processedSMLM.tif"
@@ -4627,7 +4685,7 @@
               "media_type": {
                 "id": "http://www.iana.org/assignments/media-types/image/tiff",
                 "type": "media_type",
-                "http://www.w3.org/2000/01/rdf-schema#label": {
+                "http://www.w3.org/2004/02/skos/core#prefLabel": {
                   "@language": "en",
                   "@value": "image/tiff"
                 }
@@ -4637,7 +4695,7 @@
           "media_type": {
             "id": "http://www.iana.org/assignments/media-types/image/tiff",
             "type": "media_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "image/tiff"
             }
@@ -4652,7 +4710,7 @@
           "format": {
             "id": "http://publications.europa.eu/resource/authority/file-type/PDF",
             "type": "format",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "PDF"
             }
@@ -4660,7 +4718,7 @@
           "licence": {
             "id": "https://creativecommons.org/licenses/by/4.0/",
             "type": "licence_document",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://purl.org/dc/terms/title": [
               {
                 "@language": "en",
                 "@value": "Creative Commons Attribution 4.0 International License"
@@ -4675,13 +4733,12 @@
             {
               "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
               "type": "access_rights",
-              "http://www.w3.org/2000/01/rdf-schema#label": {
-                "@language": "en",
-                "@value": "open access"
+              "label": {
+                "en": "open access"
               }
             }
           ],
-          "title": "Supplementary_Figures.pdf",
+          "http://purl.org/dc/terms/title": "Supplementary_Figures.pdf",
           "http://www.w3.org/2000/01/rdf-schema#label": {
             "@language": "en",
             "@value": "Supplementary_Figures.pdf"
@@ -4700,7 +4757,7 @@
               "format": {
                 "id": "http://publications.europa.eu/resource/authority/file-type/PDF",
                 "type": "format",
-                "http://www.w3.org/2000/01/rdf-schema#label": {
+                "http://www.w3.org/2004/02/skos/core#prefLabel": {
                   "@language": "en",
                   "@value": "PDF"
                 }
@@ -4708,7 +4765,7 @@
               "licence": {
                 "id": "https://creativecommons.org/licenses/by/4.0/",
                 "type": "licence_document",
-                "http://www.w3.org/2000/01/rdf-schema#label": [
+                "http://purl.org/dc/terms/title": [
                   {
                     "@language": "en",
                     "@value": "Creative Commons Attribution 4.0 International License"
@@ -4723,13 +4780,12 @@
                 {
                   "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
                   "type": "access_rights",
-                  "http://www.w3.org/2000/01/rdf-schema#label": {
-                    "@language": "en",
-                    "@value": "open access"
+                  "label": {
+                    "en": "open access"
                   }
                 }
               ],
-              "title": "Supplementary_Figures.pdf",
+              "http://purl.org/dc/terms/title": "Supplementary_Figures.pdf",
               "http://www.w3.org/2000/01/rdf-schema#label": {
                 "@language": "en",
                 "@value": "Supplementary_Figures.pdf"
@@ -4746,7 +4802,7 @@
               "media_type": {
                 "id": "http://www.iana.org/assignments/media-types/application/pdf",
                 "type": "media_type",
-                "http://www.w3.org/2000/01/rdf-schema#label": {
+                "http://www.w3.org/2004/02/skos/core#prefLabel": {
                   "@language": "en",
                   "@value": "application/pdf"
                 }
@@ -4756,7 +4812,7 @@
           "media_type": {
             "id": "http://www.iana.org/assignments/media-types/application/pdf",
             "type": "media_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "application/pdf"
             }
@@ -4804,16 +4860,10 @@
           "role": {
             "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
             "type": "attributed_agent_role_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-              {
-                "@language": "en",
-                "@value": "Creator"
-              },
-              {
-                "@language": "cs",
-                "@value": "Autor"
-              }
-            ]
+            "label": {
+              "en": "Creator",
+              "cs": "Autor"
+            }
           },
           "attributed_agent": {
             "id": "_:b19",
@@ -4822,18 +4872,19 @@
               {
                 "id": "https://orcid.org/0009-0003-1158-1138",
                 "type": "identifier",
-                "http://www.w3.org/2004/02/skos/core#notation": {
-                  "type": "xsd:string",
-                  "@value": "0009-0003-1158-1138"
-                },
+                "http://www.w3.org/2004/02/skos/core#notation": "0009-0003-1158-1138",
                 "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                   "id": "https://orcid.org/",
                   "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                  "http://www.w3.org/2000/01/rdf-schema#label": "ORCID"
+                  "http://www.w3.org/2000/01/rdf-schema#label": {
+                    "@language": "en",
+                    "@value": "Open Research and Contributor ID"
+                  },
+                  "http://www.w3.org/2004/02/skos/core#notation": "ORCID"
                 }
               }
             ],
-            "name": "Paldusová, Kateřina",
+            "http://xmlns.com/foaf/0.1/name": "Paldusová, Kateřina",
             "affiliation": [
               {
                 "id": "_:b20",
@@ -4842,34 +4893,33 @@
                   {
                     "id": "https://ror.org/02sat5y74",
                     "type": "identifier",
-                    "http://www.w3.org/2004/02/skos/core#notation": {
-                      "type": "xsd:string",
-                      "@value": "02sat5y74"
-                    },
+                    "http://www.w3.org/2004/02/skos/core#notation": "02sat5y74",
                     "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                       "id": "https://ror.org/",
                       "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                      "http://www.w3.org/2000/01/rdf-schema#label": "ROR"
+                      "http://www.w3.org/2000/01/rdf-schema#label": {
+                        "@language": "en",
+                        "@value": "Research Organization Registry"
+                      },
+                      "http://www.w3.org/2004/02/skos/core#notation": "ROR"
                     }
                   },
                   {
                     "id": "_:b21",
                     "type": "identifier",
-                    "http://www.w3.org/2004/02/skos/core#notation": {
-                      "type": "xsd:string",
-                      "@value": "61388955"
-                    },
+                    "http://www.w3.org/2004/02/skos/core#notation": "61388955",
                     "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                       "id": "https://www.wikidata.org/entity/Q42302581",
                       "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
                       "http://www.w3.org/2000/01/rdf-schema#label": {
                         "@language": "cs",
-                        "@value": "IČO"
-                      }
+                        "@value": "Identifikační Číslo Osoby"
+                      },
+                      "http://www.w3.org/2004/02/skos/core#notation": "IČO"
                     }
                   }
                 ],
-                "name": "Ústav fyzikální chemie J. Heyrovského AV ČR"
+                "http://xmlns.com/foaf/0.1/name": "Ústav fyzikální chemie J. Heyrovského AV ČR"
               }
             ]
           }
@@ -4880,16 +4930,10 @@
           "role": {
             "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
             "type": "attributed_agent_role_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-              {
-                "@language": "en",
-                "@value": "Creator"
-              },
-              {
-                "@language": "cs",
-                "@value": "Autor"
-              }
-            ]
+            "label": {
+              "en": "Creator",
+              "cs": "Autor"
+            }
           },
           "attributed_agent": {
             "id": "_:b22",
@@ -4898,18 +4942,19 @@
               {
                 "id": "https://orcid.org/0000-0003-1662-9092",
                 "type": "identifier",
-                "http://www.w3.org/2004/02/skos/core#notation": {
-                  "type": "xsd:string",
-                  "@value": "0000-0003-1662-9092"
-                },
+                "http://www.w3.org/2004/02/skos/core#notation": "0000-0003-1662-9092",
                 "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                   "id": "https://orcid.org/",
                   "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                  "http://www.w3.org/2000/01/rdf-schema#label": "ORCID"
+                  "http://www.w3.org/2000/01/rdf-schema#label": {
+                    "@language": "en",
+                    "@value": "Open Research and Contributor ID"
+                  },
+                  "http://www.w3.org/2004/02/skos/core#notation": "ORCID"
                 }
               }
             ],
-            "name": "González Navarro, José Alfredo",
+            "http://xmlns.com/foaf/0.1/name": "González Navarro, José Alfredo",
             "affiliation": [
               {
                 "id": "_:b23",
@@ -4918,34 +4963,33 @@
                   {
                     "id": "https://ror.org/02sat5y74",
                     "type": "identifier",
-                    "http://www.w3.org/2004/02/skos/core#notation": {
-                      "type": "xsd:string",
-                      "@value": "02sat5y74"
-                    },
+                    "http://www.w3.org/2004/02/skos/core#notation": "02sat5y74",
                     "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                       "id": "https://ror.org/",
                       "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                      "http://www.w3.org/2000/01/rdf-schema#label": "ROR"
+                      "http://www.w3.org/2000/01/rdf-schema#label": {
+                        "@language": "en",
+                        "@value": "Research Organization Registry"
+                      },
+                      "http://www.w3.org/2004/02/skos/core#notation": "ROR"
                     }
                   },
                   {
                     "id": "_:b24",
                     "type": "identifier",
-                    "http://www.w3.org/2004/02/skos/core#notation": {
-                      "type": "xsd:string",
-                      "@value": "61388955"
-                    },
+                    "http://www.w3.org/2004/02/skos/core#notation": "61388955",
                     "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                       "id": "https://www.wikidata.org/entity/Q42302581",
                       "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
                       "http://www.w3.org/2000/01/rdf-schema#label": {
                         "@language": "cs",
-                        "@value": "IČO"
-                      }
+                        "@value": "Identifikační Číslo Osoby"
+                      },
+                      "http://www.w3.org/2004/02/skos/core#notation": "IČO"
                     }
                   }
                 ],
-                "name": "Ústav fyzikální chemie J. Heyrovského AV ČR"
+                "http://xmlns.com/foaf/0.1/name": "Ústav fyzikální chemie J. Heyrovského AV ČR"
               }
             ]
           }
@@ -4956,16 +5000,10 @@
           "role": {
             "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
             "type": "attributed_agent_role_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-              {
-                "@language": "en",
-                "@value": "Creator"
-              },
-              {
-                "@language": "cs",
-                "@value": "Autor"
-              }
-            ]
+            "label": {
+              "en": "Creator",
+              "cs": "Autor"
+            }
           },
           "attributed_agent": {
             "id": "_:b25",
@@ -4974,18 +5012,19 @@
               {
                 "id": "https://orcid.org/0009-0008-0140-2075",
                 "type": "identifier",
-                "http://www.w3.org/2004/02/skos/core#notation": {
-                  "type": "xsd:string",
-                  "@value": "0009-0008-0140-2075"
-                },
+                "http://www.w3.org/2004/02/skos/core#notation": "0009-0008-0140-2075",
                 "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                   "id": "https://orcid.org/",
                   "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                  "http://www.w3.org/2000/01/rdf-schema#label": "ORCID"
+                  "http://www.w3.org/2000/01/rdf-schema#label": {
+                    "@language": "en",
+                    "@value": "Open Research and Contributor ID"
+                  },
+                  "http://www.w3.org/2004/02/skos/core#notation": "ORCID"
                 }
               }
             ],
-            "name": "Echezarreta Mendicute, Irene",
+            "http://xmlns.com/foaf/0.1/name": "Echezarreta Mendicute, Irene",
             "affiliation": [
               {
                 "id": "_:b26",
@@ -4994,34 +5033,33 @@
                   {
                     "id": "https://ror.org/02sat5y74",
                     "type": "identifier",
-                    "http://www.w3.org/2004/02/skos/core#notation": {
-                      "type": "xsd:string",
-                      "@value": "02sat5y74"
-                    },
+                    "http://www.w3.org/2004/02/skos/core#notation": "02sat5y74",
                     "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                       "id": "https://ror.org/",
                       "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                      "http://www.w3.org/2000/01/rdf-schema#label": "ROR"
+                      "http://www.w3.org/2000/01/rdf-schema#label": {
+                        "@language": "en",
+                        "@value": "Research Organization Registry"
+                      },
+                      "http://www.w3.org/2004/02/skos/core#notation": "ROR"
                     }
                   },
                   {
                     "id": "_:b27",
                     "type": "identifier",
-                    "http://www.w3.org/2004/02/skos/core#notation": {
-                      "type": "xsd:string",
-                      "@value": "61388955"
-                    },
+                    "http://www.w3.org/2004/02/skos/core#notation": "61388955",
                     "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                       "id": "https://www.wikidata.org/entity/Q42302581",
                       "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
                       "http://www.w3.org/2000/01/rdf-schema#label": {
                         "@language": "cs",
-                        "@value": "IČO"
-                      }
+                        "@value": "Identifikační Číslo Osoby"
+                      },
+                      "http://www.w3.org/2004/02/skos/core#notation": "IČO"
                     }
                   }
                 ],
-                "name": "Ústav fyzikální chemie J. Heyrovského AV ČR"
+                "http://xmlns.com/foaf/0.1/name": "Ústav fyzikální chemie J. Heyrovského AV ČR"
               }
             ]
           }
@@ -5032,16 +5070,10 @@
           "role": {
             "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
             "type": "attributed_agent_role_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-              {
-                "@language": "en",
-                "@value": "Creator"
-              },
-              {
-                "@language": "cs",
-                "@value": "Autor"
-              }
-            ]
+            "label": {
+              "en": "Creator",
+              "cs": "Autor"
+            }
           },
           "attributed_agent": {
             "id": "_:b28",
@@ -5050,18 +5082,19 @@
               {
                 "id": "https://orcid.org/0000-0002-4606-1218",
                 "type": "identifier",
-                "http://www.w3.org/2004/02/skos/core#notation": {
-                  "type": "xsd:string",
-                  "@value": "0000-0002-4606-1218"
-                },
+                "http://www.w3.org/2004/02/skos/core#notation": "0000-0002-4606-1218",
                 "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                   "id": "https://orcid.org/",
                   "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                  "http://www.w3.org/2000/01/rdf-schema#label": "ORCID"
+                  "http://www.w3.org/2000/01/rdf-schema#label": {
+                    "@language": "en",
+                    "@value": "Open Research and Contributor ID"
+                  },
+                  "http://www.w3.org/2004/02/skos/core#notation": "ORCID"
                 }
               }
             ],
-            "name": "Cebecauer, Marek",
+            "http://xmlns.com/foaf/0.1/name": "Cebecauer, Marek",
             "affiliation": [
               {
                 "id": "_:b29",
@@ -5070,34 +5103,33 @@
                   {
                     "id": "https://ror.org/02sat5y74",
                     "type": "identifier",
-                    "http://www.w3.org/2004/02/skos/core#notation": {
-                      "type": "xsd:string",
-                      "@value": "02sat5y74"
-                    },
+                    "http://www.w3.org/2004/02/skos/core#notation": "02sat5y74",
                     "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                       "id": "https://ror.org/",
                       "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                      "http://www.w3.org/2000/01/rdf-schema#label": "ROR"
+                      "http://www.w3.org/2000/01/rdf-schema#label": {
+                        "@language": "en",
+                        "@value": "Research Organization Registry"
+                      },
+                      "http://www.w3.org/2004/02/skos/core#notation": "ROR"
                     }
                   },
                   {
                     "id": "_:b30",
                     "type": "identifier",
-                    "http://www.w3.org/2004/02/skos/core#notation": {
-                      "type": "xsd:string",
-                      "@value": "61388955"
-                    },
+                    "http://www.w3.org/2004/02/skos/core#notation": "61388955",
                     "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                       "id": "https://www.wikidata.org/entity/Q42302581",
                       "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
                       "http://www.w3.org/2000/01/rdf-schema#label": {
                         "@language": "cs",
-                        "@value": "IČO"
-                      }
+                        "@value": "Identifikační Číslo Osoby"
+                      },
+                      "http://www.w3.org/2004/02/skos/core#notation": "IČO"
                     }
                   }
                 ],
-                "name": "Ústav fyzikální chemie J. Heyrovského AV ČR"
+                "http://xmlns.com/foaf/0.1/name": "Ústav fyzikální chemie J. Heyrovského AV ČR"
               }
             ]
           }
@@ -5108,16 +5140,10 @@
           "role": {
             "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Publisher",
             "type": "attributed_agent_role_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-              {
-                "@language": "cs",
-                "@value": "Vydavatel"
-              },
-              {
-                "@language": "en",
-                "@value": "Publisher"
-              }
-            ]
+            "label": {
+              "cs": "Vydavatel",
+              "en": "Publisher"
+            }
           },
           "attributed_agent": {
             "id": "_:b31",
@@ -5126,34 +5152,33 @@
               {
                 "id": "https://ror.org/02sat5y74",
                 "type": "identifier",
-                "http://www.w3.org/2004/02/skos/core#notation": {
-                  "type": "xsd:string",
-                  "@value": "02sat5y74"
-                },
+                "http://www.w3.org/2004/02/skos/core#notation": "02sat5y74",
                 "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                   "id": "https://ror.org/",
                   "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                  "http://www.w3.org/2000/01/rdf-schema#label": "ROR"
+                  "http://www.w3.org/2000/01/rdf-schema#label": {
+                    "@language": "en",
+                    "@value": "Research Organization Registry"
+                  },
+                  "http://www.w3.org/2004/02/skos/core#notation": "ROR"
                 }
               },
               {
                 "id": "_:b32",
                 "type": "identifier",
-                "http://www.w3.org/2004/02/skos/core#notation": {
-                  "type": "xsd:string",
-                  "@value": "61388955"
-                },
+                "http://www.w3.org/2004/02/skos/core#notation": "61388955",
                 "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                   "id": "https://www.wikidata.org/entity/Q42302581",
                   "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
                   "http://www.w3.org/2000/01/rdf-schema#label": {
                     "@language": "cs",
-                    "@value": "IČO"
-                  }
+                    "@value": "Identifikační Číslo Osoby"
+                  },
+                  "http://www.w3.org/2004/02/skos/core#notation": "IČO"
                 }
               }
             ],
-            "name": "Ústav fyzikální chemie J. Heyrovského AV ČR"
+            "http://xmlns.com/foaf/0.1/name": "Ústav fyzikální chemie J. Heyrovského AV ČR"
           }
         }
       ],
@@ -5166,9 +5191,9 @@
             "@value": "The Czech Science Foundation Grant Application Data Set"
           },
           "https://model.ccmm.cz/vocabulary/ccmm#hasType": {
-            "id": "https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/TranslatedTitle",
+            "id": "https://w3id.org/tib/datacite/vocab/titleType/TranslatedTitle",
             "type": "http://www.w3.org/2004/02/skos/core#Concept",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://www.w3.org/2004/02/skos/core#prefLabel": [
               {
                 "@language": "cs",
                 "@value": "Přeložený název"
@@ -5184,9 +5209,8 @@
       "primary_language": {
         "id": "http://publications.europa.eu/resource/authority/language/ENG",
         "type": "language_system",
-        "http://www.w3.org/2000/01/rdf-schema#label": {
-          "@language": "en",
-          "@value": "English"
+        "label": {
+          "en": "English"
         }
       },
       "time_reference": [
@@ -5202,9 +5226,9 @@
             }
           },
           "https://model.ccmm.cz/vocabulary/ccmm#hasType": {
-            "id": "https://vocabs.ccmm.cz/registry/codelist/TimeReference/Issued",
+            "id": "https://w3id.org/tib/datacite/vocab/dateType/Issued",
             "type": "http://www.w3.org/2004/02/skos/core#Concept",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://www.w3.org/2004/02/skos/core#prefLabel": [
               {
                 "@language": "en",
                 "@value": "Date Issued"
@@ -5240,9 +5264,9 @@
             }
           },
           "https://model.ccmm.cz/vocabulary/ccmm#hasType": {
-            "id": "https://vocabs.ccmm.cz/registry/codelist/TimeReference/Created",
+            "id": "https://w3id.org/tib/datacite/vocab/dateType/Created",
             "type": "http://www.w3.org/2004/02/skos/core#Concept",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://www.w3.org/2004/02/skos/core#prefLabel": [
               {
                 "@language": "en",
                 "@value": "Date Created"
@@ -5278,9 +5302,9 @@
             }
           },
           "https://model.ccmm.cz/vocabulary/ccmm#hasType": {
-            "id": "https://vocabs.ccmm.cz/registry/codelist/TimeReference/Collected",
+            "id": "https://w3id.org/tib/datacite/vocab/dateType/Collected",
             "type": "http://www.w3.org/2004/02/skos/core#Concept",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://www.w3.org/2004/02/skos/core#prefLabel": [
               {
                 "@language": "en",
                 "@value": "Date Collected"
@@ -5304,9 +5328,9 @@
             }
           },
           "https://model.ccmm.cz/vocabulary/ccmm#hasType": {
-            "id": "https://vocabs.ccmm.cz/registry/codelist/TimeReference/Available",
+            "id": "https://w3id.org/tib/datacite/vocab/dateType/Available",
             "type": "http://www.w3.org/2004/02/skos/core#Concept",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://www.w3.org/2004/02/skos/core#prefLabel": [
               {
                 "@language": "en",
                 "@value": "Date Available"
@@ -5328,7 +5352,11 @@
       "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
         "id": "https://doi.org/",
         "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-        "http://www.w3.org/2000/01/rdf-schema#label": "DOI"
+        "http://www.w3.org/2000/01/rdf-schema#label": {
+          "@language": "en",
+          "@value": "Digital Object Identifier"
+        },
+        "http://www.w3.org/2004/02/skos/core#notation": "DOI"
       },
       "metadata_identification": [
         {
@@ -5338,7 +5366,10 @@
             {
               "id": "https://model.ccmm.cz/research-data/2.0.0",
               "type": "application_profile",
-              "http://www.w3.org/2000/01/rdf-schema#label": "CCMM RD 2.0.0"
+              "http://www.w3.org/2000/01/rdf-schema#label": {
+                "@language": "en",
+                "@value": "Czech Core Metadata Model for Research Data 2.0.0"
+              }
             },
             {
               "id": "https://data.narodni-repozitar.cz/schemas/nr_datasets/nr-datasets-v1.0.0.json",
@@ -5354,17 +5385,15 @@
             {
               "id": "http://publications.europa.eu/resource/authority/language/CES",
               "type": "language_system",
-              "http://www.w3.org/2000/01/rdf-schema#label": {
-                "@language": "cs",
-                "@value": "čeština"
+              "label": {
+                "cs": "čeština"
               }
             },
             {
               "id": "http://publications.europa.eu/resource/authority/language/ENG",
               "type": "language_system",
-              "http://www.w3.org/2000/01/rdf-schema#label": {
-                "@language": "en",
-                "@value": "English"
+              "label": {
+                "en": "English"
               }
             }
           ],
@@ -5376,31 +5405,29 @@
               "role": {
                 "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/DataManager",
                 "type": "attributed_agent_role_type",
-                "http://www.w3.org/2000/01/rdf-schema#label": [
-                  {
-                    "@language": "en",
-                    "@value": "Data manager"
-                  },
-                  {
-                    "@language": "cs",
-                    "@value": "Manažer dat"
-                  }
-                ]
+                "label": {
+                  "en": "Data manager",
+                  "cs": "Manažer dat"
+                }
               },
               "attributed_agent": {
                 "id": "_:b42",
                 "type": "person",
-                "family_name": ":unkn",
-                "given_name": ":unkn",
-                "name": ":unkn"
+                "http://www.w3.org/2006/vcard/ns#family-name": ":unkn",
+                "http://www.w3.org/2006/vcard/ns#given-name": ":unkn",
+                "http://xmlns.com/foaf/0.1/name": ":unkn"
               }
             }
           ],
           "original_repository": {
             "id": "https://datarepo.eosc.cz",
             "type": "repository",
+            "http://purl.org/dc/terms/description": {
+              "@language": "en",
+              "@value": "The Data Catch-all Repository is a general-purpose repository for research data for which no more suitable disciplinary, institutional, or community repository is available."
+            },
             "http://purl.org/dc/terms/title": {
-              "@language": "cs",
+              "@language": "en",
               "@value": "Catch-all"
             },
             "qualified_attribution": [
@@ -5410,21 +5437,15 @@
                 "role": {
                   "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Publisher",
                   "type": "attributed_agent_role_type",
-                  "http://www.w3.org/2000/01/rdf-schema#label": [
-                    {
-                      "@language": "cs",
-                      "@value": "Vydavatel"
-                    },
-                    {
-                      "@language": "en",
-                      "@value": "Publisher"
-                    }
-                  ]
+                  "label": {
+                    "cs": "Vydavatel",
+                    "en": "Publisher"
+                  }
                 },
                 "attributed_agent": {
                   "id": "_:b1",
                   "type": "organization",
-                  "name": "Ústav fyzikální chemie J. Heyrovského AV ČR"
+                  "http://xmlns.com/foaf/0.1/name": "Ústav fyzikální chemie J. Heyrovského AV ČR"
                 }
               }
             ]
@@ -5440,9 +5461,9 @@
             "@value": "Data podporující strukturu neutrofilových extracelulárních pastí pocházejících z lidských neutrofilů"
           },
           "https://w3id.org/tib/datacite/property/descriptionType": {
-            "id": "https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Abstract",
+            "id": "https://w3id.org/tib/datacite/property/descriptionType/Abstract",
             "type": "http://www.w3.org/2004/02/skos/core#Concept",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://www.w3.org/2004/02/skos/core#prefLabel": [
               {
                 "@language": "cs",
                 "@value": "Abstrakt"
@@ -5462,9 +5483,9 @@
             "@value": "Data supporting the structure of neutrophil extracellular traps generated from human neutrophils"
           },
           "https://w3id.org/tib/datacite/property/descriptionType": {
-            "id": "https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Abstract",
+            "id": "https://w3id.org/tib/datacite/property/descriptionType/Abstract",
             "type": "http://www.w3.org/2004/02/skos/core#Concept",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://www.w3.org/2004/02/skos/core#prefLabel": [
               {
                 "@language": "cs",
                 "@value": "Abstrakt"
@@ -5484,9 +5505,9 @@
             "@value": "Doplňující mikroskopická data"
           },
           "https://w3id.org/tib/datacite/property/descriptionType": {
-            "id": "https://vocabs.ccmm.cz/registry/codelist/DescriptionType/TechnicalInfo",
+            "id": "https://w3id.org/tib/datacite/property/descriptionType/TechnicalInfo",
             "type": "http://www.w3.org/2004/02/skos/core#Concept",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://www.w3.org/2004/02/skos/core#prefLabel": [
               {
                 "@language": "cs",
                 "@value": "Technická informace"
@@ -5506,9 +5527,9 @@
             "@value": "Supplementary microscopy data"
           },
           "https://w3id.org/tib/datacite/property/descriptionType": {
-            "id": "https://vocabs.ccmm.cz/registry/codelist/DescriptionType/TechnicalInfo",
+            "id": "https://w3id.org/tib/datacite/property/descriptionType/TechnicalInfo",
             "type": "http://www.w3.org/2004/02/skos/core#Concept",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://www.w3.org/2004/02/skos/core#prefLabel": [
               {
                 "@language": "cs",
                 "@value": "Technická informace"
@@ -5528,9 +5549,9 @@
             "@value": "Izolace neutrofilů ze vzorků lidské krve, stimulace neutrofilů pomocí agens indukujících NETózu, akvizice mikroskopických dat"
           },
           "https://w3id.org/tib/datacite/property/descriptionType": {
-            "id": "https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Methods",
+            "id": "https://w3id.org/tib/datacite/property/descriptionType/Methods",
             "type": "http://www.w3.org/2004/02/skos/core#Concept",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://www.w3.org/2004/02/skos/core#prefLabel": [
               {
                 "@language": "cs",
                 "@value": "Metodologie"
@@ -5550,9 +5571,9 @@
             "@value": "Isolation of neutrophils from human blood samples, neutrophil stimulation with NETosis-inducing agents, microscopy data acquisition"
           },
           "https://w3id.org/tib/datacite/property/descriptionType": {
-            "id": "https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Methods",
+            "id": "https://w3id.org/tib/datacite/property/descriptionType/Methods",
             "type": "http://www.w3.org/2004/02/skos/core#Concept",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://www.w3.org/2004/02/skos/core#prefLabel": [
               {
                 "@language": "cs",
                 "@value": "Metodologie"
@@ -5594,10 +5615,7 @@
               }
             ]
           },
-          "https://w3id.org/tib/datacite/property/classificationCode": {
-            "type": "xsd:string",
-            "@value": "10601"
-          }
+          "https://w3id.org/tib/datacite/property/classificationCode": "10601"
         },
         {
           "id": "https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10606",
@@ -5634,10 +5652,7 @@
               }
             ]
           },
-          "https://w3id.org/tib/datacite/property/classificationCode": {
-            "type": "xsd:string",
-            "@value": "10606"
-          }
+          "https://w3id.org/tib/datacite/property/classificationCode": "10606"
         },
         {
           "id": "https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30102",
@@ -5666,10 +5681,7 @@
               }
             ]
           },
-          "https://w3id.org/tib/datacite/property/classificationCode": {
-            "type": "xsd:string",
-            "@value": "30102"
-          }
+          "https://w3id.org/tib/datacite/property/classificationCode": "30102"
         }
       ]
     }
@@ -5684,7 +5696,7 @@
       "format": {
         "id": "http://publications.europa.eu/resource/authority/file-type/PDF",
         "type": "format",
-        "http://www.w3.org/2000/01/rdf-schema#label": {
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
           "@language": "en",
           "@value": "PDF"
         }
@@ -5692,7 +5704,7 @@
       "licence": {
         "id": "https://creativecommons.org/licenses/by/4.0/",
         "type": "licence_document",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
+        "http://purl.org/dc/terms/title": [
           {
             "@language": "en",
             "@value": "Creative Commons Attribution 4.0 International License"
@@ -5707,13 +5719,12 @@
         {
           "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
           "type": "access_rights",
-          "http://www.w3.org/2000/01/rdf-schema#label": {
-            "@language": "en",
-            "@value": "open access"
+          "label": {
+            "en": "open access"
           }
         }
       ],
-      "title": "CebecauerTkadlec_GACR2026_MindMap.pdf",
+      "http://purl.org/dc/terms/title": "CebecauerTkadlec_GACR2026_MindMap.pdf",
       "http://www.w3.org/2000/01/rdf-schema#label": {
         "@language": "en",
         "@value": "CebecauerTkadlec_GACR2026_MindMap.pdf"
@@ -5732,7 +5743,7 @@
           "format": {
             "id": "http://publications.europa.eu/resource/authority/file-type/PDF",
             "type": "format",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "PDF"
             }
@@ -5740,7 +5751,7 @@
           "licence": {
             "id": "https://creativecommons.org/licenses/by/4.0/",
             "type": "licence_document",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://purl.org/dc/terms/title": [
               {
                 "@language": "en",
                 "@value": "Creative Commons Attribution 4.0 International License"
@@ -5755,13 +5766,12 @@
             {
               "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
               "type": "access_rights",
-              "http://www.w3.org/2000/01/rdf-schema#label": {
-                "@language": "en",
-                "@value": "open access"
+              "label": {
+                "en": "open access"
               }
             }
           ],
-          "title": "CebecauerTkadlec_GACR2026_MindMap.pdf",
+          "http://purl.org/dc/terms/title": "CebecauerTkadlec_GACR2026_MindMap.pdf",
           "http://www.w3.org/2000/01/rdf-schema#label": {
             "@language": "en",
             "@value": "CebecauerTkadlec_GACR2026_MindMap.pdf"
@@ -5778,7 +5788,7 @@
           "media_type": {
             "id": "http://www.iana.org/assignments/media-types/application/pdf",
             "type": "media_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "application/pdf"
             }
@@ -5788,7 +5798,7 @@
       "media_type": {
         "id": "http://www.iana.org/assignments/media-types/application/pdf",
         "type": "media_type",
-        "http://www.w3.org/2000/01/rdf-schema#label": {
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
           "@language": "en",
           "@value": "application/pdf"
         }
@@ -5803,7 +5813,7 @@
       "format": {
         "id": "http://publications.europa.eu/resource/authority/file-type/TXT",
         "type": "format",
-        "http://www.w3.org/2000/01/rdf-schema#label": {
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
           "@language": "en",
           "@value": "Plain text"
         }
@@ -5811,7 +5821,7 @@
       "licence": {
         "id": "https://creativecommons.org/licenses/by/4.0/",
         "type": "licence_document",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
+        "http://purl.org/dc/terms/title": [
           {
             "@language": "en",
             "@value": "Creative Commons Attribution 4.0 International License"
@@ -5826,13 +5836,12 @@
         {
           "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
           "type": "access_rights",
-          "http://www.w3.org/2000/01/rdf-schema#label": {
-            "@language": "en",
-            "@value": "open access"
+          "label": {
+            "en": "open access"
           }
         }
       ],
-      "title": "ReadMe.txt",
+      "http://purl.org/dc/terms/title": "ReadMe.txt",
       "http://www.w3.org/2000/01/rdf-schema#label": {
         "@language": "en",
         "@value": "ReadMe.txt"
@@ -5851,7 +5860,7 @@
           "format": {
             "id": "http://publications.europa.eu/resource/authority/file-type/TXT",
             "type": "format",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "Plain text"
             }
@@ -5859,7 +5868,7 @@
           "licence": {
             "id": "https://creativecommons.org/licenses/by/4.0/",
             "type": "licence_document",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://purl.org/dc/terms/title": [
               {
                 "@language": "en",
                 "@value": "Creative Commons Attribution 4.0 International License"
@@ -5874,13 +5883,12 @@
             {
               "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
               "type": "access_rights",
-              "http://www.w3.org/2000/01/rdf-schema#label": {
-                "@language": "en",
-                "@value": "open access"
+              "label": {
+                "en": "open access"
               }
             }
           ],
-          "title": "ReadMe.txt",
+          "http://purl.org/dc/terms/title": "ReadMe.txt",
           "http://www.w3.org/2000/01/rdf-schema#label": {
             "@language": "en",
             "@value": "ReadMe.txt"
@@ -5897,7 +5905,7 @@
           "media_type": {
             "id": "http://www.iana.org/assignments/media-types/text/plain",
             "type": "media_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "text/plain"
             }
@@ -5907,7 +5915,7 @@
       "media_type": {
         "id": "http://www.iana.org/assignments/media-types/text/plain",
         "type": "media_type",
-        "http://www.w3.org/2000/01/rdf-schema#label": {
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
           "@language": "en",
           "@value": "text/plain"
         }
@@ -5922,7 +5930,7 @@
       "format": {
         "id": "http://publications.europa.eu/resource/authority/file-type/TIFF",
         "type": "format",
-        "http://www.w3.org/2000/01/rdf-schema#label": {
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
           "@language": "en",
           "@value": "TIFF"
         }
@@ -5930,7 +5938,7 @@
       "licence": {
         "id": "https://creativecommons.org/licenses/by/4.0/",
         "type": "licence_document",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
+        "http://purl.org/dc/terms/title": [
           {
             "@language": "en",
             "@value": "Creative Commons Attribution 4.0 International License"
@@ -5945,13 +5953,12 @@
         {
           "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
           "type": "access_rights",
-          "http://www.w3.org/2000/01/rdf-schema#label": {
-            "@language": "en",
-            "@value": "open access"
+          "label": {
+            "en": "open access"
           }
         }
       ],
-      "title": "Supp_Fig2A_NE_DNAchannel.tif",
+      "http://purl.org/dc/terms/title": "Supp_Fig2A_NE_DNAchannel.tif",
       "http://www.w3.org/2000/01/rdf-schema#label": {
         "@language": "en",
         "@value": "Supp_Fig2A_NE_DNAchannel.tif"
@@ -5970,7 +5977,7 @@
           "format": {
             "id": "http://publications.europa.eu/resource/authority/file-type/TIFF",
             "type": "format",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "TIFF"
             }
@@ -5978,7 +5985,7 @@
           "licence": {
             "id": "https://creativecommons.org/licenses/by/4.0/",
             "type": "licence_document",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://purl.org/dc/terms/title": [
               {
                 "@language": "en",
                 "@value": "Creative Commons Attribution 4.0 International License"
@@ -5993,13 +6000,12 @@
             {
               "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
               "type": "access_rights",
-              "http://www.w3.org/2000/01/rdf-schema#label": {
-                "@language": "en",
-                "@value": "open access"
+              "label": {
+                "en": "open access"
               }
             }
           ],
-          "title": "Supp_Fig2A_NE_DNAchannel.tif",
+          "http://purl.org/dc/terms/title": "Supp_Fig2A_NE_DNAchannel.tif",
           "http://www.w3.org/2000/01/rdf-schema#label": {
             "@language": "en",
             "@value": "Supp_Fig2A_NE_DNAchannel.tif"
@@ -6016,7 +6022,7 @@
           "media_type": {
             "id": "http://www.iana.org/assignments/media-types/image/tiff",
             "type": "media_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "image/tiff"
             }
@@ -6026,7 +6032,7 @@
       "media_type": {
         "id": "http://www.iana.org/assignments/media-types/image/tiff",
         "type": "media_type",
-        "http://www.w3.org/2000/01/rdf-schema#label": {
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
           "@language": "en",
           "@value": "image/tiff"
         }
@@ -6041,7 +6047,7 @@
       "format": {
         "id": "http://publications.europa.eu/resource/authority/file-type/TIFF",
         "type": "format",
-        "http://www.w3.org/2000/01/rdf-schema#label": {
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
           "@language": "en",
           "@value": "TIFF"
         }
@@ -6049,7 +6055,7 @@
       "licence": {
         "id": "https://creativecommons.org/licenses/by/4.0/",
         "type": "licence_document",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
+        "http://purl.org/dc/terms/title": [
           {
             "@language": "en",
             "@value": "Creative Commons Attribution 4.0 International License"
@@ -6064,13 +6070,12 @@
         {
           "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
           "type": "access_rights",
-          "http://www.w3.org/2000/01/rdf-schema#label": {
-            "@language": "en",
-            "@value": "open access"
+          "label": {
+            "en": "open access"
           }
         }
       ],
-      "title": "Supp_Fig2A_NE_Merge_5um.tif",
+      "http://purl.org/dc/terms/title": "Supp_Fig2A_NE_Merge_5um.tif",
       "http://www.w3.org/2000/01/rdf-schema#label": {
         "@language": "en",
         "@value": "Supp_Fig2A_NE_Merge_5um.tif"
@@ -6089,7 +6094,7 @@
           "format": {
             "id": "http://publications.europa.eu/resource/authority/file-type/TIFF",
             "type": "format",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "TIFF"
             }
@@ -6097,7 +6102,7 @@
           "licence": {
             "id": "https://creativecommons.org/licenses/by/4.0/",
             "type": "licence_document",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://purl.org/dc/terms/title": [
               {
                 "@language": "en",
                 "@value": "Creative Commons Attribution 4.0 International License"
@@ -6112,13 +6117,12 @@
             {
               "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
               "type": "access_rights",
-              "http://www.w3.org/2000/01/rdf-schema#label": {
-                "@language": "en",
-                "@value": "open access"
+              "label": {
+                "en": "open access"
               }
             }
           ],
-          "title": "Supp_Fig2A_NE_Merge_5um.tif",
+          "http://purl.org/dc/terms/title": "Supp_Fig2A_NE_Merge_5um.tif",
           "http://www.w3.org/2000/01/rdf-schema#label": {
             "@language": "en",
             "@value": "Supp_Fig2A_NE_Merge_5um.tif"
@@ -6135,7 +6139,7 @@
           "media_type": {
             "id": "http://www.iana.org/assignments/media-types/image/tiff",
             "type": "media_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "image/tiff"
             }
@@ -6145,7 +6149,7 @@
       "media_type": {
         "id": "http://www.iana.org/assignments/media-types/image/tiff",
         "type": "media_type",
-        "http://www.w3.org/2000/01/rdf-schema#label": {
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
           "@language": "en",
           "@value": "image/tiff"
         }
@@ -6160,7 +6164,7 @@
       "format": {
         "id": "http://publications.europa.eu/resource/authority/file-type/TIFF",
         "type": "format",
-        "http://www.w3.org/2000/01/rdf-schema#label": {
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
           "@language": "en",
           "@value": "TIFF"
         }
@@ -6168,7 +6172,7 @@
       "licence": {
         "id": "https://creativecommons.org/licenses/by/4.0/",
         "type": "licence_document",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
+        "http://purl.org/dc/terms/title": [
           {
             "@language": "en",
             "@value": "Creative Commons Attribution 4.0 International License"
@@ -6183,13 +6187,12 @@
         {
           "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
           "type": "access_rights",
-          "http://www.w3.org/2000/01/rdf-schema#label": {
-            "@language": "en",
-            "@value": "open access"
+          "label": {
+            "en": "open access"
           }
         }
       ],
-      "title": "Supp_Fig2A_NE_processedSMLM.tif",
+      "http://purl.org/dc/terms/title": "Supp_Fig2A_NE_processedSMLM.tif",
       "http://www.w3.org/2000/01/rdf-schema#label": {
         "@language": "en",
         "@value": "Supp_Fig2A_NE_processedSMLM.tif"
@@ -6208,7 +6211,7 @@
           "format": {
             "id": "http://publications.europa.eu/resource/authority/file-type/TIFF",
             "type": "format",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "TIFF"
             }
@@ -6216,7 +6219,7 @@
           "licence": {
             "id": "https://creativecommons.org/licenses/by/4.0/",
             "type": "licence_document",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://purl.org/dc/terms/title": [
               {
                 "@language": "en",
                 "@value": "Creative Commons Attribution 4.0 International License"
@@ -6231,13 +6234,12 @@
             {
               "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
               "type": "access_rights",
-              "http://www.w3.org/2000/01/rdf-schema#label": {
-                "@language": "en",
-                "@value": "open access"
+              "label": {
+                "en": "open access"
               }
             }
           ],
-          "title": "Supp_Fig2A_NE_processedSMLM.tif",
+          "http://purl.org/dc/terms/title": "Supp_Fig2A_NE_processedSMLM.tif",
           "http://www.w3.org/2000/01/rdf-schema#label": {
             "@language": "en",
             "@value": "Supp_Fig2A_NE_processedSMLM.tif"
@@ -6254,7 +6256,7 @@
           "media_type": {
             "id": "http://www.iana.org/assignments/media-types/image/tiff",
             "type": "media_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "image/tiff"
             }
@@ -6264,7 +6266,7 @@
       "media_type": {
         "id": "http://www.iana.org/assignments/media-types/image/tiff",
         "type": "media_type",
-        "http://www.w3.org/2000/01/rdf-schema#label": {
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
           "@language": "en",
           "@value": "image/tiff"
         }
@@ -6279,7 +6281,7 @@
       "format": {
         "id": "http://publications.europa.eu/resource/authority/file-type/TIFF",
         "type": "format",
-        "http://www.w3.org/2000/01/rdf-schema#label": {
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
           "@language": "en",
           "@value": "TIFF"
         }
@@ -6287,7 +6289,7 @@
       "licence": {
         "id": "https://creativecommons.org/licenses/by/4.0/",
         "type": "licence_document",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
+        "http://purl.org/dc/terms/title": [
           {
             "@language": "en",
             "@value": "Creative Commons Attribution 4.0 International License"
@@ -6302,13 +6304,12 @@
         {
           "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
           "type": "access_rights",
-          "http://www.w3.org/2000/01/rdf-schema#label": {
-            "@language": "en",
-            "@value": "open access"
+          "label": {
+            "en": "open access"
           }
         }
       ],
-      "title": "Supp_Fig2B_citH3_DNAchannel.tif",
+      "http://purl.org/dc/terms/title": "Supp_Fig2B_citH3_DNAchannel.tif",
       "http://www.w3.org/2000/01/rdf-schema#label": {
         "@language": "en",
         "@value": "Supp_Fig2B_citH3_DNAchannel.tif"
@@ -6327,7 +6328,7 @@
           "format": {
             "id": "http://publications.europa.eu/resource/authority/file-type/TIFF",
             "type": "format",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "TIFF"
             }
@@ -6335,7 +6336,7 @@
           "licence": {
             "id": "https://creativecommons.org/licenses/by/4.0/",
             "type": "licence_document",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://purl.org/dc/terms/title": [
               {
                 "@language": "en",
                 "@value": "Creative Commons Attribution 4.0 International License"
@@ -6350,13 +6351,12 @@
             {
               "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
               "type": "access_rights",
-              "http://www.w3.org/2000/01/rdf-schema#label": {
-                "@language": "en",
-                "@value": "open access"
+              "label": {
+                "en": "open access"
               }
             }
           ],
-          "title": "Supp_Fig2B_citH3_DNAchannel.tif",
+          "http://purl.org/dc/terms/title": "Supp_Fig2B_citH3_DNAchannel.tif",
           "http://www.w3.org/2000/01/rdf-schema#label": {
             "@language": "en",
             "@value": "Supp_Fig2B_citH3_DNAchannel.tif"
@@ -6373,7 +6373,7 @@
           "media_type": {
             "id": "http://www.iana.org/assignments/media-types/image/tiff",
             "type": "media_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "image/tiff"
             }
@@ -6383,7 +6383,7 @@
       "media_type": {
         "id": "http://www.iana.org/assignments/media-types/image/tiff",
         "type": "media_type",
-        "http://www.w3.org/2000/01/rdf-schema#label": {
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
           "@language": "en",
           "@value": "image/tiff"
         }
@@ -6398,7 +6398,7 @@
       "format": {
         "id": "http://publications.europa.eu/resource/authority/file-type/TIFF",
         "type": "format",
-        "http://www.w3.org/2000/01/rdf-schema#label": {
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
           "@language": "en",
           "@value": "TIFF"
         }
@@ -6406,7 +6406,7 @@
       "licence": {
         "id": "https://creativecommons.org/licenses/by/4.0/",
         "type": "licence_document",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
+        "http://purl.org/dc/terms/title": [
           {
             "@language": "en",
             "@value": "Creative Commons Attribution 4.0 International License"
@@ -6421,13 +6421,12 @@
         {
           "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
           "type": "access_rights",
-          "http://www.w3.org/2000/01/rdf-schema#label": {
-            "@language": "en",
-            "@value": "open access"
+          "label": {
+            "en": "open access"
           }
         }
       ],
-      "title": "Supp_Fig2B_citH3_Merge_5um.tif",
+      "http://purl.org/dc/terms/title": "Supp_Fig2B_citH3_Merge_5um.tif",
       "http://www.w3.org/2000/01/rdf-schema#label": {
         "@language": "en",
         "@value": "Supp_Fig2B_citH3_Merge_5um.tif"
@@ -6446,7 +6445,7 @@
           "format": {
             "id": "http://publications.europa.eu/resource/authority/file-type/TIFF",
             "type": "format",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "TIFF"
             }
@@ -6454,7 +6453,7 @@
           "licence": {
             "id": "https://creativecommons.org/licenses/by/4.0/",
             "type": "licence_document",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://purl.org/dc/terms/title": [
               {
                 "@language": "en",
                 "@value": "Creative Commons Attribution 4.0 International License"
@@ -6469,13 +6468,12 @@
             {
               "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
               "type": "access_rights",
-              "http://www.w3.org/2000/01/rdf-schema#label": {
-                "@language": "en",
-                "@value": "open access"
+              "label": {
+                "en": "open access"
               }
             }
           ],
-          "title": "Supp_Fig2B_citH3_Merge_5um.tif",
+          "http://purl.org/dc/terms/title": "Supp_Fig2B_citH3_Merge_5um.tif",
           "http://www.w3.org/2000/01/rdf-schema#label": {
             "@language": "en",
             "@value": "Supp_Fig2B_citH3_Merge_5um.tif"
@@ -6492,7 +6490,7 @@
           "media_type": {
             "id": "http://www.iana.org/assignments/media-types/image/tiff",
             "type": "media_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "image/tiff"
             }
@@ -6502,7 +6500,7 @@
       "media_type": {
         "id": "http://www.iana.org/assignments/media-types/image/tiff",
         "type": "media_type",
-        "http://www.w3.org/2000/01/rdf-schema#label": {
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
           "@language": "en",
           "@value": "image/tiff"
         }
@@ -6517,7 +6515,7 @@
       "format": {
         "id": "http://publications.europa.eu/resource/authority/file-type/TIFF",
         "type": "format",
-        "http://www.w3.org/2000/01/rdf-schema#label": {
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
           "@language": "en",
           "@value": "TIFF"
         }
@@ -6525,7 +6523,7 @@
       "licence": {
         "id": "https://creativecommons.org/licenses/by/4.0/",
         "type": "licence_document",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
+        "http://purl.org/dc/terms/title": [
           {
             "@language": "en",
             "@value": "Creative Commons Attribution 4.0 International License"
@@ -6540,13 +6538,12 @@
         {
           "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
           "type": "access_rights",
-          "http://www.w3.org/2000/01/rdf-schema#label": {
-            "@language": "en",
-            "@value": "open access"
+          "label": {
+            "en": "open access"
           }
         }
       ],
-      "title": "Supp_Fig2B_citH3_processedSMLM.tif",
+      "http://purl.org/dc/terms/title": "Supp_Fig2B_citH3_processedSMLM.tif",
       "http://www.w3.org/2000/01/rdf-schema#label": {
         "@language": "en",
         "@value": "Supp_Fig2B_citH3_processedSMLM.tif"
@@ -6565,7 +6562,7 @@
           "format": {
             "id": "http://publications.europa.eu/resource/authority/file-type/TIFF",
             "type": "format",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "TIFF"
             }
@@ -6573,7 +6570,7 @@
           "licence": {
             "id": "https://creativecommons.org/licenses/by/4.0/",
             "type": "licence_document",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://purl.org/dc/terms/title": [
               {
                 "@language": "en",
                 "@value": "Creative Commons Attribution 4.0 International License"
@@ -6588,13 +6585,12 @@
             {
               "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
               "type": "access_rights",
-              "http://www.w3.org/2000/01/rdf-schema#label": {
-                "@language": "en",
-                "@value": "open access"
+              "label": {
+                "en": "open access"
               }
             }
           ],
-          "title": "Supp_Fig2B_citH3_processedSMLM.tif",
+          "http://purl.org/dc/terms/title": "Supp_Fig2B_citH3_processedSMLM.tif",
           "http://www.w3.org/2000/01/rdf-schema#label": {
             "@language": "en",
             "@value": "Supp_Fig2B_citH3_processedSMLM.tif"
@@ -6611,7 +6607,7 @@
           "media_type": {
             "id": "http://www.iana.org/assignments/media-types/image/tiff",
             "type": "media_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "image/tiff"
             }
@@ -6621,7 +6617,7 @@
       "media_type": {
         "id": "http://www.iana.org/assignments/media-types/image/tiff",
         "type": "media_type",
-        "http://www.w3.org/2000/01/rdf-schema#label": {
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
           "@language": "en",
           "@value": "image/tiff"
         }
@@ -6636,7 +6632,7 @@
       "format": {
         "id": "http://publications.europa.eu/resource/authority/file-type/TIFF",
         "type": "format",
-        "http://www.w3.org/2000/01/rdf-schema#label": {
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
           "@language": "en",
           "@value": "TIFF"
         }
@@ -6644,7 +6640,7 @@
       "licence": {
         "id": "https://creativecommons.org/licenses/by/4.0/",
         "type": "licence_document",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
+        "http://purl.org/dc/terms/title": [
           {
             "@language": "en",
             "@value": "Creative Commons Attribution 4.0 International License"
@@ -6659,13 +6655,12 @@
         {
           "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
           "type": "access_rights",
-          "http://www.w3.org/2000/01/rdf-schema#label": {
-            "@language": "en",
-            "@value": "open access"
+          "label": {
+            "en": "open access"
           }
         }
       ],
-      "title": "Supp_Fig2C_MPO_DNAchannel.tif",
+      "http://purl.org/dc/terms/title": "Supp_Fig2C_MPO_DNAchannel.tif",
       "http://www.w3.org/2000/01/rdf-schema#label": {
         "@language": "en",
         "@value": "Supp_Fig2C_MPO_DNAchannel.tif"
@@ -6684,7 +6679,7 @@
           "format": {
             "id": "http://publications.europa.eu/resource/authority/file-type/TIFF",
             "type": "format",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "TIFF"
             }
@@ -6692,7 +6687,7 @@
           "licence": {
             "id": "https://creativecommons.org/licenses/by/4.0/",
             "type": "licence_document",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://purl.org/dc/terms/title": [
               {
                 "@language": "en",
                 "@value": "Creative Commons Attribution 4.0 International License"
@@ -6707,13 +6702,12 @@
             {
               "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
               "type": "access_rights",
-              "http://www.w3.org/2000/01/rdf-schema#label": {
-                "@language": "en",
-                "@value": "open access"
+              "label": {
+                "en": "open access"
               }
             }
           ],
-          "title": "Supp_Fig2C_MPO_DNAchannel.tif",
+          "http://purl.org/dc/terms/title": "Supp_Fig2C_MPO_DNAchannel.tif",
           "http://www.w3.org/2000/01/rdf-schema#label": {
             "@language": "en",
             "@value": "Supp_Fig2C_MPO_DNAchannel.tif"
@@ -6730,7 +6724,7 @@
           "media_type": {
             "id": "http://www.iana.org/assignments/media-types/image/tiff",
             "type": "media_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "image/tiff"
             }
@@ -6740,7 +6734,7 @@
       "media_type": {
         "id": "http://www.iana.org/assignments/media-types/image/tiff",
         "type": "media_type",
-        "http://www.w3.org/2000/01/rdf-schema#label": {
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
           "@language": "en",
           "@value": "image/tiff"
         }
@@ -6755,7 +6749,7 @@
       "format": {
         "id": "http://publications.europa.eu/resource/authority/file-type/TIFF",
         "type": "format",
-        "http://www.w3.org/2000/01/rdf-schema#label": {
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
           "@language": "en",
           "@value": "TIFF"
         }
@@ -6763,7 +6757,7 @@
       "licence": {
         "id": "https://creativecommons.org/licenses/by/4.0/",
         "type": "licence_document",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
+        "http://purl.org/dc/terms/title": [
           {
             "@language": "en",
             "@value": "Creative Commons Attribution 4.0 International License"
@@ -6778,13 +6772,12 @@
         {
           "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
           "type": "access_rights",
-          "http://www.w3.org/2000/01/rdf-schema#label": {
-            "@language": "en",
-            "@value": "open access"
+          "label": {
+            "en": "open access"
           }
         }
       ],
-      "title": "Supp_Fig2C_MPO_Merge_5um.tif",
+      "http://purl.org/dc/terms/title": "Supp_Fig2C_MPO_Merge_5um.tif",
       "http://www.w3.org/2000/01/rdf-schema#label": {
         "@language": "en",
         "@value": "Supp_Fig2C_MPO_Merge_5um.tif"
@@ -6803,7 +6796,7 @@
           "format": {
             "id": "http://publications.europa.eu/resource/authority/file-type/TIFF",
             "type": "format",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "TIFF"
             }
@@ -6811,7 +6804,7 @@
           "licence": {
             "id": "https://creativecommons.org/licenses/by/4.0/",
             "type": "licence_document",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://purl.org/dc/terms/title": [
               {
                 "@language": "en",
                 "@value": "Creative Commons Attribution 4.0 International License"
@@ -6826,13 +6819,12 @@
             {
               "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
               "type": "access_rights",
-              "http://www.w3.org/2000/01/rdf-schema#label": {
-                "@language": "en",
-                "@value": "open access"
+              "label": {
+                "en": "open access"
               }
             }
           ],
-          "title": "Supp_Fig2C_MPO_Merge_5um.tif",
+          "http://purl.org/dc/terms/title": "Supp_Fig2C_MPO_Merge_5um.tif",
           "http://www.w3.org/2000/01/rdf-schema#label": {
             "@language": "en",
             "@value": "Supp_Fig2C_MPO_Merge_5um.tif"
@@ -6849,7 +6841,7 @@
           "media_type": {
             "id": "http://www.iana.org/assignments/media-types/image/tiff",
             "type": "media_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "image/tiff"
             }
@@ -6859,7 +6851,7 @@
       "media_type": {
         "id": "http://www.iana.org/assignments/media-types/image/tiff",
         "type": "media_type",
-        "http://www.w3.org/2000/01/rdf-schema#label": {
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
           "@language": "en",
           "@value": "image/tiff"
         }
@@ -6874,7 +6866,7 @@
       "format": {
         "id": "http://publications.europa.eu/resource/authority/file-type/TIFF",
         "type": "format",
-        "http://www.w3.org/2000/01/rdf-schema#label": {
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
           "@language": "en",
           "@value": "TIFF"
         }
@@ -6882,7 +6874,7 @@
       "licence": {
         "id": "https://creativecommons.org/licenses/by/4.0/",
         "type": "licence_document",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
+        "http://purl.org/dc/terms/title": [
           {
             "@language": "en",
             "@value": "Creative Commons Attribution 4.0 International License"
@@ -6897,13 +6889,12 @@
         {
           "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
           "type": "access_rights",
-          "http://www.w3.org/2000/01/rdf-schema#label": {
-            "@language": "en",
-            "@value": "open access"
+          "label": {
+            "en": "open access"
           }
         }
       ],
-      "title": "Supp_Fig2C_MPO_processedSMLM.tif",
+      "http://purl.org/dc/terms/title": "Supp_Fig2C_MPO_processedSMLM.tif",
       "http://www.w3.org/2000/01/rdf-schema#label": {
         "@language": "en",
         "@value": "Supp_Fig2C_MPO_processedSMLM.tif"
@@ -6922,7 +6913,7 @@
           "format": {
             "id": "http://publications.europa.eu/resource/authority/file-type/TIFF",
             "type": "format",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "TIFF"
             }
@@ -6930,7 +6921,7 @@
           "licence": {
             "id": "https://creativecommons.org/licenses/by/4.0/",
             "type": "licence_document",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://purl.org/dc/terms/title": [
               {
                 "@language": "en",
                 "@value": "Creative Commons Attribution 4.0 International License"
@@ -6945,13 +6936,12 @@
             {
               "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
               "type": "access_rights",
-              "http://www.w3.org/2000/01/rdf-schema#label": {
-                "@language": "en",
-                "@value": "open access"
+              "label": {
+                "en": "open access"
               }
             }
           ],
-          "title": "Supp_Fig2C_MPO_processedSMLM.tif",
+          "http://purl.org/dc/terms/title": "Supp_Fig2C_MPO_processedSMLM.tif",
           "http://www.w3.org/2000/01/rdf-schema#label": {
             "@language": "en",
             "@value": "Supp_Fig2C_MPO_processedSMLM.tif"
@@ -6968,7 +6958,7 @@
           "media_type": {
             "id": "http://www.iana.org/assignments/media-types/image/tiff",
             "type": "media_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "image/tiff"
             }
@@ -6978,7 +6968,7 @@
       "media_type": {
         "id": "http://www.iana.org/assignments/media-types/image/tiff",
         "type": "media_type",
-        "http://www.w3.org/2000/01/rdf-schema#label": {
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
           "@language": "en",
           "@value": "image/tiff"
         }
@@ -6993,7 +6983,7 @@
       "format": {
         "id": "http://publications.europa.eu/resource/authority/file-type/PDF",
         "type": "format",
-        "http://www.w3.org/2000/01/rdf-schema#label": {
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
           "@language": "en",
           "@value": "PDF"
         }
@@ -7001,7 +6991,7 @@
       "licence": {
         "id": "https://creativecommons.org/licenses/by/4.0/",
         "type": "licence_document",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
+        "http://purl.org/dc/terms/title": [
           {
             "@language": "en",
             "@value": "Creative Commons Attribution 4.0 International License"
@@ -7016,13 +7006,12 @@
         {
           "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
           "type": "access_rights",
-          "http://www.w3.org/2000/01/rdf-schema#label": {
-            "@language": "en",
-            "@value": "open access"
+          "label": {
+            "en": "open access"
           }
         }
       ],
-      "title": "Supplementary_Figures.pdf",
+      "http://purl.org/dc/terms/title": "Supplementary_Figures.pdf",
       "http://www.w3.org/2000/01/rdf-schema#label": {
         "@language": "en",
         "@value": "Supplementary_Figures.pdf"
@@ -7041,7 +7030,7 @@
           "format": {
             "id": "http://publications.europa.eu/resource/authority/file-type/PDF",
             "type": "format",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "PDF"
             }
@@ -7049,7 +7038,7 @@
           "licence": {
             "id": "https://creativecommons.org/licenses/by/4.0/",
             "type": "licence_document",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
+            "http://purl.org/dc/terms/title": [
               {
                 "@language": "en",
                 "@value": "Creative Commons Attribution 4.0 International License"
@@ -7064,13 +7053,12 @@
             {
               "id": "https://vocabularies.coar-repositories.org/access_rights/c_abf2/",
               "type": "access_rights",
-              "http://www.w3.org/2000/01/rdf-schema#label": {
-                "@language": "en",
-                "@value": "open access"
+              "label": {
+                "en": "open access"
               }
             }
           ],
-          "title": "Supplementary_Figures.pdf",
+          "http://purl.org/dc/terms/title": "Supplementary_Figures.pdf",
           "http://www.w3.org/2000/01/rdf-schema#label": {
             "@language": "en",
             "@value": "Supplementary_Figures.pdf"
@@ -7087,7 +7075,7 @@
           "media_type": {
             "id": "http://www.iana.org/assignments/media-types/application/pdf",
             "type": "media_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": {
+            "http://www.w3.org/2004/02/skos/core#prefLabel": {
               "@language": "en",
               "@value": "application/pdf"
             }
@@ -7097,7 +7085,7 @@
       "media_type": {
         "id": "http://www.iana.org/assignments/media-types/application/pdf",
         "type": "media_type",
-        "http://www.w3.org/2000/01/rdf-schema#label": {
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
           "@language": "en",
           "@value": "application/pdf"
         }
@@ -7145,16 +7133,10 @@
       "role": {
         "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
         "type": "attributed_agent_role_type",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-          {
-            "@language": "en",
-            "@value": "Creator"
-          },
-          {
-            "@language": "cs",
-            "@value": "Autor"
-          }
-        ]
+        "label": {
+          "en": "Creator",
+          "cs": "Autor"
+        }
       },
       "attributed_agent": {
         "id": "_:b19",
@@ -7163,18 +7145,19 @@
           {
             "id": "https://orcid.org/0009-0003-1158-1138",
             "type": "identifier",
-            "http://www.w3.org/2004/02/skos/core#notation": {
-              "type": "xsd:string",
-              "@value": "0009-0003-1158-1138"
-            },
+            "http://www.w3.org/2004/02/skos/core#notation": "0009-0003-1158-1138",
             "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
               "id": "https://orcid.org/",
               "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-              "http://www.w3.org/2000/01/rdf-schema#label": "ORCID"
+              "http://www.w3.org/2000/01/rdf-schema#label": {
+                "@language": "en",
+                "@value": "Open Research and Contributor ID"
+              },
+              "http://www.w3.org/2004/02/skos/core#notation": "ORCID"
             }
           }
         ],
-        "name": "Paldusová, Kateřina",
+        "http://xmlns.com/foaf/0.1/name": "Paldusová, Kateřina",
         "affiliation": [
           {
             "id": "_:b20",
@@ -7183,34 +7166,33 @@
               {
                 "id": "https://ror.org/02sat5y74",
                 "type": "identifier",
-                "http://www.w3.org/2004/02/skos/core#notation": {
-                  "type": "xsd:string",
-                  "@value": "02sat5y74"
-                },
+                "http://www.w3.org/2004/02/skos/core#notation": "02sat5y74",
                 "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                   "id": "https://ror.org/",
                   "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                  "http://www.w3.org/2000/01/rdf-schema#label": "ROR"
+                  "http://www.w3.org/2000/01/rdf-schema#label": {
+                    "@language": "en",
+                    "@value": "Research Organization Registry"
+                  },
+                  "http://www.w3.org/2004/02/skos/core#notation": "ROR"
                 }
               },
               {
                 "id": "_:b21",
                 "type": "identifier",
-                "http://www.w3.org/2004/02/skos/core#notation": {
-                  "type": "xsd:string",
-                  "@value": "61388955"
-                },
+                "http://www.w3.org/2004/02/skos/core#notation": "61388955",
                 "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                   "id": "https://www.wikidata.org/entity/Q42302581",
                   "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
                   "http://www.w3.org/2000/01/rdf-schema#label": {
                     "@language": "cs",
-                    "@value": "IČO"
-                  }
+                    "@value": "Identifikační Číslo Osoby"
+                  },
+                  "http://www.w3.org/2004/02/skos/core#notation": "IČO"
                 }
               }
             ],
-            "name": "Ústav fyzikální chemie J. Heyrovského AV ČR"
+            "http://xmlns.com/foaf/0.1/name": "Ústav fyzikální chemie J. Heyrovského AV ČR"
           }
         ]
       }
@@ -7221,16 +7203,10 @@
       "role": {
         "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
         "type": "attributed_agent_role_type",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-          {
-            "@language": "en",
-            "@value": "Creator"
-          },
-          {
-            "@language": "cs",
-            "@value": "Autor"
-          }
-        ]
+        "label": {
+          "en": "Creator",
+          "cs": "Autor"
+        }
       },
       "attributed_agent": {
         "id": "_:b22",
@@ -7239,18 +7215,19 @@
           {
             "id": "https://orcid.org/0000-0003-1662-9092",
             "type": "identifier",
-            "http://www.w3.org/2004/02/skos/core#notation": {
-              "type": "xsd:string",
-              "@value": "0000-0003-1662-9092"
-            },
+            "http://www.w3.org/2004/02/skos/core#notation": "0000-0003-1662-9092",
             "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
               "id": "https://orcid.org/",
               "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-              "http://www.w3.org/2000/01/rdf-schema#label": "ORCID"
+              "http://www.w3.org/2000/01/rdf-schema#label": {
+                "@language": "en",
+                "@value": "Open Research and Contributor ID"
+              },
+              "http://www.w3.org/2004/02/skos/core#notation": "ORCID"
             }
           }
         ],
-        "name": "González Navarro, José Alfredo",
+        "http://xmlns.com/foaf/0.1/name": "González Navarro, José Alfredo",
         "affiliation": [
           {
             "id": "_:b23",
@@ -7259,34 +7236,33 @@
               {
                 "id": "https://ror.org/02sat5y74",
                 "type": "identifier",
-                "http://www.w3.org/2004/02/skos/core#notation": {
-                  "type": "xsd:string",
-                  "@value": "02sat5y74"
-                },
+                "http://www.w3.org/2004/02/skos/core#notation": "02sat5y74",
                 "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                   "id": "https://ror.org/",
                   "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                  "http://www.w3.org/2000/01/rdf-schema#label": "ROR"
+                  "http://www.w3.org/2000/01/rdf-schema#label": {
+                    "@language": "en",
+                    "@value": "Research Organization Registry"
+                  },
+                  "http://www.w3.org/2004/02/skos/core#notation": "ROR"
                 }
               },
               {
                 "id": "_:b24",
                 "type": "identifier",
-                "http://www.w3.org/2004/02/skos/core#notation": {
-                  "type": "xsd:string",
-                  "@value": "61388955"
-                },
+                "http://www.w3.org/2004/02/skos/core#notation": "61388955",
                 "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                   "id": "https://www.wikidata.org/entity/Q42302581",
                   "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
                   "http://www.w3.org/2000/01/rdf-schema#label": {
                     "@language": "cs",
-                    "@value": "IČO"
-                  }
+                    "@value": "Identifikační Číslo Osoby"
+                  },
+                  "http://www.w3.org/2004/02/skos/core#notation": "IČO"
                 }
               }
             ],
-            "name": "Ústav fyzikální chemie J. Heyrovského AV ČR"
+            "http://xmlns.com/foaf/0.1/name": "Ústav fyzikální chemie J. Heyrovského AV ČR"
           }
         ]
       }
@@ -7297,16 +7273,10 @@
       "role": {
         "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
         "type": "attributed_agent_role_type",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-          {
-            "@language": "en",
-            "@value": "Creator"
-          },
-          {
-            "@language": "cs",
-            "@value": "Autor"
-          }
-        ]
+        "label": {
+          "en": "Creator",
+          "cs": "Autor"
+        }
       },
       "attributed_agent": {
         "id": "_:b25",
@@ -7315,18 +7285,19 @@
           {
             "id": "https://orcid.org/0009-0008-0140-2075",
             "type": "identifier",
-            "http://www.w3.org/2004/02/skos/core#notation": {
-              "type": "xsd:string",
-              "@value": "0009-0008-0140-2075"
-            },
+            "http://www.w3.org/2004/02/skos/core#notation": "0009-0008-0140-2075",
             "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
               "id": "https://orcid.org/",
               "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-              "http://www.w3.org/2000/01/rdf-schema#label": "ORCID"
+              "http://www.w3.org/2000/01/rdf-schema#label": {
+                "@language": "en",
+                "@value": "Open Research and Contributor ID"
+              },
+              "http://www.w3.org/2004/02/skos/core#notation": "ORCID"
             }
           }
         ],
-        "name": "Echezarreta Mendicute, Irene",
+        "http://xmlns.com/foaf/0.1/name": "Echezarreta Mendicute, Irene",
         "affiliation": [
           {
             "id": "_:b26",
@@ -7335,34 +7306,33 @@
               {
                 "id": "https://ror.org/02sat5y74",
                 "type": "identifier",
-                "http://www.w3.org/2004/02/skos/core#notation": {
-                  "type": "xsd:string",
-                  "@value": "02sat5y74"
-                },
+                "http://www.w3.org/2004/02/skos/core#notation": "02sat5y74",
                 "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                   "id": "https://ror.org/",
                   "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                  "http://www.w3.org/2000/01/rdf-schema#label": "ROR"
+                  "http://www.w3.org/2000/01/rdf-schema#label": {
+                    "@language": "en",
+                    "@value": "Research Organization Registry"
+                  },
+                  "http://www.w3.org/2004/02/skos/core#notation": "ROR"
                 }
               },
               {
                 "id": "_:b27",
                 "type": "identifier",
-                "http://www.w3.org/2004/02/skos/core#notation": {
-                  "type": "xsd:string",
-                  "@value": "61388955"
-                },
+                "http://www.w3.org/2004/02/skos/core#notation": "61388955",
                 "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                   "id": "https://www.wikidata.org/entity/Q42302581",
                   "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
                   "http://www.w3.org/2000/01/rdf-schema#label": {
                     "@language": "cs",
-                    "@value": "IČO"
-                  }
+                    "@value": "Identifikační Číslo Osoby"
+                  },
+                  "http://www.w3.org/2004/02/skos/core#notation": "IČO"
                 }
               }
             ],
-            "name": "Ústav fyzikální chemie J. Heyrovského AV ČR"
+            "http://xmlns.com/foaf/0.1/name": "Ústav fyzikální chemie J. Heyrovského AV ČR"
           }
         ]
       }
@@ -7373,16 +7343,10 @@
       "role": {
         "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
         "type": "attributed_agent_role_type",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-          {
-            "@language": "en",
-            "@value": "Creator"
-          },
-          {
-            "@language": "cs",
-            "@value": "Autor"
-          }
-        ]
+        "label": {
+          "en": "Creator",
+          "cs": "Autor"
+        }
       },
       "attributed_agent": {
         "id": "_:b28",
@@ -7391,18 +7355,19 @@
           {
             "id": "https://orcid.org/0000-0002-4606-1218",
             "type": "identifier",
-            "http://www.w3.org/2004/02/skos/core#notation": {
-              "type": "xsd:string",
-              "@value": "0000-0002-4606-1218"
-            },
+            "http://www.w3.org/2004/02/skos/core#notation": "0000-0002-4606-1218",
             "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
               "id": "https://orcid.org/",
               "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-              "http://www.w3.org/2000/01/rdf-schema#label": "ORCID"
+              "http://www.w3.org/2000/01/rdf-schema#label": {
+                "@language": "en",
+                "@value": "Open Research and Contributor ID"
+              },
+              "http://www.w3.org/2004/02/skos/core#notation": "ORCID"
             }
           }
         ],
-        "name": "Cebecauer, Marek",
+        "http://xmlns.com/foaf/0.1/name": "Cebecauer, Marek",
         "affiliation": [
           {
             "id": "_:b29",
@@ -7411,34 +7376,33 @@
               {
                 "id": "https://ror.org/02sat5y74",
                 "type": "identifier",
-                "http://www.w3.org/2004/02/skos/core#notation": {
-                  "type": "xsd:string",
-                  "@value": "02sat5y74"
-                },
+                "http://www.w3.org/2004/02/skos/core#notation": "02sat5y74",
                 "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                   "id": "https://ror.org/",
                   "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-                  "http://www.w3.org/2000/01/rdf-schema#label": "ROR"
+                  "http://www.w3.org/2000/01/rdf-schema#label": {
+                    "@language": "en",
+                    "@value": "Research Organization Registry"
+                  },
+                  "http://www.w3.org/2004/02/skos/core#notation": "ROR"
                 }
               },
               {
                 "id": "_:b30",
                 "type": "identifier",
-                "http://www.w3.org/2004/02/skos/core#notation": {
-                  "type": "xsd:string",
-                  "@value": "61388955"
-                },
+                "http://www.w3.org/2004/02/skos/core#notation": "61388955",
                 "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
                   "id": "https://www.wikidata.org/entity/Q42302581",
                   "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
                   "http://www.w3.org/2000/01/rdf-schema#label": {
                     "@language": "cs",
-                    "@value": "IČO"
-                  }
+                    "@value": "Identifikační Číslo Osoby"
+                  },
+                  "http://www.w3.org/2004/02/skos/core#notation": "IČO"
                 }
               }
             ],
-            "name": "Ústav fyzikální chemie J. Heyrovského AV ČR"
+            "http://xmlns.com/foaf/0.1/name": "Ústav fyzikální chemie J. Heyrovského AV ČR"
           }
         ]
       }
@@ -7449,16 +7413,10 @@
       "role": {
         "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Publisher",
         "type": "attributed_agent_role_type",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-          {
-            "@language": "cs",
-            "@value": "Vydavatel"
-          },
-          {
-            "@language": "en",
-            "@value": "Publisher"
-          }
-        ]
+        "label": {
+          "cs": "Vydavatel",
+          "en": "Publisher"
+        }
       },
       "attributed_agent": {
         "id": "_:b31",
@@ -7467,34 +7425,33 @@
           {
             "id": "https://ror.org/02sat5y74",
             "type": "identifier",
-            "http://www.w3.org/2004/02/skos/core#notation": {
-              "type": "xsd:string",
-              "@value": "02sat5y74"
-            },
+            "http://www.w3.org/2004/02/skos/core#notation": "02sat5y74",
             "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
               "id": "https://ror.org/",
               "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-              "http://www.w3.org/2000/01/rdf-schema#label": "ROR"
+              "http://www.w3.org/2000/01/rdf-schema#label": {
+                "@language": "en",
+                "@value": "Research Organization Registry"
+              },
+              "http://www.w3.org/2004/02/skos/core#notation": "ROR"
             }
           },
           {
             "id": "_:b32",
             "type": "identifier",
-            "http://www.w3.org/2004/02/skos/core#notation": {
-              "type": "xsd:string",
-              "@value": "61388955"
-            },
+            "http://www.w3.org/2004/02/skos/core#notation": "61388955",
             "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
               "id": "https://www.wikidata.org/entity/Q42302581",
               "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
               "http://www.w3.org/2000/01/rdf-schema#label": {
                 "@language": "cs",
-                "@value": "IČO"
-              }
+                "@value": "Identifikační Číslo Osoby"
+              },
+              "http://www.w3.org/2004/02/skos/core#notation": "IČO"
             }
           }
         ],
-        "name": "Ústav fyzikální chemie J. Heyrovského AV ČR"
+        "http://xmlns.com/foaf/0.1/name": "Ústav fyzikální chemie J. Heyrovského AV ČR"
       }
     }
   ],
@@ -7507,9 +7464,9 @@
         "@value": "The Czech Science Foundation Grant Application Data Set"
       },
       "https://model.ccmm.cz/vocabulary/ccmm#hasType": {
-        "id": "https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/TranslatedTitle",
+        "id": "https://w3id.org/tib/datacite/vocab/titleType/TranslatedTitle",
         "type": "http://www.w3.org/2004/02/skos/core#Concept",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
           {
             "@language": "cs",
             "@value": "Přeložený název"
@@ -7525,9 +7482,8 @@
   "primary_language": {
     "id": "http://publications.europa.eu/resource/authority/language/ENG",
     "type": "language_system",
-    "http://www.w3.org/2000/01/rdf-schema#label": {
-      "@language": "en",
-      "@value": "English"
+    "label": {
+      "en": "English"
     }
   },
   "time_reference": [
@@ -7543,9 +7499,9 @@
         }
       },
       "https://model.ccmm.cz/vocabulary/ccmm#hasType": {
-        "id": "https://vocabs.ccmm.cz/registry/codelist/TimeReference/Issued",
+        "id": "https://w3id.org/tib/datacite/vocab/dateType/Issued",
         "type": "http://www.w3.org/2004/02/skos/core#Concept",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
           {
             "@language": "en",
             "@value": "Date Issued"
@@ -7581,9 +7537,9 @@
         }
       },
       "https://model.ccmm.cz/vocabulary/ccmm#hasType": {
-        "id": "https://vocabs.ccmm.cz/registry/codelist/TimeReference/Created",
+        "id": "https://w3id.org/tib/datacite/vocab/dateType/Created",
         "type": "http://www.w3.org/2004/02/skos/core#Concept",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
           {
             "@language": "en",
             "@value": "Date Created"
@@ -7619,9 +7575,9 @@
         }
       },
       "https://model.ccmm.cz/vocabulary/ccmm#hasType": {
-        "id": "https://vocabs.ccmm.cz/registry/codelist/TimeReference/Collected",
+        "id": "https://w3id.org/tib/datacite/vocab/dateType/Collected",
         "type": "http://www.w3.org/2004/02/skos/core#Concept",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
           {
             "@language": "en",
             "@value": "Date Collected"
@@ -7645,9 +7601,9 @@
         }
       },
       "https://model.ccmm.cz/vocabulary/ccmm#hasType": {
-        "id": "https://vocabs.ccmm.cz/registry/codelist/TimeReference/Available",
+        "id": "https://w3id.org/tib/datacite/vocab/dateType/Available",
         "type": "http://www.w3.org/2004/02/skos/core#Concept",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
           {
             "@language": "en",
             "@value": "Date Available"
@@ -7669,7 +7625,11 @@
   "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
     "id": "https://doi.org/",
     "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
-    "http://www.w3.org/2000/01/rdf-schema#label": "DOI"
+    "http://www.w3.org/2000/01/rdf-schema#label": {
+      "@language": "en",
+      "@value": "Digital Object Identifier"
+    },
+    "http://www.w3.org/2004/02/skos/core#notation": "DOI"
   },
   "metadata_identification": [
     {
@@ -7679,7 +7639,10 @@
         {
           "id": "https://model.ccmm.cz/research-data/2.0.0",
           "type": "application_profile",
-          "http://www.w3.org/2000/01/rdf-schema#label": "CCMM RD 2.0.0"
+          "http://www.w3.org/2000/01/rdf-schema#label": {
+            "@language": "en",
+            "@value": "Czech Core Metadata Model for Research Data 2.0.0"
+          }
         },
         {
           "id": "https://data.narodni-repozitar.cz/schemas/nr_datasets/nr-datasets-v1.0.0.json",
@@ -7695,17 +7658,15 @@
         {
           "id": "http://publications.europa.eu/resource/authority/language/CES",
           "type": "language_system",
-          "http://www.w3.org/2000/01/rdf-schema#label": {
-            "@language": "cs",
-            "@value": "čeština"
+          "label": {
+            "cs": "čeština"
           }
         },
         {
           "id": "http://publications.europa.eu/resource/authority/language/ENG",
           "type": "language_system",
-          "http://www.w3.org/2000/01/rdf-schema#label": {
-            "@language": "en",
-            "@value": "English"
+          "label": {
+            "en": "English"
           }
         }
       ],
@@ -7717,31 +7678,29 @@
           "role": {
             "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/DataManager",
             "type": "attributed_agent_role_type",
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-              {
-                "@language": "en",
-                "@value": "Data manager"
-              },
-              {
-                "@language": "cs",
-                "@value": "Manažer dat"
-              }
-            ]
+            "label": {
+              "en": "Data manager",
+              "cs": "Manažer dat"
+            }
           },
           "attributed_agent": {
             "id": "_:b42",
             "type": "person",
-            "family_name": ":unkn",
-            "given_name": ":unkn",
-            "name": ":unkn"
+            "http://www.w3.org/2006/vcard/ns#family-name": ":unkn",
+            "http://www.w3.org/2006/vcard/ns#given-name": ":unkn",
+            "http://xmlns.com/foaf/0.1/name": ":unkn"
           }
         }
       ],
       "original_repository": {
         "id": "https://datarepo.eosc.cz",
         "type": "repository",
+        "http://purl.org/dc/terms/description": {
+          "@language": "en",
+          "@value": "The Data Catch-all Repository is a general-purpose repository for research data for which no more suitable disciplinary, institutional, or community repository is available."
+        },
         "http://purl.org/dc/terms/title": {
-          "@language": "cs",
+          "@language": "en",
           "@value": "Catch-all"
         },
         "qualified_attribution": [
@@ -7751,21 +7710,15 @@
             "role": {
               "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Publisher",
               "type": "attributed_agent_role_type",
-              "http://www.w3.org/2000/01/rdf-schema#label": [
-                {
-                  "@language": "cs",
-                  "@value": "Vydavatel"
-                },
-                {
-                  "@language": "en",
-                  "@value": "Publisher"
-                }
-              ]
+              "label": {
+                "cs": "Vydavatel",
+                "en": "Publisher"
+              }
             },
             "attributed_agent": {
               "id": "_:b1",
               "type": "organization",
-              "name": "Ústav fyzikální chemie J. Heyrovského AV ČR"
+              "http://xmlns.com/foaf/0.1/name": "Ústav fyzikální chemie J. Heyrovského AV ČR"
             }
           }
         ]
@@ -7781,9 +7734,9 @@
         "@value": "Data podporující strukturu neutrofilových extracelulárních pastí pocházejících z lidských neutrofilů"
       },
       "https://w3id.org/tib/datacite/property/descriptionType": {
-        "id": "https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Abstract",
+        "id": "https://w3id.org/tib/datacite/property/descriptionType/Abstract",
         "type": "http://www.w3.org/2004/02/skos/core#Concept",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
           {
             "@language": "cs",
             "@value": "Abstrakt"
@@ -7803,9 +7756,9 @@
         "@value": "Data supporting the structure of neutrophil extracellular traps generated from human neutrophils"
       },
       "https://w3id.org/tib/datacite/property/descriptionType": {
-        "id": "https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Abstract",
+        "id": "https://w3id.org/tib/datacite/property/descriptionType/Abstract",
         "type": "http://www.w3.org/2004/02/skos/core#Concept",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
           {
             "@language": "cs",
             "@value": "Abstrakt"
@@ -7825,9 +7778,9 @@
         "@value": "Doplňující mikroskopická data"
       },
       "https://w3id.org/tib/datacite/property/descriptionType": {
-        "id": "https://vocabs.ccmm.cz/registry/codelist/DescriptionType/TechnicalInfo",
+        "id": "https://w3id.org/tib/datacite/property/descriptionType/TechnicalInfo",
         "type": "http://www.w3.org/2004/02/skos/core#Concept",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
           {
             "@language": "cs",
             "@value": "Technická informace"
@@ -7847,9 +7800,9 @@
         "@value": "Supplementary microscopy data"
       },
       "https://w3id.org/tib/datacite/property/descriptionType": {
-        "id": "https://vocabs.ccmm.cz/registry/codelist/DescriptionType/TechnicalInfo",
+        "id": "https://w3id.org/tib/datacite/property/descriptionType/TechnicalInfo",
         "type": "http://www.w3.org/2004/02/skos/core#Concept",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
           {
             "@language": "cs",
             "@value": "Technická informace"
@@ -7869,9 +7822,9 @@
         "@value": "Izolace neutrofilů ze vzorků lidské krve, stimulace neutrofilů pomocí agens indukujících NETózu, akvizice mikroskopických dat"
       },
       "https://w3id.org/tib/datacite/property/descriptionType": {
-        "id": "https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Methods",
+        "id": "https://w3id.org/tib/datacite/property/descriptionType/Methods",
         "type": "http://www.w3.org/2004/02/skos/core#Concept",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
           {
             "@language": "cs",
             "@value": "Metodologie"
@@ -7891,9 +7844,9 @@
         "@value": "Isolation of neutrophils from human blood samples, neutrophil stimulation with NETosis-inducing agents, microscopy data acquisition"
       },
       "https://w3id.org/tib/datacite/property/descriptionType": {
-        "id": "https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Methods",
+        "id": "https://w3id.org/tib/datacite/property/descriptionType/Methods",
         "type": "http://www.w3.org/2004/02/skos/core#Concept",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
           {
             "@language": "cs",
             "@value": "Metodologie"
@@ -7935,10 +7888,7 @@
           }
         ]
       },
-      "https://w3id.org/tib/datacite/property/classificationCode": {
-        "type": "xsd:string",
-        "@value": "10601"
-      }
+      "https://w3id.org/tib/datacite/property/classificationCode": "10601"
     },
     {
       "id": "https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10606",
@@ -7975,10 +7925,7 @@
           }
         ]
       },
-      "https://w3id.org/tib/datacite/property/classificationCode": {
-        "type": "xsd:string",
-        "@value": "10606"
-      }
+      "https://w3id.org/tib/datacite/property/classificationCode": "10606"
     },
     {
       "id": "https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30102",
@@ -8007,10 +7954,7 @@
           }
         ]
       },
-      "https://w3id.org/tib/datacite/property/classificationCode": {
-        "type": "xsd:string",
-        "@value": "30102"
-      }
+      "https://w3id.org/tib/datacite/property/classificationCode": "30102"
     }
   ]
 }

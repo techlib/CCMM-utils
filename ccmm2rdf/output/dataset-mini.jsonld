@@ -17,8 +17,8 @@
           "@container": "@set",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "language_system": {
               "@id": "http://purl.org/dc/terms/LinguisticSystem",
@@ -49,6 +49,10 @@
                         "label": {
                           "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                           "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                        },
+                        "notation": {
+                          "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                          "@type": "xsd:string"
                         },
                         "identifier_scheme": {
                           "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
@@ -178,6 +182,10 @@
                               "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                               "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                             },
+                            "notation": {
+                              "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                              "@type": "xsd:string"
+                            },
                             "identifier_scheme": {
                               "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
                               "@context": {}
@@ -299,8 +307,8 @@
               "@type": "@id",
               "@context": {
                 "label": {
-                  "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                  "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                  "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                  "@container": "@language"
                 },
                 "attributed_agent_role_type": {
                   "@id": "http://www.w3.org/ns/dcat#Role",
@@ -344,6 +352,10 @@
               "@id": "http://purl.org/dc/terms/title",
               "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
             },
+            "description": {
+              "@id": "http://purl.org/dc/terms/description",
+              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            },
             "qualified_attribution": {
               "@id": "http://www.w3.org/ns/prov#qualifiedAttribution",
               "@container": "@set",
@@ -367,6 +379,10 @@
                             "label": {
                               "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                               "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                            },
+                            "notation": {
+                              "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                              "@type": "xsd:string"
                             },
                             "identifier_scheme": {
                               "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
@@ -496,6 +512,10 @@
                                   "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                                   "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                                 },
+                                "notation": {
+                                  "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                                  "@type": "xsd:string"
+                                },
                                 "identifier_scheme": {
                                   "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
                                   "@context": {}
@@ -617,8 +637,8 @@
                   "@type": "@id",
                   "@context": {
                     "label": {
-                      "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                      "@container": "@language"
                     },
                     "attributed_agent_role_type": {
                       "@id": "http://www.w3.org/ns/dcat#Role",
@@ -631,6 +651,16 @@
                   "@context": {}
                 }
               }
+            },
+            "record": {
+              "@id": "http://www.w3.org/ns/dcat#record",
+              "@type": "@id",
+              "@container": "@set"
+            },
+            "dataset": {
+              "@id": "http://www.w3.org/ns/dcat#dataset",
+              "@type": "@id",
+              "@container": "@set"
             },
             "repository": {
               "@id": "http://www.w3.org/ns/dcat#Catalog",
@@ -659,6 +689,10 @@
             "label": {
               "@id": "http://www.w3.org/2000/01/rdf-schema#label",
               "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            },
+            "notation": {
+              "@id": "http://www.w3.org/2004/02/skos/core#notation",
+              "@type": "xsd:string"
             },
             "identifier_scheme": {
               "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
@@ -697,8 +731,8 @@
           "@type": "@id",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "alternate_title_type": {
               "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -735,6 +769,10 @@
                     "label": {
                       "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                    },
+                    "notation": {
+                      "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                      "@type": "xsd:string"
                     },
                     "identifier_scheme": {
                       "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
@@ -863,6 +901,10 @@
                         "label": {
                           "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                           "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                        },
+                        "notation": {
+                          "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                          "@type": "xsd:string"
                         },
                         "identifier_scheme": {
                           "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
@@ -985,8 +1027,8 @@
           "@type": "@id",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "attributed_agent_role_type": {
               "@id": "http://www.w3.org/ns/dcat#Role",
@@ -1071,8 +1113,8 @@
           "@type": "@id",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "date_type": {
               "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -1095,8 +1137,8 @@
       "@type": "@id",
       "@context": {
         "label": {
-          "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+          "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "@container": "@language"
         },
         "resource_type": {
           "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -1109,8 +1151,8 @@
       "@type": "@id",
       "@context": {
         "label": {
-          "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+          "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "@container": "@language"
         },
         "language_system": {
           "@id": "http://purl.org/dc/terms/LinguisticSystem",
@@ -1123,8 +1165,8 @@
       "@container": "@set",
       "@context": {
         "label": {
-          "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+          "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "@container": "@language"
         },
         "language_system": {
           "@id": "http://purl.org/dc/terms/LinguisticSystem",
@@ -1137,8 +1179,8 @@
       "@type": "@id",
       "@context": {
         "label": {
-          "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+          "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "@container": "@language"
         },
         "access_rights": {
           "@id": "http://purl.org/dc/terms/RightsStatement",
@@ -1199,8 +1241,8 @@
           "@type": "@id",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "description_type": {
               "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -1268,6 +1310,10 @@
                       "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                     },
+                    "notation": {
+                      "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                      "@type": "xsd:string"
+                    },
                     "identifier_scheme": {
                       "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
                       "@context": {}
@@ -1301,8 +1347,8 @@
                   "@type": "@id",
                   "@context": {
                     "label": {
-                      "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                      "@container": "@language"
                     },
                     "alternate_title_type": {
                       "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -1343,6 +1389,10 @@
                             "label": {
                               "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                               "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                            },
+                            "notation": {
+                              "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                              "@type": "xsd:string"
                             },
                             "identifier_scheme": {
                               "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
@@ -1472,6 +1522,10 @@
                                   "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                                   "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                                 },
+                                "notation": {
+                                  "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                                  "@type": "xsd:string"
+                                },
                                 "identifier_scheme": {
                                   "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
                                   "@context": {}
@@ -1593,8 +1647,8 @@
                   "@type": "@id",
                   "@context": {
                     "label": {
-                      "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                      "@container": "@language"
                     },
                     "attributed_agent_role_type": {
                       "@id": "http://www.w3.org/ns/dcat#Role",
@@ -1675,8 +1729,8 @@
                   "@type": "@id",
                   "@context": {
                     "label": {
-                      "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                      "@container": "@language"
                     },
                     "date_type": {
                       "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -1699,8 +1753,8 @@
               "@type": "@id",
               "@context": {
                 "label": {
-                  "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                  "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                  "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                  "@container": "@language"
                 },
                 "resource_type": {
                   "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -1713,8 +1767,8 @@
               "@type": "@id",
               "@context": {
                 "label": {
-                  "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                  "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                  "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                  "@container": "@language"
                 },
                 "resource_relation_type": {
                   "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -1733,8 +1787,8 @@
           "@type": "@id",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "relation_type": {
               "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -1783,6 +1837,10 @@
                     "label": {
                       "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                    },
+                    "notation": {
+                      "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                      "@type": "xsd:string"
                     },
                     "identifier_scheme": {
                       "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
@@ -1911,6 +1969,10 @@
                         "label": {
                           "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                           "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                        },
+                        "notation": {
+                          "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                          "@type": "xsd:string"
                         },
                         "identifier_scheme": {
                           "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
@@ -2054,6 +2116,10 @@
                   "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                   "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                 },
+                "notation": {
+                  "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                  "@type": "xsd:string"
+                },
                 "identifier_scheme": {
                   "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
                   "@context": {}
@@ -2087,8 +2153,8 @@
               "@type": "@id",
               "@context": {
                 "label": {
-                  "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                  "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                  "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                  "@container": "@language"
                 },
                 "alternate_title_type": {
                   "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -2129,6 +2195,10 @@
                         "label": {
                           "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                           "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                        },
+                        "notation": {
+                          "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                          "@type": "xsd:string"
                         },
                         "identifier_scheme": {
                           "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
@@ -2258,6 +2328,10 @@
                               "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                               "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                             },
+                            "notation": {
+                              "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                              "@type": "xsd:string"
+                            },
                             "identifier_scheme": {
                               "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
                               "@context": {}
@@ -2379,8 +2453,8 @@
               "@type": "@id",
               "@context": {
                 "label": {
-                  "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                  "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                  "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                  "@container": "@language"
                 },
                 "attributed_agent_role_type": {
                   "@id": "http://www.w3.org/ns/dcat#Role",
@@ -2461,8 +2535,8 @@
               "@type": "@id",
               "@context": {
                 "label": {
-                  "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                  "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                  "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                  "@container": "@language"
                 },
                 "date_type": {
                   "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -2485,8 +2559,8 @@
           "@type": "@id",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "resource_type": {
               "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -2499,8 +2573,8 @@
           "@type": "@id",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "resource_relation_type": {
               "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -2555,6 +2629,10 @@
                           "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                           "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                         },
+                        "notation": {
+                          "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                          "@type": "xsd:string"
+                        },
                         "identifier_scheme": {
                           "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
                           "@context": {}
@@ -2588,8 +2666,8 @@
                       "@type": "@id",
                       "@context": {
                         "label": {
-                          "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                          "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                          "@container": "@language"
                         },
                         "alternate_title_type": {
                           "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -2630,6 +2708,10 @@
                                 "label": {
                                   "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                                   "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                                },
+                                "notation": {
+                                  "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                                  "@type": "xsd:string"
                                 },
                                 "identifier_scheme": {
                                   "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
@@ -2759,6 +2841,10 @@
                                       "@id": "http://www.w3.org/2000/01/rdf-schema#label",
                                       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                                     },
+                                    "notation": {
+                                      "@id": "http://www.w3.org/2004/02/skos/core#notation",
+                                      "@type": "xsd:string"
+                                    },
                                     "identifier_scheme": {
                                       "@id": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme",
                                       "@context": {}
@@ -2880,8 +2966,8 @@
                       "@type": "@id",
                       "@context": {
                         "label": {
-                          "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                          "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                          "@container": "@language"
                         },
                         "attributed_agent_role_type": {
                           "@id": "http://www.w3.org/ns/dcat#Role",
@@ -2962,8 +3048,8 @@
                       "@type": "@id",
                       "@context": {
                         "label": {
-                          "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                          "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                          "@container": "@language"
                         },
                         "date_type": {
                           "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -2986,8 +3072,8 @@
                   "@type": "@id",
                   "@context": {
                     "label": {
-                      "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                      "@container": "@language"
                     },
                     "resource_type": {
                       "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -3000,8 +3086,8 @@
                   "@type": "@id",
                   "@context": {
                     "label": {
-                      "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-                      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                      "@container": "@language"
                     },
                     "resource_relation_type": {
                       "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -3019,8 +3105,8 @@
               "@id": "http://purl.org/dc/terms/license",
               "@type": "@id",
               "@context": {
-                "label": {
-                  "@id": "http://www.w3.org/2000/01/rdf-schema#label",
+                "title": {
+                  "@id": "http://purl.org/dc/terms/title",
                   "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                 },
                 "licence_document": {
@@ -3068,8 +3154,8 @@
           "@container": "@set",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "access_rights": {
               "@id": "http://purl.org/dc/terms/RightsStatement",
@@ -3081,8 +3167,8 @@
           "@id": "http://purl.org/dc/terms/license",
           "@type": "@id",
           "@context": {
-            "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
+            "title": {
+              "@id": "http://purl.org/dc/terms/title",
               "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
             },
             "licence_document": {
@@ -3114,8 +3200,8 @@
           "@type": "@id",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "format": {
               "@id": "http://purl.org/dc/terms/MediaTypeOrExtent",
@@ -3128,8 +3214,8 @@
           "@type": "@id",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "media_type": {
               "@id": "http://purl.org/dc/terms/MediaType",
@@ -3142,8 +3228,8 @@
           "@type": "@id",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "media_type": {
               "@id": "http://purl.org/dc/terms/MediaType",
@@ -3156,8 +3242,8 @@
           "@type": "@id",
           "@context": {
             "label": {
-              "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-              "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "@container": "@language"
             },
             "media_type": {
               "@id": "http://purl.org/dc/terms/MediaType",
@@ -3253,17 +3339,18 @@
   "type": "dataset",
   "access_rights": {
     "id": "http://purl.org/coar/access_right/c_f1cf",
-    "type": "access_rights"
+    "type": "access_rights",
+    "http://www.w3.org/2004/02/skos/core#prefLabel": {
+      "@language": "en",
+      "@value": "embargoed access"
+    }
   },
-  "title": "Datová sada pro Údaje o zdravotní gramotnosti a depresi seniorů ve věku 65 a více let",
+  "http://purl.org/dc/terms/title": "Datová sada pro Údaje o zdravotní gramotnosti a depresi seniorů ve věku 65 a více let",
   "identifier": [
     {
       "id": "https://doi.org/10.48700/datst.xd12h-dfz24",
       "type": "identifier",
-      "http://www.w3.org/2004/02/skos/core#notation": {
-        "type": "xsd:string",
-        "@value": "10.48700/datst.xd12h-dfz24"
-      },
+      "http://www.w3.org/2004/02/skos/core#notation": "10.48700/datst.xd12h-dfz24",
       "https://model.ccmm.cz/vocabulary/ccmm#inScheme": {
         "id": "https://doi.org/",
         "type": "https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme"
@@ -3275,13 +3362,16 @@
       "type": "resource_attribution",
       "role": {
         "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator",
-        "type": "attributed_agent_role_type"
+        "type": "attributed_agent_role_type",
+        "label": {
+          "en": "Creator"
+        }
       },
       "attributed_agent": {
         "type": "person",
-        "family_name": "Bártlová",
-        "given_name": "Sylva",
-        "name": "Bártlová, Sylva"
+        "http://www.w3.org/2006/vcard/ns#family-name": "Bártlová",
+        "http://www.w3.org/2006/vcard/ns#given-name": "Sylva",
+        "http://xmlns.com/foaf/0.1/name": "Bártlová, Sylva"
       }
     },
     {
@@ -3289,20 +3379,14 @@
       "role": {
         "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Publisher",
         "type": "attributed_agent_role_type",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-          {
-            "@language": "cs",
-            "@value": "Vydavatel"
-          },
-          {
-            "@language": "en",
-            "@value": "Publisher"
-          }
-        ]
+        "label": {
+          "cs": "Vydavatel",
+          "en": "Publisher"
+        }
       },
       "attributed_agent": {
         "type": "organization",
-        "name": ":unkn"
+        "http://xmlns.com/foaf/0.1/name": "Nějaká organizace"
       }
     }
   ],
@@ -3317,8 +3401,12 @@
         }
       },
       "https://model.ccmm.cz/vocabulary/ccmm#hasType": {
-        "id": "https://vocabs.ccmm.cz/registry/codelist/TimeReference/Created",
-        "type": "http://www.w3.org/2004/02/skos/core#Concept"
+        "id": "https://w3id.org/tib/datacite/vocab/dateType/Created",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
+          "@language": "en",
+          "@value": "Created"
+        }
       }
     }
   ],
@@ -3329,7 +3417,10 @@
         {
           "id": "https://model.ccmm.cz/research-data/2.0.0",
           "type": "application_profile",
-          "http://www.w3.org/2000/01/rdf-schema#label": "CCMM RD 2.0.0"
+          "http://www.w3.org/2000/01/rdf-schema#label": {
+            "@language": "en",
+            "@value": "Czech Core Metadata Model for Research Data 2.0.0"
+          }
         }
       ],
       "date_updated": "2025-07-25",
@@ -3338,19 +3429,26 @@
           "type": "resource_attribution",
           "role": {
             "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/DataManager",
-            "type": "attributed_agent_role_type"
+            "type": "attributed_agent_role_type",
+            "label": {
+              "en": "Data Manager"
+            }
           },
           "attributed_agent": {
             "type": "person",
-            "family_name": ":unkn",
-            "given_name": ":unkn",
-            "name": ":unkn"
+            "http://www.w3.org/2006/vcard/ns#family-name": "Staeklý",
+            "http://www.w3.org/2006/vcard/ns#given-name": "Pavel",
+            "http://xmlns.com/foaf/0.1/name": "Pavel Steklý"
           }
         }
       ],
       "original_repository": {
         "id": "https://data.narodni-repozitar.cz",
         "type": "repository",
+        "http://purl.org/dc/terms/description": {
+          "@language": "cs",
+          "@value": "Popis původního repozitáře,"
+        },
         "http://purl.org/dc/terms/title": {
           "@language": "cs",
           "@value": "Původní repozitář"
@@ -3361,20 +3459,14 @@
             "role": {
               "id": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Publisher",
               "type": "attributed_agent_role_type",
-              "http://www.w3.org/2000/01/rdf-schema#label": [
-                {
-                  "@language": "cs",
-                  "@value": "Vydavatel"
-                },
-                {
-                  "@language": "en",
-                  "@value": "Publisher"
-                }
-              ]
+              "label": {
+                "cs": "Vydavatel",
+                "en": "Publisher"
+              }
             },
             "attributed_agent": {
               "type": "organization",
-              "name": "Univerzita Karlova"
+              "http://xmlns.com/foaf/0.1/name": "Univerzita Karlova"
             }
           }
         ]
@@ -3403,10 +3495,7 @@
         "id": "https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/",
         "type": "https://model.ccmm.cz/vocabulary/ccmm#SubjectScheme"
       },
-      "https://w3id.org/tib/datacite/property/classificationCode": {
-        "type": "xsd:string",
-        "@value": "10509"
-      }
+      "https://w3id.org/tib/datacite/property/classificationCode": "10509"
     }
   ]
 }
