@@ -1,5 +1,5 @@
 {
-  "@context": "https://model.ccmm.cz/research-data/dataset/schema.jsonld",
+  "@context": "https://model.ccmm.cz/research-data/dataset/context.jsonld",
   "type": "dataset",
   "access_rights": {
     "id": "http://purl.org/coar/access_right/c_f1cf",
