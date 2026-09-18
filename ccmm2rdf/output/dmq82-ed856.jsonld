@@ -1,5 +1,5 @@
 {
-  "@context": "https://model.ccmm.cz/research-data/dataset/schema.jsonld",
+  "@context": "https://model.ccmm.cz/research-data/dataset/context.jsonld",
   "id": "https://doi.org/10.48700/datst.dmq82-ed856",
   "type": [
     "dataset",
