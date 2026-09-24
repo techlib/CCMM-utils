@@ -447,45 +447,43 @@
          </rdf:Description>
       </ns3:accessRights>
       <ns5:subject>
-         <rdf:Description xmlns:ns0="http://purl.org/dc/terms/"
-                          xmlns:ns1="http://www.w3.org/2004/02/skos/core#"
-                          xmlns:ns2="https://w3id.org/tib/datacite/property/"
-                          xmlns:ns3="https://model.ccmm.cz/vocabulary/ccmm#"
+         <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
+                          xmlns:ns1="https://w3id.org/tib/datacite/property/"
+                          xmlns:ns2="https://model.ccmm.cz/vocabulary/ccmm#"
                           rdf:about="https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10509">
             <rdf:type rdf:resource="https://w3id.org/tib/datacite/class/Subject"/>
-            <ns0:title xml:lang="cs">Meteorologie, vědy o atmosféře</ns0:title>
-            <ns0:title xml:lang="en">Meteorology and atmospheric sciences</ns0:title>
-            <ns2:classificationCode>10509</ns2:classificationCode>
-            <ns3:inSubjectScheme>
+            <ns0:prefLabel xml:lang="cs">Meteorologie, vědy o atmosféře</ns0:prefLabel>
+            <ns0:prefLabel xml:lang="en">Meteorology and atmospheric sciences</ns0:prefLabel>
+            <ns1:classificationCode>10509</ns1:classificationCode>
+            <ns2:inSubjectScheme>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 rdf:about="https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/">
                   <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#SubjectScheme"/>
                   <ns0:label xml:lang="en">OECD FORD Subject Category (Frascati)</ns0:label>
                   <ns0:label xml:lang="cs">Oborové třídění OECD FORD (Frascati)</ns0:label>
                </rdf:Description>
-            </ns3:inSubjectScheme>
+            </ns2:inSubjectScheme>
          </rdf:Description>
       </ns5:subject>
       <ns5:subject>
-         <rdf:Description xmlns:ns0="http://purl.org/dc/terms/"
-                          xmlns:ns1="http://www.w3.org/2004/02/skos/core#"
-                          xmlns:ns2="https://w3id.org/tib/datacite/property/"
-                          xmlns:ns3="https://model.ccmm.cz/vocabulary/ccmm#"
+         <rdf:Description xmlns:ns0="http://www.w3.org/2004/02/skos/core#"
+                          xmlns:ns1="https://w3id.org/tib/datacite/property/"
+                          xmlns:ns2="https://model.ccmm.cz/vocabulary/ccmm#"
                           rdf:about="http://inspire.ec.europa.eu/theme/ef">
             <rdf:type rdf:resource="https://w3id.org/tib/datacite/class/Subject"/>
-            <ns0:title xml:lang="en">Environmental monitoring facilities</ns0:title>
-            <ns1:definition xml:lang="en">Location and operation of environmental monitoring facilities
+            <ns0:prefLabel xml:lang="en">Environmental monitoring facilities</ns0:prefLabel>
+            <ns0:definition xml:lang="en">Location and operation of environmental monitoring facilities
             includes observation and measurement of emissions, of the state of environmental media
             and of other ecosystem parameters (biodiversity, ecological conditions of vegetation,
-            etc.) by or on behalf of public authorities.</ns1:definition>
-            <ns2:classificationCode>EF</ns2:classificationCode>
-            <ns3:inSubjectScheme>
+            etc.) by or on behalf of public authorities.</ns0:definition>
+            <ns1:classificationCode>EF</ns1:classificationCode>
+            <ns2:inSubjectScheme>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
                                 rdf:about="https://inspire.ec.europa.eu/theme/">
                   <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#SubjectScheme"/>
                   <ns0:label xml:lang="en">INSPIRE theme register</ns0:label>
                </rdf:Description>
-            </ns3:inSubjectScheme>
+            </ns2:inSubjectScheme>
          </rdf:Description>
       </ns5:subject>
       <ns2:keyword xml:lang="cs">kvalita ovzduší</ns2:keyword>
