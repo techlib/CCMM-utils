@@ -36,7 +36,7 @@ jobs:
       - name: Run Flatten script
         working-directory: flattenCCMM
         run: |
-          python scripts/flatten_schema_4.py -i "${{ github.event.inputs.input_path }}" -o "output/flattened.xsd"
+          python scripts/flatten_schema.py -i "${{ github.event.inputs.input_path }}" -o "output/flattened.xsd"
 
       - name: Upload result as artifact
         uses: actions/upload-artifact@v4
