@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'flattenCCMM/output/ccmm_merged.xsd'
+      - 'flattenCCMM/output/CCMM_flattened.xsd'
       - 'ceCCMM/scripts/ccmm-xsd-vis.py'
   workflow_dispatch:
 
