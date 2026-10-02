@@ -36,5 +36,4 @@ Utility also contains the script comparing generated files as a basic ground gra
 
 | Tool | Primary Function | Run Trigger |
 | :--- | :--- | :--- |
-| **flattenCCMM** | Merges multiple XSDs into one. | Changes in `techlib/CCMM` XSDs. |
 | **ceCCMM** | Visualizes schema requirements. | Changes to visualization scripts OR the flattened schema. |
