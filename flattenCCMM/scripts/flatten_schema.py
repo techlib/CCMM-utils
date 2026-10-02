@@ -187,7 +187,7 @@ def main():
     parser.add_argument(
         "--output",
         "-o",
-        default="output/flattened.xsd",
+        default="output/CCMM_flattened.xsd",
         help="Output path for merged XSD.",
     )
     args = parser.parse_args()
