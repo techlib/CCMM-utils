@@ -1,0 +1,42 @@
+name: Flatten XSD Schema
+
+on:
+  workflow_dispatch:
+    inputs:
+      input_path:
+        description: 'Input path or GitHub URL to the XSD schema'
+        required: true
+        default: 'https://github.com/techlib/CCMM/tree/main'
+
+jobs:
+  flatten:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install lxml
+
+      - name: Create output directory
+        working-directory: flattenCCMM
+        run: mkdir -p output
+
+      - name: Run Flatten script
+        working-directory: flattenCCMM
+        run: |
+          python scripts/flatten_schema_4.py -i "${{ github.event.inputs.input_path }}" -o "output/flattened.xsd"
+
+      - name: Upload result as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: flattened-xsd
+          path: flattenCCMM/output/flattened.xsd
