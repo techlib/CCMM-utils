@@ -36,18 +36,18 @@ jobs:
       - name: Run Flatten script
         working-directory: flattenCCMM
         run: |
-          python scripts/flatten_schema.py -i "${{ github.event.inputs.input_path }}" -o "output/flattened.xsd"
+          python scripts/flatten_schema.py -i "${{ github.event.inputs.input_path }}" -o "output/ccmm_merged.xsd"
 
       - name: Upload result as artifact
         uses: actions/upload-artifact@v4
         with:
           name: flattened-xsd
-          path: flattenCCMM/output/flattened.xsd
+          path: flattenCCMM/output/ccmm_merged.xsd
 
       - name: Commit and push generated XSD
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add flattenCCMM/output/flattened.xsd
+          git add flattenCCMM/output/ccmm_merged.xsd
           git commit -m "build: update flattened XSD schema [skip ci]" || echo "No changes to commit"
           git push
