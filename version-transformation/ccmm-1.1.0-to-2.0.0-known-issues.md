@@ -24,7 +24,7 @@ Validity is reached partly with placeholders. **A valid output is not a finished
 | `provenance` (provenance statement, `iri` + `label`) | Becomes `generated_by` (provenance activity). The 1.1.0 element was a placeholder, so the semantic change (statement → activity) is harmless in practice. An empty `<provenance/>` (as in the 1.1.0 samples) is dropped. | – |
 | `metadata_record/date_updated` (0..n) | 2.0.0 allows exactly one: the latest date is kept. | – |
 | `time_reference/date_information` (0..1) | Copied (2.0.0 allows 0..n). | – |
-| `identifier_scheme/label` with `xml:lang=""` | Becomes `notation` (that is how 1.1.0 records carry `ORCID`, `ROR`, `DOI`). Known schemes (DOI, ORCID, ROR, IČO) also get the English label used in the 2.0.0 samples. | – |
+| `identifier/scheme/label` with `xml:lang=""` | Becomes `notation` (that is how 1.1.0 records carry `ORCID`, `ROR`, `DOI`). Known schemes (DOI, ORCID, ROR, IČO) also get the English label used in the 2.0.0 samples. | – |
 | Any other `xml:lang=""` | 2.0.0 asserts a non-empty language tag on every language-tagged string; empty tags become `und` (undetermined). | Replace `und` with the real language where known. |
 
 ## 2. Licence: one per dataset in 1.1.0, one per distribution in 2.0.0
@@ -44,8 +44,9 @@ Validity is reached partly with placeholders. **A valid output is not a finished
 | `description` (1..n, was 0..n) | The dataset title, as a description without type. | Write a real abstract; DCAT-AP makes `dct:description` mandatory, so a title copy is a weak description. |
 | `subject` from a scheme with `classification_code` and `subject_scheme` (1..n each) | 1.1.0 subjects with a `subject_scheme` are kept. Subjects whose IRI starts with the FORD or INSPIRE theme namespace get the scheme inferred and `classification_code` = last segment of the IRI. With no such subject, a placeholder subject in the FORD scheme with label and code `:unkn` is created. | Every 2.0.0 record must have a FORD subject (usage note). Records with the placeholder need manual classification. |
 | `distribution_data_service/@access_url` (required) | First of: `access_service/endpoint_url/resource_url`, `endpoint_url/iri`, `access_service/iri`, the distribution `iri`; else `:unkn`. | Check it is the real service endpoint. |
+| `access_service/label` (1..n, was 0..n) | Endpoint title, else distribution title, else the service IRI, else `:unkn`. | Set a real service name. |
 | `distribution_*/licence` (1..1) | Dataset licence, see section 2. | – |
-| `label` (1..n, was 0..n) on code-list values: role, alternate title type, date type, resource type, access rights, description type, relation types, format, media type, languages, data service | Existing labels are kept. Missing ones come from a small built-in table (COAR access rights, common EU languages, the main agent roles, a few COAR resource types), else the last segment of the IRI with `xml:lang="en"` (correct for the DataCite vocabularies, e.g. `Collected`, `IsDerivedFrom`; poor for COAR codes like `c_ddb1`). | Extend the `known-labels` table, or look labels up in the code lists before or after conversion. |
+| `label` (1..n, was 0..n) on code-list values: role, alternate title type, date type, resource type, access rights, description type, relation types, format, media type, languages | Existing labels are kept. Missing ones come from a small built-in table (COAR access rights, common EU languages, the main agent roles, a few COAR resource types), else the last segment of the IRI with `xml:lang="en"` (correct for the DataCite vocabularies, e.g. `Collected`, `IsDerivedFrom`; poor for COAR codes like `c_ddb1`). | Extend the `known-labels` table, or look labels up in the code lists before or after conversion. |
 
 ## 4. Language of new language-tagged strings
 

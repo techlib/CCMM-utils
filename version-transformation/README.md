@@ -158,7 +158,7 @@ Distribution `rights` and service licences leave no comment at their position; t
 | `subject` from a scheme (FORD required) | Subjects with FORD / INSPIRE IRIs get `subject_scheme` inferred from the IRI; with none, a FORD subject with label and code `:unkn` | yes |
 | `subject/classification_code` | Last segment of the subject IRI | yes |
 | `distribution_data_service/@access_url` (required) | First of `endpoint_url/resource_url`, `endpoint_url/iri`, `access_service/iri`, the distribution `iri`; else `:unkn` | yes |
-| `access_service/label` (1..n) | Endpoint title, else distribution title, else the service IRI | yes |
+| `access_service/label` (1..n) | Endpoint title, else distribution title, else the service IRI, else `:unkn` | yes |
 | `label` (1..n) on code-list values (role, title / date / description / relation types, resource type, access rights, format, media type, languages) | Built-in table (COAR access rights and resource types, EU languages, main agent roles), else the last segment of the IRI with `xml:lang="en"` | yes, for the IRI fallback |
 | `identifier/scheme` label and `notation` for DOI, ORCID, ROR, IČO when missing | Built-in table | – |
 

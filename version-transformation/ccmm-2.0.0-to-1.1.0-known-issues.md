@@ -56,15 +56,15 @@ Every value the transformation had to choose, merge, invent or drop is marked in
 
 | 2.0.0 property | Handling |
 |---|---|
-| `metadata_identification/title` | Dropped. |
+| `metadata_record/title`, `metadata_identification/title` | Dropped. |
 | `original_repository/description`, `qualified_attribution` (repository publisher), `record`, `dataset` | Dropped; 1.1.0 repository is only `iri` + `label`. |
-| `identifier_scheme/notation` | Dropped (comment keeps it). The 1.1.0 samples carry acronyms such as `ORCID` as a label with `xml:lang=""`, but that fails `rdf:langString` in the 1.1.0 SHACL. The inverse XSLT restores the notation of DOI, ORCID, ROR and IČO from its built-in table. |
+| `identifier/scheme/notation` | Dropped (comment keeps it). The 1.1.0 samples carry acronyms such as `ORCID` as a label with `xml:lang=""`, but that fails `rdf:langString` in the 1.1.0 SHACL. The inverse XSLT restores the notation of DOI, ORCID, ROR and IČO from its built-in table. |
 | `distribution_downloadable_file/packaging_format`, `compression_format`, `description` | Dropped. |
 | `distribution_*/title` beyond the first | Dropped (1.1.0 allows one title). |
 | `distribution_data_service/@access_url` | 1.1.0 has no access URL on a data-service distribution. Dropped when it equals an `access_service/endpoint_url` (`resource_url` or `iri`), which is the usual case; otherwise added as an extra `endpoint_url/resource_url` of the first `access_service`; with no `access_service`, dropped (comment keeps the URL). It is never used as the distribution `iri`: the endpoint URL lifts as a `ccmm:resourceUrl` literal, not as a node IRI, while the `access_service/iri` often repeats the same URL, so in RDF the distribution and the `dcat:DataService` would become one node. The distribution stays without IRI unless the source has one. |
 | `distribution_*/licence`, `rights` | See sections 1 and 2. |
-| `data_service/licence` | See section 1. |
-| `location/bounding_box/iri` and `wkt` | Dropped; only a GML envelope can be expressed. A bounding box given only as WKT is lost (comment in the output keeps the text). |
+| `access_service/licence` | See section 1. |
+| `location/bounding_box/iri` and `wkt` | Dropped; only a GML envelope can be expressed. A bounding box given only as WKT or IRI is lost as a whole (comment in the output keeps the text). |
 | `generated_by/@common_provenance_model_json_representation`, `@ro-crate_json_representation` | Dropped. `generated_by` (provenance activity) becomes `provenance` (provenance statement) with `iri` and `label`. |
 | `time_reference/date_information` beyond the first | Dropped (0..1 in 1.1.0). |
 
@@ -85,7 +85,7 @@ Every value the transformation had to choose, merge, invent or drop is marked in
 | `geometry/gml/<gml geometry>` | `geometry/<gml geometry>` |
 | `access_url` (plain IRI) | `access_url/iri` |
 | `conforms_to` | `conforms_to_schema` (files) / `conforms_to_specification` (services) |
-| `licence_document/title` | `license_document/label` |
+| `licence` / `licence/title` | `license` / `license/label` |
 | `conforms_to_standard` = `https://model.ccmm.cz/research-data/2.0.0` | rewritten to `…/1.1.0` (parameters `source-profile-iri`, `target-profile-iri`, `target-profile-label`), because the output no longer conforms to 2.0.0. |
 
 ## 6. Other points to check
