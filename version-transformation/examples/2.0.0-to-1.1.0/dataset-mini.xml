@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset xmlns="https://schema.ccmm.cz/research-data/1.1"
+         xmlns:gml="http://www.opengis.net/gml/3.2"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://schema.ccmm.cz/research-data/1.1 https://model.ccmm.cz/research-data/1.1.0/dataset/schema.xsd">
+   <metadata_identification>
+      <qualified_relation>
+         <relation>
+            <person>
+               <name>Pavel Steklý</name>
+               <given_name>Pavel</given_name>
+               <family_name>Steklý</family_name>
+            </person>
+         </relation>
+         <role>
+            <iri>https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/DataManager</iri>
+            <label xml:lang="en">Data Manager</label>
+         </role>
+      </qualified_relation>
+      <date_updated>2025-07-25</date_updated>
+      <conforms_to_standard><!-- ccmm-migration: declared profile rewritten from https://model.ccmm.cz/research-data/2.0.0-->
+         <iri>https://model.ccmm.cz/research-data/1.1.0</iri>
+         <label xml:lang="en">CCMM RD 1.1.0</label>
+      </conforms_to_standard>
+      <original_repository>
+         <iri>https://data.narodni-repozitar.cz</iri>
+         <label xml:lang="cs">Původní repozitář</label>
+         <!-- ccmm-migration: dropped repository description, qualified_attribution (no 1.1.0 counterpart) -->
+      </original_repository>
+   </metadata_identification>
+   <identifier>
+      <iri>https://doi.org/10.48700/datst.xd12h-dfz24</iri>
+      <value>10.48700/datst.xd12h-dfz24</value>
+      <scheme>
+         <iri>https://doi.org/</iri>
+      </scheme>
+   </identifier>
+   <title>Datová sada pro Údaje o zdravotní gramotnosti a depresi seniorů ve věku 65 a více let</title>
+   <qualified_relation>
+      <relation>
+         <person>
+            <name>Bártlová, Sylva</name>
+            <given_name>Sylva</given_name>
+            <family_name>Bártlová</family_name>
+         </person>
+      </relation>
+      <role>
+         <iri>https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator</iri>
+         <label xml:lang="en">Creator</label>
+      </role>
+   </qualified_relation>
+   <qualified_relation>
+      <relation>
+         <organization>
+            <name>Nějaká organizace</name>
+         </organization>
+      </relation>
+      <role>
+         <iri>https://vocabs.ccmm.cz/registry/codelist/AgentRole/Publisher</iri>
+         <label xml:lang="en">Publisher</label>
+      </role>
+   </qualified_relation>
+   <publication_year>2026</publication_year>
+   <time_reference>
+      <temporal_representation>
+         <time_instant>
+            <date>2024-05-01</date>
+         </time_instant>
+      </temporal_representation>
+      <date_type>
+         <iri>https://vocabs.ccmm.cz/registry/codelist/TimeReference/Created</iri>
+         <label xml:lang="en">Created</label>
+      </date_type>
+   </time_reference>
+   <terms_of_use>
+      <access_rights>
+         <iri>http://purl.org/coar/access_right/c_f1cf</iri>
+         <label xml:lang="en">embargoed access</label>
+      </access_rights>
+      <!-- ccmm-migration: no distribution licence in the source; licence unknown -->
+      <license>
+         <label xml:lang="en">:unkn</label>
+      </license>
+   </terms_of_use>
+   <subject>
+      <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30304</iri>
+      <title xml:lang="cs">Veřejné a environmentální zdraví</title>
+      <classification_code>10509</classification_code>
+      <subject_scheme>
+         <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/</iri>
+      </subject_scheme>
+   </subject>
+   <description>
+      <description_text xml:lang="cs">Toto je jen ukázka metadat pro neexistující datovou sadu.</description_text>
+   </description>
+</dataset>
