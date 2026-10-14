@@ -30,6 +30,13 @@ On the input there is xml metadata file, a repository and branch and on the outp
 
 Utility also contains the script comparing generated files as a basic ground graph triples, blank nodes and full RDF canonicalization. This checks whether the graph behind specific serializations is the same.
 
+### 4. version-transformation
+An utility transforming CCMM XML metadata between **CCMM 2.0.0 and CCMM 1.1.0** (both directions) using XSLT 3.0 stylesheets (requires Saxon-HE 10+). It allows storing metadata in CCMM 2.0.0 while the National Metadata Directory (NMA) still accepts only CCMM 1.1.0.
+Every value the transformation had to choose, invent, merge or drop is marked in the output by an XML comment starting with `ccmm-migration:`. Losses, decisions and recommendations for each direction are described in the known-issues files.
+
+Utility also contains a test runner which transforms the CCMM samples in both directions including round trips and validates the outputs against the target XSD, plus a SHACL check of the lifted RDF.
+* **Automation:** None, the tests are run manually (`python3 tests/run_tests.py <CCMM v2.0.0 checkout> <CCMM 1.1.0 checkout>`).
+
 ---
 
 ## Summary of Triggers
@@ -37,3 +44,5 @@ Utility also contains the script comparing generated files as a basic ground gra
 | Tool | Primary Function | Run Trigger |
 | :--- | :--- | :--- |
 | **ceCCMM** | Visualizes schema requirements. | Changes to visualization scripts OR the flattened schema. |
+| **ccmm2rdf** | Transforms CCMM XML into RDF (Turtle, RDF/XML, JSON-LD). | Manual workflow run (`workflow_dispatch`) with the XML input, repository and branch. |
+| **version-transformation** | Transforms CCMM XML between 2.0.0 and 1.1.0. | Manual. |
